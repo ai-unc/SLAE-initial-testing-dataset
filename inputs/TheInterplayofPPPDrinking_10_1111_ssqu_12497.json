@@ -8,9 +8,9 @@
             "VariableTwoName": ["Adolescent drinking"],
             "RelationshipClassification": "Direct",
             "Methodology": ["Quantitative"], //or Qualitative
-            "Methodology_Context": ["regressions", "regions of significance test"],
-            "Context": "Adolescents with binge-drinking parents were more likely to increase drinking at every level of peer drinking, supporting the stress perspective; such adolescents did not accrue benefits from abstaining peers, going against the {differential susceptibility perspective}.",
-            //Context should include all relevant information to justify the extraction of information, perhaps replacing certain words that are explained in the text with expanded counterparts
+            "Methodology_SupportingText": ["regressions", "regions of significance test"],
+            "SupportingText": "Adolescents with binge-drinking parents were more likely to increase drinking at every level of peer drinking, supporting the stress perspective; such adolescents did not accrue benefits from abstaining peers, going against the {differential susceptibility perspective}.",
+            //SupportingText should include all relevant information to justify the extraction of information, perhaps replacing certain words that are explained in the text with expanded counterparts
             //Extracted by reading the Abstract only
         },
         {
@@ -19,7 +19,7 @@
             "VariableTwoName": ["effectiveness of abstaining peers"],
             "RelationshipClassification": "Inverse",
             "Attributes": [""],
-            "Context": ""
+            "SupportingText": ""
             //Extracted by reading the Abstract only
         },
         {
@@ -28,8 +28,8 @@
             "VariableTwoName": ["peer influences on adolescent risky behaviors"],
             "RelationshipClassification": "Direct",
             "Attributes": ["Across all levels of peer drinking"],
-            "Context": "peer influences on adolescent risky behaviors may require family environments and genetic predispositions conducive to those behaviors."
-            //Looking at the context, it really only proposes a neccessary dependent relationship between the two, not exactly encodable with inverse direct or no relation... 
+            "SupportingText": "peer influences on adolescent risky behaviors may require family environments and genetic predispositions conducive to those behaviors."
+            //Looking at the SupportingText, it really only proposes a neccessary dependent relationship between the two, not exactly encodable with inverse direct or no relation... 
             //Should we add more categories that simplify into the three core categories?
             //Extracted by reading the Abstract only
         },
@@ -38,23 +38,23 @@
             "VariableTwoName": ["Adolescent Drinking"],
             "RelationshipClassification": "Direct",
             "Attributes": ["Quantitative"],
-            "Context": "In Model 1 and Model 2, peer drinking significantly predicted adolescent drinking at Wave II, with a positive coefficient (b = 0.061, p < 0.05)."
-            //extracted with assistance from chatGPT, context are not quotes from the paper
+            "SupportingText": "In Model 1 and Model 2, peer drinking significantly predicted adolescent drinking at Wave II, with a positive coefficient (b = 0.061, p < 0.05)."
+            //extracted with assistance from chatGPT, SupportingText are not quotes from the paper
         },
         {
             "VariableOneName": ["Parental Problem Drinking"],
             "VariableTwoName": ["Adolescent Drinking"],
             "RelationshipClassification": "Direct",
             "Attributes": ["Quantitative"],
-            "Context": "In Model 1 and Model 2, peer drinking significantly predicted adolescent drinking at Wave II, with a positive coefficient (b = 0.061, p < 0.05)."
+            "SupportingText": "In Model 1 and Model 2, peer drinking significantly predicted adolescent drinking at Wave II, with a positive coefficient (b = 0.061, p < 0.05)."
             //extracted with assistance from chatGPT, this is identical to the first hand extracted relation from the abstract. Perhaps humans can look at abstract and then use chatGPT to extract variables.
         },
         {
-            "VariableOneName": ["Adolescent Male Gender", "Adolescent Gender"], //ChatGPT extracted said relation as "Adolescent Gender" We should embed not only the variable name but the context of that variable within the paper to really find similar variables to merge. Otherwise it may prove impossible.
+            "VariableOneName": ["Adolescent Male Gender", "Adolescent Gender"], //ChatGPT extracted said relation as "Adolescent Gender" We should embed not only the variable name but the SupportingText of that variable within the paper to really find similar variables to merge. Otherwise it may prove impossible.
             "VariableTwoName": ["Adolescent Drinking"],
             "RelationshipClassification": "Direct",
             "Attributes": ["Quantitative"],
-            "Context": "In all models, being female (Adolescent Gender) was associated with lower levels of adolescent drinking (negative coefficients, e.g., b = -0.135, p < 0.05 in Model 3)."
+            "SupportingText": "In all models, being female (Adolescent Gender) was associated with lower levels of adolescent drinking (negative coefficients, e.g., b = -0.135, p < 0.05 in Model 3)."
             //extracted with assistance from chatGPT
         },
         {
@@ -62,7 +62,7 @@
             "VariableTwoName": ["Adolescent Drinking"],
             "RelationshipClassification": "Inverse",
             "Attributes": ["Quantitative"],
-            "Context": "In Model 3, involvement with friends, a measure of peer engagement, had a negative coefficient (b = 0.214, p < 0.05)."
+            "SupportingText": "In Model 3, involvement with friends, a measure of peer engagement, had a negative coefficient (b = 0.214, p < 0.05)."
             //extracted with assistance from chatGPT
         },
         {
@@ -70,7 +70,7 @@
             "VariableTwoName": ["Adolescent Drinking"],
             "RelationshipClassification": "Direct",
             "Attributes": ["Quantitative"],
-            "Context": "In all models, grade level was positively associated with adolescent drinking (positive coefficients, e.g., b = 0.192, p < 0.001 in Model 3)."
+            "SupportingText": "In all models, grade level was positively associated with adolescent drinking (positive coefficients, e.g., b = 0.192, p < 0.001 in Model 3)."
             //extracted with assistance from chatGPT
         },
     ]
