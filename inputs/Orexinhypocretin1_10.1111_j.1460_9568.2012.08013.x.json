@@ -6,17 +6,17 @@
 		{
 			"VariableOneName": "Orexin/hypocretin system",
 			"VariableTwoName": "Heroin reinforcement and relapse",
-			"RelationshipClassification": "Positive"
+			"RelationshipClassification": "Direct"
 		},
 		{
 			"VariableOneName": "OX1R signaling",
 			"VariableTwoName": "Acquisition and expression of a conditioned place preference for morphine",
-			"RelationshipClassification": "Positive"
+			"RelationshipClassification": "Direct"
 		},
 		{
 			"VariableOneName": "OX1R signaling",
 			"VariableTwoName": "Expression of morphine withdrawal symptoms",
-			"RelationshipClassification": "Positive"
+			"RelationshipClassification": "Direct"
 		},
 		{
 			"VariableOneName": "OX1R signaling",
