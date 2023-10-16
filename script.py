@@ -30,9 +30,19 @@ fileExt = "." + filePath.split(".").pop()
 filePath = "papers/" + filePath
 fileName = shortTitle + "_" + fileNameSafeDoi
 newFilePath = "papers/" + fileName + fileExt
-os.rename(filePath, newFilePath)
+try:
+    os.rename(filePath, newFilePath)
+except IOError:
+    f = open(newFilePath, "x")
+    f.close()
 
 print(title)
+
+fileConents = ""
+
+with open(newFilePath, "r", encoding="utf8") as f:
+    for line in f.readlines():
+        fileConents += line + " "
 
 inputData = {
     "PaperDOI": doi,

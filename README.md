@@ -19,4 +19,4 @@ python script.py
 -title="Orexin / hypocretin 1 receptor antagonist reduces heroin self-administration and cue-induced heroin seeking"
 ```
 
-**You will need to manually add the paper content and variable relationships to the input json file**
+**You will need to manually add the variable relationships to the input json file**
