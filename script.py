@@ -47,7 +47,7 @@ with open(newFilePath, "r", encoding="utf8") as f:
 inputData = {
     "PaperDOI": doi,
     "PaperTitle": title,
-    "PaperContents": "",
+    "PaperContents": fileConents,
     "Variables": [
         {
             "VariableOneName": "",
