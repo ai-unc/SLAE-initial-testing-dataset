@@ -1,0 +1,56 @@
+{
+	"PaperDOI": "10.1111/ssqu.12497",
+	"PaperTitle": "The Interplay of Peer, Parent, and Adolescent Drinking*",
+    "PaperContents": "",
+    "Variables": [
+        {
+            "VariableOneName": "parental problem drinking",
+            "VariableTwoName": "Adolescent drinking",
+            "RelationshipClassification": "Direct",
+            "SupportingText": "Adolescents with binge-drinking parents were more likely to increase drinking at every level of peer drinking, supporting the stress perspective; such adolescents did not accrue benefits from abstaining peers, going against the {differential susceptibility perspective}.",
+
+        },
+        {
+            "VariableOneName": "parental problem drinking",
+            "VariableTwoName": "effectiveness of abstaining peers",
+            "RelationshipClassification": "Inverse",
+            "SupportingText": ""
+        },
+        {
+            "VariableOneName": "family environments and genetic predispositions conducive to {those behaviors}",
+            "VariableTwoName": "peer influences on adolescent risky behaviors",
+            "RelationshipClassification": "Direct",
+            "SupportingText": "peer influences on adolescent risky behaviors may require family environments and genetic predispositions conducive to those behaviors."
+        },
+        {
+            "VariableOneName": "Peer Drinking",
+            "VariableTwoName": "Adolescent Drinking",
+            "RelationshipClassification": "Direct",
+            "SupportingText": "In Model 1 and Model 2, peer drinking significantly predicted adolescent drinking at Wave II, with a positive coefficient (b = 0.061, p < 0.05)."
+        },
+        {
+            "VariableOneName": "Parental Problem Drinking",
+            "VariableTwoName": "Adolescent Drinking",
+            "RelationshipClassification": "Direct",
+            "SupportingText": "In Model 1 and Model 2, peer drinking significantly predicted adolescent drinking at Wave II, with a positive coefficient (b = 0.061, p < 0.05)."
+        },
+        {
+            "VariableOneName": "Adolescent Male Gender", 
+            "VariableTwoName": "Adolescent Drinking",
+            "RelationshipClassification": "Direct",
+            "SupportingText": "In all models, being female (Adolescent Gender) was associated with lower levels of adolescent drinking (negative coefficients, e.g., b = -0.135, p < 0.05 in Model 3)."
+        },
+        {
+            "VariableOneName": "Peer Academic Engagement",
+            "VariableTwoName": "Adolescent Drinking",
+            "RelationshipClassification": "Inverse",
+            "SupportingText": "In Model 3, involvement with friends, a measure of peer engagement, had a negative coefficient (b = 0.214, p < 0.05)."
+        },
+        {
+            "VariableOneName": "Adolescent Grade Level",
+            "VariableTwoName": "Adolescent Drinking",
+            "RelationshipClassification": "Direct",
+            "SupportingText": "In all models, grade level was positively associated with adolescent drinking (positive coefficients, e.g., b = 0.192, p < 0.001 in Model 3)."
+        }
+    ]
+}
