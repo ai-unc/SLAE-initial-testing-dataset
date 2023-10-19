@@ -36,18 +36,16 @@ except IOError:
     f = open(newFilePath, "x")
     f.close()
 
-print(title)
-
-fileConents = ""
+fileContents = ""
 
 with open(newFilePath, "r", encoding="utf8") as f:
     for line in f.readlines():
-        fileConents += line + " "
+        fileContents += line + " "
 
 inputData = {
     "PaperDOI": doi,
     "PaperTitle": title,
-    "PaperContents": fileConents,
+    "PaperContents": fileContents,
     "Variables": [
         {
             "VariableOneName": "",
@@ -57,7 +55,6 @@ inputData = {
         }
     ],
 }
-print(inputData["PaperTitle"])
 serializedInputData = json.dumps(inputData, indent=4)
 with open("inputs/" + fileName + ".json", "w") as outfile:
     outfile.write(serializedInputData)
