@@ -1,74 +1,95 @@
 import langchain as lc
+from langchain.chat_models import ChatOpenAI
+from langchain.output_parsers import PydanticOutputParser
+from langchain.pydantic_v1 import BaseModel, Field, validator
+from langchain.llms import OpenAI
+from langchain.prompts import PromptTemplate
+from langchain.schema import AIMessage, HumanMessage, SystemMessage
+from langchain.prompts.chat import (
+    ChatPromptTemplate,
+    SystemMessagePromptTemplate,
+    AIMessagePromptTemplate,
+    HumanMessagePromptTemplate,
+)
 import openai
 import pathlib
 import os
 
+# Configure OpenAI API key
 from dotenv import load_dotenv
 load_dotenv()
 key = os.getenv("OPENAI_API_KEY")
-
-# Configure OpenAI API key
 openai.api_key = key
+
+# Configure constants
 PAPER_SOURCE = pathlib.Path("papers")
+OUTPUTS_SOURCE = pathlib.Path("outputs")
 
-class MyMapReduceChain():
-    def map(self, document):
-        # If document is longer than 5000 tokens, summarize it
-        if len(document.split()) > 5000:
-            response = openai.Completion.create(
-                engine="davinci",
-                prompt=f"Summarize the following text focusing on relationships: {document}",
-                max_tokens=150  # Adjust as needed
-            )
-            summary = response['choices'][0]['text'].strip()
-            print("GPT used")
-            return summary
-        return document
+# Configure output parser classes
+class SingleRelation(BaseModel):
+    VariableOneName: str
+    VariableTwoName: str
+    RelationshipClassification: str
+    SupportingText: str
 
-    def reduce(self, documents):
-        # Combine documents (summaries) into one text
-        return ' '.join(documents)
+    @validator("RelationshipClassification")
+    def question_ends_with_question_mark(cls, field):
+        if field in {"direct", "inverse", "inconclusive"}:
+            return field
+        else:
+            raise ValueError(f"Invalid Relationship Type {{{field}}}")
 
 def extract_relationships(text, variable_one, variable_two):
-    # Apply MapReduce to the text
-    # mr_chain = MyMapReduceChain()
-    # processed_text = mr_chain.map(text)
+    # Add map reduce or some other type of summarization function here.
     processed_text = text
 
-    # Extract Relationship
-    response = openai.Completion.create(
-        engine="gpt-3.5-turbo",
-        prompt=(
-            f"Given the text, identify the relationship between {variable_one} "
-            f"and {variable_two}. The relationship can only be 'direct', 'inverse', "
-            f"or 'inconclusive'. Text: {processed_text}"
-        ),
-        max_tokens=50
+    # Create Parser
+    parser = PydanticOutputParser(pydantic_object=SingleRelation) #Refers to a class called SingleRelation
+
+    # Create the plain text prompt, using some of langchain's functions to automatically create formatting prompts.
+    query= f"""Given the text, identify the relationship between {variable_one} 
+        and {variable_two}. The relationship can only be 'direct', 'inverse', 
+        or 'inconclusive'. The SupportText field of your output should include a section 
+        of verbatim from the text in addition to any comments you want to make about your output.
+        """
+        # The format of the output should 
+        # be a json of the form: 
+        # {{
+        # "VariableOneName": "variable_one",
+        # "VariableTwoName": "variable_two",
+        # "RelationshipClassification": "relationship",
+        # "SupportingText": "supporting_text"
+        # }}
+    prompt = PromptTemplate(
+        template = "{query}\n\n{format_instructions}\n\n{text}",
+        input_variables=["query", "text"],
+        partial_variables={"format_instructions": parser.get_format_instructions()},
     )
-    relationship = response['choices'][0]['text'].strip()
+    input_text = prompt.format_prompt(query=query, text=processed_text).to_string()
+    with open(OUTPUTS_SOURCE / "SingleVariablePipelineInput.txt", "a") as f:
+        f.write(input_text+"\n")
+    # human_message_prompt = HumanMessagePromptTemplate.from_template()
+    # print("what is human_message_prompt:", type(human_message_prompt))
+    chat_prompt = ChatPromptTemplate.from_messages([
+        ("human", input_text)
+    ])
+    print("what is chat_prompt:", type(chat_prompt))
 
-    # Check if a relationship was identified
-    if relationship in ['direct', 'inverse', 'inconclusive']:
-        # Text Citation
-        start_idx = processed_text.find(variable_one)
-        end_idx = processed_text.find(variable_two) + len(variable_two)
-        supporting_text = processed_text[start_idx:end_idx]
+    # Get an output from the LLM
+    model = ChatOpenAI(temperature=0, openai_api_key=key, model_name="gpt-3.5-turbo-16k")
+    print("What is a chat_prompt.format_prompt().to_messages():", type(chat_prompt.format_prompt().to_messages()))
+    output = model(chat_prompt.format_prompt().to_messages())
+    print("what is a output:", type(output))
+    parser.parse(output)
+    return output
 
-        # Output Formation
-        output = {
-            "VariableOneName": variable_one,
-            "VariableTwoName": variable_two,
-            "RelationshipClassification": relationship,
-            "SupportingText": supporting_text
-        }
-        return output
+    # Return None if no relationship was identified
 
-    return None  # Return None if no relationship was identified
-
-# Example Usage:
+# Usage:
 with open(PAPER_SOURCE / "EpidemiologyandEtiologyofSubstance_10.3109_00952990.2012.694527.txt") as f:
     text = f.read()
 variable_one = "Demographic"
 variable_two = "epidemiological patterns of substance use"
 output = extract_relationships(text, variable_one, variable_two)
-print(output)
+with open(OUTPUTS_SOURCE / "SingleVariablePipelineOutput.txt", "a") as f:
+    f.write(str(output))
