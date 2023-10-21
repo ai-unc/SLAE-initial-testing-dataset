@@ -34,7 +34,7 @@ class SingleRelation(BaseModel):
 
     @validator("RelationshipClassification")
     def question_ends_with_question_mark(cls, field):
-        if field in {"direct", "inverse", "inconclusive"}:
+        if field.lower() in {"direct", "inverse", "inconclusive"}:
             return field
         else:
             raise ValueError(f"Invalid Relationship Type {{{field}}}")
@@ -68,7 +68,9 @@ def extract_relationships(text, variable_one, variable_two):
     )
     input_text = prompt.format_prompt(query=query, text=processed_text).to_string()
     with open(OUTPUTS_SOURCE / "SingleVariablePipelineInput.txt", "a") as f:
-        f.write(input_text+"\n")
+        f.write("Input begins:\n")
+        f.write(input_text)
+        f.write("\n\n\n")
     human_message_prompt = HumanMessagePromptTemplate(prompt=prompt)
     print("what is human_message_prompt:", type(human_message_prompt))
     chat_prompt = ChatPromptTemplate.from_messages([human_message_prompt])
@@ -80,7 +82,9 @@ def extract_relationships(text, variable_one, variable_two):
     output = model(chat_prompt.format_prompt(query=query, text=processed_text).to_messages())
     print("what is a output:", type(output), output.content)
     with open(OUTPUTS_SOURCE / "SingleVariablePipelineOutput.txt", "a") as f:
+        f.write("pre parse: ")
         f.write(str(output.content))
+        f.write("\n")
     output = parser.parse(output.content)
     return output
 
@@ -93,4 +97,6 @@ variable_one = "Demographic"
 variable_two = "epidemiological patterns of substance use"
 output = extract_relationships(text, variable_one, variable_two)
 with open(OUTPUTS_SOURCE / "SingleVariablePipelineOutput.txt", "a") as f:
+    f.write("successful parse: ")
     f.write(str(output))
+    f.write("\n")
