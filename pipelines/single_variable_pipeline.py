@@ -51,6 +51,7 @@ def extract_relationships(text, variable_one, variable_two):
         and {variable_two}. The relationship can only be 'direct', 'inverse', 
         or 'inconclusive'. The SupportText field of your output should include a section 
         of verbatim from the text in addition to any comments you want to make about your output.
+        Use exactly wording of outputs choices and input variable names, including capitalization.
         """
         # The format of the output should 
         # be a json of the form: 
@@ -61,26 +62,26 @@ def extract_relationships(text, variable_one, variable_two):
         # "SupportingText": "supporting_text"
         # }}
     prompt = PromptTemplate(
-        template = "{query}\n\n{format_instructions}\n\n{text}",
+        template = "{text}\n\n{query}\n\n{format_instructions}\n\n",
         input_variables=["query", "text"],
         partial_variables={"format_instructions": parser.get_format_instructions()},
     )
     input_text = prompt.format_prompt(query=query, text=processed_text).to_string()
     with open(OUTPUTS_SOURCE / "SingleVariablePipelineInput.txt", "a") as f:
         f.write(input_text+"\n")
-    # human_message_prompt = HumanMessagePromptTemplate.from_template()
-    # print("what is human_message_prompt:", type(human_message_prompt))
-    chat_prompt = ChatPromptTemplate.from_messages([
-        ("human", input_text)
-    ])
+    human_message_prompt = HumanMessagePromptTemplate(prompt=prompt)
+    print("what is human_message_prompt:", type(human_message_prompt))
+    chat_prompt = ChatPromptTemplate.from_messages([human_message_prompt])
     print("what is chat_prompt:", type(chat_prompt))
 
     # Get an output from the LLM
-    model = ChatOpenAI(temperature=0, openai_api_key=key, model_name="gpt-3.5-turbo-16k")
-    print("What is a chat_prompt.format_prompt().to_messages():", type(chat_prompt.format_prompt().to_messages()))
-    output = model(chat_prompt.format_prompt().to_messages())
-    print("what is a output:", type(output))
-    parser.parse(output)
+    model = ChatOpenAI(temperature=.3, openai_api_key=key, model_name="gpt-3.5-turbo-16k")
+    print("What is a chat_prompt.format_prompt().to_messages():", type(chat_prompt.format_prompt(query=query, text=processed_text).to_messages()[0]))
+    output = model(chat_prompt.format_prompt(query=query, text=processed_text).to_messages())
+    print("what is a output:", type(output), output.content)
+    with open(OUTPUTS_SOURCE / "SingleVariablePipelineOutput.txt", "a") as f:
+        f.write(str(output.content))
+    output = parser.parse(output.content)
     return output
 
     # Return None if no relationship was identified
