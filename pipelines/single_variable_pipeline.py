@@ -49,8 +49,10 @@ def extract_relationships(text, variable_one, variable_two, verbose = False):
 
     # Create the plain text prompt. Used some of langchain's functions to automatically create formated prompts.
     query= f"""Given the text, identify the relationship between {variable_one} 
-        and {variable_two}. The relationship can only be 'direct', 'inverse', 
-        or 'inconclusive'. The SupportText field of your output should include a section 
+        and {variable_two}. The RelationshipClassification field can only be 'direct', 'inverse', 
+        or 'inconclusive'. The isCausal_True_or_False can only be 'True' or 'False', and can only be 
+        true if the text directly states that the relationship is a causal relationship.
+        The SupportText field of your output should include a section 
         of verbatim from the text in addition to any comments you want to make about your output.
         Use exactly wording of outputs choices and input variable names, including capitalization.
         """
