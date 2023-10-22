@@ -6,43 +6,43 @@
         {
             "VariableOneName": "Demographic",
             "VariableTwoName": "epidemiological patterns of substance use",
-            "RelationshipClassification": "direct",
+            "RelationshipClassification": "Direct",
             "SupportingText": ""
         },
         {
             "VariableOneName": "Individual risk factors",
             "VariableTwoName": "likelihood of substance use and addiction",
-            "RelationshipClassification": "direct",
+            "RelationshipClassification": "Direct",
             "SupportingText": ""
         },
         {
             "VariableOneName": "Contextual factors",
             "VariableTwoName": "protective factors",
-            "RelationshipClassification": "direct",
+            "RelationshipClassification": "Direct",
             "SupportingText": ""
         },
         {
             "VariableOneName": "Historical trauma",
             "VariableTwoName": "contextual factors",
-            "RelationshipClassification": "direct",
+            "RelationshipClassification": "Direct",
             "SupportingText": ""
         },
         {
             "VariableOneName": "Demographic",
             "VariableTwoName": "individual risk factors",
-            "RelationshipClassification": "indirect",
+            "RelationshipClassification": "Inverse",
             "SupportingText": ""
         },
         {
             "VariableOneName": "Contextual factor",
             "VariableTwoName": "individual risk and protective factors",
-            "RelationshipClassification": "indirect",
+            "RelationshipClassification": "Inverse",
             "SupportingText": ""
         },
         {
             "VariableOneName": "Cultural identity",
             "VariableTwoName": "substance use patterns",
-            "RelationshipClassification": "indirect",
+            "RelationshipClassification": "Inverse",
             "SupportingText": ""
         }
     ]

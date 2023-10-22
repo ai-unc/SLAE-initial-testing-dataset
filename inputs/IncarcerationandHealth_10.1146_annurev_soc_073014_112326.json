@@ -6,61 +6,61 @@
         {
             "VariableOneName": "Stress",
             "VariableTwoName": "Health",
-            "RelationshipClassification": "Negative",
+            "RelationshipClassification": "Inverse",
             "SupportingText": "Research consistently shows that stress is negatively associated with health. Exposure to repeated or chronic stressors increases allostatic load, which can lead to negative health outcomes (McEwen & Stellar 1993)."
         },
         {
             "VariableOneName": "Incarceration",
             "VariableTwoName": "Marriage rates",
-            "RelationshipClassification": "Negative",
+            "RelationshipClassification": "Inverse",
             "SupportingText": "The stigma attached to those who have been incarcerated makes them less desirable partners (Wilson 1987) and they have lower marriage rates following imprisonment (Huebner 2005)."
         },
         {
             "VariableOneName": "Incarceration",
             "VariableTwoName": "Divorce rates",
-            "RelationshipClassification": "Positive",
+            "RelationshipClassification": "Direct",
             "SupportingText": "Individuals married at the time of incarceration have a greater risk of divorce both during and after imprisonment (Apel et al. 2010, Massoglia et al. 2011). Siennick et al. (2014) found that such marriages are at increased risk of poor marital quality, relationship violence, and extramarital sex and that these factors explain approximately 40% of the association between incarceration and divorce."
         },
         {
             "VariableOneName": "Incarceration",
             "VariableTwoName": "Health",
-            "RelationshipClassification": "Negative",
+            "RelationshipClassification": "Inverse",
             "SupportingText": "Schnittker & John (2007), for example, focused on within-person change using the National Longitudinal Survey of Youth (NLSY79). Three findings from this important paper set the stage for later sociological work in the area. First, the authors found that individuals with a history of incarceration report more chronic health problems after their period of incarceration than before. Second, the authors accounted for chronic health problems prior to prison, which allowed them to demonstrate empirically that incarceration is associated with a negative change in health status. Third, Schnittker & John found that the impact of the length of incarceration on health appears to be less important than the fact of incarceration itself. "
         },
         {
             "VariableOneName": "Incarceration",
             "VariableTwoName": "Infectious diseases",
-            "RelationshipClassification": "Positive",
+            "RelationshipClassification": "Direct",
             "SupportingText": "Massoglia (2008b) found that relative to those who had not been incarcerated, those who had been incarcerated disproportionately suffer from infectious diseases (e.g., hepatitis, tuberculosis) and stress-related illness."
         },
         {
             "VariableOneName": "Incarceration",
             "VariableTwoName": "Stress-related illnesses",
-            "RelationshipClassification": "Positive",
+            "RelationshipClassification": "Direct",
             "SupportingText": "Massoglia (2008b) found that relative to those who had not been incarcerated, those who had been incarcerated disproportionately suffer from infectious diseases (e.g., hepatitis, tuberculosis) and stress-related illness."
         },
         {
             "VariableOneName": "Incarceration",
             "VariableTwoName": "BMI",
-            "RelationshipClassification": "Positive",
+            "RelationshipClassification": "Direct",
             "SupportingText": "Houle (2014) investigated how incarceration might contribute to patterns of obesity. The author examined trajectories of body mass index (BMI) and found that being incarcerated increases BMI. The effects varied, however, with strongest effects for blacks and for individuals with less education. In the conclusion the author echoed a common theme across many studies in the area: Given the disproportionate rates of incarceration, and the stronger effects for blacks, the penal system may condition the structure of obesity disparities across the life course (Houle 2014)."
         },
         {
             "VariableOneName": "Parental incarceration",
             "VariableTwoName": "Children Health",
-            "RelationshipClassification": "Negative",
+            "RelationshipClassification": "Inverse",
             "SupportingText": "In a comprehensive treatment of the topic, Wakefield & Wildeman (2013) concluded incarceration has wide-ranging effects on childhood health and well-being, including increasing mental health and behavioral problems. Parental incarceration also leads to poor health outcomes by increasing the likelihood that children will adopt behaviors associated with poor health. For instance, parental incarceration is associated with behavioral problems in children (Geller et al. 2011; Murray et al. 2012a,b), including physical aggression (Wildeman 2010) and criminality (Roettger & Swisher 2011). Parental incarceration also leads to increased drug and alcohol use among children, which has obvious implications for the health of children (Roettger et al. 2011)."
         },
         {
             "VariableOneName": "Parental incarceration",
             "VariableTwoName": "Female children body mass",
-            "RelationshipClassification": "Positive",
+            "RelationshipClassification": "Direct",
             "SupportingText": "The impact of incarceration on health, including mental health (Wildeman et al. 2012), extends to family members (including partners and children) of those who are incarcerated (Wakefield & Wildeman 2013, Wildeman & Muller 2012). Roettger & Boardman (2012) used the National Longitudinal Study of Adolescent Health to investigate the impact of parental incarceration on childhood body mass. Using multiple analytic approaches and accounting for several potentially confounding factors such as stressful life events and individual and family characteristics, the authors found that parental incarceration is associated with increased body mass among female, but not male, children of those who were incarcerated."
         },
         {
             "VariableOneName": "Incarcerated family member",
             "VariableTwoName": "Women in the family experiencing heart attack, stroke, or obesity or to have fair to poor health",
-            "RelationshipClassification": "Positive",
+            "RelationshipClassification": "Direct",
             "SupportingText": "Lee et al. (2014) also found that results vary by gender. Having a family member incarcerated increased the likelihood of women to experience a heart attack, stroke, or obesity or to have fair to poor health. "
         },
         {
@@ -72,19 +72,19 @@
         {
             "VariableOneName": "Incarceration",
             "VariableTwoName": "Public health",
-            "RelationshipClassification": "Negative",
+            "RelationshipClassification": "Inverse",
             "SupportingText": "Turney's findings are consistent with research that documents many detrimental effects of incarceration on community and public health (see discussion in Massoglia & Schnittker 2009). One such study used state-level panel data stretching almost 25 years and found an association between incarceration and poorer population health. This association is strongest for infant mortality and female life expectancy (Wildeman 2012)."
         },
         {
             "VariableOneName": "Incarceration",
             "VariableTwoName": "Infection rates of immunodeficiency syndromes",
-            "RelationshipClassification": "Positive",
+            "RelationshipClassification": "Direct",
             "SupportingText": "Another study examined the relationship between incarceration and infection rates of immunodeficiency syndromes (Johnson & Raphael 2009). The authors found that incarceration had a significant effect on AIDS infection rates for both males and females and concluded that a large proportion of the racial disparities in AIDS infections among black women can be explained by higher incarceration rates among black men (Johnson & Raphael 2009). One compelling aspect of this study is its use of data from the Centers for Disease Control and Prevention and case-level US data spanning the period 1982–1996, making it both longitudinal and representative."
         },
         {
             "VariableOneName": "Incarceration",
             "VariableTwoName": "White men mortality",
-            "RelationshipClassification": "Positive",
+            "RelationshipClassification": "Direct",
             "SupportingText": "In a retrospective cohort study, Spaulding et al. (2011) examined all persons in Georgia prisons on June 30, 1991, to determine their survivability through the end of 2006. As with prior studies, the authors found white men were at a substantially higher risk for mortality (SMR=1.28) while incarcerated than when not incarcerated. The results of these studies suggest white men are at an increased risk of mortality when living in prison than when not living in prison, and that this risk is driven largely by deaths due to infectious diseases, cardiovascular disease, and cancer."
         },
         {
