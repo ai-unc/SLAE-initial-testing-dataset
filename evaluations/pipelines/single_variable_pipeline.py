@@ -22,8 +22,8 @@ key = os.getenv("OPENAI_API_KEY")
 openai.api_key = key
 
 # Configure constants
-PAPER_SOURCE = pathlib.Path("papers")
-OUTPUTS_SOURCE = pathlib.Path("outputs")
+PAPER_SOURCE = pathlib.Path("../papers")
+OUTPUTS_SOURCE = pathlib.Path("../outputs")
 
 # Configure output parser classes
 class SingleRelation(BaseModel):
@@ -98,8 +98,8 @@ variable_one = "AI/AN status"
 variable_two = "Substance use"
 
 # Process and save outputs:
-output = extract_relationships(text, variable_one, variable_two)
+output = extract_relationships(text, variable_one, variable_two, verbose=True)
 with open(OUTPUTS_SOURCE / "SingleVariablePipelineOutput.txt", "a") as f:
     f.write("successful parse: ")
-    f.write(str(output))
+    f.write(str(type(output.json()))+output.json())
     f.write("\n")
