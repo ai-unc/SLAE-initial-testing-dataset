@@ -22,15 +22,15 @@ key = os.getenv("OPENAI_API_KEY")
 openai.api_key = key
 
 # Configure constants
-PAPER_SOURCE = pathlib.Path("../papers")
-OUTPUTS_SOURCE = pathlib.Path("../outputs")
+PAPER_SOURCE = pathlib.Path("../../papers")
+OUTPUTS_SOURCE = pathlib.Path("../../outputs")
 
 # Configure output parser classes
 class SingleRelation(BaseModel):
     VariableOneName: str
     VariableTwoName: str
     RelationshipClassification: str
-    isCausal_True_or_False: str
+    isCausal: str
     SupportingText: str
 
     @validator("RelationshipClassification")
@@ -47,32 +47,38 @@ def extract_relationships(text, variable_one, variable_two, verbose = False):
     # Create Parser
     parser = PydanticOutputParser(pydantic_object=SingleRelation) #Refers to a class called SingleRelation
 
-    # Create the plain text prompt. Used some of langchain's functions to automatically create formated prompts.
-    query= f"""Given the text, identify the relationship between {variable_one} 
-        and {variable_two}. The RelationshipClassification field can only be 'direct', 'inverse', 
-        or 'inconclusive'. The isCausal_True_or_False can only be 'True' or 'False', and can only be 
+    # Create the plain text prompt. Used some of langchain's functions to automatically create formated prompts. 
+    prompt = PromptTemplate(
+        template = """
+        {text}
+        
+        Given the text, identify the relationship between {variable_one} 
+        and {variable_two}.
+        
+        {format_instructions}
+
+        The RelationshipClassification field can only be 'direct', 'inverse', 
+        or 'inconclusive'. The isCausal field can only be either 'True' or 'False', and can only be 
         true if the text directly states that the relationship is a causal relationship.
         The SupportText field of your output should include a section 
         of verbatim from the text in addition to any comments you want to make about your output.
-        Use exactly wording of outputs choices and input variable names, including capitalization.
-        """
-    prompt = PromptTemplate(
-        template = """{text}\n\n{query}\n\n{format_instructions}\n\n""",
-        input_variables=["query", "text"],
+        Use exactly wording of outputs choices and input variable names, including capitalization.""",
+        input_variables=["text", "variable_one", "variable_two"],
         partial_variables={"format_instructions": parser.get_format_instructions()},
     )
-    input_text = prompt.format_prompt(query=query, text=processed_text).to_string()
-    with open(OUTPUTS_SOURCE / "SingleVariablePipelineInput.txt", "a") as f:
-        f.write("Input begins:\n")
-        f.write(input_text)
-        f.write("\n\n\n")
+    input_text = prompt.format_prompt(text=processed_text, variable_one=variable_one, variable_two=variable_two).to_string()
+    if verbose:
+        with open(OUTPUTS_SOURCE / "SingleVariablePipelineInput.txt", "a") as f:
+            f.write("Input begins:\n")
+            f.write(input_text)
+            f.write("\n\n\n")
     human_message_prompt = HumanMessagePromptTemplate(prompt=prompt)
     if verbose:
         print("what is human_message_prompt:", type(human_message_prompt))
     chat_prompt = ChatPromptTemplate.from_messages([human_message_prompt])
     if verbose:
         print("what is chat_prompt:", type(chat_prompt))
-    completion_prompt = chat_prompt.format_prompt(query=query, text=processed_text).to_messages()
+    completion_prompt = chat_prompt.format_prompt(text=processed_text, variable_one=variable_one, variable_two=variable_two).to_messages()
     if verbose:
         print("What is a completion_prompt:", type(completion_prompt))
 
@@ -83,23 +89,24 @@ def extract_relationships(text, variable_one, variable_two, verbose = False):
     output = model(completion_prompt)
     if verbose:
         print("what is a output:", type(output), output.content)
-    with open(OUTPUTS_SOURCE / "SingleVariablePipelineOutput.txt", "a") as f:
-        f.write("pre parse: ")
-        f.write(str(output.content))
-        f.write("\n")
+        with open(OUTPUTS_SOURCE / "SingleVariablePipelineOutput.txt", "a") as f:
+            f.write("pre parse: ")
+            f.write(str(output.content))
+            f.write("\n")
     output = parser.parse(output.content)
     return output
 
-# Prepare inputs:
-text = str()
-with open(PAPER_SOURCE / "testpaper.txt") as f:
-    text = f.read()
-variable_one = "AI/AN status"
-variable_two = "Substance use"
+if __name__ == "__main__":
+    # Prepare inputs:
+    text = str()
+    with open(PAPER_SOURCE / "testpaper.txt") as f:
+        text = f.read()
+    variable_one = "AI/AN status"
+    variable_two = "Substance use"
 
-# Process and save outputs:
-output = extract_relationships(text, variable_one, variable_two, verbose=True)
-with open(OUTPUTS_SOURCE / "SingleVariablePipelineOutput.txt", "a") as f:
-    f.write("successful parse: ")
-    f.write(str(type(output.json()))+output.json())
-    f.write("\n")
+    # Process and save outputs:
+    output = extract_relationships(text, variable_one, variable_two, verbose=True)
+    with open(OUTPUTS_SOURCE / "SingleVariablePipelineOutput.txt", "a") as f:
+        f.write("successful parse: ")
+        f.write(str(type(output.json()))+output.json())
+        f.write("\n")
