@@ -40,12 +40,15 @@ class SingleRelation(BaseModel):
         else:
             raise ValueError(f"Invalid Relationship Type {{{field}}}")
 
+class ListOfRelations(BaseModel):
+    Relations: list[SingleRelation]
+
 def extract_relationships(text, variable_one, variable_two, verbose = False):
     # Add map reduce or some other type of summarization function here.
     processed_text = text
 
     # Create Parser
-    parser = PydanticOutputParser(pydantic_object=SingleRelation) #Refers to a class called SingleRelation
+    parser = PydanticOutputParser(pydantic_object=ListOfRelations) #Refers to a class called SingleRelation
 
     # Create the plain text prompt. Used some of langchain's functions to automatically create formated prompts. 
     formatting_text = """
@@ -72,7 +75,7 @@ def extract_relationships(text, variable_one, variable_two, verbose = False):
         {format_instructions}
         """,
         input_variables=["text"],
-        partial_variables={"format_instructions":formatting_text}
+        partial_variables={"format_instructions":parser.get_format_instructions}
     )
     input_text = prompt.format_prompt(text=processed_text).to_string()
     if verbose:
@@ -101,8 +104,8 @@ def extract_relationships(text, variable_one, variable_two, verbose = False):
             f.write("pre parse: ")
             f.write(str(output.content))
             f.write("\n")
-    # output = parser.parse(output.content)
-    return output.content
+    output = parser.parse(output.content)
+    return output
 
 if __name__ == "__main__":
     # Prepare inputs:
@@ -115,6 +118,6 @@ if __name__ == "__main__":
     # Process and save outputs:
     output = extract_relationships(text, variable_one, variable_two, verbose=True)
     with open(OUTPUTS_SOURCE / "SingleVariablePipelineOutput.txt", "a") as f:
-        f.write("successful parse: ")
-        f.write(output)
+        f.write("successful parse MULTIRELATION: ")
+        f.write(output.json())
         f.write("\n")
