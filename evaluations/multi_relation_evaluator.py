@@ -51,9 +51,18 @@ if len(predictions["Relations"]) > len(ground_truth["Relations"]):
     index_max = len(ground_truth["Relations"])
 else: index_max = len(predictions["Relations"])
 
-results = list()
+results: list(dict()) = list()
 for relation_index in range(index_max):
     relation = ground_truth["Relations"][relation_index]
     prediction = predictions["Relations"][relation_index]
     results.append(compare(prediction, relation))
 
+aggregate_results = dict()
+aggregate_results["RelationshipClassificationScore"] = 0
+aggregate_results["CausalIdentificationScore"] = 0
+for x, result in enumerate(results):
+    aggregate_results["RelationshipClassificationScore"] += result["RelationshipClassificationScore"]
+    aggregate_results["CausalIdentificationScore"] += result["isCausalScore"]
+aggregate_results["RelationshipClassificationScore"] /= (x + 1)
+aggregate_results["CausalIdentificationScore"] /= (x + 1)
+print(aggregate_results)
