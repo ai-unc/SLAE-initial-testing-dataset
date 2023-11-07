@@ -29,12 +29,6 @@ OUTPUTS_SOURCE = pathlib.Path("outputs")
 model = ChatOpenAI(temperature=.3, openai_api_key=key, model_name="text-davinci-003") 
         
 class Variable_Relationship_Extraction(BaseModel):
-    # relation: dict = {
-    #     "VariableOneName": str,
-    #     "VariableTwoName": str,
-    #     "RelationshipClassification": str,
-    #     "SupportingText": str
-    # }
     VariableOneName: str
     VariableTwoName: str
     RelationshipClassification: str
@@ -49,7 +43,7 @@ class Variable_Relationship_Extraction(BaseModel):
             raise ValueError(f"Invalid Relationship Type {{{field}}}")
 
 class Multivariable_List(BaseModel):
-    __root__: Variable_Relationship_Extraction 
+    __root__: list[Variable_Relationship_Extraction]
     class Config:
            schema_extra = {
                "examples": [
