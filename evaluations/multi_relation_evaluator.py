@@ -15,34 +15,36 @@ print("___\n\n\n", mypath)
 
 def compare(prediction, ground_truth):
     score_dictionary = dict()
-    print(prediction["RelationshipClassification"], ground_truth["RelationshipClassification"])
-    if prediction["RelationshipClassification"] == ground_truth["RelationshipClassification"]:
+    if prediction["RelationshipClassification"].lower() == ground_truth["RelationshipClassification"].lower():
         score_dictionary["RelationshipClassificationScore"] = 1
-        print("RelationshipClassification Score ==> success")
+        print("RelationshipClassification Score ==> success;", ground_truth["RelationshipClassification"])
     else:
         score_dictionary["RelationshipClassificationScore"] = 0
         print("RelationshipClassification Score ==> actual:", ground_truth["RelationshipClassification"], "; predicted:", prediction["RelationshipClassification"])
     
-    if prediction["isCausal"] == ground_truth["isCausal"]:
+    if prediction["isCausal"].lower() == ground_truth["isCausal"].lower():
         score_dictionary["isCausalScore"] = 1
-        print("Causal Score ==> success")
+        print("Causal Score ==> success; ", ground_truth["isCausal"])
     else:
         score_dictionary["isCausalScore"] = 0
         print("Causal Score ==> actual:", ground_truth["isCausal"], "; predicted:", prediction["isCausal"])
     return score_dictionary
+
 # Read a YAML file
 dataset_path = pathlib.Path("evaluation_datasets/multi_relation_dataset")
 
 # Read evaluation dataset
-with open(dataset_path / "partner_violence_and_alcohol_exposed_prengancy_10.1111_acer.13968.json") as f:
+with open(dataset_path / "test_paper.json") as f:
     ground_truth = json.load(f)
     print("datatype of ground truth", type(ground_truth))    
 
 # Determine Settings
 text = ground_truth["text"]
 # extract_relationships based on settings (which is text and nothing else)
-# prediction = extract_relationships(text, VariableOneName, VariableTwoName).dict()
-predictions = deepcopy(ground_truth)
+if True:
+    predictions = extract_relationships(text).dict()
+else:
+    predictions = deepcopy(ground_truth)
 predictions["Relations"][0]["RelationshipClassification"] = "inverse"
 print("datatype of prediction", type(predictions))
 # compare to obtain score
@@ -66,3 +68,11 @@ for x, result in enumerate(results):
 aggregate_results["RelationshipClassificationScore"] /= (x + 1)
 aggregate_results["CausalIdentificationScore"] /= (x + 1)
 print(aggregate_results)
+
+with open("evaluation_outputs/results_and_predictions/results.txt", "w") as f:
+    f.write("Predictions\n")
+    f.write(json.dumps(predictions, indent=2))
+    f.write("Ground Truth\n")
+    f.write(json.dumps(ground_truth, indent=2))
+    f.write("Results\n")
+    f.write(json.dumps(aggregate_results, indent=2))

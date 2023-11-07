@@ -43,7 +43,7 @@ class SingleRelation(BaseModel):
 class ListOfRelations(BaseModel):
     Relations: list[SingleRelation]
 
-def extract_relationships(text, variable_one, variable_two, verbose = False):
+def extract_relationships(text, verbose = False):
     # Add map reduce or some other type of summarization function here.
     processed_text = text
 
