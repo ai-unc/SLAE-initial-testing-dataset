@@ -117,7 +117,7 @@ if __name__ == "__main__":
 
     # Process and save outputs:
     output = extract_relationships(text, variable_one, variable_two, verbose=True)
-    with open(OUTPUTS_SOURCE / "SingleVariablePipelineOutput.txt", "a") as f:
+    with open(OUTPUTS_SOURCE / "MultiPaperPipelineOutput.txt", "a") as f:
         f.write("successful parse MULTIRELATION: ")
         f.write(output.json())
         f.write("\n")
