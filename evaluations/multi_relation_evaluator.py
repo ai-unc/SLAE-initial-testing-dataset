@@ -69,7 +69,7 @@ aggregate_results["RelationshipClassificationScore"] /= (x + 1)
 aggregate_results["CausalIdentificationScore"] /= (x + 1)
 print(aggregate_results)
 
-with open("evaluation_outputs/results_and_predictions/results.txt", "w") as f:
+with open("evaluation_outputs/multi_relation_results/results.txt", "w") as f:
     f.write("Predictions\n")
     f.write(json.dumps(predictions, indent=2))
     f.write("Ground Truth\n")

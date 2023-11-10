@@ -43,7 +43,7 @@ class SingleRelation(BaseModel):
 class ListOfRelations(BaseModel):
     Relations: list[SingleRelation]
 
-def extract_relationships(text, verbose = False):
+def extract_relationships(text, verbose = False, model = "gpt-3.5-turbo-16k"):
     # Add map reduce or some other type of summarization function here.
     processed_text = text
 
@@ -94,7 +94,7 @@ def extract_relationships(text, verbose = False):
         print("What is a completion_prompt:", type(completion_prompt))
 
     # Create LLM
-    model = ChatOpenAI(temperature=.3, openai_api_key=key, model_name="gpt-3.5-turbo-16k")
+    model = ChatOpenAI(temperature=.3, openai_api_key=key, model_name=model)
 
     # Obtain completion from LLM
     output = model(completion_prompt)
@@ -116,7 +116,7 @@ if __name__ == "__main__":
     variable_two = "Substance use"
 
     # Process and save outputs:
-    output = extract_relationships(text, variable_one, variable_two, verbose=True)
+    output = extract_relationships(text, verbose=True, model="gpt-3.5-turbo-1106")
     with open(OUTPUTS_SOURCE / "MultiPaperPipelineOutput.txt", "a") as f:
         f.write("successful parse MULTIRELATION: ")
         f.write(output.json())
