@@ -1,0 +1,17 @@
+Variable:  Influenced by
+Births:  Pop (+), Birth Rate (+), Pop (+), Birth Rate (+)
+Pop:  Births (+), Deaths (-), Births (+), Deaths (-)
+Deaths:  Pop (+), Death Rate (+), test (Neutral), Pop (+), Death Rate (+), test (Neutral)
+Birth Rate:
+Death Rate:
+R:
+B:
+test:
+Births:
+Pop:
+Deaths:
+Birth Rate:
+Death Rate:
+R:
+B:
+test:
