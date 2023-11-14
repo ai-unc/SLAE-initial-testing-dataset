@@ -21,10 +21,16 @@ load_dotenv()
 key = os.getenv("OPENAI_API_KEY")
 openai.api_key = key
 
-# Configure constants
-    ## Copilot suggested these instead since the originals failed on my machine
-PAPER_SOURCE = pathlib.Path("./papers")
-OUTPUTS_SOURCE = pathlib.Path("./outputs")
+# Filepath Debug
+mypath = os.path.abspath("")
+print("___\n\n\n", mypath)
+
+# Configuration
+"""This section configs the run"""
+PAPER_SOURCE = pathlib.Path("../../papers")
+OUTPUTS_SOURCE = pathlib.Path("../../outputs")
+PAPER_FILENAME = "IncarcerationandHealth_10.1146_annurev_soc_073014_112326.text"
+MODEL_NAME = "gpt-3.5-turbo-1106"
 
 # Configure output parser classes
 class SingleRelation(BaseModel):
@@ -44,7 +50,7 @@ class SingleRelation(BaseModel):
 class ListOfRelations(BaseModel):
     Relations: list[SingleRelation]
 
-def extract_relationships(text, verbose = False, model = "gpt-3.5-turbo-16k"):
+def extract_relationships(text, verbose = False, model = "gpt-3.5-turbo-1106"):
     # Add map reduce or some other type of summarization function here.
     processed_text = text
 
@@ -70,7 +76,7 @@ def extract_relationships(text, verbose = False, model = "gpt-3.5-turbo-16k"):
         For example, if a text says "We find a strong correlation p < .0001 between a country's per capita income and it's literacy rate" then "Country's per capita income" and "Country's literacy rate" would be good variables. Variables that are implied but not directly stated by the text such as "education infilstructure" should not be included. 
         The RelationshipClassification field can only be 'direct', 'inverse', 
         or 'inconclusive'. The isCausal field can only be either 'True' or 'False', and can only be true if the text directly states that the relationship is a causal relationship.
-        The SupportText field of your output should include a section of verbatim from the text in addition to any comments you want to make about your output.
+        The SupportText field of your output should include a section of verbatim from the text in addition to any comments you want to make about your output, without paraphrasing.
         Use exactly wording of outputs choices and input variable names, including capitalization choices.
 
         {format_instructions}
@@ -80,7 +86,7 @@ def extract_relationships(text, verbose = False, model = "gpt-3.5-turbo-16k"):
     )
     input_text = prompt.format_prompt(text=processed_text).to_string()
     if verbose:
-        with open(OUTPUTS_SOURCE / "SingleVariablePipelineInput.txt", "a") as f:
+        with open(OUTPUTS_SOURCE / "MultiVariablePipelineInput.txt", "a") as f:
             f.write("Input begins:\n")
             f.write(input_text)
             f.write("\n\n\n")
@@ -101,26 +107,24 @@ def extract_relationships(text, verbose = False, model = "gpt-3.5-turbo-16k"):
     output = model(completion_prompt)
     if verbose:
         print("what is a output:", type(output), output.content)
-        with open(OUTPUTS_SOURCE / "SingleVariablePipelineOutput.txt", "a") as f:
+        with open(OUTPUTS_SOURCE / "MultiVariablePipelineOutput.txt", "a") as f:
             f.write("pre parse: ")
             f.write(str(output.content))
             f.write("\n")
-    output = parser.parse(output.content)
+    parsed_output = parser.parse(output.content)
     return output
 
 if __name__ == "__main__":
     # Prepare inputs:
     text = str()
-    for file in os.listdir(PAPER_SOURCE):
-        print(file)
-    with open(PAPER_SOURCE / "testpaper") as f:
+    with open(PAPER_SOURCE / "testpaper.txt") as f:
         text = f.read()
     variable_one = "AI/AN status"
     variable_two = "Substance use"
 
     # Process and save outputs:
     output = extract_relationships(text, verbose=True, model="gpt-3.5-turbo-1106")
-    with open(OUTPUTS_SOURCE / "MultiPaperPipelineOutput.txt", "a") as f:
+    with open(OUTPUTS_SOURCE / "MultiVariablePipelineOutput.txt", "a") as f:
         f.write("successful parse MULTIRELATION: ")
-        f.write(output.json())
+        f.write(str(output.content))
         f.write("\n")

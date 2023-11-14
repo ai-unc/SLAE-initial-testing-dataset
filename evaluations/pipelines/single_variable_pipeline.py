@@ -21,9 +21,16 @@ load_dotenv()
 key = os.getenv("OPENAI_API_KEY")
 openai.api_key = key
 
-# Configure constants
+# Filepath Debug
+mypath = os.path.abspath("")
+print("___\n\n\n", mypath)
+
+# Configuration
+"""This section configs the run"""
 PAPER_SOURCE = pathlib.Path("../../papers")
 OUTPUTS_SOURCE = pathlib.Path("../../outputs")
+PAPER_FILENAME = "testpaper.txt"
+MODEL_NAME = "gpt-3.5-turbo-1106"
 
 # Configure output parser classes
 class SingleRelation(BaseModel):
@@ -40,7 +47,7 @@ class SingleRelation(BaseModel):
         else:
             raise ValueError(f"Invalid Relationship Type {{{field}}}")
 
-def extract_relationships(text, variable_one, variable_two, verbose = False):
+def extract_relationships(text, variable_one, variable_two, verbose = False, model = MODEL_NAME):
     # Add map reduce or some other type of summarization function here.
     processed_text = text
 
@@ -83,7 +90,7 @@ def extract_relationships(text, variable_one, variable_two, verbose = False):
         print("What is a completion_prompt:", type(completion_prompt))
 
     # Create LLM
-    model = ChatOpenAI(temperature=.3, openai_api_key=key, model_name="gpt-3.5-turbo-16k")
+    model = ChatOpenAI(temperature=.3, openai_api_key=key, model_name=model)
 
     # Obtain completion from LLM
     output = model(completion_prompt)
@@ -99,7 +106,7 @@ def extract_relationships(text, variable_one, variable_two, verbose = False):
 if __name__ == "__main__":
     # Prepare inputs:
     text = str()
-    with open(PAPER_SOURCE / "testpaper.txt") as f:
+    with open(PAPER_SOURCE / PAPER_FILENAME) as f:
         text = f.read()
     variable_one = "AI/AN status"
     variable_two = "Substance use"
