@@ -38,9 +38,20 @@ except IOError:
 
 fileContents = ""
 
+#with open(newFilePath, "wr", encoding="utf8") as f:
+#    for line in f.readlines():
+#        line = re.sub("[^a-zA-Z0-9\n ]", "_", line)
+#        fileContents += line
+
+# Python
 with open(newFilePath, "r", encoding="utf8") as f:
-    for line in f.readlines():
-        fileContents += line + " "
+    lines = f.readlines()
+
+with open(newFilePath, "w", encoding="utf8") as f:
+    for line in lines:
+        line = re.sub("[^a-zA-Z0-9\n ]", "_", line)
+        fileContents += line
+        f.write(line)
 
 inputData = {
     "PaperDOI": doi,
