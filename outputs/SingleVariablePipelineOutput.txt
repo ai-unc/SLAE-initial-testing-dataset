@@ -30,3 +30,56 @@ pre parse: {
     }
   ]
 }
+pre parse: {
+  "Relations": [
+    {
+      "VariableOneName": "CBM-I with prior RNT",
+      "VariableTwoName": "Reduction in negative interpretation bias",
+      "RelationshipClassification": "direct",
+      "isCausal": "True",
+      "SupportingText": "We predict that CBM-I with prior RNT will reduce negative interpretation bias relative to the active control condition."
+    },
+    {
+      "VariableOneName": "CBM-I with prior RNT",
+      "VariableTwoName": "Reduction in worry and rumination",
+      "RelationshipClassification": "direct",
+      "isCausal": "True",
+      "SupportingText": "We predict that CBM-I with prior RNT will reduce worry and rumination in individuals with GAD and depression."
+    },
+    {
+      "VariableOneName": "CBM-I with prior RNT",
+      "VariableTwoName": "Reduction in anxiety and depression symptoms",
+      "RelationshipClassification": "direct",
+      "isCausal": "True",
+      "SupportingText": "We predict that CBM-I with prior RNT will reduce anxiety and depression symptoms in individuals with GAD and depression."
+    },
+    {
+      "VariableOneName": "CBM-I without prior RNT",
+      "VariableTwoName": "Reduction in negative interpretation bias",
+      "RelationshipClassification": "direct",
+      "isCausal": "True",
+      "SupportingText": "We predict that CBM-I without prior RNT will reduce negative interpretation bias relative to the active control condition."
+    },
+    {
+      "VariableOneName": "CBM-I without prior RNT",
+      "VariableTwoName": "Reduction in worry and rumination",
+      "RelationshipClassification": "direct",
+      "isCausal": "True",
+      "SupportingText": "We predict that CBM-I without prior RNT will reduce worry and rumination in individuals with GAD and depression."
+    },
+    {
+      "VariableOneName": "CBM-I without prior RNT",
+      "VariableTwoName": "Reduction in anxiety and depression symptoms",
+      "RelationshipClassification": "direct",
+      "isCausal": "True",
+      "SupportingText": "We predict that CBM-I without prior RNT will reduce anxiety and depression symptoms in individuals with GAD and depression."
+    },
+    {
+      "VariableOneName": "Prior RNT",
+      "VariableTwoName": "Activation of interpretation bias",
+      "RelationshipClassification": "direct",
+      "isCausal": "True",
+      "SupportingText": "We seek to examine whether engaging in RNT prior to CBM-I activates interpretation bias."
+    }
+  ]
+}

@@ -22,8 +22,9 @@ key = os.getenv("OPENAI_API_KEY")
 openai.api_key = key
 
 # Configure constants
-PAPER_SOURCE = pathlib.Path("../../papers")
-OUTPUTS_SOURCE = pathlib.Path("../../outputs")
+    ## Copilot suggested these instead since the originals failed on my machine
+PAPER_SOURCE = pathlib.Path("./papers")
+OUTPUTS_SOURCE = pathlib.Path("./outputs")
 
 # Configure output parser classes
 class SingleRelation(BaseModel):
@@ -110,7 +111,9 @@ def extract_relationships(text, verbose = False, model = "gpt-3.5-turbo-16k"):
 if __name__ == "__main__":
     # Prepare inputs:
     text = str()
-    with open(PAPER_SOURCE / "testpaper.txt") as f:
+    for file in os.listdir(PAPER_SOURCE):
+        print(file)
+    with open(PAPER_SOURCE / "testpaper") as f:
         text = f.read()
     variable_one = "AI/AN status"
     variable_two = "Substance use"
