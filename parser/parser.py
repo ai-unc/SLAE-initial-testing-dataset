@@ -1,7 +1,9 @@
 import os
-vars = [] #The list of vars and what they are connected to
+import json
+ #The list of vars and what they are connected to
 dir = "./models"
 for filename in os.listdir(dir):
+    vars = []
     with open("models/test.mdl", "r") as f:
         '''
         Vensim model breakdown
@@ -22,7 +24,7 @@ for filename in os.listdir(dir):
                     sline[2] = sline[2] + "," + sline[3]
                     sline.remove(sline[3])
                 vars.append([sline[2]])
-                print(sline)
+                #print(sline)
             elif sline[0] == '1':
                 vars.append([])
                 factors = []
@@ -31,9 +33,9 @@ for filename in os.listdir(dir):
                     case "0":
                         factors.append("Neutral")
                     case "43":
-                        factors.append("+")
+                        factors.append("Positive")
                     case "45":
-                        factors.append("-")
+                        factors.append("Inverse")
                     case "83":
                         factors.append("S")
                     case "79":
@@ -45,21 +47,30 @@ for filename in os.listdir(dir):
                     case "85":
                         factors.append("U")
                     case "63":
-                        factors.append("?")
+                        factors.append("Inconclusive")
                 vars[int(sline[3]) - 1].append(factors)
             elif line[0] == "/":
                 f.close()
                 break
-
+    
+    for var in vars:
+        if(len(var) < 2):
+            vars.remove(var)
     #Basic output from list to file output
     with open(f"outputs/{filename[:-4]}.json", 'w') as g:
-        g.write("Variable:  Influenced by\n")
+        #g.write('{\n\t"Variables": [' + '\n')
+        json_list = []
+
         for var in vars:
-            if len(var) > 0:
-                line = var[0] + ":  "
-                if len(var) > 1:
-                    for item in var[1:]:
-                        line += item[0] + " (" + item[1] + "), "
-                g.write(line[:len(line)-2] + '\n')
+            for item in var[1:]:
+                entry = {
+                    "VariableOneName": var[0],
+                    "VariableTwoName": item[0],
+                    "RelationshipClassification": item[1]
+                }
+                json_list.append(entry)
+        output_dict = {"Variables": json_list}
+        json_str = json.dumps(output_dict, indent=4)
+        g.write(json_str)
     g.close()
  
