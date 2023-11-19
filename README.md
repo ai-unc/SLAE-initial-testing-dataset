@@ -45,12 +45,6 @@ To use the evaluation pipelines, follow the instructions in the `single_variable
 
 Make sure to install these dependencies before running the pipelines.
 
-## Acknowledgments
-
-This project utilizes the Langchain library and OpenAI's GPT models for processing academic texts.
-
-
-
 ## Adding a paper
 
 There is a python script to quickly rename a paper file and create a corresponding json file
@@ -75,3 +69,7 @@ You can use the following commands for usage help:
 python script.py -h
 python script.py --help
 ``` 
+
+## Acknowledgments
+
+This project utilizes the Langchain library and OpenAI's GPT models for processing academic texts.
