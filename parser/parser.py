@@ -4,7 +4,7 @@ import os, json, sys, re
 # Check if the first argument is a help flag
 if sys.argv[1] == "-h" or sys.argv[1] == "--help":
     # If it is, print the usage instructions and exit
-    print("Usage: python script.py -m=MODEL")
+    print("Usage: python script.py -model=MODEL")
     print("MODEL: The name of the model to be parsed.")
     sys.exit()
 
@@ -18,7 +18,7 @@ if len(sys.argv) < 2 or len(sys.argv) > 2:
 modelFlag = sys.argv[1]
 
 # Check if the model flag is valid
-if not modelFlag.startswith("-m=") or len(modelFlag) < 7 or not modelFlag.endswith('.mdl'):
+if not modelFlag.startswith("-model=") or len(modelFlag) < 7 or not modelFlag.endswith('.mdl'):
     # If it is not, print an error message and exit
     sys.exit("Invalid model flag")
 
@@ -126,6 +126,8 @@ with open(f"kumu/{modelFlag[:-4]}.json", 'w') as h:
             "type": "variable"
         }
         json_list.append(entry)
+    
+    
     # Create a dictionary to store the list of JSON objects
     output_dict = {"elements": json_list}
     # Convert the dictionary to a JSON string
