@@ -109,9 +109,14 @@ with open(f"json/{modelFlag[:-4]}.json", 'w') as g:
 # Close the output file
 g.close()
 
+## I currently do not have access to Kumu to check if this formatting will work
+## This format is based on the Kumu documentation
+## https://docs.kumu.io/guides/import/blueprints
+## If this is wrong when we plug it into Kumu, we can change it
+ 
 with open(f"kumu/{modelFlag[:-4]}.json", 'w') as h:
-     # Initialize a list to store the JSON objects
-    json_list = []
+    # Initialize a list to store the elements
+    elementList = []
     temp = []
     # Loop through each variable in the list of variables
     for var in vars:
@@ -119,17 +124,29 @@ with open(f"kumu/{modelFlag[:-4]}.json", 'w') as h:
         if(var.__len__() > 0):
             temp.append(var[0])
 
-    # Add the JSON object to the list of JSON objects
+    # Add the JSON object to the list of elements
     for element in temp:
         entry = {
             "label": element,
             "type": "variable"
         }
-        json_list.append(entry)
+        elementList.append(entry)
     
+    # Initialize a list to store the connections
+    connectionList = []
+    for var in vars:
+        for item in var[1:]:
+            # Create a JSON object for the current connections
+            entry = {
+                "from": item[0],
+                "to": var[0],
+                "type": item[1]
+            }
+            # Add the JSON object to the list of JSON objects
+            connectionList.append(entry)
     
     # Create a dictionary to store the list of JSON objects
-    output_dict = {"elements": json_list}
+    output_dict = {"elements": elementList, "connections": connectionList}
     # Convert the dictionary to a JSON string
     json_str = json.dumps(output_dict, indent=4)
     # Write the JSON string to the output file

@@ -52,7 +52,7 @@
         {
             "from": "Deaths",
             "to": "Pop",
-            "type": "Inverse"
+            "type": "Positive"
         },
         {
             "from": "Pop",
