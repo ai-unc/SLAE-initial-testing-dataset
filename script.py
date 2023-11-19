@@ -20,7 +20,7 @@ doiFlag = sys.argv[2]
 titleFlag = sys.argv[3]
 
 # Validate file flag
-if not fileFlag.startswith("-file=") or len(fileFlag) < 7:
+if not fileFlag.startswith("-file=") or len(fileFlag) < 7 or not fileFlag.endswith(".txt"):
     sys.exit("Invalid file flag")
 
 # Validate doi flag
