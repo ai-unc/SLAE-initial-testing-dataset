@@ -69,3 +69,9 @@ python script.py
 ```
 
 **You will need to manually add the variable relationships to the input json file**
+
+You can use the following commands for usage help:
+```py
+python script.py -h
+python script.py --help
+``` 
