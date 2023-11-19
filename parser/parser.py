@@ -1,30 +1,43 @@
+# Import necessary libraries
 import os, json, sys, re
 
+# Check if the first argument is a help flag
 if sys.argv[1] == "-h" or sys.argv[1] == "--help":
+    # If it is, print the usage instructions and exit
     print("Usage: python script.py -m=MODEL")
     print("MODEL: The name of the model to be parsed.")
     sys.exit()
 
+# Check if the number of arguments is not 2
 if len(sys.argv) < 2 or len(sys.argv) > 2:
+    # If it is not, print an error message and exit
     print("Invalid number of arguments")
     sys.exit("Type 'python script.py -h' for help")
 
+# Get the model flag from the arguments
 modelFlag = sys.argv[1]
 
-if not modelFlag.startswith("-m=") or len(modelFlag) < 7 or not modelFlag.endswith(".mdl"):
+# Check if the model flag is valid
+if not modelFlag.startswith("-m=") or len(modelFlag) < 7 or not modelFlag.endswith('.mdl'):
+    # If it is not, print an error message and exit
     sys.exit("Invalid model flag")
 
-#The list of variables for this model
+# Initialize a list to store the variables for this model
 vars = []
+
+modelFlag = modelFlag.split("=")[1]
+
+# Open the model file
 with open(f"models/{modelFlag}", "r") as f:
     '''
-    Vensim model breakdown
-    Item type, item id, item name, (other unneeded data)
-    10,1,Births,402,208,42,22,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+        Vensim model breakdown
+        Item type, item id, item name, (other unneeded data)
+        10,1,Births,402,208,42,22,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
 
-    Item type, item id, to, from, ?, ?, relation type, (other unneeded data)
-    1,4,1,2,1,0,43,0,0,64,0,-1--1--1,,1|(479,138)|
+        Item type, item id, to, from, ?, ?, relation type, (other unneeded data)
+        1,4,1,2,1,0,43,0,0,64,0,-1--1--1,,1|(479,138)|
     '''
+    # Loop through each line in the file
     for line in f:
         sline = line.split(",")
         if sline[0] == "10":
@@ -36,6 +49,7 @@ with open(f"models/{modelFlag}", "r") as f:
                 sline[2] = sline[2] + "," + sline[3]
                 sline.remove(sline[3])
             vars.append([sline[2]])
+            #print(sline)
         elif sline[0] == '1':
             vars.append([])
             factors = []
@@ -63,24 +77,60 @@ with open(f"models/{modelFlag}", "r") as f:
         elif line[0] == "/":
             f.close()
             break
-    
-for var in vars:
-    if(len(var) < 2):
-        vars.remove(var)
 
-#Basic output from list to file output
-with open(f"outputs/{modelFlag[:-4]}.json", 'w') as g:
+# Remove variables that don't have any relationships
+strippedVars = []
+for var in vars:
+    if(len(var) >= 2):
+        strippedVars.append(var)
+
+# Open the output file
+with open(f"json/{modelFlag[:-4]}.json", 'w') as g:
+    # Initialize a list to store the JSON objects
     json_list = []
-    for var in vars:
+    # Loop through each variable in the list of variables
+    for var in strippedVars:
+        # Loop through each relationship for the current variable
         for item in var[1:]:
+            # Create a JSON object for the current relationship
             entry = {
-                "VariableOneName": var[0],
-                "VariableTwoName": item[0],
+                "VariableOneName": item[0],
+                "VariableTwoName": var[0],
                 "RelationshipClassification": item[1]
             }
+            # Add the JSON object to the list of JSON objects
             json_list.append(entry)
+    # Create a dictionary to store the list of JSON objects
     output_dict = {"Variables": json_list}
+    # Convert the dictionary to a JSON string
     json_str = json.dumps(output_dict, indent=4)
+    # Write the JSON string to the output file
     g.write(json_str)
+# Close the output file
 g.close()
- 
+
+with open(f"kumu/{modelFlag[:-4]}.json", 'w') as h:
+     # Initialize a list to store the JSON objects
+    json_list = []
+    temp = []
+    # Loop through each variable in the list of variables
+    for var in vars:
+        # Create a JSON object for the current relationship
+        if(var.__len__() > 0):
+            temp.append(var[0])
+
+    # Add the JSON object to the list of JSON objects
+    for element in temp:
+        entry = {
+            "label": element,
+            "type": "variable"
+        }
+        json_list.append(entry)
+    # Create a dictionary to store the list of JSON objects
+    output_dict = {"elements": json_list}
+    # Convert the dictionary to a JSON string
+    json_str = json.dumps(output_dict, indent=4)
+    # Write the JSON string to the output file
+    h.write(json_str)
+# Close the output file
+h.close()

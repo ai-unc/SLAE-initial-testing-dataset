@@ -1,0 +1,39 @@
+{
+    "Variables": [
+        {
+            "VariableOneName": "Pop",
+            "VariableTwoName": "Births",
+            "RelationshipClassification": "Positive"
+        },
+        {
+            "VariableOneName": "Birth Rate",
+            "VariableTwoName": "Births",
+            "RelationshipClassification": "Positive"
+        },
+        {
+            "VariableOneName": "Births",
+            "VariableTwoName": "Pop",
+            "RelationshipClassification": "Positive"
+        },
+        {
+            "VariableOneName": "Deaths",
+            "VariableTwoName": "Pop",
+            "RelationshipClassification": "Inverse"
+        },
+        {
+            "VariableOneName": "Pop",
+            "VariableTwoName": "Deaths",
+            "RelationshipClassification": "Positive"
+        },
+        {
+            "VariableOneName": "Death Rate",
+            "VariableTwoName": "Deaths",
+            "RelationshipClassification": "Positive"
+        },
+        {
+            "VariableOneName": "test",
+            "VariableTwoName": "Deaths",
+            "RelationshipClassification": "Neutral"
+        }
+    ]
+}
