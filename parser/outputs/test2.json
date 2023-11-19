@@ -18,7 +18,7 @@
         {
             "VariableOneName": "Pop",
             "VariableTwoName": "Deaths",
-            "RelationshipClassification": "Inverse"
+            "RelationshipClassification": "Positive"
         },
         {
             "VariableOneName": "Deaths",

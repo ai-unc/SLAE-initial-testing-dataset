@@ -27,7 +27,7 @@
         },
         {
             "VariableOneName": "Deaths",
-            "VariableTwoName": "Death Rate",
+            "VariableTwoName": "\"Death, Rate, test\"",
             "RelationshipClassification": "Positive"
         },
         {
