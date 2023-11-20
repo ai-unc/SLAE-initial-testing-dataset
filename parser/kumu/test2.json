@@ -1,0 +1,73 @@
+{
+    "elements": [
+        {
+            "label": "Births",
+            "type": "variable"
+        },
+        {
+            "label": "Pop",
+            "type": "variable"
+        },
+        {
+            "label": "Deaths",
+            "type": "variable"
+        },
+        {
+            "label": "Birth Rate",
+            "type": "variable"
+        },
+        {
+            "label": "Death Rate",
+            "type": "variable"
+        },
+        {
+            "label": "R",
+            "type": "variable"
+        },
+        {
+            "label": "B",
+            "type": "variable"
+        },
+        {
+            "label": "test",
+            "type": "variable"
+        }
+    ],
+    "connections": [
+        {
+            "from": "Pop",
+            "to": "Births",
+            "type": "Positive"
+        },
+        {
+            "from": "Birth Rate",
+            "to": "Births",
+            "type": "Positive"
+        },
+        {
+            "from": "Births",
+            "to": "Pop",
+            "type": "Positive"
+        },
+        {
+            "from": "Deaths",
+            "to": "Pop",
+            "type": "Positive"
+        },
+        {
+            "from": "Pop",
+            "to": "Deaths",
+            "type": "Positive"
+        },
+        {
+            "from": "Death Rate",
+            "to": "Deaths",
+            "type": "Positive"
+        },
+        {
+            "from": "test",
+            "to": "Deaths",
+            "type": "Neutral"
+        }
+    ]
+}
