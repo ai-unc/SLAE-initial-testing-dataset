@@ -208,3 +208,145 @@ successful parse MULTIRELATION: {
     }
   ]
 }
+pre parse: {
+  "Relations": [
+    {
+      "VariableOneName": "Parental problem drinking",
+      "VariableTwoName": "Adolescent drinking",
+      "RelationshipClassification": "direct",
+      "isCausal": "True",
+      "SupportingText": "Young people with parents who binge drank were more likely to drink if their peers were also drinkers."
+    },
+    {
+      "VariableOneName": "Peer drinking",
+      "VariableTwoName": "Adolescent drinking",
+      "RelationshipClassification": "direct",
+      "isCausal": "False",
+      "SupportingText": "Every point increase on the scale of drinking among peers was associated with an increase in adolescent drinking between Waves I and II."
+    },
+    {
+      "VariableOneName": "Peer drinking",
+      "VariableTwoName": "Parental problem drinking",
+      "RelationshipClassification": "direct",
+      "isCausal": "False",
+      "SupportingText": "The interaction between drinking among peers and parental drinking was significant and positive."
+    }
+  ]
+}
+successful parse MULTIRELATION: {
+  "Relations": [
+    {
+      "VariableOneName": "Parental problem drinking",
+      "VariableTwoName": "Adolescent drinking",
+      "RelationshipClassification": "direct",
+      "isCausal": "True",
+      "SupportingText": "Young people with parents who binge drank were more likely to drink if their peers were also drinkers."
+    },
+    {
+      "VariableOneName": "Peer drinking",
+      "VariableTwoName": "Adolescent drinking",
+      "RelationshipClassification": "direct",
+      "isCausal": "False",
+      "SupportingText": "Every point increase on the scale of drinking among peers was associated with an increase in adolescent drinking between Waves I and II."
+    },
+    {
+      "VariableOneName": "Peer drinking",
+      "VariableTwoName": "Parental problem drinking",
+      "RelationshipClassification": "direct",
+      "isCausal": "False",
+      "SupportingText": "The interaction between drinking among peers and parental drinking was significant and positive."
+    }
+  ]
+}
+pre parse: {
+  "Relations": [
+    {
+      "VariableOneName": "Rumination",
+      "VariableTwoName": "Sadness",
+      "RelationshipClassification": "Direct",
+      "isCausal": "True",
+      "SupportingText": "As expected, rumination increased sadness and triggered RSA withdrawal for both MDDs and CTLs. This demonstrates a direct and causal relationship between rumination and increased sadness."
+    },
+    {
+      "VariableOneName": "Cognitive Distraction",
+      "VariableTwoName": "Sadness",
+      "RelationshipClassification": "Direct",
+      "isCausal": "False",
+      "SupportingText": "Interestingly, although cognitive distraction reduced sadness, it also triggered RSA withdrawal. This suggests a direct relationship between cognitive distraction and reduced sadness, but the causal direction is unclear."
+    },
+    {
+      "VariableOneName": "Cognitive Distraction",
+      "VariableTwoName": "RSA",
+      "RelationshipClassification": "Direct",
+      "isCausal": "False",
+      "SupportingText": "Moreover, cognitive distraction was associated with greater RSA withdrawal for MDDs than CTLs. This indicates a direct relationship between cognitive distraction and RSA withdrawal, but the causal direction is unclear."
+    },
+    {
+      "VariableOneName": "MDD",
+      "VariableTwoName": "Sadness",
+      "RelationshipClassification": "Direct",
+      "isCausal": "False",
+      "SupportingText": "As expected, compared to CTLs, the MDD group reported greater sadness reactivity to the forced_failure stressor. This demonstrates a direct relationship between MDD and increased sadness, but the causal direction is unclear."
+    },
+    {
+      "VariableOneName": "MDD",
+      "VariableTwoName": "RSA",
+      "RelationshipClassification": "Direct",
+      "isCausal": "False",
+      "SupportingText": "Results demonstrate that the effect of rumination on RSA withdrawal did not significantly differ between the MDD and CTL groups. This indicates a direct relationship between MDD and RSA withdrawal, but the causal direction is unclear."
+    },
+    {
+      "VariableOneName": "Cognitive Distraction",
+      "VariableTwoName": "RSA",
+      "RelationshipClassification": "Direct",
+      "isCausal": "False",
+      "SupportingText": "Our results demonstrate that distraction leads to greater parasympathetic withdrawal, indexed via RSA withdrawal. This suggests a direct relationship between cognitive distraction and RSA withdrawal, but the causal direction is unclear."
+    }
+  ]
+}
+successful parse MULTIRELATION: {
+  "Relations": [
+    {
+      "VariableOneName": "Rumination",
+      "VariableTwoName": "Sadness",
+      "RelationshipClassification": "Direct",
+      "isCausal": "True",
+      "SupportingText": "As expected, rumination increased sadness and triggered RSA withdrawal for both MDDs and CTLs. This demonstrates a direct and causal relationship between rumination and increased sadness."
+    },
+    {
+      "VariableOneName": "Cognitive Distraction",
+      "VariableTwoName": "Sadness",
+      "RelationshipClassification": "Direct",
+      "isCausal": "False",
+      "SupportingText": "Interestingly, although cognitive distraction reduced sadness, it also triggered RSA withdrawal. This suggests a direct relationship between cognitive distraction and reduced sadness, but the causal direction is unclear."
+    },
+    {
+      "VariableOneName": "Cognitive Distraction",
+      "VariableTwoName": "RSA",
+      "RelationshipClassification": "Direct",
+      "isCausal": "False",
+      "SupportingText": "Moreover, cognitive distraction was associated with greater RSA withdrawal for MDDs than CTLs. This indicates a direct relationship between cognitive distraction and RSA withdrawal, but the causal direction is unclear."
+    },
+    {
+      "VariableOneName": "MDD",
+      "VariableTwoName": "Sadness",
+      "RelationshipClassification": "Direct",
+      "isCausal": "False",
+      "SupportingText": "As expected, compared to CTLs, the MDD group reported greater sadness reactivity to the forced_failure stressor. This demonstrates a direct relationship between MDD and increased sadness, but the causal direction is unclear."
+    },
+    {
+      "VariableOneName": "MDD",
+      "VariableTwoName": "RSA",
+      "RelationshipClassification": "Direct",
+      "isCausal": "False",
+      "SupportingText": "Results demonstrate that the effect of rumination on RSA withdrawal did not significantly differ between the MDD and CTL groups. This indicates a direct relationship between MDD and RSA withdrawal, but the causal direction is unclear."
+    },
+    {
+      "VariableOneName": "Cognitive Distraction",
+      "VariableTwoName": "RSA",
+      "RelationshipClassification": "Direct",
+      "isCausal": "False",
+      "SupportingText": "Our results demonstrate that distraction leads to greater parasympathetic withdrawal, indexed via RSA withdrawal. This suggests a direct relationship between cognitive distraction and RSA withdrawal, but the causal direction is unclear."
+    }
+  ]
+}

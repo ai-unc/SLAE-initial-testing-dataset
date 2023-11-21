@@ -84,6 +84,7 @@ inputData = {
             "VariableOneName": "",
             "VariableTwoName": "",
             "RelationshipClassification": "",
+            "IsCausal": "",
             "SupportingText": "",
         }
     ],
