@@ -594,3 +594,26 @@ Here is the output schema:
         
 
 
+Input begins:
+
+        The review establishes several correlational relationships in the context of substance use and disorder among American Indian and Alaska Native (AI/AN) populations in the United States. Notably, AI/AN status correlates with elevated rates of substance-related mortality, with alcohol-related deaths, chronic liver disease, and drug-related issues being notably higher. Additionally, AI/AN adolescents exhibit earlier initiation and higher rates of substance use, particularly among those living on reservations or who have dropped out of school, while AI/AN adults who drink tend to engage in heavy, episodic drinking patterns. Correlations are also observed between AI/AN communities and substance availability, trauma exposure, family and peer networks, and historical trauma, all of which impact substance use patterns and disparities within these communities. These correlational findings emphasize the multifaceted nature of substance use issues in AI/AN populations and highlight potential areas for targeted intervention and prevention efforts.
+
+        Given the text identify a series of relationships between variables that have a well defined positive direction and a clear textual backing.
+        For example, if a text says "We find a strong correlation p < .0001 between a country's per capita income and it's literacy rate" then "Country's per capita income" and "Country's literacy rate" would be good variables. Variables that are implied but not directly stated by the text such as "education infilstructure" should not be included. 
+        The RelationshipClassification field can only be 'direct', 'inverse', 
+        or 'inconclusive'. The isCausal field can only be either 'True' or 'False', and can only be true if the text directly states that the relationship is a causal relationship.
+        The SupportText field of your output should include a section of verbatim from the text in addition to any comments you want to make about your output, without paraphrasing.
+        Use exactly wording of outputs choices and input variable names, including capitalization choices.
+
+        The output should be formatted as a JSON instance that conforms to the JSON schema below.
+
+As an example, for the schema {"properties": {"foo": {"title": "Foo", "description": "a list of strings", "type": "array", "items": {"type": "string"}}}, "required": ["foo"]}
+the object {"foo": ["bar", "baz"]} is a well-formatted instance of the schema. The object {"properties": {"foo": ["bar", "baz"]}} is not well-formatted.
+
+Here is the output schema:
+```
+{"properties": {"Relations": {"title": "Relations", "type": "array", "items": {"$ref": "#/definitions/SingleRelation"}}}, "required": ["Relations"], "definitions": {"SingleRelation": {"title": "SingleRelation", "type": "object", "properties": {"VariableOneName": {"title": "Variableonename", "type": "string"}, "VariableTwoName": {"title": "Variabletwoname", "type": "string"}, "RelationshipClassification": {"title": "Relationshipclassification", "type": "string"}, "isCausal": {"title": "Iscausal", "type": "string"}, "SupportingText": {"title": "Supportingtext", "type": "string"}}, "required": ["VariableOneName", "VariableTwoName", "RelationshipClassification", "isCausal", "SupportingText"]}}}
+```
+        
+
+
