@@ -14,7 +14,7 @@ if not titleFlag.startswith("-title=") or len(titleFlag) < 8:
 
 doi = doiFlag.split("=")[1]
 fileNameSafeDoi = re.sub("[^a-zA-Z0-9\n\.]", "_", doi)
-
+print(fileNameSafeDoi)
 title = titleFlag.split("=")[1]
 fileNameSafeTitle = re.sub("[^a-zA-Z0-9\n\.]", "_", title)
 shortTitle = ""
