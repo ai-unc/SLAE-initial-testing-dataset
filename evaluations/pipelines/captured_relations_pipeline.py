@@ -36,12 +36,29 @@ PAPER_FILENAME = "IncarcerationandHealth_10.1146_annurev_soc_073014_112326.text"
 MODEL_NAME = "gpt-3.5-turbo-1106"
 
 # Configure output parser classes
+# class SingleRelation(BaseModel):
+#     VariableOneName: str
+#     VariableTwoName: str
+#     SupportingText: str
+#     Reasoning: str
+#     RelationshipClassification: str
+#     isCausal: str
+    
+
+#     @validator("RelationshipClassification")
+#     def question_ends_with_question_mark(cls, field):
+#         if field.lower() in {"direct", "inverse", "not applicable", "independent"}:
+#             return field
+#         else:
+#             raise ValueError(f"Invalid Relationship Type {{{field}}}")
+        
 class SingleRelation(BaseModel):
     VariableOneName: str
     VariableTwoName: str
     RelationshipClassification: str
     isCausal: str
     SupportingText: str
+    
 
     @validator("RelationshipClassification")
     def question_ends_with_question_mark(cls, field):
@@ -53,6 +70,22 @@ class SingleRelation(BaseModel):
 class ListOfRelations(BaseModel):
     Relations: list[SingleRelation]
 
+# CWD switcher to ensure that the verbose option works when it is being run from the captured relations evaluator file
+import os
+import inspect
+
+class WorkingDirectoryManager:
+    def __init__(self):
+        self.original_directory = os.getcwd()
+
+    def change_to_module_directory(self):
+        module_file_path = inspect.getfile(inspect.currentframe())
+        module_dir = os.path.dirname(os.path.abspath(module_file_path))
+        os.chdir(module_dir)
+
+    def restore_original_directory(self):
+        os.chdir(self.original_directory)
+
 def extract_relationships(data, verbose = False, model = "gpt-3.5-turbo-1106"):
     # Add map reduce or some other type of summarization function here.
     processed_text = data["text"]
@@ -62,30 +95,31 @@ def extract_relationships(data, verbose = False, model = "gpt-3.5-turbo-1106"):
     parser = PydanticOutputParser(pydantic_object=ListOfRelations) #Refers to a class called SingleRelation
 
     # Create the plain text prompt. Used some of langchain's functions to automatically create formated prompts. 
-    formatting_text = """
-    The output should be formatted as a JSON instance that conforms to the JSON schema below.
+    # formatting_text = """
+    # The output should be formatted as a JSON instance that conforms to the JSON schema below.
 
-    As an example, for the schema {"properties": {"foo": {"title": "Foo", "description": "a list of strings", "type": "array", "items": {"type": "string"}}}, "required": ["foo"]}
-    the object {"foo": ["bar", "baz"]} is a well-formatted instance of the schema. The object {"properties": {"foo": ["bar", "baz"]}} is not well-formatted.
+    # As an example, for the schema {"properties": {"foo": {"title": "Foo", "description": "a list of strings", "type": "array", "items": {"type": "string"}}}, "required": ["foo"]}
+    # the object {"foo": ["bar", "baz"]} is a well-formatted instance of the schema. The object {"properties": {"foo": ["bar", "baz"]}} is not well-formatted.
 
-    Here is the output schema:
-    ```
-    {"Relationships":[{"properties": {"VariableOneName": {"title": "Variableonename", "type": "string"}, "VariableTwoName": {"title": "Variabletwoname", "type": "string"}, "RelationshipClassification": {"title": "Relationshipclassification", "type": "string"}, "isCausal": {"title": "Iscausal", "type": "string"}, "SupportingText": {"title": "Supportingtext", "type": "string"}}, "required": ["VariableOneName", "VariableTwoName", "RelationshipClassification", "isCausal", "SupportingText"]}]}
-    ```"""
+    # Here is the output schema:
+    # ```
+    # {"Relationships":[{"properties": {"VariableOneName": {"title": "Variableonename", "type": "string"}, "VariableTwoName": {"title": "Variabletwoname", "type": "string"}, "Reasoning": {"title": "Reasoning", "type": "string"}, "RelationshipClassification": {"title": "Relationshipclassification", "type": "string"}, "isCausal": {"title": "Iscausal", "type": "string"}, "SupportingText": {"title": "Supportingtext", "type": "string"}}, "required": ["VariableOneName", "VariableTwoName", "RelationshipClassification", "isCausal", "SupportingText"]}]}
+    # ```"""
     prompt = PromptTemplate(
         template="""
         {text}
 
         Given the text validate a series of relationships between variables that will be included in a json format below.
         For example, if the json includes a relation between "Country's per capita income" and "Country's literacy rate", and the text includes "We find a strong correlation p < .0001 between a country's per capita income and it's literacy rate" then the RelationshipClssification would be direct.
+        The SupportText field of your output should include verbaitum text related to the relation between the two variables without paraphrasing.
+        The reasoning field should be used as a way to apply chain of thought reasoning and explain why based on relevant text.
         The RelationshipClassification field can only be 'direct', 'inverse', 'Not applicable', or 'independent'.
         The isCausal field can only be either 'True' or 'False', and can only be true if the text directly states that the relationship is a causal relationship.
-        The SupportText field of your output should include a section of verbatim from the text in addition to any comments you want to make about your output, without paraphrasing.
-        Use exactly wording of outputs choices and input variable names, including capitalization choices.
+        Use exactly wording of outputs choices and input variable names, including capitalization choices. 
         
         {format_instructions}
 
-        Below is a list of relationships with the relationships that you need to fill in removed. Please fill in the fields according to the above instructions.
+        Below is a list of relationships, please fill in the fields according to the above instructions.
         {relationships}
         End of relationships to fill in.
         """,
@@ -119,11 +153,11 @@ def extract_relationships(data, verbose = False, model = "gpt-3.5-turbo-1106"):
             f.write("pre parse: ")
             f.write(str(output.content))
             f.write("\n")
-    parsed_output = parser.parse(output.content)
-    return output
+    parsed_output = parser.parse(output.content) # Ensure content is in valid json format.
+    return parsed_output.dict()  # Returns in dict format
 
 def clean_data(data_file, verbose=False) -> dict():
-    """Reads Json and cleans all predictive information"""
+    """Reads Json and cleans all information into a dict, including paper fulltext and list of user predictions"""
     with open(data_file, "r") as f:
         data = json.load(f)
     for relation in data['Relations']:
@@ -132,7 +166,7 @@ def clean_data(data_file, verbose=False) -> dict():
         relation["SupportingText"] = ""
     if verbose:
         pprint(data)
-    return data
+    return data  
 
 def match_relation_to_paper():
     """Reference passage ranking section https://huggingface.co/tasks/sentence-similarity"""
@@ -142,6 +176,11 @@ def obtain_papers_via_MLSE():
     """Obtains relevant papers via the massive literature search engine"""
     pass
 
+def captured_relations_pipeline(data_file, verbose=False, model="gpt-3.5-turbo-1106"):
+    cleaned_data = clean_data(data_file, verbose=verbose)
+    output = extract_relationships(cleaned_data, verbose=verbose, model=model)
+    return output
+
 if __name__ == "__main__":
     # # Prepare inputs:
     data = clean_data(INPUTS_SOURCE/"IncarcerationandHealth_10.1146_annurev_soc_073014_112326.json")
@@ -150,6 +189,5 @@ if __name__ == "__main__":
     output = extract_relationships(data, verbose=True)
     with open(OUTPUTS_SOURCE / "MultiVariablePipelineOutput.txt", "a") as f:
         f.write("successful parse MULTIRELATION: ")
-        f.write(str(output.content))
+        f.write(str(output))
         f.write("\n")
-    
