@@ -32,7 +32,7 @@ def compare(prediction, ground_truth):
 
 # Read a YAML file to obtain settings
 dataset_path = pathlib.Path("evaluation_datasets/multi_relation_dataset")
-input_file_path = dataset_path / "test_paper.json"
+input_file_path = dataset_path / "partner_violence_and_alcohol_exposed_prengancy_10.1111_acer.13968.json"
 
 # Read evaluation dataset
 with open(input_file_path) as f:
@@ -78,9 +78,12 @@ aggregate_results["CausalIdentificationScore"] /= len(results)
 print(aggregate_results)
 
 with open("evaluation_outputs/captured_relations_results/results.txt", "w") as f:
-    f.write("Predictions\n")
-    f.write(json.dumps(predictions, indent=2))
-    f.write("Ground Truth\n")
-    f.write(json.dumps(ground_truth, indent=2))
     f.write("Results\n")
     f.write(json.dumps(aggregate_results, indent=2))
+    f.write("\n")
+    f.write("Predictions\n")
+    f.write(json.dumps(predictions, indent=2))
+    f.write("\n")
+    f.write("Ground Truth\n")
+    f.write(json.dumps(ground_truth, indent=2))
+    f.write("\n")

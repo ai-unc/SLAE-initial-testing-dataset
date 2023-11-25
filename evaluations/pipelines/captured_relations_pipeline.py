@@ -34,23 +34,6 @@ INPUTS_SOURCE = pathlib.Path("../../inputs")
 OUTPUTS_SOURCE = pathlib.Path("../../outputs")
 PAPER_FILENAME = "IncarcerationandHealth_10.1146_annurev_soc_073014_112326.text"
 MODEL_NAME = "gpt-3.5-turbo-1106"
-
-# Configure output parser classes
-# class SingleRelation(BaseModel):
-#     VariableOneName: str
-#     VariableTwoName: str
-#     SupportingText: str
-#     Reasoning: str
-#     RelationshipClassification: str
-#     isCausal: str
-    
-
-#     @validator("RelationshipClassification")
-#     def question_ends_with_question_mark(cls, field):
-#         if field.lower() in {"direct", "inverse", "not applicable", "independent"}:
-#             return field
-#         else:
-#             raise ValueError(f"Invalid Relationship Type {{{field}}}")
         
 class SingleRelation(BaseModel):
     VariableOneName: str
@@ -88,7 +71,7 @@ class WorkingDirectoryManager:
 
 def extract_relationships(data, verbose = False, model = "gpt-3.5-turbo-1106"):
     # Add map reduce or some other type of summarization function here.
-    processed_text = data["text"]
+    processed_text = data["PaperContents"]
     relationships = data["Relations"]
 
     # Create Parser
@@ -111,10 +94,9 @@ def extract_relationships(data, verbose = False, model = "gpt-3.5-turbo-1106"):
 
         Given the text validate a series of relationships between variables that will be included in a json format below.
         For example, if the json includes a relation between "Country's per capita income" and "Country's literacy rate", and the text includes "We find a strong correlation p < .0001 between a country's per capita income and it's literacy rate" then the RelationshipClssification would be direct.
-        The SupportText field of your output should include verbaitum text related to the relation between the two variables without paraphrasing.
-        The reasoning field should be used as a way to apply chain of thought reasoning and explain why based on relevant text.
         The RelationshipClassification field can only be 'direct', 'inverse', 'Not applicable', or 'independent'.
         The isCausal field can only be either 'True' or 'False', and can only be true if the text directly states that the relationship is a causal relationship.
+        The SupportText field of your output should include verbaitum text related to the relation between the two variables without paraphrasing.
         Use exactly wording of outputs choices and input variable names, including capitalization choices. 
         
         {format_instructions}
