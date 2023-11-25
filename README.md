@@ -45,21 +45,16 @@ To use the evaluation pipelines, follow the instructions in the `single_variable
 
 Make sure to install these dependencies before running the pipelines.
 
-## Acknowledgments
-
-This project utilizes the Langchain library and OpenAI's GPT models for processing academic texts.
-
-
-
 ## Adding a paper
 
-There is a python script to quickly rename a paper file and create a corresponding json file
+There is a python script to quickly rename a paper file and create a corresponding json file.
 
+### Usage
 ```py
 python script.py -file="paper_file_name" -doi="paper_doi"  -title="paper_title"
 ```
 
-Example:
+#### Example:
 
 ```py
 python script.py
@@ -75,3 +70,11 @@ You can use the following commands for usage help:
 python script.py -h
 python script.py --help
 ``` 
+
+## Parsing .mdl Files
+
+There is a python script to parse the .mdl files into .json files, one for general use and the other for Kumu. This script and it's documentation can be found in the "parser" directory. 
+
+## Acknowledgments
+
+This project utilizes the Langchain library and OpenAI's GPT models for processing academic texts.
