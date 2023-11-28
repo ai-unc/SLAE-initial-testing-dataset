@@ -21,22 +21,16 @@ load_dotenv()
 key = os.getenv("OPENAI_API_KEY")
 openai.api_key = key
 
-# Filepath Debug
-mypath = os.path.abspath("")
-print("___\n\n\n", mypath)
-
-# Configuration
-"""This section configs the run"""
-PAPER_SOURCE = pathlib.Path("../../papers")
-OUTPUTS_SOURCE = pathlib.Path("../../outputs")
-PAPER_FILENAME = "RuminationandCognitiveDistractionin_10.1007_s10862_015_9510_1.text"
+#Setting paths
+directory = os.getcwd()
+PAPER_SOURCE = "/papers"
+PAPER_SOURCE_PATH = directory + PAPER_SOURCE
+OUTPUTS_SOURCE = directory + "/outputs"
+PAPER_FILENAME = "RuminationandCognitiveDistractionin_10.1007_s10862_015_9510_1.txt"
 MODEL_NAME = "gpt-3.5-turbo-1106"
+PAPER_PATH = os.path.join(PAPER_SOURCE_PATH, PAPER_FILENAME)
 
-#I am getting an error when running this in the slae_repo/SLAE-initial-testing-dataset on Windows
-#I don't wanna edit/delete this code, so I will just make another file and then test out if that work for everyone else as well
-#The changes in this fily only include minor changes (ai deletion of unneccessary variables, and putting already created constants to the model)
-
-# Configure output parser classes
+#Configure output parser classes
 class SingleRelation(BaseModel):
     VariableOneName: str
     VariableTwoName: str
@@ -90,7 +84,7 @@ def extract_relationships(text, verbose = False, model = MODEL_NAME):
     )
     input_text = prompt.format_prompt(text=processed_text).to_string()
     if verbose:
-        with open(OUTPUTS_SOURCE / "MultiVariablePipelineInput.txt", "a") as f:
+        with open(OUTPUTS_SOURCE + "\MultiVariablePipelineInput.txt", "a") as f:
             f.write("Input begins:\n")
             f.write(input_text)
             f.write("\n\n\n")
@@ -111,7 +105,7 @@ def extract_relationships(text, verbose = False, model = MODEL_NAME):
     output = model(completion_prompt)
     if verbose:
         print("what is a output:", type(output), output.content)
-        with open(OUTPUTS_SOURCE / "MultiVariablePipelineOutput.txt", "a") as f:
+        with open(OUTPUTS_SOURCE + "\MultiVariablePipelineOutput.txt", "a") as f:
             f.write("pre parse: ")
             f.write(str(output.content))
             f.write("\n")
@@ -121,12 +115,12 @@ def extract_relationships(text, verbose = False, model = MODEL_NAME):
 if __name__ == "__main__":
     # Prepare inputs:
     text = str()
-    with open(PAPER_SOURCE / "RuminationandCognitiveDistractionin_10.1007_s10862_015_9510_1.txt") as f:
+    with open(PAPER_PATH) as f:
         text = f.read()
 
     # Process and save outputs:
     output = extract_relationships(text, verbose=True, model=MODEL_NAME)
-    with open(OUTPUTS_SOURCE / "MultiVariablePipelineOutput.txt", "a") as f:
+    with open(OUTPUTS_SOURCE + "\MultiVariablePipelineOutput.txt", "a") as f:
         f.write("successful parse MULTIRELATION: ")
         f.write(str(output.content))
         f.write("\n")
