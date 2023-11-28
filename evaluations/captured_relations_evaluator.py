@@ -22,17 +22,17 @@ def compare(prediction, ground_truth):
         score_dictionary["RelationshipClassificationScore"] = 0
         print("RelationshipClassification Score ==> actual:", ground_truth["RelationshipClassification"], "; predicted:", prediction["RelationshipClassification"])
     
-    if prediction["isCausal"].lower() == ground_truth["isCausal"].lower():
-        score_dictionary["isCausalScore"] = 1
-        print("Causal Score ==> success; ", ground_truth["isCausal"])
+    if prediction["IsCausal"].lower() == ground_truth["IsCausal"].lower():
+        score_dictionary["IsCausalScore"] = 1
+        print("Causal Score ==> success; ", ground_truth["IsCausal"])
     else:
-        score_dictionary["isCausalScore"] = 0
-        print("Causal Score ==> actual:", ground_truth["isCausal"], "; predicted:", prediction["isCausal"])
+        score_dictionary["IsCausalScore"] = 0
+        print("Causal Score ==> actual:", ground_truth["IsCausal"], "; predicted:", prediction["IsCausal"])
     return score_dictionary
 
 # Read a YAML file to obtain settings
 dataset_path = pathlib.Path("evaluation_datasets/multi_relation_dataset")
-input_file_path = dataset_path / "partner_violence_and_alcohol_exposed_prengancy_10.1111_acer.13968.json"
+input_file_path = dataset_path / "RuminationandCognitiveDistractionin_10.1007_s10862_015_9510_1.json"
 
 # Read evaluation dataset
 with open(input_file_path) as f:
@@ -72,7 +72,7 @@ aggregate_results["RelationshipClassificationScore"] = 0
 aggregate_results["CausalIdentificationScore"] = 0
 for x, result in enumerate(results):
     aggregate_results["RelationshipClassificationScore"] += result["RelationshipClassificationScore"]
-    aggregate_results["CausalIdentificationScore"] += result["isCausalScore"]
+    aggregate_results["CausalIdentificationScore"] += result["IsCausalScore"]
 aggregate_results["RelationshipClassificationScore"] /= len(results)
 aggregate_results["CausalIdentificationScore"] /= len(results)
 print(aggregate_results)

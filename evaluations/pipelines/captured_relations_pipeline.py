@@ -39,10 +39,9 @@ class SingleRelation(BaseModel):
     VariableOneName: str
     VariableTwoName: str
     RelationshipClassification: str
-    isCausal: str
+    IsCausal: str
     SupportingText: str
     
-
     @validator("RelationshipClassification")
     def question_ends_with_question_mark(cls, field):
         if field.lower() in {"direct", "inverse", "not applicable", "independent"}:
