@@ -301,6 +301,32 @@ pre parse: {
       "RelationshipClassification": "Direct",
       "isCausal": "False",
       "SupportingText": "Our results demonstrate that distraction leads to greater parasympathetic withdrawal, indexed via RSA withdrawal. This suggests a direct relationship between cognitive distraction and RSA withdrawal, but the causal direction is unclear."
+      "VariableOneName": "AI/AN status",
+      "VariableTwoName": "Substance-related mortality",
+      "RelationshipClassification": "direct",
+      "isCausal": "False",
+      "SupportingText": "AI/AN status correlates with elevated rates of substance-related mortality, with alcohol-related deaths, chronic liver disease, and drug-related issues being notably higher."
+    },
+    {
+      "VariableOneName": "AI/AN adolescents",
+      "VariableTwoName": "Substance use initiation and rates",
+      "RelationshipClassification": "direct",
+      "isCausal": "False",
+      "SupportingText": "AI/AN adolescents exhibit earlier initiation and higher rates of substance use, particularly among those living on reservations or who have dropped out of school."
+    },
+    {
+      "VariableOneName": "AI/AN adults who drink",
+      "VariableTwoName": "Heavy, episodic drinking patterns",
+      "RelationshipClassification": "direct",
+      "isCausal": "False",
+      "SupportingText": "AI/AN adults who drink tend to engage in heavy, episodic drinking patterns."
+    },
+    {
+      "VariableOneName": "AI/AN communities",
+      "VariableTwoName": "Substance availability, trauma exposure, family and peer networks, historical trauma",
+      "RelationshipClassification": "direct",
+      "isCausal": "False",
+      "SupportingText": "Correlations are also observed between AI/AN communities and substance availability, trauma exposure, family and peer networks, and historical trauma, all of which impact substance use patterns and disparities within these communities."
     }
   ]
 }
@@ -347,6 +373,32 @@ successful parse MULTIRELATION: {
       "RelationshipClassification": "Direct",
       "isCausal": "False",
       "SupportingText": "Our results demonstrate that distraction leads to greater parasympathetic withdrawal, indexed via RSA withdrawal. This suggests a direct relationship between cognitive distraction and RSA withdrawal, but the causal direction is unclear."
+      "VariableOneName": "AI/AN status",
+      "VariableTwoName": "Substance-related mortality",
+      "RelationshipClassification": "direct",
+      "isCausal": "False",
+      "SupportingText": "AI/AN status correlates with elevated rates of substance-related mortality, with alcohol-related deaths, chronic liver disease, and drug-related issues being notably higher."
+    },
+    {
+      "VariableOneName": "AI/AN adolescents",
+      "VariableTwoName": "Substance use initiation and rates",
+      "RelationshipClassification": "direct",
+      "isCausal": "False",
+      "SupportingText": "AI/AN adolescents exhibit earlier initiation and higher rates of substance use, particularly among those living on reservations or who have dropped out of school."
+    },
+    {
+      "VariableOneName": "AI/AN adults who drink",
+      "VariableTwoName": "Heavy, episodic drinking patterns",
+      "RelationshipClassification": "direct",
+      "isCausal": "False",
+      "SupportingText": "AI/AN adults who drink tend to engage in heavy, episodic drinking patterns."
+    },
+    {
+      "VariableOneName": "AI/AN communities",
+      "VariableTwoName": "Substance availability, trauma exposure, family and peer networks, historical trauma",
+      "RelationshipClassification": "direct",
+      "isCausal": "False",
+      "SupportingText": "Correlations are also observed between AI/AN communities and substance availability, trauma exposure, family and peer networks, and historical trauma, all of which impact substance use patterns and disparities within these communities."
     }
   ]
 }
