@@ -48,6 +48,13 @@ class SingleRelation(BaseModel):
             return field
         else:
             raise ValueError(f"Invalid Relationship Type {{{field}}}")
+        
+    @validator("IsCausal")
+    def question_ends_with_question_mark(cls, field):
+        if field.lower() in {"true", "false"}:
+            return field
+        else:
+            raise ValueError(f"Invalid Relationship Type {{{field}}}")
 
 class ListOfRelations(BaseModel):
     Relations: list[SingleRelation]
