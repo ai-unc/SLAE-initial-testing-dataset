@@ -1,3 +1,4 @@
+import sys
 import langchain as lc
 from langchain.chat_models import ChatOpenAI
 from langchain.output_parsers import PydanticOutputParser
@@ -29,9 +30,9 @@ print("___\n\n\n", mypath)
 
 # Configuration
 """This section configs the run"""
-PAPER_SOURCE = pathlib.Path("../../papers")
-INPUTS_SOURCE = pathlib.Path("../../inputs")
-OUTPUTS_SOURCE = pathlib.Path("../../outputs")
+PAPER_SOURCE = sys.path[0][:-21] + "papers\\"
+INPUTS_SOURCE = sys.path[0][:-21] + "inputs\\"
+OUTPUTS_SOURCE = sys.path[0][:-21] + "outputs\\"
 PAPER_FILENAME = "IncarcerationandHealth_10.1146_annurev_soc_073014_112326.text"
 MODEL_NAME = "gpt-3.5-turbo-1106"
         
@@ -70,7 +71,7 @@ class WorkingDirectoryManager:
 
 def extract_relationships(data, verbose = False, model = "gpt-3.5-turbo-1106"):
     # Add map reduce or some other type of summarization function here.
-    processed_text = data["PaperContents"]
+    processed_text = data["text"]
     relationships = data["Relations"]
 
     # Create Parser
@@ -99,7 +100,7 @@ def extract_relationships(data, verbose = False, model = "gpt-3.5-turbo-1106"):
     )
     input_text = prompt.format_prompt(text=processed_text, relationships=relationships).to_string()
     if verbose:
-        with open(OUTPUTS_SOURCE / "MultiVariablePipelineInput.txt", "a") as f:
+        with open(OUTPUTS_SOURCE + "MultiVariablePipelineInput.txt", "a") as f:
             f.write("Input begins:\n")
             f.write(input_text)
             f.write("\n\n\n")
@@ -120,7 +121,7 @@ def extract_relationships(data, verbose = False, model = "gpt-3.5-turbo-1106"):
     output = model(completion_prompt)
     if verbose:
         print("what is a output:", type(output), output.content)
-        with open(OUTPUTS_SOURCE / "MultiVariablePipelineOutput.txt", "a") as f:
+        with open(OUTPUTS_SOURCE + "MultiVariablePipelineOutput.txt", "a") as f:
             f.write("pre parse: ")
             f.write(str(output.content))
             f.write("\n")
@@ -129,7 +130,7 @@ def extract_relationships(data, verbose = False, model = "gpt-3.5-turbo-1106"):
 
 def clean_data(data_file, verbose=False) -> dict():
     """Reads Json and cleans all information into a dict, including paper fulltext and list of user predictions"""
-    with open(data_file, "r") as f:
+    with open(data_file, "r", encoding="UTF-8") as f:
         data = json.load(f)
     for relation in data['Relations']:
         relation["RelationshipClassification"] = ""
@@ -154,11 +155,12 @@ def captured_relations_pipeline(data_file, verbose=False, model="gpt-3.5-turbo-1
 
 if __name__ == "__main__":
     # # Prepare inputs:
-    data = clean_data(INPUTS_SOURCE/"IncarcerationandHealth_10.1146_annurev_soc_073014_112326.json")
+    print(INPUTS_SOURCE)
+    data = clean_data(INPUTS_SOURCE + "IncarcerationandHealth_10.1146_annurev_soc_073014_112326.json")
     
     # # Process and save outputs:
     output = extract_relationships(data, verbose=True)
-    with open(OUTPUTS_SOURCE / "MultiVariablePipelineOutput.txt", "a") as f:
+    with open(OUTPUTS_SOURCE + "MultiVariablePipelineOutput.txt", "a") as f:
         f.write("successful parse MULTIRELATION: ")
         f.write(str(output))
         f.write("\n")

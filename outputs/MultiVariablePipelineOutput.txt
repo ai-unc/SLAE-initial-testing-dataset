@@ -508,3 +508,113 @@ successful parse MULTIRELATION: {
     }
   ]
 }
+pre parse: {
+  "Relations": [
+    {
+      "VariableOneName": "Stress",
+      "VariableTwoName": "Health",
+      "RelationshipClassification": "Direct",
+      "IsCausal": "True",
+      "SupportingText": "Incarceration is a chronic stressor, and research shows that chronic stress is negatively associated with health. The psychoneuroimmunology literature reveals that chronic stress is associated with immune dysfunction, and research shows that chronic exposure to hostile conditions—a staple of prison life—is associated with immune dysfunction that can last for long periods."
+    },
+    {
+      "VariableOneName": "Incarceration",
+      "VariableTwoName": "Marriage rates",
+      "RelationshipClassification": "Inverse",
+      "IsCausal": "False",
+      "SupportingText": "Incarceration is associated with lower marriage rates following imprisonment, indicating an inverse relationship between incarceration and marriage rates."
+    },
+    {
+      "VariableOneName": "Incarceration",
+      "VariableTwoName": "Divorce rates",
+      "RelationshipClassification": "Direct",
+      "IsCausal": "False",
+      "SupportingText": "Incarceration is associated with a greater risk of divorce both during and after imprisonment, indicating a direct relationship between incarceration and divorce rates."
+    },
+    {
+      "VariableOneName": "Incarceration",
+      "VariableTwoName": "Health",
+      "RelationshipClassification": "Direct",
+      "IsCausal": "True",
+      "SupportingText": "Incarceration is associated with lower self-reported health and increased risks of being medically diagnosed with stress-related illnesses such as psychological problems, hypertension, and heart disease."
+    },
+    {
+      "VariableOneName": "Incarceration",
+      "VariableTwoName": "Infectious diseases",
+      "RelationshipClassification": "Direct",
+      "IsCausal": "True",
+      "SupportingText": "Incarceration places inmates at a disproportionate risk of acquiring infectious diseases such as tuberculosis, hepatitis, HIV, sexually transmitted infections, and methicillin-resistant Staphylococcus aureus."
+    },
+    {
+      "VariableOneName": "Incarceration",
+      "VariableTwoName": "Stress-related illnesses",
+      "RelationshipClassification": "Direct",
+      "IsCausal": "True",
+      "SupportingText": "Incarceration is a chronic stressor, and research shows that chronic stress is negatively associated with health. The psychoneuroimmunology literature reveals that chronic stress is associated with immune dysfunction, and research shows that chronic exposure to hostile conditions—a staple of prison life—is associated with immune dysfunction that can last for long periods."
+    },
+    {
+      "VariableOneName": "Incarceration",
+      "VariableTwoName": "BMI",
+      "RelationshipClassification": "Direct",
+      "IsCausal": "True",
+      "SupportingText": "Incarceration increases BMI, with the strongest effects for blacks and for individuals with less education."
+    },
+    {
+      "VariableOneName": "Parental incarceration",
+      "VariableTwoName": "Children Health",
+      "RelationshipClassification": "Direct",
+      "IsCausal": "True",
+      "SupportingText": "Parental incarceration is an important contributor to racial disparities in childhood health and well-being, increasing mental health and behavioral problems in children."
+    },
+    {
+      "VariableOneName": "Parental incarceration",
+      "VariableTwoName": "Female children body mass",
+      "RelationshipClassification": "Direct",
+      "IsCausal": "True",
+      "SupportingText": "Having a family member incarcerated increased the likelihood of women to experience a heart attack, stroke, or obesity or to have fair to poor health."
+    },
+    {
+      "VariableOneName": "Incarcerated family member",
+      "VariableTwoName": "Women in the family experiencing heart attack, stroke, or obesity or to have fair to poor health",
+      "RelationshipClassification": "Direct",
+      "IsCausal": "True",
+      "SupportingText": "Having a family member incarcerated increased the likelihood of women to experience a heart attack, stroke, or obesity or to have fair to poor health."
+    },
+    {
+      "VariableOneName": "Incarcerated family member",
+      "VariableTwoName": "Men in the family experiencing heart attack, stroke, or obesity or to have fair to poor health",
+      "RelationshipClassification": "Direct",
+      "IsCausal": "True",
+      "SupportingText": "Having a family member incarcerated increased the likelihood of men to experience a heart attack, stroke, or obesity or to have fair to poor health."
+    },
+    {
+      "VariableOneName": "Incarceration",
+      "VariableTwoName": "Public health",
+      "RelationshipClassification": "Direct",
+      "IsCausal": "True",
+      "SupportingText": "Incarceration has wide-ranging effects on childhood health and well-being, including increasing mental health and behavioral problems, and contributes to population-level class and ethnic inequalities in children's health."
+    },
+    {
+      "VariableOneName": "Incarceration",
+      "VariableTwoName": "Infection rates of immunodeficiency syndromes",
+      "RelationshipClassification": "Direct",
+      "IsCausal": "True",
+      "SupportingText": "Incarceration had a significant effect on AIDS infection rates for both males and females, and a large proportion of the racial disparities in AIDS infections among black women can be explained by higher incarceration rates among black men."
+    },
+    {
+      "VariableOneName": "Incarceration",
+      "VariableTwoName": "White men mortality",
+      "RelationshipClassification": "Direct",
+      "IsCausal": "True",
+      "SupportingText": "Incarcerated white men were at a substantially higher risk for mortality while incarcerated than when not incarcerated."
+    },
+    {
+      "VariableOneName": "Incarceration",
+      "VariableTwoName": "Black men mortality",
+      "RelationshipClassification": "Direct",
+      "IsCausal": "True",
+      "SupportingText": "Incarcerated black men were at a lower risk of mortality while incarcerated than when not incarcerated."
+    }
+  ]
+}
+successful parse MULTIRELATION: {'Relations': [{'VariableOneName': 'Stress', 'VariableTwoName': 'Health', 'RelationshipClassification': 'Direct', 'IsCausal': 'True', 'SupportingText': 'Incarceration is a chronic stressor, and research shows that chronic stress is negatively associated with health. The psychoneuroimmunology literature reveals that chronic stress is associated with immune dysfunction, and research shows that chronic exposure to hostile conditions—a staple of prison life—is associated with immune dysfunction that can last for long periods.'}, {'VariableOneName': 'Incarceration', 'VariableTwoName': 'Marriage rates', 'RelationshipClassification': 'Inverse', 'IsCausal': 'False', 'SupportingText': 'Incarceration is associated with lower marriage rates following imprisonment, indicating an inverse relationship between incarceration and marriage rates.'}, {'VariableOneName': 'Incarceration', 'VariableTwoName': 'Divorce rates', 'RelationshipClassification': 'Direct', 'IsCausal': 'False', 'SupportingText': 'Incarceration is associated with a greater risk of divorce both during and after imprisonment, indicating a direct relationship between incarceration and divorce rates.'}, {'VariableOneName': 'Incarceration', 'VariableTwoName': 'Health', 'RelationshipClassification': 'Direct', 'IsCausal': 'True', 'SupportingText': 'Incarceration is associated with lower self-reported health and increased risks of being medically diagnosed with stress-related illnesses such as psychological problems, hypertension, and heart disease.'}, {'VariableOneName': 'Incarceration', 'VariableTwoName': 'Infectious diseases', 'RelationshipClassification': 'Direct', 'IsCausal': 'True', 'SupportingText': 'Incarceration places inmates at a disproportionate risk of acquiring infectious diseases such as tuberculosis, hepatitis, HIV, sexually transmitted infections, and methicillin-resistant Staphylococcus aureus.'}, {'VariableOneName': 'Incarceration', 'VariableTwoName': 'Stress-related illnesses', 'RelationshipClassification': 'Direct', 'IsCausal': 'True', 'SupportingText': 'Incarceration is a chronic stressor, and research shows that chronic stress is negatively associated with health. The psychoneuroimmunology literature reveals that chronic stress is associated with immune dysfunction, and research shows that chronic exposure to hostile conditions—a staple of prison life—is associated with immune dysfunction that can last for long periods.'}, {'VariableOneName': 'Incarceration', 'VariableTwoName': 'BMI', 'RelationshipClassification': 'Direct', 'IsCausal': 'True', 'SupportingText': 'Incarceration increases BMI, with the strongest effects for blacks and for individuals with less education.'}, {'VariableOneName': 'Parental incarceration', 'VariableTwoName': 'Children Health', 'RelationshipClassification': 'Direct', 'IsCausal': 'True', 'SupportingText': 'Parental incarceration is an important contributor to racial disparities in childhood health and well-being, increasing mental health and behavioral problems in children.'}, {'VariableOneName': 'Parental incarceration', 'VariableTwoName': 'Female children body mass', 'RelationshipClassification': 'Direct', 'IsCausal': 'True', 'SupportingText': 'Having a family member incarcerated increased the likelihood of women to experience a heart attack, stroke, or obesity or to have fair to poor health.'}, {'VariableOneName': 'Incarcerated family member', 'VariableTwoName': 'Women in the family experiencing heart attack, stroke, or obesity or to have fair to poor health', 'RelationshipClassification': 'Direct', 'IsCausal': 'True', 'SupportingText': 'Having a family member incarcerated increased the likelihood of women to experience a heart attack, stroke, or obesity or to have fair to poor health.'}, {'VariableOneName': 'Incarcerated family member', 'VariableTwoName': 'Men in the family experiencing heart attack, stroke, or obesity or to have fair to poor health', 'RelationshipClassification': 'Direct', 'IsCausal': 'True', 'SupportingText': 'Having a family member incarcerated increased the likelihood of men to experience a heart attack, stroke, or obesity or to have fair to poor health.'}, {'VariableOneName': 'Incarceration', 'VariableTwoName': 'Public health', 'RelationshipClassification': 'Direct', 'IsCausal': 'True', 'SupportingText': "Incarceration has wide-ranging effects on childhood health and well-being, including increasing mental health and behavioral problems, and contributes to population-level class and ethnic inequalities in children's health."}, {'VariableOneName': 'Incarceration', 'VariableTwoName': 'Infection rates of immunodeficiency syndromes', 'RelationshipClassification': 'Direct', 'IsCausal': 'True', 'SupportingText': 'Incarceration had a significant effect on AIDS infection rates for both males and females, and a large proportion of the racial disparities in AIDS infections among black women can be explained by higher incarceration rates among black men.'}, {'VariableOneName': 'Incarceration', 'VariableTwoName': 'White men mortality', 'RelationshipClassification': 'Direct', 'IsCausal': 'True', 'SupportingText': 'Incarcerated white men were at a substantially higher risk for mortality while incarcerated than when not incarcerated.'}, {'VariableOneName': 'Incarceration', 'VariableTwoName': 'Black men mortality', 'RelationshipClassification': 'Direct', 'IsCausal': 'True', 'SupportingText': 'Incarcerated black men were at a lower risk of mortality while incarcerated than when not incarcerated.'}]}
