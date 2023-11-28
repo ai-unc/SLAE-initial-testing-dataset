@@ -78,16 +78,6 @@ def extract_relationships(data, verbose = False, model = "gpt-3.5-turbo-1106"):
     parser = PydanticOutputParser(pydantic_object=ListOfRelations) #Refers to a class called SingleRelation
 
     # Create the plain text prompt. Used some of langchain's functions to automatically create formated prompts. 
-    # formatting_text = """
-    # The output should be formatted as a JSON instance that conforms to the JSON schema below.
-
-    # As an example, for the schema {"properties": {"foo": {"title": "Foo", "description": "a list of strings", "type": "array", "items": {"type": "string"}}}, "required": ["foo"]}
-    # the object {"foo": ["bar", "baz"]} is a well-formatted instance of the schema. The object {"properties": {"foo": ["bar", "baz"]}} is not well-formatted.
-
-    # Here is the output schema:
-    # ```
-    # {"Relationships":[{"properties": {"VariableOneName": {"title": "Variableonename", "type": "string"}, "VariableTwoName": {"title": "Variabletwoname", "type": "string"}, "Reasoning": {"title": "Reasoning", "type": "string"}, "RelationshipClassification": {"title": "Relationshipclassification", "type": "string"}, "isCausal": {"title": "Iscausal", "type": "string"}, "SupportingText": {"title": "Supportingtext", "type": "string"}}, "required": ["VariableOneName", "VariableTwoName", "RelationshipClassification", "isCausal", "SupportingText"]}]}
-    # ```"""
     prompt = PromptTemplate(
         template="""
         {text}
