@@ -208,6 +208,112 @@ successful parse MULTIRELATION: {
     }
   ]
 }
+successful parse MULTIRELATION: {
+  "Relations": [
+    {
+      "VariableOneName": "Stress",
+      "VariableTwoName": "Health",
+      "RelationshipClassification": "Direct",
+      "SupportingText": "Incarceration is an acute and chronic stressor. Imprisonment is a major life event that requires dramatic changes in a short period across a number of life circumstances. Research shows such events cause considerable stress, which can have negative repercussions for health.",
+      "isCausal": "True"
+    },
+    {
+      "VariableOneName": "Incarceration",
+      "VariableTwoName": "Marriage rates",
+      "RelationshipClassification": "Inverse",
+      "SupportingText": "Although research has demonstrated a negative impact of incarceration on individual health across a variety of outcomes, work has also demonstrated differential effects of incarceration on family life. For example, individuals married at the time of incarceration have a greater risk of divorce both during and after imprisonment.",
+      "isCausal": "True"
+    },
+    {
+      "VariableOneName": "Incarceration",
+      "VariableTwoName": "Divorce rates",
+      "RelationshipClassification": "Direct",
+      "SupportingText": "Although research has demonstrated a negative impact of incarceration on individual health across a variety of outcomes, work has also demonstrated differential effects of incarceration on family life. For example, individuals married at the time of incarceration have a greater risk of divorce both during and after imprisonment.",
+      "isCausal": "True"
+    },
+    {
+      "VariableOneName": "Incarceration",
+      "VariableTwoName": "Health",
+      "RelationshipClassification": "Direct",
+      "SupportingText": "A number of studies have examined the relationship between incarceration and a range of individual-level health outcomes, indicating a direct relationship between incarceration and health.",
+      "isCausal": "True"
+    },
+    {
+      "VariableOneName": "Incarceration",
+      "VariableTwoName": "Infectious diseases",
+      "RelationshipClassification": "Direct",
+      "SupportingText": "Incarceration is associated with lower self-reported health and having been incarcerated was more consequential than the length of incarceration. Relative to those who had not been incarcerated, those who had been incarcerated disproportionately suffer from infectious diseases (e.g., hepatitis, tuberculosis) and stress-related illness.",
+      "isCausal": "True"
+    },
+    {
+      "VariableOneName": "Incarceration",
+      "VariableTwoName": "Stress-related illnesses",
+      "RelationshipClassification": "Direct",
+      "SupportingText": "Incarceration is an acute and chronic stressor. Imprisonment is a major life event that requires dramatic changes in a short period across a number of life circumstances. Research shows such events cause considerable stress, which can have negative repercussions for health.",
+      "isCausal": "True"
+    },
+    {
+      "VariableOneName": "Incarceration",
+      "VariableTwoName": "BMI",
+      "RelationshipClassification": "Direct",
+      "SupportingText": "The author examined trajectories of body mass index (BMI) and found that being incarcerated increases BMI.",
+      "isCausal": "True"
+    },
+    {
+      "VariableOneName": "Parental incarceration",
+      "VariableTwoName": "Children Health",
+      "RelationshipClassification": "Direct",
+      "SupportingText": "Parental incarceration is an important contributor to racial disparities in childhood health and well-being. Parental incarceration also leads to poor health outcomes by increasing the likelihood that children will adopt behaviors associated with poor health.",
+      "isCausal": "True"
+    },
+    {
+      "VariableOneName": "Parental incarceration",
+      "VariableTwoName": "Female children body mass",
+      "RelationshipClassification": "Direct",
+      "SupportingText": "Parental incarceration is an important contributor to racial disparities in childhood health and well-being. Parental incarceration also leads to poor health outcomes by increasing the likelihood that children will adopt behaviors associated with poor health.",
+      "isCausal": "True"
+    },
+    {
+      "VariableOneName": "Incarcerated family member",
+      "VariableTwoName": "Women in the family experiencing heart attack, stroke, or obesity or to have fair to poor health",
+      "RelationshipClassification": "Direct",
+      "SupportingText": "Given the current data limitations of studying incarceration and health, this study is also notable because it utilized the National Survey of American Life, a cross-sectional, nationally representative study.",
+      "isCausal": "False"
+    },
+    {
+      "VariableOneName": "Incarcerated family member",
+      "VariableTwoName": "Men in the family experiencing heart attack, stroke, or obesity or to have fair to poor health",
+      "RelationshipClassification": "Direct",
+      "SupportingText": "Given the current data limitations of studying incarceration and health, this study is also notable because it utilized the National Survey of American Life, a cross-sectional, nationally representative study.",
+      "isCausal": "False"
+    },
+    {
+      "VariableOneName": "Incarceration",
+      "VariableTwoName": "Public health",
+      "RelationshipClassification": "Direct",
+      "SupportingText": "One such study used state-level panel data stretching almost 25 years and found an association between incarceration and poorer population health.",
+      "isCausal": "False"
+    },
+    {
+      "VariableOneName": "Incarceration",
+      "VariableTwoName": "Infection rates of immunodeficiency syndromes",
+      "RelationshipClassification": "Direct",
+      "SupportingText": "The authors found that incarceration had a significant effect on AIDS infection rates for both males and females and concluded that a large proportion of the racial disparities in AIDS infections among black women can be explained by higher incarceration rates among black men.",
+      "isCausal": "True"
+    },
+    {
+      "VariableOneName": "Incarceration",
+      "VariableTwoName": "White men mortality",
+      "RelationshipClassification": "Direct",
+      "SupportingText": "The all-cause standardized mortality ratio (SMR) for white inmates was 1.12, with more deaths than expected from HIV and viral hepatitis infections, liver disease, cancer, and respiratory disease.",
+      "isCausal": "False"
+    },
+    {
+      "VariableOneName": "Incarceration",
+      "VariableTwoName": "Black men mortality",
+      "RelationshipClassification": "Direct",
+      "SupportingText": "The authors found that the mortality rate for black male prisoners aged 15–64 was 19% lower than that for black men in the general population.",
+      "isCausal": "False"
 pre parse: {
   "Relations": [
     {
