@@ -54,7 +54,7 @@ class SingleRelation(BaseModel):
         if field.lower() in {"true", "false"}:
             return field
         else:
-            raise ValueError(f"Invalid Relationship Type {{{field}}}")
+            raise ValueError(f"Invalid IsCausal Type {{{field}}}")
 
 class ListOfRelations(BaseModel):
     Relations: list[SingleRelation]
@@ -140,7 +140,7 @@ def clean_data(data_file, verbose=False) -> dict():
         data = json.load(f)
     for relation in data['Relations']:
         relation["RelationshipClassification"] = ""
-        relation["isCausal"] = ""
+        relation["IsCausal"] = ""
         relation["SupportingText"] = ""
     if verbose:
         pprint(data)
