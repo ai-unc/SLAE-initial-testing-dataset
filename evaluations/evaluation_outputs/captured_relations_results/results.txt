@@ -1,7 +1,7 @@
 Results
 {
-  "RelationshipClassificationScore": 0.875,
-  "CausalIdentificationScore": 1.0
+  "RelationshipClassificationScore": 0.75,
+  "CausalIdentificationScore": 0.125
 }
 Predictions
 {
@@ -9,58 +9,58 @@ Predictions
     {
       "VariableOneName": "Cognitive distraction",
       "VariableTwoName": "Rumination",
-      "RelationshipClassification": "inverse",
-      "IsCausal": "True",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
       "SupportingText": "Interestingly, although cognitive distraction reduced sadness, it also triggered RSA withdrawal. Moreover, cognitive distraction was associated with greater RSA withdrawal for MDDs than CTLs."
     },
     {
       "VariableOneName": "Forced-failure stress",
       "VariableTwoName": "Sadness",
       "RelationshipClassification": "direct",
-      "IsCausal": "True",
-      "SupportingText": "As expected, compared to CTLs, the MDD group reported greater sadness reactivity to the forced_failure stressor."
+      "IsCausal": "False",
+      "SupportingText": "Sadness reactivity to the forced_failure stressor was calculated as sadness rated during the forced_failure induction minus sadness at baseline."
     },
     {
       "VariableOneName": "Rumination",
       "VariableTwoName": "Sadness",
       "RelationshipClassification": "direct",
-      "IsCausal": "True",
-      "SupportingText": "Rumination increased sadness for both MDDs and CTLs."
+      "IsCausal": "False",
+      "SupportingText": "As expected, rumination increased sadness for both MDDs and CTLs."
     },
     {
       "VariableOneName": "Forced-failure stress",
       "VariableTwoName": "RSA withdrawal",
       "RelationshipClassification": "direct",
-      "IsCausal": "True",
+      "IsCausal": "False",
       "SupportingText": "We observed a significant RSA withdrawal in response to the forced_failure stressor."
     },
     {
       "VariableOneName": "Rumination Induction",
       "VariableTwoName": "RSA withdrawal",
       "RelationshipClassification": "direct",
-      "IsCausal": "True",
-      "SupportingText": "Rumination increased RSA withdrawal for both MDDs and CTLs."
+      "IsCausal": "False",
+      "SupportingText": "Results demonstrate that the effect of rumination on RSA withdrawal did not significantly differ between the MDD and CTL groups."
     },
     {
       "VariableOneName": "Induced distraction",
       "VariableTwoName": "RSA withdrawal",
       "RelationshipClassification": "direct",
-      "IsCausal": "True",
-      "SupportingText": "Cognitive distraction was associated with greater RSA withdrawal for MDDs than CTLs."
+      "IsCausal": "False",
+      "SupportingText": "Our results demonstrate that distraction leads to greater parasympathetic withdrawal, indexed via RSA withdrawal."
     },
     {
       "VariableOneName": "Forced-failure stress",
       "VariableTwoName": "RSA withdrawal",
       "RelationshipClassification": "direct",
-      "IsCausal": "True",
-      "SupportingText": "There was a significant RSA withdrawal in response to the forced_failure stressor."
+      "IsCausal": "False",
+      "SupportingText": "RSA withdrawal during the R_D induction did not differ by group or condition."
     },
     {
       "VariableOneName": "MDD",
       "VariableTwoName": "Cardiovascular disease",
-      "RelationshipClassification": "inverse",
+      "RelationshipClassification": "Not applicable",
       "IsCausal": "False",
-      "SupportingText": "Results from our study suggest that depressed individuals may be at heightened risk for cardiovascular disease not because rumination has a greater effect on RSA in MDDs than in CTLs, but because MDDs spend more time using an emotion regulation strategy that is associated with parasympathetic withdrawal."
+      "SupportingText": "Given evidence connecting effort and parasympathetic withdrawal, greater RSA withdrawal in the MDD group could reflect greater effort required for depressed individuals to engage in cognitive distraction following sadness-inducing failure."
     }
   ]
 }

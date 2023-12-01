@@ -30,60 +30,63 @@ def compare(prediction, ground_truth):
         print("Causal Score ==> actual:", ground_truth["IsCausal"], "; predicted:", prediction["IsCausal"])
     return score_dictionary
 
+def evaluate_one_paper(input_file_path):
+    # Read evaluation dataset
+    with open(input_file_path) as f:
+        ground_truth = json.load(f)
+        print("datatype of ground truth", type(ground_truth))    
+
+    # extract_relationships based on settings (which is text and nothing else)
+    if True:
+        predictions = captured_relations_pipeline()
+    else:
+        predictions = deepcopy(ground_truth)
+        # Change predictions for testing
+        predictions["PaperContents"] = ""
+        predictions["Relations"][0]["RelationshipClassification"] = "inverse"
+        print("datatype of prediction", type(predictions))
+
+    # strip full text from ground truth to prevent accidental printing of full text
+    ground_truth["PaperContents"] = ""
+
+    # compare to obtain score
+    if len(predictions["Relations"]) > len(ground_truth["Relations"]):
+        index_max = len(ground_truth["Relations"])
+    elif len(predictions["Relations"]) < len(ground_truth["Relations"]): 
+        index_max = len(predictions["Relations"])
+    else:
+        index_max = len(predictions["Relations"])
+        print("Number of relations in ground truth and predictions match.")
+
+    results: list(dict()) = list()
+    for relation_index in range(index_max):
+        relation = ground_truth["Relations"][relation_index]
+        prediction = predictions["Relations"][relation_index]
+        results.append(compare(prediction, relation))
+
+    aggregate_results = dict()
+    aggregate_results["RelationshipClassificationScore"] = 0
+    aggregate_results["CausalIdentificationScore"] = 0
+    for x, result in enumerate(results):
+        aggregate_results["RelationshipClassificationScore"] += result["RelationshipClassificationScore"]
+        aggregate_results["CausalIdentificationScore"] += result["IsCausalScore"]
+    aggregate_results["RelationshipClassificationScore"] /= len(results)
+    aggregate_results["CausalIdentificationScore"] /= len(results)
+    print(aggregate_results)
+
+    with open("evaluation_outputs/captured_relations_results/results.txt", "w") as f:
+        f.write("Results\n")
+        f.write(json.dumps(aggregate_results, indent=2))
+        f.write("\n")
+        f.write("Predictions\n")
+        f.write(json.dumps(predictions, indent=2))
+        f.write("\n")
+        f.write("Ground Truth\n")
+        f.write(json.dumps(ground_truth, indent=2))
+        f.write("\n")
+
 # Read a YAML file to obtain settings
 dataset_path = pathlib.Path("evaluation_datasets/multi_relation_dataset")
 input_file_path = dataset_path / "RuminationandCognitiveDistractionin_10.1007_s10862_015_9510_1.json"
-
-# Read evaluation dataset
-with open(input_file_path) as f:
-    ground_truth = json.load(f)
-    print("datatype of ground truth", type(ground_truth))    
-
-# extract_relationships based on settings (which is text and nothing else)
-if True:
-    predictions = captured_relations_pipeline()
-else:
-    predictions = deepcopy(ground_truth)
-    # Change predictions for testing
-    predictions["PaperContents"] = ""
-    predictions["Relations"][0]["RelationshipClassification"] = "inverse"
-    print("datatype of prediction", type(predictions))
-
-# strip full text from ground truth to prevent accidental printing of full text
-ground_truth["PaperContents"] = ""
-
-# compare to obtain score
-if len(predictions["Relations"]) > len(ground_truth["Relations"]):
-    index_max = len(ground_truth["Relations"])
-elif len(predictions["Relations"]) < len(ground_truth["Relations"]): 
-    index_max = len(predictions["Relations"])
-else:
-    index_max = len(predictions["Relations"])
-    print("Number of relations in ground truth and predictions match.")
-
-results: list(dict()) = list()
-for relation_index in range(index_max):
-    relation = ground_truth["Relations"][relation_index]
-    prediction = predictions["Relations"][relation_index]
-    results.append(compare(prediction, relation))
-
-aggregate_results = dict()
-aggregate_results["RelationshipClassificationScore"] = 0
-aggregate_results["CausalIdentificationScore"] = 0
-for x, result in enumerate(results):
-    aggregate_results["RelationshipClassificationScore"] += result["RelationshipClassificationScore"]
-    aggregate_results["CausalIdentificationScore"] += result["IsCausalScore"]
-aggregate_results["RelationshipClassificationScore"] /= len(results)
-aggregate_results["CausalIdentificationScore"] /= len(results)
-print(aggregate_results)
-
-with open("evaluation_outputs/captured_relations_results/results.txt", "w") as f:
-    f.write("Results\n")
-    f.write(json.dumps(aggregate_results, indent=2))
-    f.write("\n")
-    f.write("Predictions\n")
-    f.write(json.dumps(predictions, indent=2))
-    f.write("\n")
-    f.write("Ground Truth\n")
-    f.write(json.dumps(ground_truth, indent=2))
-    f.write("\n")
+        
+evaluate_one_paper(input_file_path)
