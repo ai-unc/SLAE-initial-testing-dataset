@@ -41,7 +41,7 @@ with open(input_file_path) as f:
 
 # extract_relationships based on settings (which is text and nothing else)
 if True:
-    predictions = captured_relations_pipeline(input_file_path)
+    predictions = captured_relations_pipeline()
 else:
     predictions = deepcopy(ground_truth)
     # Change predictions for testing

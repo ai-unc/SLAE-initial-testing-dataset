@@ -32,7 +32,8 @@ print("___\n\n\n", mypath)
 PAPER_SOURCE = pathlib.Path("../../papers")
 INPUTS_SOURCE = pathlib.Path("../../inputs")
 OUTPUTS_SOURCE = pathlib.Path("../../outputs")
-PAPER_FILENAME = "IncarcerationandHealth_10.1146_annurev_soc_073014_112326.text"
+DATASET_PATH = pathlib.Path("evaluation_datasets/multi_relation_dataset")
+PAPER_FILENAME = "RuminationandCognitiveDistractionin_10.1007_s10862_015_9510_1.json"
 MODEL_NAME = "gpt-3.5-turbo-1106"
         
 class SingleRelation(BaseModel):
@@ -43,14 +44,14 @@ class SingleRelation(BaseModel):
     SupportingText: str
     
     @validator("RelationshipClassification")
-    def question_ends_with_question_mark(cls, field):
+    def allowed_classifications(cls, field):
         if field.lower() in {"direct", "inverse", "not applicable", "independent"}:
             return field
         else:
             raise ValueError(f"Invalid Relationship Type {{{field}}}")
         
     @validator("IsCausal")
-    def question_ends_with_question_mark(cls, field):
+    def true_or_false(cls, field):
         if field.lower() in {"true", "false"}:
             return field
         else:
@@ -154,7 +155,7 @@ def obtain_papers_via_MLSE():
     """Obtains relevant papers via the massive literature search engine"""
     pass
 
-def captured_relations_pipeline(data_file, verbose=False, model="gpt-3.5-turbo-1106"):
+def captured_relations_pipeline(data_file=DATASET_PATH/PAPER_FILENAME, verbose=False, model="gpt-3.5-turbo-1106"):
     cleaned_data = clean_data(data_file, verbose=verbose)
     output = extract_relationships(cleaned_data, verbose=verbose, model=model)
     return output
