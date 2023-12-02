@@ -29,9 +29,9 @@ print("___\n\n\n", mypath)
 
 # Configuration
 """This section configs the run"""
-PAPER_SOURCE = pathlib.Path("../../papers")
-INPUTS_SOURCE = pathlib.Path("../../inputs")
-OUTPUTS_SOURCE = pathlib.Path("../../outputs")
+PAPER_SOURCE = pathlib.Path("../papers")
+INPUTS_SOURCE = pathlib.Path("../inputs")
+OUTPUTS_SOURCE = pathlib.Path("../outputs")
 DATASET_PATH = pathlib.Path("evaluation_datasets/multi_relation_dataset")
 PAPER_FILENAME = "RuminationandCognitiveDistractionin_10.1007_s10862_015_9510_1.json"
 MODEL_NAME = "gpt-3.5-turbo-1106"
@@ -79,7 +79,7 @@ class WorkingDirectoryManager:
 def extract_relationships(data, verbose = False, model = "gpt-3.5-turbo-1106"):
     # Add map reduce or some other type of summarization function here.
     processed_text = data["PaperContents"]
-    relationships = data["Relations"]
+    relationships = {"Relations": data["Relations"]}
 
     # Create Parser
     parser = PydanticOutputParser(pydantic_object=ListOfRelations) #Refers to a class called SingleRelation
@@ -87,20 +87,20 @@ def extract_relationships(data, verbose = False, model = "gpt-3.5-turbo-1106"):
     # Create the plain text prompt. Used some of langchain's functions to automatically create formated prompts. 
     prompt = PromptTemplate(
         template="""
-        {text}
+{text}
 
-        Given the text validate a series of relationships between variables that will be included in a json format below.
-        For example, if the json includes a relation between "Country's per capita income" and "Country's literacy rate", and the text includes "We find a strong correlation p < .0001 between a country's per capita income and it's literacy rate" then the RelationshipClssification would be direct.
-        The RelationshipClassification field can only be 'direct', 'inverse', 'Not applicable', or 'independent'.
-        The isCausal field can only be either 'True' or 'False', and can only be true if the text directly states that the relationship is a causal relationship.
-        The SupportText field of your output should include verbaitum text related to the relation between the two variables without paraphrasing.
-        Use exactly wording of outputs choices and input variable names, including capitalization choices. 
-        
-        {format_instructions}
+Given the text validate a series of relationships between variables that will be included in a json format below.
+For example, if the json includes a relation between "Country's per capita income" and "Country's literacy rate", and the text includes "We find a strong correlation p < .0001 between a country's per capita income and it's literacy rate" then the RelationshipClssification would be direct.
+The RelationshipClassification field can only be 'direct', 'inverse', 'Not applicable', or 'independent'.
+The isCausal field can only be either 'True' or 'False', and can only be true if the text directly states that the relationship is a causal relationship.
+The SupportText field of your output should include verbaitum text related to the relation between the two variables without paraphrasing.
+Use exactly wording of outputs choices and input variable names, including capitalization choices. 
 
-        Below is a list of relationships, please fill in the fields according to the above instructions.
-        {relationships}
-        End of relationships to fill in.
+{format_instructions}
+
+Below is a list of relationships, please fill in the fields according to the above instructions.
+{relationships}
+End of relationships to fill in, fill in all relationships.
         """,
         input_variables=["text", "relationships"],
         partial_variables={"format_instructions":parser.get_format_instructions}
@@ -127,7 +127,7 @@ def extract_relationships(data, verbose = False, model = "gpt-3.5-turbo-1106"):
     # Obtain completion from LLM
     output = model(completion_prompt)
     if verbose:
-        print("what is a output:", type(output), output.content)
+        print("what is a output:", type(output))
         with open(OUTPUTS_SOURCE / "MultiVariablePipelineOutput.txt", "a") as f:
             f.write("pre parse: ")
             f.write(str(output.content))
@@ -155,7 +155,7 @@ def obtain_papers_via_MLSE():
     """Obtains relevant papers via the massive literature search engine"""
     pass
 
-def captured_relations_pipeline(data_file=DATASET_PATH/PAPER_FILENAME, verbose=False, model="gpt-3.5-turbo-1106"):
+def captured_relations_pipeline(data_file=DATASET_PATH/PAPER_FILENAME, verbose=False, model=MODEL_NAME):
     cleaned_data = clean_data(data_file, verbose=verbose)
     output = extract_relationships(cleaned_data, verbose=verbose, model=model)
     return output

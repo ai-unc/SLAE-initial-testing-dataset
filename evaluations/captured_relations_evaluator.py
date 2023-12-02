@@ -30,7 +30,7 @@ def compare(prediction, ground_truth):
         print("Causal Score ==> actual:", ground_truth["IsCausal"], "; predicted:", prediction["IsCausal"])
     return score_dictionary
 
-def evaluate_one_paper(input_file_path):
+def evaluate_one_paper(input_file_path, strict_length=True, verbose=False):
     # Read evaluation dataset
     with open(input_file_path) as f:
         ground_truth = json.load(f)
@@ -38,7 +38,7 @@ def evaluate_one_paper(input_file_path):
 
     # extract_relationships based on settings (which is text and nothing else)
     if True:
-        predictions = captured_relations_pipeline()
+        predictions = captured_relations_pipeline(input_file_path, verbose=verbose)
     else:
         predictions = deepcopy(ground_truth)
         # Change predictions for testing
@@ -52,8 +52,12 @@ def evaluate_one_paper(input_file_path):
     # compare to obtain score
     if len(predictions["Relations"]) > len(ground_truth["Relations"]):
         index_max = len(ground_truth["Relations"])
+        if strict_length:
+            raise Exception("Prediction and Groundtruth lengths do not match")
     elif len(predictions["Relations"]) < len(ground_truth["Relations"]): 
         index_max = len(predictions["Relations"])
+        if strict_length:
+            raise Exception("Prediction and Groundtruth lengths do not match")
     else:
         index_max = len(predictions["Relations"])
         print("Number of relations in ground truth and predictions match.")
@@ -74,8 +78,8 @@ def evaluate_one_paper(input_file_path):
     aggregate_results["CausalIdentificationScore"] /= len(results)
     print(aggregate_results)
 
-    with open("evaluation_outputs/captured_relations_results/results.txt", "w") as f:
-        f.write("Results\n")
+    with open("evaluation_outputs/captured_relations_results/results.txt", "a+") as f:
+        f.write(f"\nResults for {input_file_path.name}\n")
         f.write(json.dumps(aggregate_results, indent=2))
         f.write("\n")
         f.write("Predictions\n")
@@ -84,9 +88,26 @@ def evaluate_one_paper(input_file_path):
         f.write("Ground Truth\n")
         f.write(json.dumps(ground_truth, indent=2))
         f.write("\n")
+    aggregate_results["file"] = input_file_path.name
+    return aggregate_results
 
 # Read a YAML file to obtain settings
-dataset_path = pathlib.Path("evaluation_datasets/multi_relation_dataset")
-input_file_path = dataset_path / "RuminationandCognitiveDistractionin_10.1007_s10862_015_9510_1.json"
-        
-evaluate_one_paper(input_file_path)
+DATASET_PATH = pathlib.Path("evaluation_datasets/multi_relation_dataset")
+MULTIPAPER = True
+
+if MULTIPAPER:
+    with open("evaluation_outputs/captured_relations_results/results.txt", "w") as f:
+        f.write(f"New multi file evaluation source from path: {DATASET_PATH}")
+    dir, _, files = next(os.walk(DATASET_PATH))
+    full_evaluator_aggregate_results = []
+    for file in files: 
+        print("\n\nEvaluating: ", file)
+        result = evaluate_one_paper(pathlib.Path(dir)/pathlib.Path(file), verbose=True)
+        full_evaluator_aggregate_results.append(result)
+    with open("evaluation_outputs/captured_relations_results/results.txt", "a+") as f:
+        f.write("\n\nAggregated_Results:\n")
+        for i in full_evaluator_aggregate_results:
+            f.write(f"{i['file']}")
+            f.write(f"{i}")
+else:
+    evaluate_one_paper()
