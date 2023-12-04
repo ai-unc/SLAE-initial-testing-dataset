@@ -1,0 +1,244 @@
+{
+    "elements": [
+        {
+            "label": "Incarceration",
+            "type": "variable"
+        },
+        {
+            "label": "Chronic health conditions",
+            "type": "variable"
+        },
+        {
+            "label": "Mortality",
+            "type": "variable"
+        },
+        {
+            "label": "Family health outcomes",
+            "type": "variable"
+        },
+        {
+            "label": "Population health",
+            "type": "variable"
+        },
+        {
+            "label": "Stress-related illness",
+            "type": "variable"
+        },
+        {
+            "label": "Infectious diseases",
+            "type": "variable"
+        },
+        {
+            "label": "Chronic Health Conditions",
+            "type": "variable"
+        },
+        {
+            "label": "Family Health",
+            "type": "variable"
+        },
+        {
+            "label": "AI/AN status",
+            "type": "variable"
+        },
+        {
+            "label": "Substance-related mortality",
+            "type": "variable"
+        },
+        {
+            "label": "AI/AN adolescents",
+            "type": "variable"
+        },
+        {
+            "label": "Substance use initiation and rates",
+            "type": "variable"
+        },
+        {
+            "label": "AI/AN adults who drink",
+            "type": "variable"
+        },
+        {
+            "label": "Heavy, episodic drinking patterns",
+            "type": "variable"
+        },
+        {
+            "label": "AI/AN communities",
+            "type": "variable"
+        },
+        {
+            "label": "Substance availability, trauma exposure, family and peer networks, historical trauma",
+            "type": "variable"
+        }
+    ],
+    "connections": [
+        {
+            "from": "Incarceration",
+            "to": "Chronic health conditions",
+            "type": "Direct"
+        },
+        {
+            "from": "Incarceration",
+            "to": "Mortality",
+            "type": "Direct"
+        },
+        {
+            "from": "Incarceration",
+            "to": "Family health outcomes",
+            "type": "Direct"
+        },
+        {
+            "from": "Incarceration",
+            "to": "Population health",
+            "type": "Direct"
+        },
+        {
+            "from": "Incarceration",
+            "to": "Chronic health conditions",
+            "type": "Direct"
+        },
+        {
+            "from": "Incarceration",
+            "to": "Mortality",
+            "type": "Direct"
+        },
+        {
+            "from": "Incarceration",
+            "to": "Stress-related illness",
+            "type": "Direct"
+        },
+        {
+            "from": "Incarceration",
+            "to": "Infectious diseases",
+            "type": "Direct"
+        },
+        {
+            "from": "Incarceration",
+            "to": "Family health outcomes",
+            "type": "Direct"
+        },
+        {
+            "from": "Incarceration",
+            "to": "Chronic health conditions",
+            "type": "Direct"
+        },
+        {
+            "from": "Incarceration",
+            "to": "Mortality",
+            "type": "Direct"
+        },
+        {
+            "from": "Incarceration",
+            "to": "Stress-related illness",
+            "type": "Direct"
+        },
+        {
+            "from": "Incarceration",
+            "to": "Infectious diseases",
+            "type": "Direct"
+        },
+        {
+            "from": "Incarceration",
+            "to": "Family health outcomes",
+            "type": "Direct"
+        },
+        {
+            "from": "Incarceration",
+            "to": "Mortality",
+            "type": "direct"
+        },
+        {
+            "from": "Incarceration",
+            "to": "Chronic Health Conditions",
+            "type": "direct"
+        },
+        {
+            "from": "Incarceration",
+            "to": "Family Health",
+            "type": "direct"
+        },
+        {
+            "from": "Incarceration",
+            "to": "Mortality",
+            "type": "direct"
+        },
+        {
+            "from": "Incarceration",
+            "to": "Chronic Health Conditions",
+            "type": "direct"
+        },
+        {
+            "from": "Incarceration",
+            "to": "Family Health",
+            "type": "direct"
+        },
+        {
+            "from": "Incarceration",
+            "to": "Chronic health conditions",
+            "type": "Direct"
+        },
+        {
+            "from": "Incarceration",
+            "to": "Mortality",
+            "type": "Direct"
+        },
+        {
+            "from": "Incarceration",
+            "to": "Stress-related illness",
+            "type": "Direct"
+        },
+        {
+            "from": "Incarceration",
+            "to": "Chronic health conditions",
+            "type": "Direct"
+        },
+        {
+            "from": "Incarceration",
+            "to": "Mortality",
+            "type": "Direct"
+        },
+        {
+            "from": "Incarceration",
+            "to": "Stress-related illness",
+            "type": "Direct"
+        },
+        {
+            "from": "AI/AN status",
+            "to": "Substance-related mortality",
+            "type": "direct"
+        },
+        {
+            "from": "AI/AN adolescents",
+            "to": "Substance use initiation and rates",
+            "type": "direct"
+        },
+        {
+            "from": "AI/AN adults who drink",
+            "to": "Heavy, episodic drinking patterns",
+            "type": "direct"
+        },
+        {
+            "from": "AI/AN communities",
+            "to": "Substance availability, trauma exposure, family and peer networks, historical trauma",
+            "type": "direct"
+        },
+        {
+            "from": "AI/AN status",
+            "to": "Substance-related mortality",
+            "type": "direct"
+        },
+        {
+            "from": "AI/AN adolescents",
+            "to": "Substance use initiation and rates",
+            "type": "direct"
+        },
+        {
+            "from": "AI/AN adults who drink",
+            "to": "Heavy, episodic drinking patterns",
+            "type": "direct"
+        },
+        {
+            "from": "AI/AN communities",
+            "to": "Substance availability, trauma exposure, family and peer networks, historical trauma",
+            "type": "direct"
+        }
+    ]
+}

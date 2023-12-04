@@ -272,3 +272,12 @@ successful parse MULTIRELATION: {
     }
   ]
 }
+pre parse: [
+    {
+        "VariableOneName": "Rumination",
+        "VariableTwoName": "Rejection Sensitivity",
+        "RelationshipClassification": "Direct",
+        "isCausal": "True",
+        "SupportingText": "The results suggest that rejection sensitivity is a specific prospective predictor for increased depressive rumination and brooding, whilst indicating that rumination does not prospectively predict rejection sensitivity or passive interpersonal behaviors."
+    }
+]
