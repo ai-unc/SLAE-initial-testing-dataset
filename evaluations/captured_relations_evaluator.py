@@ -93,7 +93,7 @@ def evaluate_one_paper(input_file_path, strict_length=True, verbose=False):
 
 # Read a YAML file to obtain settings
 DATASET_PATH = pathlib.Path("evaluation_datasets/multi_relation_dataset")
-MULTIPAPER = True
+MULTIPAPER = False
 
 if MULTIPAPER:
     with open("evaluation_outputs/captured_relations_results/results.txt", "w") as f:
@@ -110,4 +110,7 @@ if MULTIPAPER:
             f.write(f"{i['file']}")
             f.write(f"{i}")
 else:
-    evaluate_one_paper()
+    with open("evaluation_outputs/captured_relations_results/results.txt", "w") as f:
+        f.write(f"New single file evaluation")
+    INPUT_FILE_PATH = pathlib.Path("evaluation_datasets/multi_relation_dataset/RuminationandCognitiveDistractionin_10.1007_s10862_015_9510_1.json")
+    evaluate_one_paper(INPUT_FILE_PATH, verbose=True)

@@ -76,10 +76,13 @@ class WorkingDirectoryManager:
     def restore_original_directory(self):
         os.chdir(self.original_directory)
 
-def extract_relationships(data, verbose = False, model = "gpt-3.5-turbo-1106"):
+def extract_relationships(data, verbose = False, model = "gpt-3.5-turbo-1106", verbatim=False):
     # Add map reduce or some other type of summarization function here.
     processed_text = data["PaperContents"]
-    relationships = {"Relations": data["Relations"]}
+    if verbatim:
+        relationships = {"Relations": data["Relations"]}
+    else:
+        relationships = extract_all_ordered_pairs(data)
 
     # Create Parser
     parser = PydanticOutputParser(pydantic_object=ListOfRelations) #Refers to a class called SingleRelation
@@ -146,6 +149,21 @@ def clean_data(data_file, verbose=False) -> dict():
     if verbose:
         pprint(data)
     return data  
+
+def extract_all_ordered_pairs(data):
+    #Extract the relationships
+    relationships = data.get("Relations", [])
+    #Store unique ordered pairs of variables
+    variable_pairs = []
+    # Iterate through each relationship and extract variables
+    for relationship in relationships:
+        variable_one = relationship.get("VariableOneName", "")
+        variable_two = relationship.get("VariableTwoName", "")
+        variable_pairs.append(variable_one + " -> " + variable_two)
+    # Print the resulting list of variable lists
+    relations_text = "\n".join(variable_pairs)
+    return relations_text
+
 
 def match_relation_to_paper():
     """Reference passage ranking section https://huggingface.co/tasks/sentence-similarity"""
