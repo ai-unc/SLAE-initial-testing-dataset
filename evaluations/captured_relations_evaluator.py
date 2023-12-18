@@ -22,12 +22,12 @@ def compare(prediction, ground_truth):
         score_dictionary["RelationshipClassificationScore"] = 0
         print("RelationshipClassification Score ==> actual:", ground_truth["RelationshipClassification"], "; predicted:", prediction["RelationshipClassification"])
     
-    if prediction["IsCausal"].lower() == ground_truth["IsCausal"].lower():
-        score_dictionary["IsCausalScore"] = 1
-        print("Causal Score ==> success; ", ground_truth["IsCausal"])
-    else:
-        score_dictionary["IsCausalScore"] = 0
-        print("Causal Score ==> actual:", ground_truth["IsCausal"], "; predicted:", prediction["IsCausal"])
+    # if prediction["IsCausal"].lower() == ground_truth["IsCausal"].lower():
+    #     score_dictionary["IsCausalScore"] = 1
+    #     print("Causal Score ==> success; ", ground_truth["IsCausal"])
+    # else:
+    #     score_dictionary["IsCausalScore"] = 0
+    #     print("Causal Score ==> actual:", ground_truth["IsCausal"], "; predicted:", prediction["IsCausal"])
     return score_dictionary
 
 def evaluate_one_paper(input_file_path, strict_length=True, verbose=False):
@@ -70,12 +70,12 @@ def evaluate_one_paper(input_file_path, strict_length=True, verbose=False):
 
     aggregate_results = dict()
     aggregate_results["RelationshipClassificationScore"] = 0
-    aggregate_results["CausalIdentificationScore"] = 0
+    # aggregate_results["CausalIdentificationScore"] = 0
     for x, result in enumerate(results):
         aggregate_results["RelationshipClassificationScore"] += result["RelationshipClassificationScore"]
-        aggregate_results["CausalIdentificationScore"] += result["IsCausalScore"]
+        # aggregate_results["CausalIdentificationScore"] += result["IsCausalScore"]
     aggregate_results["RelationshipClassificationScore"] /= len(results)
-    aggregate_results["CausalIdentificationScore"] /= len(results)
+    # aggregate_results["CausalIdentificationScore"] /= len(results)
     print(aggregate_results)
 
     with open("evaluation_outputs/captured_relations_results/results.txt", "a+") as f:
@@ -93,7 +93,7 @@ def evaluate_one_paper(input_file_path, strict_length=True, verbose=False):
 
 # Read a YAML file to obtain settings
 DATASET_PATH = pathlib.Path("evaluation_datasets/multi_relation_dataset")
-MULTIPAPER = False
+MULTIPAPER = True
 
 if MULTIPAPER:
     with open("evaluation_outputs/captured_relations_results/results.txt", "w") as f:
@@ -107,8 +107,8 @@ if MULTIPAPER:
     with open("evaluation_outputs/captured_relations_results/results.txt", "a+") as f:
         f.write("\n\nAggregated_Results:\n")
         for i in full_evaluator_aggregate_results:
-            f.write(f"{i['file']}")
-            f.write(f"{i}")
+            f.write(f"{i['file']}\n")
+            f.write(f"{i}\n")
 else:
     with open("evaluation_outputs/captured_relations_results/results.txt", "w") as f:
         f.write(f"New single file evaluation")

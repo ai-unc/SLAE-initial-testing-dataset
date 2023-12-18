@@ -39,23 +39,24 @@ MODEL_NAME = "gpt-3.5-turbo-1106"
 class SingleRelation(BaseModel):
     VariableOneName: str
     VariableTwoName: str
-    RelationshipClassification: str
-    IsCausal: str
     SupportingText: str
+    Reasoning: str
+    RelationshipClassification: str
+    # IsCausal: str
     
     @validator("RelationshipClassification")
     def allowed_classifications(cls, field):
-        if field.lower() in {"direct", "inverse", "not applicable", "independent"}:
+        if field.lower() in {"direct", "inverse", "not applicable", "uncorrelated"}:
             return field
         else:
             raise ValueError(f"Invalid Relationship Type {{{field}}}")
         
-    @validator("IsCausal")
-    def true_or_false(cls, field):
-        if field.lower() in {"true", "false"}:
-            return field
-        else:
-            raise ValueError(f"Invalid IsCausal Type {{{field}}}")
+    # @validator("IsCausal")
+    # def true_or_false(cls, field):
+    #     if field.lower() in {"true", "false"}:
+    #         return field
+    #     else:
+    #         raise ValueError(f"Invalid IsCausal Type {{{field}}}")
 
 class ListOfRelations(BaseModel):
     Relations: list[SingleRelation]
@@ -76,7 +77,7 @@ class WorkingDirectoryManager:
     def restore_original_directory(self):
         os.chdir(self.original_directory)
 
-def extract_relationships(data, verbose = False, model = "gpt-3.5-turbo-1106", verbatim=False):
+def extract_relationships(data, verbose = False, model = "gpt-4", verbatim=False):
     # Add map reduce or some other type of summarization function here.
     processed_text = data["PaperContents"]
     if verbatim:
@@ -90,20 +91,30 @@ def extract_relationships(data, verbose = False, model = "gpt-3.5-turbo-1106", v
     # Create the plain text prompt. Used some of langchain's functions to automatically create formated prompts. 
     prompt = PromptTemplate(
         template="""
+START TEXT
 {text}
+END TEXT
 
+START PROMPT
 Given the text validate a series of relationships between variables that will be included in a json format below.
-For example, if the json includes a relation between "Country's per capita income" and "Country's literacy rate", and the text includes "We find a strong correlation p < .0001 between a country's per capita income and it's literacy rate" then the RelationshipClssification would be direct.
-The RelationshipClassification field can only be 'direct', 'inverse', 'Not applicable', or 'independent'.
-The isCausal field can only be either 'True' or 'False', and can only be true if the text directly states that the relationship is a causal relationship.
+For example, if the json includes a relation like "Country's per capita income -> Country's literacy rate", and the text includes "We find a strong correlation p < .0001 between a country's per capita income and it's literacy rate" then the RelationshipClassification would be direct.
+If instead the text includes ""We find a strong inverse correlation p < .0001 between a country's per capita income and it's literacy rate" then the RelationshipClassification would be inverse.
 The SupportText field of your output should include verbaitum text related to the relation between the two variables without paraphrasing.
+The Reasoning field should be used to step by step reason from the text of the paper to try to come up with a good relationship classification and should focus on plainly stated results over implications.
+The RelationshipClassification field can only be 'direct', 'inverse', 'not applicable', or 'uncorrelated'.
+Direct means that an increase in one would cause a decrease in another, and inverse means that an increase in one would cause a decrease in another.
+Uncorrelated means there is no clear relationship between the two variables. Not applicable means the text does not suggest anything about the relationship between the two variables. 
 Use exactly wording of outputs choices and input variable names, including capitalization choices. 
 
+OUTPUT FORMATTING INSTRUCTIONS START
 {format_instructions}
+OUTPUT FORMATTING INSTRUCTIONS END
 
-Below is a list of relationships, please fill in the fields according to the above instructions.
+Below is the list of relationships that you should include in your output. Ensure all relationships are evaluated!
 {relationships}
-End of relationships to fill in, fill in all relationships.
+End of the list of relationships.
+
+END PROMPT
         """,
         input_variables=["text", "relationships"],
         partial_variables={"format_instructions":parser.get_format_instructions}
@@ -125,7 +136,7 @@ End of relationships to fill in, fill in all relationships.
         print("What is a completion_prompt:", type(completion_prompt))
 
     # Create LLM
-    model = ChatOpenAI(temperature=.3, openai_api_key=key, model_name=model)
+    model = ChatOpenAI(temperature=.0, openai_api_key=key, model_name=model)
 
     # Obtain completion from LLM
     output = model(completion_prompt)
@@ -139,13 +150,14 @@ End of relationships to fill in, fill in all relationships.
     return parsed_output.dict()  # Returns in dict format
 
 def clean_data(data_file, verbose=False) -> dict():
-    """Reads Json and cleans all information into a dict, including paper fulltext and list of user predictions"""
+    """Reads Json and removes paper fulltext and list of user predictions"""
     with open(data_file, "r") as f:
         data = json.load(f)
     for relation in data['Relations']:
         relation["RelationshipClassification"] = ""
         relation["IsCausal"] = ""
         relation["SupportingText"] = ""
+        relation["Attributes"] = ""
     if verbose:
         pprint(data)
     return data  
@@ -153,14 +165,12 @@ def clean_data(data_file, verbose=False) -> dict():
 def extract_all_ordered_pairs(data):
     #Extract the relationships
     relationships = data.get("Relations", [])
-    #Store unique ordered pairs of variables
-    variable_pairs = []
+    variable_pairs = [f"Below are {len(relationships)} relations:"]
     # Iterate through each relationship and extract variables
     for relationship in relationships:
         variable_one = relationship.get("VariableOneName", "")
         variable_two = relationship.get("VariableTwoName", "")
         variable_pairs.append(variable_one + " -> " + variable_two)
-    # Print the resulting list of variable lists
     relations_text = "\n".join(variable_pairs)
     return relations_text
 

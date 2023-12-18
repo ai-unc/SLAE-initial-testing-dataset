@@ -1,8 +1,7 @@
-New single file evaluation
+New multi file evaluation source from path: evaluation_datasets/multi_relation_dataset
 Results for RuminationandCognitiveDistractionin_10.1007_s10862_015_9510_1.json
 {
-  "RelationshipClassificationScore": 0.5,
-  "CausalIdentificationScore": 0.25
+  "RelationshipClassificationScore": 0.75
 }
 Predictions
 {
@@ -10,58 +9,58 @@ Predictions
     {
       "VariableOneName": "Cognitive distraction",
       "VariableTwoName": "Rumination",
-      "RelationshipClassification": "Not applicable",
-      "IsCausal": "False",
-      "SupportingText": "The study did not directly compare the effects of cognitive distraction and rumination on each other."
+      "SupportingText": "Interestingly, although cognitive distraction reduced sadness, it also triggered RSA withdrawal. Moreover, cognitive distraction was associated with greater RSA withdrawal for MDDs than CTLs.",
+      "Reasoning": "The text clearly states that cognitive distraction triggered RSA withdrawal, and this effect was greater for MDDs than CTLs. This suggests a potential relationship between cognitive distraction and rumination, indicating that cognitive distraction may be related to increased rumination in individuals with MDD.",
+      "RelationshipClassification": "direct"
     },
     {
       "VariableOneName": "Forced-failure stress",
       "VariableTwoName": "Sadness",
-      "RelationshipClassification": "direct",
-      "IsCausal": "True",
-      "SupportingText": "The forced-failure stressor led to an increase in self-reported sadness."
+      "SupportingText": "As expected, compared to CTLs, the MDD group reported greater sadness reactivity to the forced_failure stressor.",
+      "Reasoning": "The text explicitly states that the MDD group reported greater sadness reactivity to the forced_failure stressor, indicating a direct relationship between forced-failure stress and sadness.",
+      "RelationshipClassification": "direct"
     },
     {
       "VariableOneName": "Rumination",
       "VariableTwoName": "Sadness",
-      "RelationshipClassification": "direct",
-      "IsCausal": "False",
-      "SupportingText": "Rumination was associated with increased self-reported sadness in both MDD and CTL groups."
+      "SupportingText": "Rumination increased sadness for both MDDs and CTLs.",
+      "Reasoning": "The text clearly states that rumination increased sadness for both MDDs and CTLs, indicating a direct relationship between rumination and sadness.",
+      "RelationshipClassification": "direct"
     },
     {
       "VariableOneName": "Forced-failure stress",
       "VariableTwoName": "RSA withdrawal",
-      "RelationshipClassification": "Not applicable",
-      "IsCausal": "False",
-      "SupportingText": "The study did not directly compare the effects of forced-failure stress on RSA withdrawal."
+      "SupportingText": "We observed a significant RSA withdrawal in response to the forced_failure stressor.",
+      "Reasoning": "The text explicitly mentions the significant RSA withdrawal in response to the forced_failure stressor, indicating a direct relationship between forced-failure stress and RSA withdrawal.",
+      "RelationshipClassification": "direct"
     },
     {
       "VariableOneName": "Rumination Induction",
       "VariableTwoName": "RSA withdrawal",
-      "RelationshipClassification": "direct",
-      "IsCausal": "False",
-      "SupportingText": "Rumination induction was associated with RSA withdrawal for both MDDs and CTLs."
+      "SupportingText": "Results demonstrate that the effect of rumination on RSA did not significantly differ between the MDD and CTL groups.",
+      "Reasoning": "The text clearly states that the effect of rumination on RSA did not significantly differ between the MDD and CTL groups, suggesting that rumination induction may not have a direct relationship with RSA withdrawal.",
+      "RelationshipClassification": "not applicable"
     },
     {
       "VariableOneName": "Induced distraction",
       "VariableTwoName": "RSA withdrawal",
-      "RelationshipClassification": "direct",
-      "IsCausal": "False",
-      "SupportingText": "Cognitive distraction was associated with greater RSA withdrawal for MDDs than CTLs."
+      "SupportingText": "We observed a significant RSA withdrawal during the R_D induction.",
+      "Reasoning": "The text explicitly mentions the significant RSA withdrawal during the R_D induction, indicating a direct relationship between induced distraction and RSA withdrawal.",
+      "RelationshipClassification": "direct"
     },
     {
       "VariableOneName": "Forced-failure stress",
       "VariableTwoName": "RSA withdrawal",
-      "RelationshipClassification": "Not applicable",
-      "IsCausal": "False",
-      "SupportingText": "The study did not directly compare the effects of forced-failure stress on RSA withdrawal."
+      "SupportingText": "We observed a significant RSA withdrawal in response to the forced_failure stressor.",
+      "Reasoning": "The text explicitly mentions the significant RSA withdrawal in response to the forced_failure stressor, indicating a direct relationship between forced-failure stress and RSA withdrawal.",
+      "RelationshipClassification": "direct"
     },
     {
       "VariableOneName": "MDD",
       "VariableTwoName": "Cardiovascular disease",
-      "RelationshipClassification": "Not applicable",
-      "IsCausal": "False",
-      "SupportingText": "The study did not directly assess the relationship between MDD and cardiovascular disease."
+      "SupportingText": "Results from our study suggest that depressed individuals may be at heightened risk for cardiovascular disease not because rumination has a greater effect on RSA in MDDs than in CTLs, but because MDDs spend more time using an emotion regulation strategy that is associated with parasympathetic withdrawal.",
+      "Reasoning": "The text suggests that depressed individuals may be at heightened risk for cardiovascular disease due to spending more time using an emotion regulation strategy associated with parasympathetic withdrawal, indicating a potential relationship between MDD and cardiovascular disease.",
+      "RelationshipClassification": "direct"
     }
   ]
 }
@@ -129,3 +128,326 @@ Ground Truth
     }
   ]
 }
+
+Results for test_paper.json
+{
+  "RelationshipClassificationScore": 1.0
+}
+Predictions
+{
+  "Relations": [
+    {
+      "VariableOneName": "AI/AN status",
+      "VariableTwoName": "Substance-related mortality",
+      "SupportingText": "AI/AN status correlates with elevated rates of substance-related mortality",
+      "Reasoning": "The text explicitly states that AI/AN status correlates with elevated rates of substance-related mortality, indicating a direct relationship between the two variables.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "AI/AN status",
+      "VariableTwoName": "Alcohol-related deaths",
+      "SupportingText": "AI/AN status correlates with elevated rates of alcohol-related deaths",
+      "Reasoning": "The text explicitly states that AI/AN status correlates with elevated rates of alcohol-related deaths, indicating a direct relationship between the two variables.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "AI/AN status",
+      "VariableTwoName": "Chronic liver disease",
+      "SupportingText": "AI/AN status correlates with elevated rates of chronic liver disease",
+      "Reasoning": "The text explicitly states that AI/AN status correlates with elevated rates of chronic liver disease, indicating a direct relationship between the two variables.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "AI/AN status",
+      "VariableTwoName": "Drug-related issues",
+      "SupportingText": "AI/AN status correlates with notably higher rates of drug-related issues",
+      "Reasoning": "The text explicitly states that AI/AN status correlates with notably higher rates of drug-related issues, indicating a direct relationship between the two variables.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "AI/AN adolescents",
+      "VariableTwoName": "Substance use initiation",
+      "SupportingText": "AI/AN adolescents exhibit earlier initiation of substance use",
+      "Reasoning": "The text explicitly states that AI/AN adolescents exhibit earlier initiation of substance use, indicating a direct relationship between the two variables.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "AI/AN adolescents",
+      "VariableTwoName": "Substance use rates",
+      "SupportingText": "AI/AN adolescents exhibit higher rates of substance use",
+      "Reasoning": "The text explicitly states that AI/AN adolescents exhibit higher rates of substance use, indicating a direct relationship between the two variables.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "AI/AN adolescents",
+      "VariableTwoName": "Living on reservations",
+      "SupportingText": "Substance use rates are particularly high among AI/AN adolescents living on reservations",
+      "Reasoning": "The text explicitly states that substance use rates are particularly high among AI/AN adolescents living on reservations, indicating a direct relationship between the two variables.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "AI/AN adolescents",
+      "VariableTwoName": "Dropped out of school",
+      "SupportingText": "Substance use rates are particularly high among AI/AN adolescents who have dropped out of school",
+      "Reasoning": "The text explicitly states that substance use rates are particularly high among AI/AN adolescents who have dropped out of school, indicating a direct relationship between the two variables.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "AI/AN adults who drink",
+      "VariableTwoName": "Heavy, episodic drinking patterns",
+      "SupportingText": "AI/AN adults who drink tend to engage in heavy, episodic drinking patterns",
+      "Reasoning": "The text explicitly states that AI/AN adults who drink tend to engage in heavy, episodic drinking patterns, indicating a direct relationship between the two variables.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "AI/AN communities",
+      "VariableTwoName": "Substance availability",
+      "SupportingText": "Correlations are observed between AI/AN communities and substance availability",
+      "Reasoning": "The text explicitly states that correlations are observed between AI/AN communities and substance availability, indicating a direct relationship between the two variables.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "AI/AN communities",
+      "VariableTwoName": "Trauma exposure",
+      "SupportingText": "Correlations are observed between AI/AN communities and trauma exposure",
+      "Reasoning": "The text explicitly states that correlations are observed between AI/AN communities and trauma exposure, indicating a direct relationship between the two variables.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "AI/AN communities",
+      "VariableTwoName": "Family and peer networks",
+      "SupportingText": "Correlations are observed between AI/AN communities and family and peer networks",
+      "Reasoning": "The text explicitly states that correlations are observed between AI/AN communities and family and peer networks, indicating a direct relationship between the two variables.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "AI/AN communities",
+      "VariableTwoName": "Historical trauma",
+      "SupportingText": "Correlations are observed between AI/AN communities and historical trauma",
+      "Reasoning": "The text explicitly states that correlations are observed between AI/AN communities and historical trauma, indicating a direct relationship between the two variables.",
+      "RelationshipClassification": "direct"
+    }
+  ]
+}
+Ground Truth
+{
+  "PaperContents": "",
+  "Relations": [
+    {
+      "VariableOneName": "AI/AN status",
+      "VariableTwoName": "Substance-related mortality",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "AI/AN status correlates with elevated rates of substance-related mortality."
+    },
+    {
+      "VariableOneName": "AI/AN status",
+      "VariableTwoName": "Alcohol-related deaths",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "AI/AN status correlates with elevated rates of alcohol-related deaths."
+    },
+    {
+      "VariableOneName": "AI/AN status",
+      "VariableTwoName": "Chronic liver disease",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "AI/AN status correlates with elevated rates of chronic liver disease."
+    },
+    {
+      "VariableOneName": "AI/AN status",
+      "VariableTwoName": "Drug-related issues",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "AI/AN status correlates with elevated rates of drug-related issues."
+    },
+    {
+      "VariableOneName": "AI/AN adolescents",
+      "VariableTwoName": "Substance use initiation",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "AI/AN adolescents exhibit earlier initiation of substance use."
+    },
+    {
+      "VariableOneName": "AI/AN adolescents",
+      "VariableTwoName": "Substance use rates",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "AI/AN adolescents exhibit higher rates of substance use."
+    },
+    {
+      "VariableOneName": "AI/AN adolescents",
+      "VariableTwoName": "Living on reservations",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "AI/AN adolescents living on reservations exhibit higher rates of substance use."
+    },
+    {
+      "VariableOneName": "AI/AN adolescents",
+      "VariableTwoName": "Dropped out of school",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "AI/AN adolescents who have dropped out of school exhibit higher rates of substance use."
+    },
+    {
+      "VariableOneName": "AI/AN adults who drink",
+      "VariableTwoName": "Heavy, episodic drinking patterns",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "AI/AN adults who drink tend to engage in heavy, episodic drinking patterns."
+    },
+    {
+      "VariableOneName": "AI/AN communities",
+      "VariableTwoName": "Substance availability",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Correlations are observed between AI/AN communities and substance availability."
+    },
+    {
+      "VariableOneName": "AI/AN communities",
+      "VariableTwoName": "Trauma exposure",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Correlations are observed between AI/AN communities and trauma exposure."
+    },
+    {
+      "VariableOneName": "AI/AN communities",
+      "VariableTwoName": "Family and peer networks",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Correlations are observed between AI/AN communities and family and peer networks."
+    },
+    {
+      "VariableOneName": "AI/AN communities",
+      "VariableTwoName": "Historical trauma",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Correlations are observed between AI/AN communities and historical trauma."
+    }
+  ]
+}
+
+Results for partner_violence_and_alcohol_exposed_prengancy_10.1111_acer.13968.json
+{
+  "RelationshipClassificationScore": 0.7142857142857143
+}
+Predictions
+{
+  "Relations": [
+    {
+      "VariableOneName": "IPV",
+      "VariableTwoName": "AEP",
+      "SupportingText": "Within-person and between-person IPV significantly related to higher odds of AEP compared to non-pregnancy and non-AEP.",
+      "Reasoning": "The text explicitly states that both within-person and between-person IPV are significantly related to higher odds of AEP, indicating a direct relationship between IPV and AEP.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "Adolescent alcohol use",
+      "VariableTwoName": "AEP",
+      "SupportingText": "Adolescent alcohol use had similarly increased odds for AEP when compared to non-pregnancy or non-AEP outcomes.",
+      "Reasoning": "The text clearly states that adolescent alcohol use had increased odds for AEP, indicating a direct relationship between adolescent alcohol use and AEP.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "Between-person birth control use",
+      "VariableTwoName": "AEP",
+      "SupportingText": "Between-person birth control use related to higher odds for AEP compared to non-pregnancy and non-AEP.",
+      "Reasoning": "The text explicitly states that between-person birth control use related to higher odds for AEP, indicating a direct relationship between between-person birth control use and AEP.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "IPV",
+      "VariableTwoName": "Contraceptive use",
+      "SupportingText": "IPV also relates to lower levels of contraceptive use.",
+      "Reasoning": "The text explicitly states that IPV relates to lower levels of contraceptive use, indicating an inverse relationship between IPV and contraceptive use.",
+      "RelationshipClassification": "inverse"
+    },
+    {
+      "VariableOneName": "Birth control within a relationship",
+      "VariableTwoName": "AEP",
+      "SupportingText": "Using birth control consistently within a relationship, compared to other relationships, did not significantly increase the odds of AEP compared to non-pregnancy or nAEP outcomes.",
+      "Reasoning": "The text indicates that using birth control consistently within a relationship did not significantly increase the odds of AEP, suggesting that there may not be a direct relationship between birth control within a relationship and AEP.",
+      "RelationshipClassification": "not applicable"
+    },
+    {
+      "VariableOneName": "Consistent birth control use over a 5-year period or more",
+      "VariableTwoName": "AEP",
+      "SupportingText": "Individuals who used birth control more consistently over the 5-year period compared to other individuals decreased odds of AEP by 66% (compared to non-pregnancy) and 62% (compared to nAEP).",
+      "Reasoning": "The text explicitly states that consistent birth control use over a 5-year period decreased odds of AEP, indicating a direct relationship between consistent birth control use and AEP.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "IPV",
+      "VariableTwoName": "Birth control",
+      "SupportingText": "IPV related to declines in both outcomes preferred over AEP: non-pregnancy and nAEP.",
+      "Reasoning": "The text indicates that IPV related to declines in both non-pregnancy and nAEP, suggesting a potential inverse relationship between IPV and birth control.",
+      "RelationshipClassification": "inverse"
+    }
+  ]
+}
+Ground Truth
+{
+  "PaperDOI": "10.1111/acer.13968",
+  "PaperTitle": "The importance of intimate partner violence in within-relationship and between-person risk for alcohol-exposed pregnancy",
+  "PaperContents": "",
+  "Relations": [
+    {
+      "VariableOneName": "IPV",
+      "VariableTwoName": "AEP",
+      "RelationshipClassification": "Direct",
+      "IsCausal": "False",
+      "SupportingText": "Within-person and between-person IPV significantly related to higher odds of AEP compared to non-pregnancy and non-AEP. IPV strongly associates with AEP (Anderson et al., 2014; Kitsantas et al., 2015; Li et al., 2012; Skagerstrom et al., 2011). For every additional physical IPV indicator experienced within the five-year span (averaged over all relationships), compared to other individuals, increased the overall odds of AEP compared to non-pregnancy by 200%, and increased the overall odds of AEP compared to nAEP by 154%. Therefore, not only did IPV have within-relationship influence, but also distinguished AEP outcomes between individuals."
+    },
+    {
+      "VariableOneName": "Adolescent alcohol use",
+      "VariableTwoName": "AEP",
+      "RelationshipClassification": "Direct",
+      "IsCausal": "False",
+      "SupportingText": "Adolescent alcohol use had similarly increased odds for AEP when compared to non-pregnancy or non-AEP outcomes. Finally, alcohol use in adolescence increased odds of AEP. Individuals who reported past-year infrequent drinking in adolescence, compared to those who reported abstention or no past year drinking, increased odds of overall AEP compared to nAEP in adulthood by 175%. Those who reported heavy or moderate past-year drinking in adolescence, compared to those who reported abstention or no past year drinking, increased odds of AEP in adulthood by 176% (compared to no-pregnancy) or 195% (compared to nAEP). Therefore, adolescent drinking overall increased higher odds of AEP compared to either non-pregnancy or nAEP outcomes in adulthood."
+    },
+    {
+      "VariableOneName": "Between-person birth control use",
+      "VariableTwoName": "AEP",
+      "RelationshipClassification": "Direct",
+      "IsCausal": "False",
+      "SupportingText": "Only between-person birth control use related to higher odds for AEP compared to non-pregnancy and non-AEP."
+    },
+    {
+      "VariableOneName": "IPV",
+      "VariableTwoName": "Contraceptive use",
+      "RelationshipClassification": "Inverse",
+      "IsCausal": "False",
+      "SupportingText": "IPV also relates to lower levels of contraceptive use (Bergman & Stockman, 2015; Deutsch, in press; Maxwell et al., 2015)"
+    },
+    {
+      "VariableOneName": "Birth control within a relationship",
+      "VariableTwoName": "AEP",
+      "RelationshipClassification": "Inconclusive",
+      "IsCausal": "False",
+      "SupportingText": "There were no within-person significant effects for birth control use. In other words, using birth control consistently within a relationship, compared to other relationships, did not significantly increase the odds of AEP compared to non-pregnancy or nAEP outcomes."
+    },
+    {
+      "VariableOneName": "Consistent birth control use over a 5-year period or more",
+      "VariableTwoName": "AEP",
+      "RelationshipClassification": "Inverse",
+      "IsCausal": "False",
+      "SupportingText": "Individuals who used birth control more consistently over the 5-year period compared to other individuals decreased odds of AEP by 66% (compared to non-pregnancy) and 62% (compared to nAEP)."
+    },
+    {
+      "VariableOneName": "IPV",
+      "VariableTwoName": "Birth control",
+      "RelationshipClassification": "Inverse",
+      "IsCausal": "False",
+      "SupportingText": "There are also underlying mechanisms explaining the association between IPV and lower birth control use. IPV-related lower birth control is associated with coercive control motives within a relationship (Tanha et al., 2010)."
+    }
+  ]
+}
+
+
+Aggregated_Results:
+RuminationandCognitiveDistractionin_10.1007_s10862_015_9510_1.json
+{'RelationshipClassificationScore': 0.75, 'file': 'RuminationandCognitiveDistractionin_10.1007_s10862_015_9510_1.json'}
+test_paper.json
+{'RelationshipClassificationScore': 1.0, 'file': 'test_paper.json'}
+partner_violence_and_alcohol_exposed_prengancy_10.1111_acer.13968.json
+{'RelationshipClassificationScore': 0.7142857142857143, 'file': 'partner_violence_and_alcohol_exposed_prengancy_10.1111_acer.13968.json'}

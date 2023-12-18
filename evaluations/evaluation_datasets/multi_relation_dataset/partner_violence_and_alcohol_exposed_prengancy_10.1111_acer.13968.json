@@ -34,7 +34,7 @@
         {
 			"VariableOneName": "Birth control within a relationship",
 			"VariableTwoName": "AEP",
-			"RelationshipClassification": "Inconclusive",
+			"RelationshipClassification": "Uncorrelated",
 			"IsCausal": "False",
 			"SupportingText": "There were no within-person significant effects for birth control use. In other words, using birth control consistently within a relationship, compared to other relationships, did not significantly increase the odds of AEP compared to non-pregnancy or nAEP outcomes."
 		},
