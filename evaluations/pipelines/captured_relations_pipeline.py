@@ -16,6 +16,7 @@ import pathlib
 import os
 import json
 from pprint import pprint
+import yaml
 
 # Configure OpenAI API key
 from dotenv import load_dotenv
@@ -29,6 +30,8 @@ print("___\n\n\n", mypath)
 
 # Configuration
 """This section configs the run"""
+with open("./pipeline_settings.yaml", "r") as f:
+    settings = yaml.safe_load(f)
 PAPER_SOURCE = pathlib.Path("../papers")
 INPUTS_SOURCE = pathlib.Path("../inputs")
 OUTPUTS_SOURCE = pathlib.Path("../outputs")
@@ -78,6 +81,14 @@ class WorkingDirectoryManager:
         os.chdir(self.original_directory)
 
 def extract_relationships(data, verbose = False, model = "gpt-4", verbatim=False):
+    """
+    12/19/2023 (Function Last Updated)
+    Data should be a python dictionary cleaned of all ground truth data. 
+    Verbose triggers storage of information into debug files, this may break depending on where you run this script from as it depends on relative paths.
+    Model specifies LLM to be used. (This file was only tested with OpenAI LLMs)
+    Verbatim feeds the exact formatting of the dictionary found in the ground truth encoding into the prompt. (Minus the ground truth data)
+    Verbatim will make it hard for the model to decide whether or not to include fields that were not in ground truth if you modify the SingleRelation class.
+    """
     # Add map reduce or some other type of summarization function here.
     processed_text = data["PaperContents"]
     if verbatim:
@@ -190,11 +201,12 @@ def captured_relations_pipeline(data_file=DATASET_PATH/PAPER_FILENAME, verbose=F
 
 if __name__ == "__main__":
     # # Prepare inputs:
-    data = clean_data(INPUTS_SOURCE/"IncarcerationandHealth_10.1146_annurev_soc_073014_112326.json")
+    # data = clean_data(INPUTS_SOURCE/"IncarcerationandHealth_10.1146_annurev_soc_073014_112326.json")
     
-    # # Process and save outputs:
-    output = extract_relationships(data, verbose=True)
-    with open(OUTPUTS_SOURCE / "MultiVariablePipelineOutput.txt", "a") as f:
-        f.write("successful parse MULTIRELATION: ")
-        f.write(str(output))
-        f.write("\n")
+    # # # Process and save outputs:
+    # output = extract_relationships(data, verbose=True)
+    # with open(OUTPUTS_SOURCE / "MultiVariablePipelineOutput.txt", "a") as f:
+    #     f.write("successful parse MULTIRELATION: ")
+    #     f.write(str(output))
+    #     f.write("\n")
+    pass
