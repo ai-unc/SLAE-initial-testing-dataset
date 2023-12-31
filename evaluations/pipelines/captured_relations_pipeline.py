@@ -28,16 +28,11 @@ openai.api_key = key
 mypath = os.path.abspath("")
 print("___\n\n\n", mypath)
 
-# Configuration
-"""This section configs the run"""
+# Defaults
+"""This section configs the run's default settings"""
+OUTPUT_SOURCE = pathlib.Path("../../outputs")
 with open("./pipeline_settings.yaml", "r") as f:
-    settings = yaml.safe_load(f)
-PAPER_SOURCE = pathlib.Path("../papers")
-INPUTS_SOURCE = pathlib.Path("../inputs")
-OUTPUTS_SOURCE = pathlib.Path("../outputs")
-DATASET_PATH = pathlib.Path("evaluation_datasets/multi_relation_dataset")
-PAPER_FILENAME = "RuminationandCognitiveDistractionin_10.1007_s10862_015_9510_1.json"
-MODEL_NAME = "gpt-3.5-turbo-1106"
+    SETTINGS = yaml.safe_load(f)
         
 class SingleRelation(BaseModel):
     VariableOneName: str
@@ -45,7 +40,6 @@ class SingleRelation(BaseModel):
     SupportingText: str
     Reasoning: str
     RelationshipClassification: str
-    # IsCausal: str
     
     @validator("RelationshipClassification")
     def allowed_classifications(cls, field):
@@ -53,20 +47,9 @@ class SingleRelation(BaseModel):
             return field
         else:
             raise ValueError(f"Invalid Relationship Type {{{field}}}")
-        
-    # @validator("IsCausal")
-    # def true_or_false(cls, field):
-    #     if field.lower() in {"true", "false"}:
-    #         return field
-    #     else:
-    #         raise ValueError(f"Invalid IsCausal Type {{{field}}}")
 
 class ListOfRelations(BaseModel):
     Relations: list[SingleRelation]
-
-# CWD switcher to ensure that the verbose option works when it is being run from the captured relations evaluator file
-import os
-import inspect
 
 class WorkingDirectoryManager:
     def __init__(self):
@@ -80,7 +63,7 @@ class WorkingDirectoryManager:
     def restore_original_directory(self):
         os.chdir(self.original_directory)
 
-def extract_relationships(data, verbose = False, model = "gpt-4", verbatim=False):
+def extract_relationships(data, set_prompt=None, verbose = False, model = None, verbatim=False, outputs_source=None):
     """
     12/19/2023 (Function Last Updated)
     Data should be a python dictionary cleaned of all ground truth data. 
@@ -88,6 +71,7 @@ def extract_relationships(data, verbose = False, model = "gpt-4", verbatim=False
     Model specifies LLM to be used. (This file was only tested with OpenAI LLMs)
     Verbatim feeds the exact formatting of the dictionary found in the ground truth encoding into the prompt. (Minus the ground truth data)
     Verbatim will make it hard for the model to decide whether or not to include fields that were not in ground truth if you modify the SingleRelation class.
+    outputs_source, path to the file where verbose will dump debug information
     """
     # Add map reduce or some other type of summarization function here.
     processed_text = data["PaperContents"]
@@ -101,38 +85,13 @@ def extract_relationships(data, verbose = False, model = "gpt-4", verbatim=False
 
     # Create the plain text prompt. Used some of langchain's functions to automatically create formated prompts. 
     prompt = PromptTemplate(
-        template="""
-START TEXT
-{text}
-END TEXT
-
-START PROMPT
-Given the text validate a series of relationships between variables that will be included in a json format below.
-For example, if the json includes a relation like "Country's per capita income -> Country's literacy rate", and the text includes "We find a strong correlation p < .0001 between a country's per capita income and it's literacy rate" then the RelationshipClassification would be direct.
-If instead the text includes ""We find a strong inverse correlation p < .0001 between a country's per capita income and it's literacy rate" then the RelationshipClassification would be inverse.
-The SupportText field of your output should include verbaitum text related to the relation between the two variables without paraphrasing.
-The Reasoning field should be used to step by step reason from the text of the paper to try to come up with a good relationship classification and should focus on plainly stated results over implications.
-The RelationshipClassification field can only be 'direct', 'inverse', 'not applicable', or 'uncorrelated'.
-Direct means that an increase in one would cause a decrease in another, and inverse means that an increase in one would cause a decrease in another.
-Uncorrelated means there is no clear relationship between the two variables. Not applicable means the text does not suggest anything about the relationship between the two variables. 
-Use exactly wording of outputs choices and input variable names, including capitalization choices. 
-
-OUTPUT FORMATTING INSTRUCTIONS START
-{format_instructions}
-OUTPUT FORMATTING INSTRUCTIONS END
-
-Below is the list of relationships that you should include in your output. Ensure all relationships are evaluated!
-{relationships}
-End of the list of relationships.
-
-END PROMPT
-        """,
+        template=set_prompt,
         input_variables=["text", "relationships"],
         partial_variables={"format_instructions":parser.get_format_instructions}
     )
     input_text = prompt.format_prompt(text=processed_text, relationships=relationships).to_string()
     if verbose:
-        with open(OUTPUTS_SOURCE / "MultiVariablePipelineInput.txt", "a") as f:
+        with open(outputs_source / "MultiVariablePipelineInput.txt", "a") as f:
             f.write("Input begins:\n")
             f.write(input_text)
             f.write("\n\n\n")
@@ -153,7 +112,7 @@ END PROMPT
     output = model(completion_prompt)
     if verbose:
         print("what is a output:", type(output))
-        with open(OUTPUTS_SOURCE / "MultiVariablePipelineOutput.txt", "a") as f:
+        with open(outputs_source / "MultiVariablePipelineOutput.txt", "a") as f:
             f.write("pre parse: ")
             f.write(str(output.content))
             f.write("\n")
@@ -194,19 +153,16 @@ def obtain_papers_via_MLSE():
     """Obtains relevant papers via the massive literature search engine"""
     pass
 
-def captured_relations_pipeline(data_file=DATASET_PATH/PAPER_FILENAME, verbose=False, model=MODEL_NAME):
+def captured_relations_pipeline(data_file, settings_path, debug_path):
+    with open(settings_path, "r") as f:
+        pipeline_settings = yaml.safe_load(f)
+        verbose = pipeline_settings["verbose"]
+        prompt = pipeline_settings["prompt"]
+        model = pipeline_settings["model"]
     cleaned_data = clean_data(data_file, verbose=verbose)
-    output = extract_relationships(cleaned_data, verbose=verbose, model=model)
+    output = extract_relationships(cleaned_data, set_prompt=prompt, verbose=verbose, model=model, outputs_source=debug_path)
     return output
 
 if __name__ == "__main__":
-    # # Prepare inputs:
-    # data = clean_data(INPUTS_SOURCE/"IncarcerationandHealth_10.1146_annurev_soc_073014_112326.json")
-    
-    # # # Process and save outputs:
-    # output = extract_relationships(data, verbose=True)
-    # with open(OUTPUTS_SOURCE / "MultiVariablePipelineOutput.txt", "a") as f:
-    #     f.write("successful parse MULTIRELATION: ")
-    #     f.write(str(output))
-    #     f.write("\n")
+    captured_relations_pipeline()
     pass

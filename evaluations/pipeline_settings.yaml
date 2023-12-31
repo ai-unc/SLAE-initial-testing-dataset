@@ -26,3 +26,5 @@ prompt: |
   End of the list of relationships.
 
   END PROMPT
+
+verbose: True
