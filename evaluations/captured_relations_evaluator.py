@@ -94,7 +94,7 @@ def evaluate_one_paper(input_file_path, settings_path, strict_length=True, verbo
 # Read a YAML file to obtain settings
 DATASET_PATH = pathlib.Path("evaluation_datasets/multi_relation_dataset")
 SETTINGS_PATH = pathlib.Path("./pipeline_settings.yaml")
-DEBUG_PATH = pathlib.Path("../outputs")
+DEBUG_PATH = pathlib.Path("evaluation_outputs/captured_relations_results/debug_outputs")
 MULTIPAPER = False
 
 if MULTIPAPER:
@@ -114,5 +114,5 @@ if MULTIPAPER:
 else:
     with open("evaluation_outputs/captured_relations_results/results.txt", "w") as f:
         f.write(f"New single file evaluation")
-    INPUT_FILE_PATH = pathlib.Path("evaluation_datasets/multi_relation_dataset/test_paper.json")
+    INPUT_FILE_PATH = pathlib.Path("evaluation_datasets/multi_relation_dataset/test_paper_2.json")
     evaluate_one_paper(INPUT_FILE_PATH, settings_path=SETTINGS_PATH, verbose=True, debug_path=DEBUG_PATH)

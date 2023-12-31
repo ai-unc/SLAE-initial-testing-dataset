@@ -26,13 +26,6 @@ openai.api_key = key
 
 # Filepath Debug
 mypath = os.path.abspath("")
-print("___\n\n\n", mypath)
-
-# Defaults
-"""This section configs the run's default settings"""
-OUTPUT_SOURCE = pathlib.Path("../../outputs")
-with open("./pipeline_settings.yaml", "r") as f:
-    SETTINGS = yaml.safe_load(f)
         
 class SingleRelation(BaseModel):
     VariableOneName: str
@@ -92,18 +85,18 @@ def extract_relationships(data, set_prompt=None, verbose = False, model = None, 
     input_text = prompt.format_prompt(text=processed_text, relationships=relationships).to_string()
     if verbose:
         with open(outputs_source / "MultiVariablePipelineInput.txt", "a") as f:
-            f.write("Input begins:\n")
+            f.write("="*70+f"\nPaper Analyzed: {data['PaperTitle']}"+"\nLLM Prompt:\n")
             f.write(input_text)
             f.write("\n\n\n")
     human_message_prompt = HumanMessagePromptTemplate(prompt=prompt)
     if verbose:
-        print("what is human_message_prompt:", type(human_message_prompt))
+        print("Type of human_message_prompt:", type(human_message_prompt))
     chat_prompt = ChatPromptTemplate.from_messages([human_message_prompt])
     if verbose:
-        print("what is chat_prompt:", type(chat_prompt))
+        print("Type of chat_prompt:", type(chat_prompt))
     completion_prompt = chat_prompt.format_prompt(text=processed_text, relationships=relationships).to_messages()
     if verbose:
-        print("What is a completion_prompt:", type(completion_prompt))
+        print("Type of completion_prompt:", type(completion_prompt))
 
     # Create LLM
     model = ChatOpenAI(temperature=.0, openai_api_key=key, model_name=model)
@@ -111,17 +104,18 @@ def extract_relationships(data, set_prompt=None, verbose = False, model = None, 
     # Obtain completion from LLM
     output = model(completion_prompt)
     if verbose:
-        print("what is a output:", type(output))
         with open(outputs_source / "MultiVariablePipelineOutput.txt", "a") as f:
-            f.write("pre parse: ")
+            f.write("="*70+f"\nPaper Analyzed: {data['PaperTitle']}"+"\nLLM Pipeline Output:\n")
             f.write(str(output.content))
             f.write("\n")
     parsed_output = parser.parse(output.content) # Ensure content is in valid json format.
+    if verbose:
+        print(f"Successful pipeline completion, debug information and results saved at {outputs_source}")
     return parsed_output.dict()  # Returns in dict format
 
-def clean_data(data_file, verbose=False) -> dict():
+def clean_data(data_path, verbose=False) -> dict():
     """Reads Json and removes paper fulltext and list of user predictions"""
-    with open(data_file, "r") as f:
+    with open(data_path, "r") as f:
         data = json.load(f)
     for relation in data['Relations']:
         relation["RelationshipClassification"] = ""
@@ -153,16 +147,19 @@ def obtain_papers_via_MLSE():
     """Obtains relevant papers via the massive literature search engine"""
     pass
 
-def captured_relations_pipeline(data_file, settings_path, debug_path):
+def captured_relations_pipeline(data_path, settings_path, debug_path: pathlib.Path):
     with open(settings_path, "r") as f:
         pipeline_settings = yaml.safe_load(f)
         verbose = pipeline_settings["verbose"]
         prompt = pipeline_settings["prompt"]
         model = pipeline_settings["model"]
-    cleaned_data = clean_data(data_file, verbose=verbose)
+    cleaned_data = clean_data(data_path, verbose=verbose)
     output = extract_relationships(cleaned_data, set_prompt=prompt, verbose=verbose, model=model, outputs_source=debug_path)
     return output
 
 if __name__ == "__main__":
-    captured_relations_pipeline()
+    """This section configs the run's default debug settings for running the file without the evaluator"""
+    captured_relations_pipeline(data_path="../evaluation_datasets/multi_relation_dataset/test_paper.json",
+                                settings_path="../pipeline_settings.yaml",
+                                debug_path=pathlib.Path("./debug_outputs"))
     pass
