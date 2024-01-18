@@ -1,0 +1,174 @@
+{
+    "relations": [
+        {
+            "VariableOneName": "Incarceration",
+            "VariableTwoName": "Chronic health conditions",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "Incarceration",
+            "VariableTwoName": "Mortality",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "Incarceration",
+            "VariableTwoName": "Family health outcomes",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "Incarceration",
+            "VariableTwoName": "Population health",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "Incarceration",
+            "VariableTwoName": "Chronic health conditions",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "Incarceration",
+            "VariableTwoName": "Mortality",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "Incarceration",
+            "VariableTwoName": "Stress-related illness",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "Incarceration",
+            "VariableTwoName": "Infectious diseases",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "Incarceration",
+            "VariableTwoName": "Family health outcomes",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "Incarceration",
+            "VariableTwoName": "Chronic health conditions",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "Incarceration",
+            "VariableTwoName": "Mortality",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "Incarceration",
+            "VariableTwoName": "Stress-related illness",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "Incarceration",
+            "VariableTwoName": "Infectious diseases",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "Incarceration",
+            "VariableTwoName": "Family health outcomes",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "Incarceration",
+            "VariableTwoName": "Mortality",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "Incarceration",
+            "VariableTwoName": "Chronic Health Conditions",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "Incarceration",
+            "VariableTwoName": "Family Health",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "Incarceration",
+            "VariableTwoName": "Mortality",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "Incarceration",
+            "VariableTwoName": "Chronic Health Conditions",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "Incarceration",
+            "VariableTwoName": "Family Health",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "Incarceration",
+            "VariableTwoName": "Chronic health conditions",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "Incarceration",
+            "VariableTwoName": "Mortality",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "Incarceration",
+            "VariableTwoName": "Stress-related illness",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "Incarceration",
+            "VariableTwoName": "Chronic health conditions",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "Incarceration",
+            "VariableTwoName": "Mortality",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "Incarceration",
+            "VariableTwoName": "Stress-related illness",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "AI/AN status",
+            "VariableTwoName": "Substance-related mortality",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "AI/AN adolescents",
+            "VariableTwoName": "Substance use initiation and rates",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "AI/AN adults who drink",
+            "VariableTwoName": "Heavy, episodic drinking patterns",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "AI/AN communities",
+            "VariableTwoName": "Substance availability, trauma exposure, family and peer networks, historical trauma",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "AI/AN status",
+            "VariableTwoName": "Substance-related mortality",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "AI/AN adolescents",
+            "VariableTwoName": "Substance use initiation and rates",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "AI/AN adults who drink",
+            "VariableTwoName": "Heavy, episodic drinking patterns",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "AI/AN communities",
+            "VariableTwoName": "Substance availability, trauma exposure, family and peer networks, historical trauma",
+            "RelationshipClassification": "direct"
+        }
+    ]
+}

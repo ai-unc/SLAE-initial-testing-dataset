@@ -1,4 +1,4 @@
-import os, sys, json
+import sys, json
 
 # Get the path to the output directory
 path = sys.path[0][:-15] + "outputs\\"
@@ -29,6 +29,9 @@ vars = []
 connections = []
 elementList = []
 connectionList = []
+tags = {
+
+}
 
 # Process each JSON object in the list
 for jsn in jsons:
@@ -46,20 +49,39 @@ for jsn in jsons:
         
         connections.append([variable_one, variable_two, relationType])
 
+        if variable_one not in tags:
+            tags[variable_one] = [[variable_two, relation["SupportingText"]]]
+        elif [variable_two, relation["SupportingText"]] not in tags[variable_one]:
+            tags[variable_one].append([variable_two, relation["SupportingText"]])
+
 # Create the element list for the output JSON
 for var in vars:
-    entry = {
-        "label": var,
-        "type": "variable"
-    }
+
+    if var in tags:
+        entry = {
+            "label": var,
+            "type": "variable",
+            "tags": tags[var]
+        }
+    else:
+        entry = {
+            "label": var,
+            "type": "variable",
+            "tags": []
+        }
     elementList.append(entry)
     
 # Create the connection list for the output JSON
+
 for connection in connections:
+    if connection[2] == "direct" or connection[2] == "Direct":
+        connection[2] = "directed"
+    else:
+        connection[2] = "mutual"
     entry = {
         "from": connection[0],
         "to": connection[1],
-        "type": connection[2]
+        "direction": connection[2]
     }
     connectionList.append(entry)
 
