@@ -115,4 +115,4 @@ else:
     with open("evaluation_outputs/captured_relations_results/results.txt", "w") as f:
         f.write(f"New single file evaluation")
     INPUT_FILE_PATH = pathlib.Path("evaluation_datasets/multi_relation_dataset/test_paper_2.json")
-    evaluate_one_paper(INPUT_FILE_PATH, settings_path=SETTINGS_PATH, verbose=True, debug_path=DEBUG_PATH)
+    result = evaluate_one_paper(INPUT_FILE_PATH, settings_path=SETTINGS_PATH, verbose=True, debug_path=DEBUG_PATH)

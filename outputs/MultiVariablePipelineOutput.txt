@@ -508,3 +508,2732 @@ successful parse MULTIRELATION: {
     }
   ]
 }
+pre parse: {
+  "Relations": [
+    {
+      "VariableOneName": "Cognitive distraction",
+      "VariableTwoName": "Rumination",
+      "RelationshipClassification": "inverse",
+      "IsCausal": "False",
+      "SupportingText": "Interestingly, although cognitive distraction reduced sadness, it also triggered RSA withdrawal. Moreover, cognitive distraction was associated with greater RSA withdrawal for MDDs than CTLs."
+    },
+    {
+      "VariableOneName": "Forced-failure stress",
+      "VariableTwoName": "Sadness",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Sadness reactivity to the forced_failure stressor was calculated as sadness rated during the forced_failure induction minus sadness at baseline."
+    },
+    {
+      "VariableOneName": "Rumination",
+      "VariableTwoName": "Sadness",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "As expected, rumination increased sadness for both MDDs and CTLs."
+    },
+    {
+      "VariableOneName": "Forced-failure stress",
+      "VariableTwoName": "RSA withdrawal",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "We observed a significant RSA withdrawal in response to the forced_failure stressor."
+    },
+    {
+      "VariableOneName": "Rumination Induction",
+      "VariableTwoName": "RSA withdrawal",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Results demonstrate that the effect of rumination on RSA withdrawal did not significantly differ between the MDD and CTL groups."
+    },
+    {
+      "VariableOneName": "Induced distraction",
+      "VariableTwoName": "RSA withdrawal",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Results demonstrate that distraction leads to greater parasympathetic withdrawal, indexed via RSA withdrawal."
+    },
+    {
+      "VariableOneName": "Forced-failure stress",
+      "VariableTwoName": "RSA withdrawal",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "RSA withdrawal during rumination is in line with numerous studies reporting that both anger and depressive rumination is associated with less parasympathetic activation."
+    },
+    {
+      "VariableOneName": "MDD",
+      "VariableTwoName": "Cardiovascular disease",
+      "RelationshipClassification": "Not applicable",
+      "IsCausal": "False",
+      "SupportingText": "The study did not directly assess cardiovascular disease but focused on the effects of different emotion regulation strategies on RSA in MDD."
+    }
+  ]
+}
+pre parse: [
+    {
+        "VariableOneName": "AI/AN status",
+        "VariableTwoName": "Substance-related mortality",
+        "RelationshipClassification": "direct",
+        "IsCausal": "False",
+        "SupportingText": "AI/AN status correlates with elevated rates of substance-related mortality, with alcohol-related deaths, chronic liver disease, and drug-related issues being notably higher."
+    },
+    {
+        "VariableOneName": "AI/AN adolescents",
+        "VariableTwoName": "Substance use initiation",
+        "RelationshipClassification": "direct",
+        "IsCausal": "False",
+        "SupportingText": "AI/AN adolescents exhibit earlier initiation and higher rates of substance use, particularly among those living on reservations or who have dropped out of school."
+    },
+    {
+        "VariableOneName": "AI/AN adults who drink",
+        "VariableTwoName": "Heavy, episodic drinking patterns",
+        "RelationshipClassification": "direct",
+        "IsCausal": "False",
+        "SupportingText": "AI/AN adults who drink tend to engage in heavy, episodic drinking patterns."
+    },
+    {
+        "VariableOneName": "AI/AN communities",
+        "VariableTwoName": "Substance availability",
+        "RelationshipClassification": "direct",
+        "IsCausal": "False",
+        "SupportingText": "Correlations are also observed between AI/AN communities and substance availability, trauma exposure, family and peer networks, and historical trauma, all of which impact substance use patterns and disparities within these communities."
+    }
+]
+pre parse: {
+    "Relations": [
+        {
+            "VariableOneName": "Cognitive distraction",
+            "VariableTwoName": "Rumination",
+            "RelationshipClassification": "independent",
+            "IsCausal": "False",
+            "SupportingText": "Results demonstrate that distraction leads to greater parasympathetic withdrawal, indexed via RSA withdrawal, for MDDs than CTLs, which may reflect that depressed individuals require additional effort to disengage from negative material."
+        },
+        {
+            "VariableOneName": "Forced-failure stress",
+            "VariableTwoName": "Sadness",
+            "RelationshipClassification": "direct",
+            "IsCausal": "False",
+            "SupportingText": "As expected, compared to CTLs, the MDD group reported greater sadness reactivity to the forced_failure stressor."
+        },
+        {
+            "VariableOneName": "Rumination",
+            "VariableTwoName": "Sadness",
+            "RelationshipClassification": "direct",
+            "IsCausal": "False",
+            "SupportingText": "Rumination increased sadness for both MDDs and CTLs."
+        },
+        {
+            "VariableOneName": "Forced-failure stress",
+            "VariableTwoName": "RSA withdrawal",
+            "RelationshipClassification": "direct",
+            "IsCausal": "False",
+            "SupportingText": "We observed a significant RSA withdrawal in response to the forced_failure stressor."
+        },
+        {
+            "VariableOneName": "Rumination Induction",
+            "VariableTwoName": "RSA withdrawal",
+            "RelationshipClassification": "direct",
+            "IsCausal": "False",
+            "SupportingText": "RSA withdrawal during rumination did not significantly differ between CTLs and MDDs."
+        },
+        {
+            "VariableOneName": "Induced distraction",
+            "VariableTwoName": "RSA withdrawal",
+            "RelationshipClassification": "direct",
+            "IsCausal": "False",
+            "SupportingText": "RSA withdrawal during cognitive distraction was significantly greater for MDDs than CTLs."
+        },
+        {
+            "VariableOneName": "Forced-failure stress",
+            "VariableTwoName": "RSA withdrawal",
+            "RelationshipClassification": "direct",
+            "IsCausal": "False",
+            "SupportingText": "RSA withdrawal during cognitive distraction was even greater for MDDs than CTLs."
+        },
+        {
+            "VariableOneName": "MDD",
+            "VariableTwoName": "Cardiovascular disease",
+            "RelationshipClassification": "independent",
+            "IsCausal": "False",
+            "SupportingText": "Results from our study suggest that depressed individuals may be at heightened risk for cardiovascular disease not because rumination has a greater effect on RSA in MDDs than in CTLs, but because MDDs spend more time using an emotion regulation strategy that is associated with parasympathetic withdrawal."
+        }
+    ]
+}
+pre parse: {
+    "Relations": [
+        {
+            "VariableOneName": "AI/AN status",
+            "VariableTwoName": "Substance-related mortality",
+            "RelationshipClassification": "direct",
+            "IsCausal": "False",
+            "SupportingText": "AI/AN status correlates with elevated rates of substance-related mortality, with alcohol-related deaths, chronic liver disease, and drug-related issues being notably higher."
+        },
+        {
+            "VariableOneName": "AI/AN adolescents",
+            "VariableTwoName": "Substance use initiation",
+            "RelationshipClassification": "direct",
+            "IsCausal": "False",
+            "SupportingText": "AI/AN adolescents exhibit earlier initiation and higher rates of substance use, particularly among those living on reservations or who have dropped out of school."
+        },
+        {
+            "VariableOneName": "AI/AN adults who drink",
+            "VariableTwoName": "Heavy, episodic drinking patterns",
+            "RelationshipClassification": "direct",
+            "IsCausal": "False",
+            "SupportingText": "AI/AN adults who drink tend to engage in heavy, episodic drinking patterns."
+        },
+        {
+            "VariableOneName": "AI/AN communities",
+            "VariableTwoName": "Substance availability",
+            "RelationshipClassification": "direct",
+            "IsCausal": "False",
+            "SupportingText": "Correlations are also observed between AI/AN communities and substance availability, trauma exposure, family and peer networks, and historical trauma, all of which impact substance use patterns and disparities within these communities."
+        }
+    ]
+}
+pre parse: {
+  "Relations": [
+    {
+      "VariableOneName": "Cognitive distraction",
+      "VariableTwoName": "Rumination",
+      "RelationshipClassification": "inverse",
+      "IsCausal": "False",
+      "SupportingText": "Interestingly, although cognitive distraction reduced sadness, it also triggered RSA withdrawal. Moreover, cognitive distraction was associated with greater RSA withdrawal for MDDs than CTLs. Thus, cognitive distraction may be associated with greater cognitive effort."
+    },
+    {
+      "VariableOneName": "Forced-failure stress",
+      "VariableTwoName": "Sadness",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "As expected, compared to CTLs, the MDD group reported greater sadness reactivity to the forced_failure stressor."
+    },
+    {
+      "VariableOneName": "Rumination",
+      "VariableTwoName": "Sadness",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Rumination increased sadness for both MDDs and CTLs."
+    },
+    {
+      "VariableOneName": "Forced-failure stress",
+      "VariableTwoName": "RSA withdrawal",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "There was a significant RSA withdrawal in response to the forced_failure stressor."
+    },
+    {
+      "VariableOneName": "Rumination Induction",
+      "VariableTwoName": "RSA withdrawal",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Rumination increased sadness and triggered RSA withdrawal for both MDDs and CTLs."
+    },
+    {
+      "VariableOneName": "Induced distraction",
+      "VariableTwoName": "RSA withdrawal",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Cognitive distraction was associated with greater RSA withdrawal for MDDs than CTLs."
+    },
+    {
+      "VariableOneName": "Forced-failure stress",
+      "VariableTwoName": "RSA withdrawal",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Results demonstrate that the effect of rumination on RSA withdrawal did not significantly differ between the MDD and CTL groups."
+    },
+    {
+      "VariableOneName": "MDD",
+      "VariableTwoName": "Cardiovascular disease",
+      "RelationshipClassification": "Not applicable",
+      "IsCausal": "False",
+      "SupportingText": "The study did not directly assess the relationship between MDD and cardiovascular disease, therefore the relationship classification is not applicable."
+    }
+  ]
+}
+pre parse: {
+  "Relations": [
+    {
+      "VariableOneName": "AI/AN status",
+      "VariableTwoName": "Substance-related mortality",
+      "RelationshipClassification": "direct",
+      "IsCausal": "True",
+      "SupportingText": "AI/AN status correlates with elevated rates of substance-related mortality, with alcohol-related deaths, chronic liver disease, and drug-related issues being notably higher."
+    },
+    {
+      "VariableOneName": "AI/AN status",
+      "VariableTwoName": "Alcohol-related deaths",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "AI/AN status correlates with elevated rates of substance-related mortality, with alcohol-related deaths, chronic liver disease, and drug-related issues being notably higher."
+    },
+    {
+      "VariableOneName": "AI/AN status",
+      "VariableTwoName": "Chronic liver disease",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "AI/AN status correlates with elevated rates of substance-related mortality, with alcohol-related deaths, chronic liver disease, and drug-related issues being notably higher."
+    },
+    {
+      "VariableOneName": "AI/AN status",
+      "VariableTwoName": "Drug-related issues",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "AI/AN status correlates with elevated rates of substance-related mortality, with alcohol-related deaths, chronic liver disease, and drug-related issues being notably higher."
+    },
+    {
+      "VariableOneName": "AI/AN adolescents",
+      "VariableTwoName": "Substance use initiation",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "AI/AN adolescents exhibit earlier initiation and higher rates of substance use, particularly among those living on reservations or who have dropped out of school."
+    },
+    {
+      "VariableOneName": "AI/AN adolescents",
+      "VariableTwoName": "Substance use rates",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "AI/AN adolescents exhibit earlier initiation and higher rates of substance use, particularly among those living on reservations or who have dropped out of school."
+    },
+    {
+      "VariableOneName": "AI/AN adolescents",
+      "VariableTwoName": "Living on reservations",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "AI/AN adolescents exhibit earlier initiation and higher rates of substance use, particularly among those living on reservations or who have dropped out of school."
+    },
+    {
+      "VariableOneName": "AI/AN adolescents",
+      "VariableTwoName": "Dropped out of school",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "AI/AN adolescents exhibit earlier initiation and higher rates of substance use, particularly among those living on reservations or who have dropped out of school."
+    },
+    {
+      "VariableOneName": "AI/AN adults who drink",
+      "VariableTwoName": "Heavy, episodic drinking patterns",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "AI/AN adults who drink tend to engage in heavy, episodic drinking patterns."
+    },
+    {
+      "VariableOneName": "AI/AN communities",
+      "VariableTwoName": "Substance availability",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Correlations are also observed between AI/AN communities and substance availability, trauma exposure, family and peer networks, and historical trauma, all of which impact substance use patterns and disparities within these communities."
+    },
+    {
+      "VariableOneName": "AI/AN communities",
+      "VariableTwoName": "Trauma exposure",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Correlations are also observed between AI/AN communities and substance availability, trauma exposure, family and peer networks, and historical trauma, all of which impact substance use patterns and disparities within these communities."
+    },
+    {
+      "VariableOneName": "AI/AN communities",
+      "VariableTwoName": "Family and peer networks",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Correlations are also observed between AI/AN communities and substance availability, trauma exposure, family and peer networks, and historical trauma, all of which impact substance use patterns and disparities within these communities."
+    },
+    {
+      "VariableOneName": "AI/AN communities",
+      "VariableTwoName": "Historical trauma",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Correlations are also observed between AI/AN communities and substance availability, trauma exposure, family and peer networks, and historical trauma, all of which impact substance use patterns and disparities within these communities."
+    }
+  ]
+}
+pre parse: {
+  "Relations": [
+    {
+      "VariableOneName": "IPV",
+      "VariableTwoName": "AEP",
+      "RelationshipClassification": "direct",
+      "IsCausal": "True",
+      "SupportingText": "IPV related to higher odds of AEP, alongside higher alcohol use and lower birth control use."
+    },
+    {
+      "VariableOneName": "Adolescent alcohol use",
+      "VariableTwoName": "AEP",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Adolescent drinking overall increased higher odds of AEP compared to either non-pregnancy or nAEP outcomes in adulthood."
+    },
+    {
+      "VariableOneName": "Between-person birth control use",
+      "VariableTwoName": "AEP",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Individuals who used birth control more consistently over the 5-year period compared to other individuals decreased odds of AEP."
+    },
+    {
+      "VariableOneName": "IPV",
+      "VariableTwoName": "Contraceptive use",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "IPV related to lower birth control use."
+    },
+    {
+      "VariableOneName": "Birth control within a relationship",
+      "VariableTwoName": "AEP",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Using birth control consistently within a relationship, compared to other relationships, did not significantly increase the odds of AEP."
+    },
+    {
+      "VariableOneName": "Consistent birth control use over a 5-year period or more",
+      "VariableTwoName": "AEP",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Individuals who reported using birth control more consistently over the 5-year period compared to other individuals decreased the odds of AEP."
+    },
+    {
+      "VariableOneName": "IPV",
+      "VariableTwoName": "Birth control",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "IPV related to lower birth control use."
+    }
+  ]
+}
+pre parse: {
+  "Relations": [
+    {
+      "VariableOneName": "Cognitive distraction",
+      "VariableTwoName": "Rumination",
+      "RelationshipClassification": "independent",
+      "IsCausal": "False",
+      "SupportingText": "Our results demonstrate that distraction leads to greater parasympathetic withdrawal, indexed via RSA withdrawal, for MDDs than CTLs, which may reflect that depressed individuals require additional effort to disengage from negative material."
+    },
+    {
+      "VariableOneName": "Forced-failure stress",
+      "VariableTwoName": "Sadness",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "As expected, compared to CTLs, the MDD group reported greater sadness reactivity to the forced_failure stressor."
+    },
+    {
+      "VariableOneName": "Rumination",
+      "VariableTwoName": "Sadness",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Results demonstrate that the effect of rumination on sadness did not significantly differ between the MDD and CTL groups."
+    },
+    {
+      "VariableOneName": "Forced-failure stress",
+      "VariableTwoName": "RSA withdrawal",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "We observed a significant RSA withdrawal in response to the forced_failure stressor."
+    },
+    {
+      "VariableOneName": "Rumination Induction",
+      "VariableTwoName": "RSA withdrawal",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Results demonstrate that the effect of rumination on RSA did not significantly differ between the MDD and CTL groups."
+    },
+    {
+      "VariableOneName": "Induced distraction",
+      "VariableTwoName": "RSA withdrawal",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "We observed greater RSA withdrawal during cognitive distraction in the MDD versus CTL group."
+    },
+    {
+      "VariableOneName": "Forced-failure stress",
+      "VariableTwoName": "RSA withdrawal",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Results demonstrate that the effect of rumination on RSA did not significantly differ between the MDD and CTL groups."
+    },
+    {
+      "VariableOneName": "MDD",
+      "VariableTwoName": "Cardiovascular disease",
+      "RelationshipClassification": "independent",
+      "IsCausal": "False",
+      "SupportingText": "Results from our study suggest that depressed individuals may be at heightened risk for cardiovascular disease not because rumination has a greater effect on RSA in MDDs than in CTLs, but because MDDs spend more time using an emotion regulation strategy that is associated with parasympathetic withdrawal."
+    }
+  ]
+}
+pre parse: {
+  "Relations": [
+    {
+      "VariableOneName": "AI/AN status",
+      "VariableTwoName": "Substance-related mortality",
+      "RelationshipClassification": "direct",
+      "IsCausal": "True",
+      "SupportingText": "AI/AN status correlates with elevated rates of substance-related mortality."
+    },
+    {
+      "VariableOneName": "AI/AN status",
+      "VariableTwoName": "Alcohol-related deaths",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "AI/AN status correlates with elevated rates of alcohol-related deaths."
+    },
+    {
+      "VariableOneName": "AI/AN status",
+      "VariableTwoName": "Chronic liver disease",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "AI/AN status correlates with elevated rates of chronic liver disease."
+    },
+    {
+      "VariableOneName": "AI/AN status",
+      "VariableTwoName": "Drug-related issues",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "AI/AN status correlates with elevated rates of drug-related issues."
+    },
+    {
+      "VariableOneName": "AI/AN adolescents",
+      "VariableTwoName": "Substance use initiation",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "AI/AN adolescents exhibit earlier initiation of substance use."
+    },
+    {
+      "VariableOneName": "AI/AN adolescents",
+      "VariableTwoName": "Substance use rates",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "AI/AN adolescents exhibit higher rates of substance use."
+    },
+    {
+      "VariableOneName": "AI/AN adolescents",
+      "VariableTwoName": "Living on reservations",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Substance use rates are particularly high among AI/AN adolescents living on reservations."
+    },
+    {
+      "VariableOneName": "AI/AN adolescents",
+      "VariableTwoName": "Dropped out of school",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Substance use rates are particularly high among AI/AN adolescents who have dropped out of school."
+    },
+    {
+      "VariableOneName": "AI/AN adults who drink",
+      "VariableTwoName": "Heavy, episodic drinking patterns",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "AI/AN adults who drink tend to engage in heavy, episodic drinking patterns."
+    },
+    {
+      "VariableOneName": "AI/AN communities",
+      "VariableTwoName": "Substance availability",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "There is a correlation between AI/AN communities and substance availability."
+    },
+    {
+      "VariableOneName": "AI/AN communities",
+      "VariableTwoName": "Trauma exposure",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "There is a correlation between AI/AN communities and trauma exposure."
+    },
+    {
+      "VariableOneName": "AI/AN communities",
+      "VariableTwoName": "Family and peer networks",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "There is a correlation between AI/AN communities and family and peer networks."
+    },
+    {
+      "VariableOneName": "AI/AN communities",
+      "VariableTwoName": "Historical trauma",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "There is a correlation between AI/AN communities and historical trauma."
+    }
+  ]
+}
+pre parse: {
+  "Relations": [
+    {
+      "VariableOneName": "IPV",
+      "VariableTwoName": "AEP",
+      "RelationshipClassification": "direct",
+      "IsCausal": "True",
+      "SupportingText": "IPV related to higher odds of AEP, alongside higher alcohol use and lower birth control use."
+    },
+    {
+      "VariableOneName": "Adolescent alcohol use",
+      "VariableTwoName": "AEP",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Alcohol use in adolescence increased odds of AEP. Individuals who reported past-year infrequent drinking in adolescence, compared to those who reported abstention or no past year drinking, increased odds of overall AEP compared to nAEP in adulthood by 175%. Those who reported heavy or moderate past-year drinking in adolescence, compared to those who reported abstention or no past year drinking, increased odds of AEP in adulthood by 176% (compared to no-pregnancy) or 195% (compared to nAEP)."
+    },
+    {
+      "VariableOneName": "Between-person birth control use",
+      "VariableTwoName": "AEP",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Individuals who used birth control more consistently over the 5-year period compared to other individuals decreased odds of AEP by 66% (compared to non-pregnancy) and 62% (compared to nAEP)."
+    },
+    {
+      "VariableOneName": "IPV",
+      "VariableTwoName": "Contraceptive use",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "IPV related to lower levels of contraceptive use."
+    },
+    {
+      "VariableOneName": "Birth control within a relationship",
+      "VariableTwoName": "AEP",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Using birth control consistently within a relationship, compared to other relationships, did not significantly increase the odds of AEP compared to non-pregnancy or nAEP outcomes."
+    },
+    {
+      "VariableOneName": "Consistent birth control use over a 5-year period or more",
+      "VariableTwoName": "AEP",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Individuals who used birth control more consistently over the 5-year period compared to other individuals decreased odds of AEP by 66% (compared to non-pregnancy) and 62% (compared to nAEP)."
+    },
+    {
+      "VariableOneName": "IPV",
+      "VariableTwoName": "Birth control",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "IPV related to lower birth control use."
+    }
+  ]
+}
+pre parse: {
+  "Relations": [
+    {
+      "VariableOneName": "Cognitive distraction",
+      "VariableTwoName": "Rumination",
+      "RelationshipClassification": "independent",
+      "IsCausal": "False",
+      "SupportingText": "Our results demonstrate that distraction leads to greater parasympathetic withdrawal, indexed via RSA withdrawal, for MDDs than CTLs, which may reflect that depressed individuals require additional effort to disengage from negative material."
+    },
+    {
+      "VariableOneName": "Forced-failure stress",
+      "VariableTwoName": "Sadness",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "As expected, compared to CTLs, the MDD group reported greater sadness reactivity to the forced_failure stressor."
+    },
+    {
+      "VariableOneName": "Rumination",
+      "VariableTwoName": "Sadness",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Rumination increased sadness for both MDDs and CTLs."
+    },
+    {
+      "VariableOneName": "Forced-failure stress",
+      "VariableTwoName": "RSA withdrawal",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "We observed a significant RSA withdrawal in response to the forced_failure stressor."
+    },
+    {
+      "VariableOneName": "Rumination Induction",
+      "VariableTwoName": "RSAwithdrawal",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Rumination increased RSA withdrawal for both MDDs and CTLs."
+    },
+    {
+      "VariableOneName": "Induced distraction",
+      "VariableTwoName": "RSAwithdrawal",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Cognitive distraction was associated with greater RSA withdrawal for MDDs than CTLs."
+    },
+    {
+      "VariableOneName": "Forced-failure stress",
+      "VariableTwoName": "RSAwithdrawal",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "There was a significant RSA withdrawal in response to the forced_failure stressor."
+    },
+    {
+      "VariableOneName": "MDD",
+      "VariableTwoName": "Cardiovascular disease",
+      "RelationshipClassification": "Not applicable",
+      "IsCausal": "False",
+      "SupportingText": "Results from our study suggest that depressed individuals may be at heightened risk for cardiovascular disease not because rumination has a greater effect on RSA in MDDs than in CTLs, but because MDDs spend more time using an emotion regulation strategy that is associated with parasympathetic withdrawal."
+    }
+  ]
+}
+pre parse: {
+  "Relations": [
+    {
+      "VariableOneName": "AI/AN status",
+      "VariableTwoName": "Substance-related mortality",
+      "RelationshipClassification": "direct",
+      "IsCausal": "True",
+      "SupportingText": "AI/AN status correlates with elevated rates of substance-related mortality, with alcohol-related deaths, chronic liver disease, and drug-related issues being notably higher."
+    },
+    {
+      "VariableOneName": "AI/AN status",
+      "VariableTwoName": "Alcohol-related deaths",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "AI/AN status correlates with elevated rates of substance-related mortality, with alcohol-related deaths, chronic liver disease, and drug-related issues being notably higher."
+    },
+    {
+      "VariableOneName": "AI/AN status",
+      "VariableTwoName": "Chronic liver disease",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "AI/AN status correlates with elevated rates of substance-related mortality, with alcohol-related deaths, chronic liver disease, and drug-related issues being notably higher."
+    },
+    {
+      "VariableOneName": "AI/AN status",
+      "VariableTwoName": "Drug-related issues",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "AI/AN status correlates with elevated rates of substance-related mortality, with alcohol-related deaths, chronic liver disease, and drug-related issues being notably higher."
+    },
+    {
+      "VariableOneName": "AI/AN adolescents",
+      "VariableTwoName": "Substance use initiation",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "AI/AN adolescents exhibit earlier initiation and higher rates of substance use, particularly among those living on reservations or who have dropped out of school."
+    },
+    {
+      "VariableOneName": "AI/AN adolescents",
+      "VariableTwoName": "Substance use rates",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "AI/AN adolescents exhibit earlier initiation and higher rates of substance use, particularly among those living on reservations or who have dropped out of school."
+    },
+    {
+      "VariableOneName": "AI/AN adolescents",
+      "VariableTwoName": "Living on reservations",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "AI/AN adolescents exhibit earlier initiation and higher rates of substance use, particularly among those living on reservations or who have dropped out of school."
+    },
+    {
+      "VariableOneName": "AI/AN adolescents",
+      "VariableTwoName": "Dropped out of school",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "AI/AN adolescents exhibit earlier initiation and higher rates of substance use, particularly among those living on reservations or who have dropped out of school."
+    },
+    {
+      "VariableOneName": "AI/AN adults who drink",
+      "VariableTwoName": "Heavy, episodic drinking patterns",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "AI/AN adults who drink tend to engage in heavy, episodic drinking patterns."
+    },
+    {
+      "VariableOneName": "AI/AN communities",
+      "VariableTwoName": "Substance availability",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Correlations are also observed between AI/AN communities and substance availability, trauma exposure, family and peer networks, and historical trauma, all of which impact substance use patterns and disparities within these communities."
+    },
+    {
+      "VariableOneName": "AI/AN communities",
+      "VariableTwoName": "Trauma exposure",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Correlations are also observed between AI/AN communities and substance availability, trauma exposure, family and peer networks, and historical trauma, all of which impact substance use patterns and disparities within these communities."
+    },
+    {
+      "VariableOneName": "AI/AN communities",
+      "VariableTwoName": "Family and peer networks",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Correlations are also observed between AI/AN communities and substance availability, trauma exposure, family and peer networks, and historical trauma, all of which impact substance use patterns and disparities within these communities."
+    },
+    {
+      "VariableOneName": "AI/AN communities",
+      "VariableTwoName": "Historical trauma",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Correlations are also observed between AI/AN communities and substance availability, trauma exposure, family and peer networks, and historical trauma, all of which impact substance use patterns and disparities within these communities."
+    }
+  ]
+}
+pre parse: {
+  "Relations": [
+    {
+      "VariableOneName": "IPV",
+      "VariableTwoName": "AEP",
+      "RelationshipClassification": "direct",
+      "IsCausal": "True",
+      "SupportingText": "IPV related to higher odds of AEP, alongside higher alcohol use and lower birth control use."
+    },
+    {
+      "VariableOneName": "Adolescent alcohol use",
+      "VariableTwoName": "AEP",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Adolescent drinking overall increased higher odds of AEP compared to either non-pregnancy or nAEP outcomes in adulthood."
+    },
+    {
+      "VariableOneName": "Between-person birth control use",
+      "VariableTwoName": "AEP",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Individuals who used birth control more consistently over the 5-year period compared to other individuals decreased odds of AEP by 66% (compared to non-pregnancy) and 62% (compared to nAEP)."
+    },
+    {
+      "VariableOneName": "IPV",
+      "VariableTwoName": "Contraceptive use",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "IPV related to lower birth control use."
+    },
+    {
+      "VariableOneName": "Birth control within a relationship",
+      "VariableTwoName": "AEP",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Using birth control consistently within a relationship, compared to other relationships, did not significantly increase the odds of AEP compared to non-pregnancy or nAEP outcomes."
+    },
+    {
+      "VariableOneName": "Consistent birth control use over a 5-year period or more",
+      "VariableTwoName": "AEP",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Individuals who used birth control more consistently over the 5-year period compared to other individuals decreased odds of AEP by 66% (compared to non-pregnancy) and 62% (compared to nAEP)."
+    },
+    {
+      "VariableOneName": "IPV",
+      "VariableTwoName": "Birth control",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "IPV related to lower birth control use."
+    }
+  ]
+}
+pre parse: {
+  "Relations": [
+    {
+      "VariableOneName": "Cognitive distraction",
+      "VariableTwoName": "Rumination",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "As expected, rumination increased sadness and triggered RSA withdrawal for both MDDs and CTLs. Interestingly, although cognitive distraction reduced sadness, it also triggered RSA withdrawal."
+    },
+    {
+      "VariableOneName": "Forced-failure stress",
+      "VariableTwoName": "Sadness",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Sadness reactivity to the forced_failure stressor was calculated as sadness rated during the forced_failure induction minus sadness at baseline."
+    },
+    {
+      "VariableOneName": "Rumination",
+      "VariableTwoName": "Sadness",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Results demonstrate that the effect of rumination on RSA did not significantly differ between the MDD and CTL groups."
+    },
+    {
+      "VariableOneName": "Forced-failure stress",
+      "VariableTwoName": "RSA withdrawal",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Results demonstrate that the effect of rumination on RSA did not significantly differ between the MDD and CTL groups."
+    },
+    {
+      "VariableOneName": "Rumination Induction",
+      "VariableTwoName": "RSAwithdrawal",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Results demonstrate that the effect of rumination on RSA did not significantly differ between the MDD and CTL groups."
+    },
+    {
+      "VariableOneName": "Induced distraction",
+      "VariableTwoName": "RSAwithdrawal",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Results demonstrate that the effect of rumination on RSA did not significantly differ between the MDD and CTL groups."
+    },
+    {
+      "VariableOneName": "Forced-failure stress",
+      "VariableTwoName": "RSAwithdrawal",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Results demonstrate that the effect of rumination on RSA did not significantly differ between the MDD and CTL groups."
+    },
+    {
+      "VariableOneName": "MDD",
+      "VariableTwoName": "Cardiovascular disease",
+      "RelationshipClassification": "Not applicable",
+      "IsCausal": "False",
+      "SupportingText": "Results demonstrate that the effect of rumination on RSA did not significantly differ between the MDD and CTL groups."
+    }
+  ]
+}
+pre parse: {
+  "Relations": [
+    {
+      "VariableOneName": "AI/AN status",
+      "VariableTwoName": "Substance-related mortality",
+      "RelationshipClassification": "direct",
+      "IsCausal": "True",
+      "SupportingText": "AI/AN status correlates with elevated rates of substance-related mortality."
+    },
+    {
+      "VariableOneName": "AI/AN status",
+      "VariableTwoName": "Alcohol-related deaths",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "AI/AN status correlates with elevated rates of alcohol-related deaths."
+    },
+    {
+      "VariableOneName": "AI/AN status",
+      "VariableTwoName": "Chronic liver disease",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "AI/AN status correlates with elevated rates of chronic liver disease."
+    },
+    {
+      "VariableOneName": "AI/AN status",
+      "VariableTwoName": "Drug-related issues",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "AI/AN status correlates with elevated rates of drug-related issues."
+    },
+    {
+      "VariableOneName": "AI/AN adolescents",
+      "VariableTwoName": "Substance use initiation",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "AI/AN adolescents exhibit earlier initiation of substance use."
+    },
+    {
+      "VariableOneName": "AI/AN adolescents",
+      "VariableTwoName": "Substance use rates",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "AI/AN adolescents exhibit higher rates of substance use."
+    },
+    {
+      "VariableOneName": "AI/AN adolescents",
+      "VariableTwoName": "Living on reservations",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Substance use rates are particularly high among AI/AN adolescents living on reservations."
+    },
+    {
+      "VariableOneName": "AI/AN adolescents",
+      "VariableTwoName": "Dropped out of school",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Substance use rates are particularly high among AI/AN adolescents who have dropped out of school."
+    },
+    {
+      "VariableOneName": "AI/AN adults who drink",
+      "VariableTwoName": "Heavy, episodic drinking patterns",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "AI/AN adults who drink tend to engage in heavy, episodic drinking patterns."
+    },
+    {
+      "VariableOneName": "AI/AN communities",
+      "VariableTwoName": "Substance availability",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "There are correlations between AI/AN communities and substance availability."
+    },
+    {
+      "VariableOneName": "AI/AN communities",
+      "VariableTwoName": "Trauma exposure",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "There are correlations between AI/AN communities and trauma exposure."
+    },
+    {
+      "VariableOneName": "AI/AN communities",
+      "VariableTwoName": "Family and peer networks",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "There are correlations between AI/AN communities and family and peer networks."
+    },
+    {
+      "VariableOneName": "AI/AN communities",
+      "VariableTwoName": "Historical trauma",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "There are correlations between AI/AN communities and historical trauma."
+    }
+  ]
+}
+pre parse: {
+  "Relations": [
+    {
+      "VariableOneName": "IPV",
+      "VariableTwoName": "AEP",
+      "RelationshipClassification": "direct",
+      "IsCausal": "True",
+      "SupportingText": "IPV related to higher odds of AEP, alongside higher alcohol use and lower birth control use."
+    },
+    {
+      "VariableOneName": "Adolescent alcohol use",
+      "VariableTwoName": "AEP",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Adolescent drinking overall increased higher odds of AEP compared to either non-pregnancy or nAEP outcomes in adulthood."
+    },
+    {
+      "VariableOneName": "Between-person birth control use",
+      "VariableTwoName": "AEP",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Individuals who used birth control more consistently over the 5-year period compared to other individuals decreased odds of AEP by 66% (compared to non-pregnancy) and 62% (compared to nAEP)."
+    },
+    {
+      "VariableOneName": "IPV",
+      "VariableTwoName": "Contraceptive use",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "IPV related to lower levels of contraceptive use."
+    },
+    {
+      "VariableOneName": "Birth control within a relationship",
+      "VariableTwoName": "AEP",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Using birth control consistently within a relationship, compared to other relationships, did not significantly increase the odds of AEP compared to non-pregnancy or nAEP outcomes."
+    },
+    {
+      "VariableOneName": "Consistent birth control use over a 5-year period or more",
+      "VariableTwoName": "AEP",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Individuals who used birth control more consistently over the 5-year period compared to other individuals decreased odds of AEP by 66% (compared to non-pregnancy) and 62% (compared to nAEP)."
+    },
+    {
+      "VariableOneName": "IPV",
+      "VariableTwoName": "Birth control",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "IPV related to lower levels of contraceptive use."
+    }
+  ]
+}
+pre parse: {
+  "Relations": [
+    {
+      "VariableOneName": "Cognitive distraction",
+      "VariableTwoName": "Rumination",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Interestingly, although cognitive distraction reduced sadness, it also triggered RSA withdrawal. Moreover, cognitive distraction was associated with greater RSA withdrawal for MDDs than CTLs."
+    },
+    {
+      "VariableOneName": "Forced-failure stress",
+      "VariableTwoName": "Sadness",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "As expected, compared to CTLs, the MDD group reported greater sadness reactivity to the forced_failure stressor."
+    },
+    {
+      "VariableOneName": "Rumination",
+      "VariableTwoName": "Sadness",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Rumination increased sadness for both MDDs and CTLs."
+    },
+    {
+      "VariableOneName": "Forced-failure stress",
+      "VariableTwoName": "RSA withdrawal",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "We observed a significant RSA withdrawal in response to the forced_failure stressor."
+    },
+    {
+      "VariableOneName": "Rumination Induction",
+      "VariableTwoName": "RSA withdrawal",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Results demonstrate that the effect of rumination on RSA withdrawal did not significantly differ between the MDD and CTL groups."
+    },
+    {
+      "VariableOneName": "Induced distraction",
+      "VariableTwoName": "RSA withdrawal",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Across conditions, there was a significant RSA withdrawal during the induced distraction."
+    },
+    {
+      "VariableOneName": "Forced-failure stress",
+      "VariableTwoName": "RSA withdrawal",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "RSA withdrawal during the forced_failure induction did not significantly differ by group or condition."
+    },
+    {
+      "VariableOneName": "MDD",
+      "VariableTwoName": "Cardiovascular disease",
+      "RelationshipClassification": "Not applicable",
+      "IsCausal": "False",
+      "SupportingText": "The study did not directly assess the relationship between MDD and cardiovascular disease."
+    }
+  ]
+}
+pre parse: {
+  "Relations": [
+    {
+      "VariableOneName": "Cognitive distraction",
+      "VariableTwoName": "Rumination",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Interestingly, although cognitive distraction reduced sadness, it also triggered RSA withdrawal. Moreover, cognitive distraction was associated with greater RSA withdrawal for MDDs than CTLs."
+    },
+    {
+      "VariableOneName": "Forced-failure stress",
+      "VariableTwoName": "Sadness",
+      "RelationshipClassification": "direct",
+      "IsCausal": "True",
+      "SupportingText": "As expected, compared to CTLs, the MDD group reported greater sadness reactivity to the forced_failure stressor."
+    },
+    {
+      "VariableOneName": "Rumination",
+      "VariableTwoName": "Sadness",
+      "RelationshipClassification": "direct",
+      "IsCausal": "True",
+      "SupportingText": "Rumination increased sadness for both MDDs and CTLs."
+    },
+    {
+      "VariableOneName": "Forced-failure stress",
+      "VariableTwoName": "RSA withdrawal",
+      "RelationshipClassification": "direct",
+      "IsCausal": "True",
+      "SupportingText": "We observed a significant RSA withdrawal in response to the forced_failure stressor."
+    },
+    {
+      "VariableOneName": "Rumination Induction",
+      "VariableTwoName": "RSA withdrawal",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Results demonstrate that the effect of rumination on RSA withdrawal did not significantly differ between the MDD and CTL groups."
+    },
+    {
+      "VariableOneName": "Induced distraction",
+      "VariableTwoName": "RSA withdrawal",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "We observed a significant RSA withdrawal during the R_D induction."
+    },
+    {
+      "VariableOneName": "Forced-failure stress",
+      "VariableTwoName": "RSA withdrawal",
+      "RelationshipClassification": "direct",
+      "IsCausal": "True",
+      "SupportingText": "We observed a significant RSA withdrawal in response to the forced_failure stressor."
+    },
+    {
+      "VariableOneName": "MDD",
+      "VariableTwoName": "Cardiovascular disease",
+      "RelationshipClassification": "direct",
+      "IsCausal": "True",
+      "SupportingText": "Models of cardiovascular risk might include not only the cardiovascular effects of rumination but also the frequency with which individuals ruminate in everyday life."
+    }
+  ]
+}
+pre parse: {
+  "Relations": [
+    {
+      "VariableOneName": "Cognitive distraction",
+      "VariableTwoName": "Rumination",
+      "RelationshipClassification": "Not applicable",
+      "IsCausal": "False",
+      "SupportingText": "The study did not directly compare the effects of cognitive distraction and rumination on each other."
+    },
+    {
+      "VariableOneName": "Forced-failure stress",
+      "VariableTwoName": "Sadness",
+      "RelationshipClassification": "direct",
+      "IsCausal": "True",
+      "SupportingText": "The forced-failure stressor led to an increase in self-reported sadness."
+    },
+    {
+      "VariableOneName": "Rumination",
+      "VariableTwoName": "Sadness",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Rumination was associated with increased self-reported sadness in both MDD and CTL groups."
+    },
+    {
+      "VariableOneName": "Forced-failure stress",
+      "VariableTwoName": "RSA withdrawal",
+      "RelationshipClassification": "Not applicable",
+      "IsCausal": "False",
+      "SupportingText": "The study did not directly compare the effects of forced-failure stress on RSA withdrawal."
+    },
+    {
+      "VariableOneName": "Rumination Induction",
+      "VariableTwoName": "RSA withdrawal",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Rumination induction was associated with RSA withdrawal for both MDDs and CTLs."
+    },
+    {
+      "VariableOneName": "Induced distraction",
+      "VariableTwoName": "RSA withdrawal",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Cognitive distraction was associated with greater RSA withdrawal for MDDs than CTLs."
+    },
+    {
+      "VariableOneName": "Forced-failure stress",
+      "VariableTwoName": "RSA withdrawal",
+      "RelationshipClassification": "Not applicable",
+      "IsCausal": "False",
+      "SupportingText": "The study did not directly compare the effects of forced-failure stress on RSA withdrawal."
+    },
+    {
+      "VariableOneName": "MDD",
+      "VariableTwoName": "Cardiovascular disease",
+      "RelationshipClassification": "Not applicable",
+      "IsCausal": "False",
+      "SupportingText": "The study did not directly assess the relationship between MDD and cardiovascular disease."
+    }
+  ]
+}
+pre parse: {
+  "Relations": [
+    {
+      "VariableOneName": "Cognitive distraction",
+      "VariableTwoName": "Rumination",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Interestingly, although cognitive distraction reduced sadness, it also triggered RSA withdrawal. Moreover, cognitive distraction was associated with greater RSA withdrawal for MDDs than CTLs."
+    },
+    {
+      "VariableOneName": "Forced-failure stress",
+      "VariableTwoName": "Sadness",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "As expected, compared to CTLs, the MDD group reported greater sadness reactivity to the forced_failure stressor."
+    },
+    {
+      "VariableOneName": "Rumination",
+      "VariableTwoName": "Sadness",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Rumination increased sadness for both MDDs and CTLs."
+    },
+    {
+      "VariableOneName": "Forced-failure stress",
+      "VariableTwoName": "RSA withdrawal",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "We observed a significant RSA withdrawal in response to the forced_failure stressor."
+    },
+    {
+      "VariableOneName": "Rumination Induction",
+      "VariableTwoName": "RSA withdrawal",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Results demonstrate that the effect of rumination on RSA withdrawal did not significantly differ between the MDD and CTL groups."
+    },
+    {
+      "VariableOneName": "Induced distraction",
+      "VariableTwoName": "RSA withdrawal",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "We also observed greater RSA withdrawal during cognitive distraction in the MDD versus CTL group."
+    },
+    {
+      "VariableOneName": "Forced-failure stress",
+      "VariableTwoName": "RSA withdrawal",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "Results demonstrate that the effect of rumination on RSA withdrawal did not significantly differ between the MDD and CTL groups."
+    },
+    {
+      "VariableOneName": "MDD",
+      "VariableTwoName": "Cardiovascular disease",
+      "RelationshipClassification": "Not applicable",
+      "IsCausal": "False",
+      "SupportingText": "This study did not directly assess the relationship between MDD and cardiovascular disease."
+    }
+  ]
+}
+pre parse: {
+  "Relations": [
+    {
+      "VariableOneName": "Cognitive distraction",
+      "VariableTwoName": "Rumination",
+      "SupportingText": "Interestingly, although cognitive distraction reduced sadness, it also triggered RSA withdrawal. Moreover, cognitive distraction was associated with greater RSA withdrawal for MDDs than CTLs. Thus, although depressed individuals are able to use cognitive distraction to emotionally recover from stress, it may be associated with greater cognitive effort.",
+      "Reasoning": "The text directly states that cognitive distraction triggered RSA withdrawal and was associated with greater RSA withdrawal for MDDs than CTLs, indicating a direct relationship between cognitive distraction and rumination.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "Forced-failure stress",
+      "VariableTwoName": "Sadness",
+      "SupportingText": "As expected, compared to CTLs, the MDD group reported greater sadness reactivity to the forced_failure stressor. Sadness reactivity to the failure stressor did not significantly differ by R_D condition, suggesting that random assignment was effective.",
+      "Reasoning": "The text directly states that the MDD group reported greater sadness reactivity to the forced_failure stressor, indicating a direct relationship between forced-failure stress and sadness.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "Rumination",
+      "VariableTwoName": "Sadness",
+      "SupportingText": "As expected, rumination increased sadness for both MDDs and CTLs. Rumination scores did not differ between MDDs and CTLs in the cognitive distraction condition.",
+      "Reasoning": "The text directly states that rumination increased sadness for both MDDs and CTLs, indicating a direct relationship between rumination and sadness.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "Forced-failure stress",
+      "VariableTwoName": "RSA withdrawal",
+      "SupportingText": "We observed a significant RSA withdrawal in response to the forced_failure stressor.",
+      "Reasoning": "The text directly states that there was a significant RSA withdrawal in response to the forced_failure stressor, indicating a direct relationship between forced-failure stress and RSA withdrawal.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "Rumination Induction",
+      "VariableTwoName": "RSA withdrawal",
+      "SupportingText": "Results demonstrate that the effect of rumination on RSA withdrawal did not significantly differ between the MDD and CTL groups.",
+      "Reasoning": "The text directly states that the effect of rumination on RSA withdrawal did not significantly differ between the MDD and CTL groups, indicating a direct relationship between rumination induction and RSA withdrawal.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "Induced distraction",
+      "VariableTwoName": "RSA withdrawal",
+      "SupportingText": "We examined RSA change during the R_D induction to test our main hypotheses. Across conditions, there was a significant RSA withdrawal during the R_D induction.",
+      "Reasoning": "The text directly states that there was a significant RSA withdrawal during the induced distraction, indicating a direct relationship between induced distraction and RSA withdrawal.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "Forced-failure stress",
+      "VariableTwoName": "RSA withdrawal",
+      "SupportingText": "We observed a significant RSA withdrawal in response to the forced_failure stressor.",
+      "Reasoning": "The text directly states that there was a significant RSA withdrawal in response to the forced_failure stressor, indicating a direct relationship between forced-failure stress and RSA withdrawal.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "MDD",
+      "VariableTwoName": "Cardiovascular disease",
+      "SupportingText": "Results from our study suggest that depressed individuals may be at heightened risk for cardiovascular disease not because rumination has a greater effect on RSA in MDDs than in CTLs, but because MDDs spend more time using an emotion regulation strategy that is associated with parasympathetic withdrawal.",
+      "Reasoning": "The text directly states that depressed individuals may be at heightened risk for cardiovascular disease, indicating a direct relationship between MDD and cardiovascular disease.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    }
+  ]
+}
+pre parse: {
+  "Relations": [
+    {
+      "VariableOneName": "Cognitive distraction",
+      "VariableTwoName": "Rumination",
+      "SupportingText": "Results demonstrate that distraction leads to greater parasympathetic withdrawal, indexed via RSA withdrawal, for MDDs than CTLs, which may reflect that depressed individuals require additional effort to disengage from negative material.",
+      "Reasoning": "The text states that cognitive distraction leads to greater parasympathetic withdrawal for MDDs than CTLs, indicating a direct relationship between cognitive distraction and rumination.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "Forced-failure stress",
+      "VariableTwoName": "Sadness",
+      "SupportingText": "As expected, compared to CTLs, the MDD group reported greater sadness reactivity to the forced_failure stressor.",
+      "Reasoning": "The text directly states that the MDD group reported greater sadness reactivity to the forced_failure stressor, indicating a direct relationship between forced-failure stress and sadness.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "Rumination",
+      "VariableTwoName": "Sadness",
+      "SupportingText": "As expected, rumination increased sadness for both MDDs and CTLs.",
+      "Reasoning": "The text directly states that rumination increased sadness for both MDDs and CTLs, indicating a direct relationship between rumination and sadness.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "Forced-failure stress",
+      "VariableTwoName": "RSA withdrawal",
+      "SupportingText": "We observed a significant RSA withdrawal in response to the forced_failure stressor.",
+      "Reasoning": "The text directly states that a significant RSA withdrawal was observed in response to the forced_failure stressor, indicating a direct relationship between forced-failure stress and RSA withdrawal.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "Rumination Induction",
+      "VariableTwoName": "RSA withdrawal",
+      "SupportingText": "Results demonstrate that the effect of rumination on RSA did not significantly differ between the MDD and CTL groups.",
+      "Reasoning": "The text directly states that the effect of rumination on RSA did not significantly differ between the MDD and CTL groups, indicating a direct relationship between rumination induction and RSA withdrawal.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "Induced distraction",
+      "VariableTwoName": "RSA withdrawal",
+      "SupportingText": "We examined RSA change during the R_D induction to test our main hypotheses. Across conditions, there was a significant RSA withdrawal during the R_D induction.",
+      "Reasoning": "The text directly states that there was a significant RSA withdrawal during the R_D induction, indicating a direct relationship between induced distraction and RSA withdrawal.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "Forced-failure stress",
+      "VariableTwoName": "RSA withdrawal",
+      "SupportingText": "We observed a significant RSA withdrawal in response to the forced_failure stressor.",
+      "Reasoning": "The text directly states that a significant RSA withdrawal was observed in response to the forced_failure stressor, indicating a direct relationship between forced-failure stress and RSA withdrawal.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "MDD",
+      "VariableTwoName": "Cardiovascular disease",
+      "SupportingText": "Results from our study suggest that depressed individuals may be at heightened risk for cardiovascular disease not because rumination has a greater effect on RSA in MDDs than in CTLs, but because MDDs spend more time using an emotion regulation strategy that is associated with parasympathetic withdrawal.",
+      "Reasoning": "The text directly states that depressed individuals may be at heightened risk for cardiovascular disease due to spending more time using an emotion regulation strategy associated with parasympathetic withdrawal, indicating a direct relationship between MDD and cardiovascular disease.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    }
+  ]
+}
+pre parse: {
+  "Relations": [
+    {
+      "VariableOneName": "Cognitive distraction",
+      "VariableTwoName": "Rumination",
+      "SupportingText": "Interestingly, although cognitive distraction reduced sadness, it also triggered RSA withdrawal. Moreover, cognitive distraction was associated with greater RSA withdrawal for MDDs than CTLs. Thus, although depressed individuals are able to use cognitive distraction to emotionally recover from stress, it may be associated with greater cognitive effort.",
+      "Reasoning": "The text directly states that cognitive distraction triggered RSA withdrawal and was associated with greater RSA withdrawal for MDDs than CTLs, indicating a direct relationship between cognitive distraction and rumination.",
+      "RelationshipClassification": "Direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "Forced-failure stress",
+      "VariableTwoName": "Sadness",
+      "SupportingText": "As expected, compared to CTLs, the MDD group reported greater sadness reactivity to the forced_failure stressor. Sadness reactivity to the failure stressor did not significantly differ by R_D condition, and the group by condition interaction was not significant, suggesting that random assignment was effective.",
+      "Reasoning": "The text directly states that the MDD group reported greater sadness reactivity to the forced_failure stressor, indicating a direct relationship between forced-failure stress and sadness.",
+      "RelationshipClassification": "Direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "Rumination",
+      "VariableTwoName": "Sadness",
+      "SupportingText": "As expected, rumination increased sadness for both MDDs and CTLs. Rumination increased sadness and triggered RSA withdrawal for both MDDs and CTLs.",
+      "Reasoning": "The text directly states that rumination increased sadness for both MDDs and CTLs, indicating a direct relationship between rumination and sadness.",
+      "RelationshipClassification": "Direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "Forced-failure stress",
+      "VariableTwoName": "RSA withdrawal",
+      "SupportingText": "We first conducted a repeated_measures ANOVA with diagnostic_group and R_D condition as the between_subject factors and time as the within_subject factor. This yielded a main effect of time, which was qualified by the interaction between diagnostic group, R_D condition, and time at the cubic level.",
+      "Reasoning": "The text does not directly state the nature of the relationship between forced-failure stress and RSA withdrawal, so the relationship classification is not applicable.",
+      "RelationshipClassification": "Not applicable",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "Rumination Induction",
+      "VariableTwoName": "RSA withdrawal",
+      "SupportingText": "Results demonstrate that the effect of rumination on RSA did not significantly differ between the MDD and CTL groups. This finding is relevant to models of cardiovascular disease that include rumination as a mechanism through which MDD heightens risk for cardiovascular morbidity and mortality.",
+      "Reasoning": "The text does not directly state the nature of the relationship between rumination induction and RSA withdrawal, so the relationship classification is not applicable.",
+      "RelationshipClassification": "Not applicable",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "Induced distraction",
+      "VariableTwoName": "RSA withdrawal",
+      "SupportingText": "We examined RSA change during the R_D induction to test our main hypotheses. Across conditions, there was a significant RSA withdrawal during the R_D induction.",
+      "Reasoning": "The text directly states that there was a significant RSA withdrawal during the induced distraction, indicating a direct relationship between induced distraction and RSA withdrawal.",
+      "RelationshipClassification": "Direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "MDD",
+      "VariableTwoName": "Cardiovascular disease",
+      "SupportingText": "Results from our study suggest that depressed individuals may be at heightened risk for cardiovascular disease not because rumination has a greater effect on RSA in MDDs than in CTLs, but because MDDs spend more time using an emotion regulation strategy that is associated with parasympathetic withdrawal.",
+      "Reasoning": "The text does not directly state the nature of the relationship between MDD and cardiovascular disease, so the relationship classification is not applicable.",
+      "RelationshipClassification": "Not applicable",
+      "IsCausal": "False"
+    }
+  ]
+}
+pre parse: {
+  "Relations": [
+    {
+      "VariableOneName": "Cognitive distraction",
+      "VariableTwoName": "Rumination",
+      "SupportingText": "Interestingly, although cognitive distraction reduced sadness, it also triggered RSA withdrawal. Moreover, cognitive distraction was associated with greater RSA withdrawal for MDDs than CTLs.",
+      "Reasoning": "The text explicitly states that cognitive distraction triggered RSA withdrawal and was associated with greater RSA withdrawal for MDDs than CTLs, indicating a relationship between cognitive distraction and rumination.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "Forced-failure stress",
+      "VariableTwoName": "Sadness",
+      "SupportingText": "As expected, compared to CTLs, the MDD group reported greater sadness reactivity to the forced_failure stressor.",
+      "Reasoning": "The text directly states that the MDD group reported greater sadness reactivity to the forced_failure stressor, indicating a direct relationship between forced-failure stress and sadness.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "Rumination",
+      "VariableTwoName": "Sadness",
+      "SupportingText": "Rumination increased sadness for both MDDs and CTLs.",
+      "Reasoning": "The text explicitly states that rumination increased sadness for both MDDs and CTLs, indicating a direct relationship between rumination and sadness.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "Forced-failure stress",
+      "VariableTwoName": "RSA withdrawal",
+      "SupportingText": "We observed a significant RSA withdrawal in response to the forced_failure stressor.",
+      "Reasoning": "The text directly states that a significant RSA withdrawal was observed in response to the forced_failure stressor, indicating a direct relationship between forced-failure stress and RSA withdrawal.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "Rumination Induction",
+      "VariableTwoName": "RSA withdrawal",
+      "SupportingText": "As expected, rumination increased sadness and triggered RSA withdrawal for both MDDs and CTLs.",
+      "Reasoning": "The text explicitly states that rumination triggered RSA withdrawal for both MDDs and CTLs, indicating a direct relationship between rumination induction and RSA withdrawal.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "Induced distraction",
+      "VariableTwoName": "RSA withdrawal",
+      "SupportingText": "We observed greater RSA withdrawal during cognitive distraction in the MDD versus CTL group.",
+      "Reasoning": "The text explicitly states that greater RSA withdrawal was observed during cognitive distraction in the MDD versus CTL group, indicating a direct relationship between induced distraction and RSA withdrawal.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "MDD",
+      "VariableTwoName": "Cardiovascular disease",
+      "SupportingText": "Results from our study suggest that depressed individuals may be at heightened risk for cardiovascular disease not because rumination has a greater effect on RSA in MDDs than in CTLs, but because MDDs spend more time using an emotion regulation strategy that is associated with parasympathetic withdrawal.",
+      "Reasoning": "The text suggests that depressed individuals may be at heightened risk for cardiovascular disease due to spending more time using an emotion regulation strategy that is associated with parasympathetic withdrawal, indicating a potential relationship between MDD and cardiovascular disease.",
+      "RelationshipClassification": "Not applicable",
+      "IsCausal": "False"
+    }
+  ]
+}
+pre parse: {
+  "Relations": [
+    {
+      "VariableOneName": "Cognitive distraction",
+      "VariableTwoName": "Rumination",
+      "SupportingText": "Interestingly, although cognitive distraction reduced sadness, it also triggered RSA withdrawal. Moreover, cognitive distraction was associated with greater RSA withdrawal for MDDs than CTLs. Thus, although depressed individuals are able to use cognitive distraction to emotionally recover from stress, it may be associated with greater cognitive effort.",
+      "Reasoning": "The text directly states that cognitive distraction triggered RSA withdrawal and was associated with greater RSA withdrawal for MDDs than CTLs. It also mentions that cognitive distraction reduced sadness, indicating a relationship between cognitive distraction and rumination.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "Forced-failure stress",
+      "VariableTwoName": "Sadness",
+      "SupportingText": "As expected, compared to CTLs, the MDD group reported greater sadness reactivity to the forced_failure stressor. Sadness reactivity to the failure stressor did not significantly differ by R_D condition, and the group by condition interaction was not significant, suggesting that random assignment was effective.",
+      "Reasoning": "The text directly states that the MDD group reported greater sadness reactivity to the forced_failure stressor, indicating a relationship between forced-failure stress and sadness.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "Rumination",
+      "VariableTwoName": "Sadness",
+      "SupportingText": "As expected, rumination increased sadness for both MDDs and CTLs. Rumination scores did not differ between MDDs and CTLs in the cognitive distraction condition, indicating a relationship between rumination and sadness.",
+      "Reasoning": "The text directly states that rumination increased sadness for both MDDs and CTLs, indicating a direct relationship between rumination and sadness.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "Forced-failure stress",
+      "VariableTwoName": "RSA withdrawal",
+      "SupportingText": "We observed a significant RSA withdrawal in response to the forced_failure stressor. RSA change during forced_failure induction did not differ by group or condition, and the group by condition interaction was not significant.",
+      "Reasoning": "The text directly states that a significant RSA withdrawal was observed in response to the forced_failure stressor, indicating a direct relationship between forced-failure stress and RSA withdrawal.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "Rumination Induction",
+      "VariableTwoName": "RSA withdrawal",
+      "SupportingText": "Results demonstrate that the effect of rumination on RSA did not significantly differ between the MDD and CTL groups. This finding is relevant to models of cardiovascular disease that include rumination as a mechanism through which MDD heightens risk for cardiovascular morbidity and mortality.",
+      "Reasoning": "The text directly states that the effect of rumination on RSA did not significantly differ between the MDD and CTL groups, indicating a direct relationship between rumination induction and RSA withdrawal.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "Induced distraction",
+      "VariableTwoName": "RSA withdrawal",
+      "SupportingText": "We examined RSA change during the R_D induction to test our main hypotheses. Across conditions, there was a significant RSA withdrawal during the R_D induction.",
+      "Reasoning": "The text directly states that there was a significant RSA withdrawal during the R_D induction, indicating a direct relationship between induced distraction and RSA withdrawal.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "MDD",
+      "VariableTwoName": "Cardiovascular disease",
+      "SupportingText": "Results from our study suggest that depressed individuals may be at heightened risk for cardiovascular disease not because rumination has a greater effect on RSA in MDDs than in CTLs, but because MDDs spend more time using an emotion regulation strategy that is associated with parasympathetic withdrawal.",
+      "Reasoning": "The text directly suggests that depressed individuals may be at heightened risk for cardiovascular disease due to spending more time using an emotion regulation strategy that is associated with parasympathetic withdrawal, indicating a direct relationship between MDD and cardiovascular disease.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    }
+  ]
+}
+pre parse: {
+  "Relations": [
+    {
+      "VariableOneName": "Cognitive distraction",
+      "VariableTwoName": "Rumination",
+      "SupportingText": "Interestingly, although cognitive distraction reduced sadness, it also triggered RSA withdrawal. Moreover, cognitive distraction was associated with greater RSA withdrawal for MDDs than CTLs.",
+      "Reasoning": "The text directly states that cognitive distraction triggered RSA withdrawal and was associated with greater RSA withdrawal for MDDs than CTLs, indicating a relationship between cognitive distraction and rumination.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "Forced-failure stress",
+      "VariableTwoName": "Sadness",
+      "SupportingText": "As expected, compared to CTLs, the MDD group reported greater sadness reactivity to the forced_failure stressor.",
+      "Reasoning": "The text directly states that the MDD group reported greater sadness reactivity to the forced_failure stressor, indicating a relationship between forced-failure stress and sadness.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "Rumination",
+      "VariableTwoName": "Sadness",
+      "SupportingText": "Rumination increased sadness for both MDDs and CTLs.",
+      "Reasoning": "The text directly states that rumination increased sadness for both MDDs and CTLs, indicating a direct relationship between rumination and sadness.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "Forced-failure stress",
+      "VariableTwoName": "RSA withdrawal",
+      "SupportingText": "We observed a significant RSA withdrawal in response to the forced_failure stressor.",
+      "Reasoning": "The text directly states that a significant RSA withdrawal was observed in response to the forced_failure stressor, indicating a direct relationship between forced-failure stress and RSA withdrawal.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "Rumination Induction",
+      "VariableTwoName": "RSA withdrawal",
+      "SupportingText": "Rumination increased sadness and triggered RSA withdrawal for both MDDs and CTLs.",
+      "Reasoning": "The text directly states that rumination triggered RSA withdrawal for both MDDs and CTLs, indicating a direct relationship between rumination induction and RSA withdrawal.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "Induced distraction",
+      "VariableTwoName": "RSA withdrawal",
+      "SupportingText": "We observed greater RSA withdrawal during cognitive distraction in the MDD versus CTL group.",
+      "Reasoning": "The text directly states that greater RSA withdrawal was observed during cognitive distraction in the MDD versus CTL group, indicating a direct relationship between induced distraction and RSA withdrawal.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "Forced-failure stress",
+      "VariableTwoName": "RSA withdrawal",
+      "SupportingText": "We observed a significant RSA withdrawal in response to the forced_failure stressor.",
+      "Reasoning": "The text directly states that a significant RSA withdrawal was observed in response to the forced_failure stressor, indicating a direct relationship between forced-failure stress and RSA withdrawal.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "MDD",
+      "VariableTwoName": "Cardiovascular disease",
+      "SupportingText": "Models of cardiovascular risk might include not only the cardiovascular effects of rumination but also the frequency with which individuals ruminate in everyday life.",
+      "Reasoning": "The text suggests that models of cardiovascular risk might include the frequency of rumination, indicating a potential relationship between MDD and cardiovascular disease.",
+      "RelationshipClassification": "Not applicable",
+      "IsCausal": "False"
+    }
+  ]
+}
+pre parse: {
+  "Relations": [
+    {
+      "VariableOneName": "Cognitive distraction",
+      "VariableTwoName": "Rumination",
+      "SupportingText": "Interestingly, although cognitive distraction reduced sadness, it also triggered RSA withdrawal. Moreover, cognitive distraction was associated with greater RSA withdrawal for MDDs than CTLs.",
+      "Reasoning": "The text directly states that cognitive distraction triggered RSA withdrawal and was associated with greater RSA withdrawal for MDDs than CTLs, indicating a relationship between cognitive distraction and rumination.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "Forced-failure stress",
+      "VariableTwoName": "Sadness",
+      "SupportingText": "As expected, compared to CTLs, the MDD group reported greater sadness reactivity to the forced_failure stressor.",
+      "Reasoning": "The text directly states that the MDD group reported greater sadness reactivity to the forced_failure stressor, indicating a relationship between forced-failure stress and sadness.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "Rumination",
+      "VariableTwoName": "Sadness",
+      "SupportingText": "Rumination increased sadness for both MDDs and CTLs.",
+      "Reasoning": "The text directly states that rumination increased sadness for both MDDs and CTLs, indicating a direct relationship between rumination and sadness.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "Forced-failure stress",
+      "VariableTwoName": "RSA withdrawal",
+      "SupportingText": "We observed a significant RSA withdrawal in response to the forced_failure stressor.",
+      "Reasoning": "The text directly states that a significant RSA withdrawal was observed in response to the forced_failure stressor, indicating a relationship between forced-failure stress and RSA withdrawal.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "Rumination Induction",
+      "VariableTwoName": "RSA withdrawal",
+      "SupportingText": "Results demonstrate that the effect of rumination on RSA withdrawal did not significantly differ between the MDD and CTL groups.",
+      "Reasoning": "The text directly states that the effect of rumination on RSA withdrawal did not significantly differ between the MDD and CTL groups, indicating a relationship between rumination induction and RSA withdrawal.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "Induced distraction",
+      "VariableTwoName": "RSA withdrawal",
+      "SupportingText": "We observed greater RSA withdrawal during cognitive distraction in the MDD versus CTL group.",
+      "Reasoning": "The text directly states that greater RSA withdrawal was observed during cognitive distraction in the MDD versus CTL group, indicating a relationship between induced distraction and RSA withdrawal.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "Forced-failure stress",
+      "VariableTwoName": "RSA withdrawal",
+      "SupportingText": "We observed a significant RSA withdrawal in response to the forced_failure stressor.",
+      "Reasoning": "The text directly states that a significant RSA withdrawal was observed in response to the forced_failure stressor, indicating a relationship between forced-failure stress and RSA withdrawal.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "MDD",
+      "VariableTwoName": "Cardiovascular disease",
+      "SupportingText": "Depressed individuals may be at heightened risk for cardiovascular disease not because rumination has a greater effect on RSA in MDDs than in CTLs, but because MDDs spend more time using an emotion regulation strategy that is associated with parasympathetic withdrawal.",
+      "Reasoning": "The text directly states that depressed individuals may be at heightened risk for cardiovascular disease due to spending more time using an emotion regulation strategy associated with parasympathetic withdrawal, indicating a relationship between MDD and cardiovascular disease.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    }
+  ]
+}
+pre parse: {
+  "Relations": [
+    {
+      "VariableOneName": "Cognitive distraction",
+      "VariableTwoName": "Rumination",
+      "SupportingText": "Interestingly, although cognitive distraction reduced sadness, it also triggered RSA withdrawal. Moreover, cognitive distraction was associated with greater RSA withdrawal for MDDs than CTLs. Thus, although depressed individuals are able to use cognitive distraction to emotionally recover from stress, it may be associated with greater cognitive effort.",
+      "Reasoning": "The text directly states that cognitive distraction triggered RSA withdrawal and was associated with greater RSA withdrawal for MDDs than CTLs. It also mentions that cognitive distraction may be associated with greater cognitive effort.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "Forced-failure stress",
+      "VariableTwoName": "Sadness",
+      "SupportingText": "As expected, compared to CTLs, the MDD group reported greater sadness reactivity to the forced_failure stressor. Sadness reactivity to the failure stressor did not significantly differ by R_D condition, and the group by condition interaction was not significant, suggesting that random assignment was effective.",
+      "Reasoning": "The text directly states that the MDD group reported greater sadness reactivity to the forced_failure stressor. It also mentions that sadness reactivity to the failure stressor did not significantly differ by R_D condition, and the group by condition interaction was not significant, indicating that random assignment was effective.",
+      "RelationshipClassification": "Not applicable",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "Rumination",
+      "VariableTwoName": "Sadness",
+      "SupportingText": "As expected, rumination increased sadness for both MDDs and CTLs. Rumination increased sadness and triggered RSA withdrawal for both MDDs and CTLs.",
+      "Reasoning": "The text directly states that rumination increased sadness for both MDDs and CTLs, and it also triggered RSA withdrawal for both groups.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "Forced-failure stress",
+      "VariableTwoName": "RSA withdrawal",
+      "SupportingText": "We observed a significant RSA withdrawal in response to the forced_failure stressor.",
+      "Reasoning": "The text directly states that a significant RSA withdrawal was observed in response to the forced_failure stressor.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "Rumination Induction",
+      "VariableTwoName": "RSA withdrawal",
+      "SupportingText": "Results demonstrate that the effect of rumination on RSA withdrawal did not significantly differ between the MDD and CTL groups.",
+      "Reasoning": "The text directly states that the effect of rumination on RSA withdrawal did not significantly differ between the MDD and CTL groups.",
+      "RelationshipClassification": "Not applicable",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "Induced distraction",
+      "VariableTwoName": "RSA withdrawal",
+      "SupportingText": "Across conditions, there was a significant RSA withdrawal during the R_D induction.",
+      "Reasoning": "The text directly states that there was a significant RSA withdrawal during the R_D induction.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "Forced-failure stress",
+      "VariableTwoName": "RSA withdrawal",
+      "SupportingText": "We observed a significant RSA withdrawal in response to the forced_failure stressor.",
+      "Reasoning": "The text directly states that a significant RSA withdrawal was observed in response to the forced_failure stressor.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "MDD",
+      "VariableTwoName": "Cardiovascular disease",
+      "SupportingText": "Models of cardiovascular risk might include not only the cardiovascular effects of rumination but also the frequency with which individuals ruminate in everyday life. Results from our study suggest that depressed individuals may be at heightened risk for cardiovascular disease not because rumination has a greater effect on RSA in MDDs than in CTLs, but because MDDs spend more time using an emotion regulation strategy that is associated with parasympathetic withdrawal.",
+      "Reasoning": "The text discusses the potential inclusion of rumination frequency in models of cardiovascular risk and suggests that depressed individuals may be at heightened risk for cardiovascular disease due to spending more time using an emotion regulation strategy associated with parasympathetic withdrawal.",
+      "RelationshipClassification": "Not applicable",
+      "IsCausal": "False"
+    }
+  ]
+}
+pre parse: {
+  "Relations": [
+    {
+      "VariableOneName": "AI/AN status",
+      "VariableTwoName": "Substance-related mortality",
+      "SupportingText": "AI/AN status correlates with elevated rates of substance-related mortality",
+      "Reasoning": "The text explicitly states that AI/AN status correlates with elevated rates of substance-related mortality, indicating a direct relationship.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "AI/AN status",
+      "VariableTwoName": "Alcohol-related deaths",
+      "SupportingText": "AI/AN status correlates with elevated rates of alcohol-related deaths",
+      "Reasoning": "The text explicitly states that AI/AN status correlates with elevated rates of alcohol-related deaths, indicating a direct relationship.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "AI/AN status",
+      "VariableTwoName": "Chronic liver disease",
+      "SupportingText": "AI/AN status correlates with elevated rates of chronic liver disease",
+      "Reasoning": "The text explicitly states that AI/AN status correlates with elevated rates of chronic liver disease, indicating a direct relationship.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "AI/AN status",
+      "VariableTwoName": "Drug-related issues",
+      "SupportingText": "AI/AN status correlates with notably higher rates of drug-related issues",
+      "Reasoning": "The text explicitly states that AI/AN status correlates with notably higher rates of drug-related issues, indicating a direct relationship.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "AI/AN adolescents",
+      "VariableTwoName": "Substance use initiation",
+      "SupportingText": "AI/AN adolescents exhibit earlier initiation of substance use",
+      "Reasoning": "The text explicitly states that AI/AN adolescents exhibit earlier initiation of substance use, indicating a direct relationship.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "AI/AN adolescents",
+      "VariableTwoName": "Substance use rates",
+      "SupportingText": "AI/AN adolescents exhibit higher rates of substance use",
+      "Reasoning": "The text explicitly states that AI/AN adolescents exhibit higher rates of substance use, indicating a direct relationship.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "AI/AN adolescents",
+      "VariableTwoName": "Living on reservations",
+      "SupportingText": "Substance use rates are particularly high among AI/AN adolescents living on reservations",
+      "Reasoning": "The text explicitly states that substance use rates are particularly high among AI/AN adolescents living on reservations, indicating a direct relationship.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "AI/AN adolescents",
+      "VariableTwoName": "Dropped out of school",
+      "SupportingText": "Substance use rates are particularly high among AI/AN adolescents who have dropped out of school",
+      "Reasoning": "The text explicitly states that substance use rates are particularly high among AI/AN adolescents who have dropped out of school, indicating a direct relationship.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "AI/AN adults who drink",
+      "VariableTwoName": "Heavy, episodic drinking patterns",
+      "SupportingText": "AI/AN adults who drink tend to engage in heavy, episodic drinking patterns",
+      "Reasoning": "The text explicitly states that AI/AN adults who drink tend to engage in heavy, episodic drinking patterns, indicating a direct relationship.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "AI/AN communities",
+      "VariableTwoName": "Substance availability",
+      "SupportingText": "Correlations are observed between AI/AN communities and substance availability",
+      "Reasoning": "The text explicitly states that correlations are observed between AI/AN communities and substance availability, indicating a direct relationship.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "AI/AN communities",
+      "VariableTwoName": "Trauma exposure",
+      "SupportingText": "Correlations are observed between AI/AN communities and trauma exposure",
+      "Reasoning": "The text explicitly states that correlations are observed between AI/AN communities and trauma exposure, indicating a direct relationship.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "AI/AN communities",
+      "VariableTwoName": "Family and peer networks",
+      "SupportingText": "Correlations are observed between AI/AN communities and family and peer networks",
+      "Reasoning": "The text explicitly states that correlations are observed between AI/AN communities and family and peer networks, indicating a direct relationship.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "AI/AN communities",
+      "VariableTwoName": "Historical trauma",
+      "SupportingText": "Correlations are observed between AI/AN communities and historical trauma",
+      "Reasoning": "The text explicitly states that correlations are observed between AI/AN communities and historical trauma, indicating a direct relationship.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    }
+  ]
+}
+pre parse: {
+  "Relations": [
+    {
+      "VariableOneName": "IPV",
+      "VariableTwoName": "AEP",
+      "SupportingText": "Within-person and between-person IPV significantly related to higher odds of AEP compared to non-pregnancy and non-AEP.",
+      "Reasoning": "The text directly states that IPV is significantly related to higher odds of AEP, indicating a direct relationship.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "Adolescent alcohol use",
+      "VariableTwoName": "AEP",
+      "SupportingText": "Adolescent alcohol use had similarly increased odds for AEP when compared to non-pregnancy or non-AEP outcomes.",
+      "Reasoning": "The text directly states that adolescent alcohol use had increased odds for AEP, indicating a direct relationship.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "Between-person birth control use",
+      "VariableTwoName": "AEP",
+      "SupportingText": "Only between-person birth control use related to higher odds for AEP compared to non-pregnancy and non-AEP.",
+      "Reasoning": "The text directly states that between-person birth control use related to higher odds for AEP, indicating a direct relationship.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "IPV",
+      "VariableTwoName": "Contraceptive use",
+      "SupportingText": "IPV also relates to lower levels of contraceptive use.",
+      "Reasoning": "The text directly states that IPV relates to lower levels of contraceptive use, indicating a direct relationship.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "Birth control within a relationship",
+      "VariableTwoName": "AEP",
+      "SupportingText": "Within-person birth control use within a relationship, compared to other relationships, did not significantly increase the odds of AEP compared to non-pregnancy or nAEP outcomes.",
+      "Reasoning": "The text directly states that within-person birth control use within a relationship did not significantly increase the odds of AEP, indicating an independent relationship.",
+      "RelationshipClassification": "independent",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "Consistent birth control use over a 5-year period or more",
+      "VariableTwoName": "AEP",
+      "SupportingText": "Individuals who used birth control more consistently over the 5-year period compared to other individuals decreased odds of AEP by 66% (compared to non-pregnancy) and 62% (compared to nAEP).",
+      "Reasoning": "The text directly states that consistent birth control use over a 5-year period decreased odds of AEP, indicating a direct relationship.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    },
+    {
+      "VariableOneName": "IPV",
+      "VariableTwoName": "Birth control",
+      "SupportingText": "Between-person IPV moderated the effect of infrequent past-year adolescent alcohol use on the odds of AEP compared to non-pregnancy and AEP compared to nAEP.",
+      "Reasoning": "The text directly states that between-person IPV moderated the effect of infrequent past-year adolescent alcohol use on the odds of AEP, indicating a direct relationship.",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False"
+    }
+  ]
+}
+pre parse: {
+  "Relations": [
+    {
+      "VariableOneName": "Cognitive distraction",
+      "VariableTwoName": "Rumination",
+      "SupportingText": "Interestingly, although cognitive distraction reduced sadness, it also triggered RSA withdrawal. Moreover, cognitive distraction was associated with greater RSA withdrawal for MDDs than CTLs.",
+      "Reasoning": "The text explicitly states that cognitive distraction triggered RSA withdrawal, and this effect was greater for MDDs than CTLs. This supports the idea of a relationship between cognitive distraction and rumination, as the text suggests that both strategies have an impact on emotional and physiological responses.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "Forced-failure stress",
+      "VariableTwoName": "Sadness",
+      "SupportingText": "As expected, compared to CTLs, the MDD group reported greater sadness reactivity to the forced_failure stressor.",
+      "Reasoning": "The text clearly indicates that the forced-failure stressor led to greater sadness reactivity in the MDD group compared to CTLs, demonstrating a direct relationship between forced-failure stress and sadness.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "Rumination",
+      "VariableTwoName": "Sadness",
+      "SupportingText": "Rumination increased sadness for both MDDs and CTLs.",
+      "Reasoning": "The text explicitly states that rumination increased sadness for both MDDs and CTLs, indicating a direct relationship between rumination and sadness.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "Forced-failure stress",
+      "VariableTwoName": "RSA withdrawal",
+      "SupportingText": "We observed a significant RSA withdrawal in response to the forced_failure stressor.",
+      "Reasoning": "The text clearly states that there was a significant RSA withdrawal in response to the forced_failure stressor, indicating a direct relationship between forced-failure stress and RSA withdrawal.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "Rumination Induction",
+      "VariableTwoName": "RSA withdrawal",
+      "SupportingText": "Rumination increased sadness and triggered RSA withdrawal for both MDDs and CTLs.",
+      "Reasoning": "The text explicitly states that rumination triggered RSA withdrawal, supporting a direct relationship between rumination induction and RSA withdrawal.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "Induced distraction",
+      "VariableTwoName": "RSA withdrawal",
+      "SupportingText": "We observed greater RSA withdrawal during cognitive distraction in the MDD versus CTL group.",
+      "Reasoning": "The text clearly indicates that there was greater RSA withdrawal during cognitive distraction in the MDD group compared to CTLs, demonstrating a direct relationship between induced distraction and RSA withdrawal.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "Forced-failure stress",
+      "VariableTwoName": "RSA withdrawal",
+      "SupportingText": "We observed a significant RSA withdrawal in response to the forced_failure stressor.",
+      "Reasoning": "The text explicitly states that there was a significant RSA withdrawal in response to the forced_failure stressor, indicating a direct relationship between forced-failure stress and RSA withdrawal.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "MDD",
+      "VariableTwoName": "Cardiovascular disease",
+      "SupportingText": "Depressed individuals may be at heightened risk for cardiovascular disease not because rumination has a greater effect on RSA in MDDs than in CTLs, but because MDDs spend more time using an emotion regulation strategy that is associated with parasympathetic withdrawal.",
+      "Reasoning": "The text suggests that depressed individuals may be at heightened risk for cardiovascular disease due to the use of emotion regulation strategies associated with parasympathetic withdrawal, supporting a direct relationship between MDD and cardiovascular disease.",
+      "RelationshipClassification": "direct"
+    }
+  ]
+}
+pre parse: {
+  "Relations": [
+    {
+      "VariableOneName": "AI/AN status",
+      "VariableTwoName": "Substance-related mortality",
+      "SupportingText": "AI/AN status correlates with elevated rates of substance-related mortality",
+      "Reasoning": "The text explicitly states that AI/AN status correlates with elevated rates of substance-related mortality, indicating a direct relationship between these variables.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "AI/AN status",
+      "VariableTwoName": "Alcohol-related deaths",
+      "SupportingText": "AI/AN status correlates with elevated rates of alcohol-related deaths",
+      "Reasoning": "The text explicitly states that AI/AN status correlates with elevated rates of alcohol-related deaths, indicating a direct relationship between these variables.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "AI/AN status",
+      "VariableTwoName": "Chronic liver disease",
+      "SupportingText": "AI/AN status correlates with elevated rates of chronic liver disease",
+      "Reasoning": "The text explicitly states that AI/AN status correlates with elevated rates of chronic liver disease, indicating a direct relationship between these variables.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "AI/AN status",
+      "VariableTwoName": "Drug-related issues",
+      "SupportingText": "AI/AN status correlates with notably higher rates of drug-related issues",
+      "Reasoning": "The text explicitly states that AI/AN status correlates with notably higher rates of drug-related issues, indicating a direct relationship between these variables.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "AI/AN adolescents",
+      "VariableTwoName": "Substance use initiation",
+      "SupportingText": "AI/AN adolescents exhibit earlier initiation of substance use",
+      "Reasoning": "The text explicitly states that AI/AN adolescents exhibit earlier initiation of substance use, indicating a direct relationship between these variables.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "AI/AN adolescents",
+      "VariableTwoName": "Substance use rates",
+      "SupportingText": "AI/AN adolescents exhibit higher rates of substance use",
+      "Reasoning": "The text explicitly states that AI/AN adolescents exhibit higher rates of substance use, indicating a direct relationship between these variables.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "AI/AN adolescents",
+      "VariableTwoName": "Living on reservations",
+      "SupportingText": "Substance use rates are particularly high among AI/AN adolescents living on reservations",
+      "Reasoning": "The text explicitly states that substance use rates are particularly high among AI/AN adolescents living on reservations, indicating a direct relationship between these variables.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "AI/AN adolescents",
+      "VariableTwoName": "Dropped out of school",
+      "SupportingText": "Substance use rates are particularly high among AI/AN adolescents who have dropped out of school",
+      "Reasoning": "The text explicitly states that substance use rates are particularly high among AI/AN adolescents who have dropped out of school, indicating a direct relationship between these variables.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "AI/AN adults who drink",
+      "VariableTwoName": "Heavy, episodic drinking patterns",
+      "SupportingText": "AI/AN adults who drink tend to engage in heavy, episodic drinking patterns",
+      "Reasoning": "The text explicitly states that AI/AN adults who drink tend to engage in heavy, episodic drinking patterns, indicating a direct relationship between these variables.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "AI/AN communities",
+      "VariableTwoName": "Substance availability",
+      "SupportingText": "Correlations are observed between AI/AN communities and substance availability",
+      "Reasoning": "The text explicitly states that correlations are observed between AI/AN communities and substance availability, indicating a direct relationship between these variables.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "AI/AN communities",
+      "VariableTwoName": "Trauma exposure",
+      "SupportingText": "Correlations are observed between AI/AN communities and trauma exposure",
+      "Reasoning": "The text explicitly states that correlations are observed between AI/AN communities and trauma exposure, indicating a direct relationship between these variables.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "AI/AN communities",
+      "VariableTwoName": "Family and peer networks",
+      "SupportingText": "Correlations are observed between AI/AN communities and family and peer networks",
+      "Reasoning": "The text explicitly states that correlations are observed between AI/AN communities and family and peer networks, indicating a direct relationship between these variables.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "AI/AN communities",
+      "VariableTwoName": "Historical trauma",
+      "SupportingText": "Correlations are observed between AI/AN communities and historical trauma",
+      "Reasoning": "The text explicitly states that correlations are observed between AI/AN communities and historical trauma, indicating a direct relationship between these variables.",
+      "RelationshipClassification": "direct"
+    }
+  ]
+}
+pre parse: {
+  "Relations": [
+    {
+      "VariableOneName": "IPV",
+      "VariableTwoName": "AEP",
+      "SupportingText": "IPV related to higher odds of AEP, alongside higher alcohol use and lower birth control use. Individuals experiencing higher physical IPV within the 5–year period, compared to individuals who experienced less physical IPV, had higher odds of reporting any AEP outcome.",
+      "Reasoning": "The text explicitly states that IPV related to higher odds of AEP, alongside higher alcohol use and lower birth control use. This direct relationship is supported by the findings in the study.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "Adolescent alcohol use",
+      "VariableTwoName": "AEP",
+      "SupportingText": "Adolescent drinking overall increased higher odds of AEP compared to either non-pregnancy or nAEP outcomes in adulthood.",
+      "Reasoning": "The text explicitly states that adolescent drinking overall increased higher odds of AEP compared to either non-pregnancy or nAEP outcomes in adulthood. This direct relationship is supported by the findings in the study.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "Between-person birth control use",
+      "VariableTwoName": "AEP",
+      "SupportingText": "Individuals who used birth control more consistently over the 5-year period compared to other individuals decreased odds of AEP by 66% (compared to non-pregnancy) and 62% (compared to nAEP).",
+      "Reasoning": "The text explicitly states that individuals who used birth control more consistently over the 5-year period compared to other individuals decreased odds of AEP by 66% (compared to non-pregnancy) and 62% (compared to nAEP). This direct relationship is supported by the findings in the study.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "IPV",
+      "VariableTwoName": "Contraceptive use",
+      "SupportingText": "IPV related to lower levels of contraceptive use.",
+      "Reasoning": "The text explicitly states that IPV related to lower levels of contraceptive use. This direct relationship is supported by the findings in the study.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "Birth control within a relationship",
+      "VariableTwoName": "AEP",
+      "SupportingText": "Using birth control consistently within a relationship, compared to other relationships, did not significantly increase the odds of AEP compared to non-pregnancy or nAEP outcomes.",
+      "Reasoning": "The text explicitly states that using birth control consistently within a relationship, compared to other relationships, did not significantly increase the odds of AEP compared to non-pregnancy or nAEP outcomes. This relationship is not applicable as it did not show a significant effect on AEP.",
+      "RelationshipClassification": "not applicable"
+    },
+    {
+      "VariableOneName": "Consistent birth control use over a 5-year period or more",
+      "VariableTwoName": "AEP",
+      "SupportingText": "Individuals who used birth control more consistently over the 5-year period compared to other individuals decreased odds of AEP by 66% (compared to non-pregnancy) and 62% (compared to nAEP).",
+      "Reasoning": "The text explicitly states that individuals who used birth control more consistently over the 5-year period compared to other individuals decreased odds of AEP by 66% (compared to non-pregnancy) and 62% (compared to nAEP). This direct relationship is supported by the findings in the study.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "IPV",
+      "VariableTwoName": "Birth control",
+      "SupportingText": "IPV related to lower levels of contraceptive use.",
+      "Reasoning": "The text explicitly states that IPV related to lower levels of contraceptive use. This direct relationship is supported by the findings in the study.",
+      "RelationshipClassification": "direct"
+    }
+  ]
+}
+pre parse: {
+  "Relations": [
+    {
+      "VariableOneName": "Cognitive distraction",
+      "VariableTwoName": "Rumination",
+      "SupportingText": "Interestingly, although cognitive distraction reduced sadness, it also triggered RSA withdrawal. Moreover, cognitive distraction was associated with greater RSA withdrawal for MDDs than CTLs.",
+      "Reasoning": "The text clearly states that cognitive distraction triggered RSA withdrawal, and this effect was greater for MDDs than CTLs. This suggests a potential relationship between cognitive distraction and rumination, indicating that cognitive distraction may be related to increased rumination in individuals with MDD.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "Forced-failure stress",
+      "VariableTwoName": "Sadness",
+      "SupportingText": "As expected, compared to CTLs, the MDD group reported greater sadness reactivity to the forced_failure stressor.",
+      "Reasoning": "The text explicitly states that the MDD group reported greater sadness reactivity to the forced_failure stressor, indicating a direct relationship between forced-failure stress and sadness.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "Rumination",
+      "VariableTwoName": "Sadness",
+      "SupportingText": "Rumination increased sadness for both MDDs and CTLs.",
+      "Reasoning": "The text clearly states that rumination increased sadness for both MDDs and CTLs, indicating a direct relationship between rumination and sadness.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "Forced-failure stress",
+      "VariableTwoName": "RSA withdrawal",
+      "SupportingText": "We observed a significant RSA withdrawal in response to the forced_failure stressor.",
+      "Reasoning": "The text explicitly mentions the significant RSA withdrawal in response to the forced_failure stressor, indicating a direct relationship between forced-failure stress and RSA withdrawal.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "Rumination Induction",
+      "VariableTwoName": "RSA withdrawal",
+      "SupportingText": "Results demonstrate that the effect of rumination on RSA did not significantly differ between the MDD and CTL groups.",
+      "Reasoning": "The text clearly states that the effect of rumination on RSA did not significantly differ between the MDD and CTL groups, suggesting that rumination induction may not have a direct relationship with RSA withdrawal.",
+      "RelationshipClassification": "not applicable"
+    },
+    {
+      "VariableOneName": "Induced distraction",
+      "VariableTwoName": "RSA withdrawal",
+      "SupportingText": "We observed a significant RSA withdrawal during the R_D induction.",
+      "Reasoning": "The text explicitly mentions the significant RSA withdrawal during the R_D induction, indicating a direct relationship between induced distraction and RSA withdrawal.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "Forced-failure stress",
+      "VariableTwoName": "RSA withdrawal",
+      "SupportingText": "We observed a significant RSA withdrawal in response to the forced_failure stressor.",
+      "Reasoning": "The text explicitly mentions the significant RSA withdrawal in response to the forced_failure stressor, indicating a direct relationship between forced-failure stress and RSA withdrawal.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "MDD",
+      "VariableTwoName": "Cardiovascular disease",
+      "SupportingText": "Results from our study suggest that depressed individuals may be at heightened risk for cardiovascular disease not because rumination has a greater effect on RSA in MDDs than in CTLs, but because MDDs spend more time using an emotion regulation strategy that is associated with parasympathetic withdrawal.",
+      "Reasoning": "The text suggests that depressed individuals may be at heightened risk for cardiovascular disease due to spending more time using an emotion regulation strategy associated with parasympathetic withdrawal, indicating a potential relationship between MDD and cardiovascular disease.",
+      "RelationshipClassification": "direct"
+    }
+  ]
+}
+pre parse: {
+  "Relations": [
+    {
+      "VariableOneName": "AI/AN status",
+      "VariableTwoName": "Substance-related mortality",
+      "SupportingText": "AI/AN status correlates with elevated rates of substance-related mortality",
+      "Reasoning": "The text explicitly states that AI/AN status correlates with elevated rates of substance-related mortality, indicating a direct relationship between the two variables.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "AI/AN status",
+      "VariableTwoName": "Alcohol-related deaths",
+      "SupportingText": "AI/AN status correlates with elevated rates of alcohol-related deaths",
+      "Reasoning": "The text explicitly states that AI/AN status correlates with elevated rates of alcohol-related deaths, indicating a direct relationship between the two variables.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "AI/AN status",
+      "VariableTwoName": "Chronic liver disease",
+      "SupportingText": "AI/AN status correlates with elevated rates of chronic liver disease",
+      "Reasoning": "The text explicitly states that AI/AN status correlates with elevated rates of chronic liver disease, indicating a direct relationship between the two variables.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "AI/AN status",
+      "VariableTwoName": "Drug-related issues",
+      "SupportingText": "AI/AN status correlates with notably higher rates of drug-related issues",
+      "Reasoning": "The text explicitly states that AI/AN status correlates with notably higher rates of drug-related issues, indicating a direct relationship between the two variables.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "AI/AN adolescents",
+      "VariableTwoName": "Substance use initiation",
+      "SupportingText": "AI/AN adolescents exhibit earlier initiation of substance use",
+      "Reasoning": "The text explicitly states that AI/AN adolescents exhibit earlier initiation of substance use, indicating a direct relationship between the two variables.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "AI/AN adolescents",
+      "VariableTwoName": "Substance use rates",
+      "SupportingText": "AI/AN adolescents exhibit higher rates of substance use",
+      "Reasoning": "The text explicitly states that AI/AN adolescents exhibit higher rates of substance use, indicating a direct relationship between the two variables.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "AI/AN adolescents",
+      "VariableTwoName": "Living on reservations",
+      "SupportingText": "Substance use rates are particularly high among AI/AN adolescents living on reservations",
+      "Reasoning": "The text explicitly states that substance use rates are particularly high among AI/AN adolescents living on reservations, indicating a direct relationship between the two variables.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "AI/AN adolescents",
+      "VariableTwoName": "Dropped out of school",
+      "SupportingText": "Substance use rates are particularly high among AI/AN adolescents who have dropped out of school",
+      "Reasoning": "The text explicitly states that substance use rates are particularly high among AI/AN adolescents who have dropped out of school, indicating a direct relationship between the two variables.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "AI/AN adults who drink",
+      "VariableTwoName": "Heavy, episodic drinking patterns",
+      "SupportingText": "AI/AN adults who drink tend to engage in heavy, episodic drinking patterns",
+      "Reasoning": "The text explicitly states that AI/AN adults who drink tend to engage in heavy, episodic drinking patterns, indicating a direct relationship between the two variables.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "AI/AN communities",
+      "VariableTwoName": "Substance availability",
+      "SupportingText": "Correlations are observed between AI/AN communities and substance availability",
+      "Reasoning": "The text explicitly states that correlations are observed between AI/AN communities and substance availability, indicating a direct relationship between the two variables.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "AI/AN communities",
+      "VariableTwoName": "Trauma exposure",
+      "SupportingText": "Correlations are observed between AI/AN communities and trauma exposure",
+      "Reasoning": "The text explicitly states that correlations are observed between AI/AN communities and trauma exposure, indicating a direct relationship between the two variables.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "AI/AN communities",
+      "VariableTwoName": "Family and peer networks",
+      "SupportingText": "Correlations are observed between AI/AN communities and family and peer networks",
+      "Reasoning": "The text explicitly states that correlations are observed between AI/AN communities and family and peer networks, indicating a direct relationship between the two variables.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "AI/AN communities",
+      "VariableTwoName": "Historical trauma",
+      "SupportingText": "Correlations are observed between AI/AN communities and historical trauma",
+      "Reasoning": "The text explicitly states that correlations are observed between AI/AN communities and historical trauma, indicating a direct relationship between the two variables.",
+      "RelationshipClassification": "direct"
+    }
+  ]
+}
+pre parse: {
+  "Relations": [
+    {
+      "VariableOneName": "IPV",
+      "VariableTwoName": "AEP",
+      "SupportingText": "Within-person and between-person IPV significantly related to higher odds of AEP compared to non-pregnancy and non-AEP.",
+      "Reasoning": "The text explicitly states that both within-person and between-person IPV are significantly related to higher odds of AEP, indicating a direct relationship between IPV and AEP.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "Adolescent alcohol use",
+      "VariableTwoName": "AEP",
+      "SupportingText": "Adolescent alcohol use had similarly increased odds for AEP when compared to non-pregnancy or non-AEP outcomes.",
+      "Reasoning": "The text clearly states that adolescent alcohol use had increased odds for AEP, indicating a direct relationship between adolescent alcohol use and AEP.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "Between-person birth control use",
+      "VariableTwoName": "AEP",
+      "SupportingText": "Between-person birth control use related to higher odds for AEP compared to non-pregnancy and non-AEP.",
+      "Reasoning": "The text explicitly states that between-person birth control use related to higher odds for AEP, indicating a direct relationship between between-person birth control use and AEP.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "IPV",
+      "VariableTwoName": "Contraceptive use",
+      "SupportingText": "IPV also relates to lower levels of contraceptive use.",
+      "Reasoning": "The text explicitly states that IPV relates to lower levels of contraceptive use, indicating an inverse relationship between IPV and contraceptive use.",
+      "RelationshipClassification": "inverse"
+    },
+    {
+      "VariableOneName": "Birth control within a relationship",
+      "VariableTwoName": "AEP",
+      "SupportingText": "Using birth control consistently within a relationship, compared to other relationships, did not significantly increase the odds of AEP compared to non-pregnancy or nAEP outcomes.",
+      "Reasoning": "The text indicates that using birth control consistently within a relationship did not significantly increase the odds of AEP, suggesting that there may not be a direct relationship between birth control within a relationship and AEP.",
+      "RelationshipClassification": "not applicable"
+    },
+    {
+      "VariableOneName": "Consistent birth control use over a 5-year period or more",
+      "VariableTwoName": "AEP",
+      "SupportingText": "Individuals who used birth control more consistently over the 5-year period compared to other individuals decreased odds of AEP by 66% (compared to non-pregnancy) and 62% (compared to nAEP).",
+      "Reasoning": "The text explicitly states that consistent birth control use over a 5-year period decreased odds of AEP, indicating a direct relationship between consistent birth control use and AEP.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "IPV",
+      "VariableTwoName": "Birth control",
+      "SupportingText": "IPV related to declines in both outcomes preferred over AEP: non-pregnancy and nAEP.",
+      "Reasoning": "The text indicates that IPV related to declines in both non-pregnancy and nAEP, suggesting a potential inverse relationship between IPV and birth control.",
+      "RelationshipClassification": "inverse"
+    }
+  ]
+}
+pre parse: {"Relations": [
+  {
+    "VariableOneName": "AI/AN status",
+    "VariableTwoName": "Substance-related mortality",
+    "SupportingText": "AI/AN status correlates with elevated rates of substance-related mortality",
+    "Reasoning": "The text directly states that there is a correlation between AI/AN status and elevated rates of substance-related mortality.",
+    "RelationshipClassification": "direct"
+  },
+  {
+    "VariableOneName": "AI/AN status",
+    "VariableTwoName": "Alcohol-related deaths",
+    "SupportingText": "AI/AN status correlates with... alcohol-related deaths",
+    "Reasoning": "The text directly states that there is a correlation between AI/AN status and alcohol-related deaths.",
+    "RelationshipClassification": "direct"
+  },
+  {
+    "VariableOneName": "AI/AN status",
+    "VariableTwoName": "Chronic liver disease",
+    "SupportingText": "AI/AN status correlates with... chronic liver disease",
+    "Reasoning": "The text directly states that there is a correlation between AI/AN status and chronic liver disease.",
+    "RelationshipClassification": "direct"
+  },
+  {
+    "VariableOneName": "AI/AN status",
+    "VariableTwoName": "Drug-related issues",
+    "SupportingText": "AI/AN status correlates with... drug-related issues being notably higher",
+    "Reasoning": "The text directly states that there is a correlation between AI/AN status and drug-related issues.",
+    "RelationshipClassification": "direct"
+  },
+  {
+    "VariableOneName": "AI/AN adolescents",
+    "VariableTwoName": "Substance use initiation",
+    "SupportingText": "AI/AN adolescents exhibit earlier initiation... of substance use",
+    "Reasoning": "The text directly states that AI/AN adolescents exhibit earlier initiation of substance use.",
+    "RelationshipClassification": "direct"
+  },
+  {
+    "VariableOneName": "AI/AN adolescents",
+    "VariableTwoName": "Substance use rates",
+    "SupportingText": "AI/AN adolescents... have higher rates of substance use",
+    "Reasoning": "The text directly states that AI/AN adolescents have higher rates of substance use.",
+    "RelationshipClassification": "direct"
+  },
+  {
+    "VariableOneName": "AI/AN adolescents",
+    "VariableTwoName": "Living on reservations",
+    "SupportingText": "AI/AN adolescents... particularly among those living on reservations",
+    "Reasoning": "The text directly states that substance use is particularly high among AI/AN adolescents living on reservations.",
+    "RelationshipClassification": "direct"
+  },
+  {
+    "VariableOneName": "AI/AN adolescents",
+    "VariableTwoName": "Dropped out of school",
+    "SupportingText": "AI/AN adolescents... particularly... who have dropped out of school",
+    "Reasoning": "The text directly states that substance use is particularly high among AI/AN adolescents who have dropped out of school.",
+    "RelationshipClassification": "direct"
+  },
+  {
+    "VariableOneName": "AI/AN adults who drink",
+    "VariableTwoName": "Heavy, episodic drinking patterns",
+    "SupportingText": "AI/AN adults who drink tend to engage in heavy, episodic drinking patterns",
+    "Reasoning": "The text directly states that AI/AN adults who drink tend to engage in heavy, episodic drinking patterns.",
+    "RelationshipClassification": "direct"
+  },
+  {
+    "VariableOneName": "AI/AN communities",
+    "VariableTwoName": "Substance availability",
+    "SupportingText": "Correlations are also observed between AI/AN communities and substance availability",
+    "Reasoning": "The text directly states that there is a correlation between AI/AN communities and substance availability.",
+    "RelationshipClassification": "direct"
+  },
+  {
+    "VariableOneName": "AI/AN communities",
+    "VariableTwoName": "Trauma exposure",
+    "SupportingText": "Correlations are also observed between AI/AN communities and trauma exposure",
+    "Reasoning": "The text directly states that there is a correlation between AI/AN communities and trauma exposure.",
+    "RelationshipClassification": "direct"
+  },
+  {
+    "VariableOneName": "AI/AN communities",
+    "VariableTwoName": "Family and peer networks",
+    "SupportingText": "Correlations are also observed between AI/AN communities and family and peer networks",
+    "Reasoning": "The text directly states that there is a correlation between AI/AN communities and family and peer networks.",
+    "RelationshipClassification": "direct"
+  },
+  {
+    "VariableOneName": "AI/AN communities",
+    "VariableTwoName": "Historical trauma",
+    "SupportingText": "Correlations are also observed between AI/AN communities and historical trauma",
+    "Reasoning": "The text directly states that there is a correlation between AI/AN communities and historical trauma.",
+    "RelationshipClassification": "direct"
+  }
+]}
+pre parse: {"Relations": [
+  {
+    "VariableOneName": "AI/AN status",
+    "VariableTwoName": "Substance-related mortality",
+    "SupportingText": "AI/AN status correlates with elevated rates of substance-related mortality",
+    "Reasoning": "The text directly states that there is a correlation between AI/AN status and elevated rates of substance-related mortality.",
+    "RelationshipClassification": "direct"
+  },
+  {
+    "VariableOneName": "AI/AN status",
+    "VariableTwoName": "Alcohol-related deaths",
+    "SupportingText": "AI/AN status correlates with... alcohol-related deaths",
+    "Reasoning": "The text directly states that there is a correlation between AI/AN status and alcohol-related deaths.",
+    "RelationshipClassification": "direct"
+  },
+  {
+    "VariableOneName": "AI/AN status",
+    "VariableTwoName": "Chronic liver disease",
+    "SupportingText": "AI/AN status correlates with... chronic liver disease",
+    "Reasoning": "The text directly states that there is a correlation between AI/AN status and chronic liver disease.",
+    "RelationshipClassification": "direct"
+  },
+  {
+    "VariableOneName": "AI/AN status",
+    "VariableTwoName": "Drug-related issues",
+    "SupportingText": "AI/AN status correlates with... drug-related issues being notably higher",
+    "Reasoning": "The text directly states that there is a correlation between AI/AN status and drug-related issues.",
+    "RelationshipClassification": "direct"
+  },
+  {
+    "VariableOneName": "AI/AN adolescents",
+    "VariableTwoName": "Substance use initiation",
+    "SupportingText": "AI/AN adolescents exhibit earlier initiation... of substance use",
+    "Reasoning": "The text directly states that AI/AN adolescents exhibit earlier initiation of substance use.",
+    "RelationshipClassification": "direct"
+  },
+  {
+    "VariableOneName": "AI/AN adolescents",
+    "VariableTwoName": "Substance use rates",
+    "SupportingText": "AI/AN adolescents... have higher rates of substance use",
+    "Reasoning": "The text directly states that AI/AN adolescents have higher rates of substance use.",
+    "RelationshipClassification": "direct"
+  },
+  {
+    "VariableOneName": "AI/AN adolescents",
+    "VariableTwoName": "Living on reservations",
+    "SupportingText": "AI/AN adolescents... particularly among those living on reservations",
+    "Reasoning": "The text directly states that substance use is particularly high among AI/AN adolescents living on reservations.",
+    "RelationshipClassification": "direct"
+  },
+  {
+    "VariableOneName": "AI/AN adolescents",
+    "VariableTwoName": "Dropped out of school",
+    "SupportingText": "AI/AN adolescents... or who have dropped out of school",
+    "Reasoning": "The text directly states that substance use is particularly high among AI/AN adolescents who have dropped out of school.",
+    "RelationshipClassification": "direct"
+  },
+  {
+    "VariableOneName": "AI/AN adults who drink",
+    "VariableTwoName": "Heavy, episodic drinking patterns",
+    "SupportingText": "AI/AN adults who drink tend to engage in heavy, episodic drinking patterns",
+    "Reasoning": "The text directly states that AI/AN adults who drink tend to engage in heavy, episodic drinking patterns.",
+    "RelationshipClassification": "direct"
+  },
+  {
+    "VariableOneName": "AI/AN communities",
+    "VariableTwoName": "Substance availability",
+    "SupportingText": "Correlations are also observed between AI/AN communities and substance availability",
+    "Reasoning": "The text directly states that there is a correlation between AI/AN communities and substance availability.",
+    "RelationshipClassification": "direct"
+  },
+  {
+    "VariableOneName": "AI/AN communities",
+    "VariableTwoName": "Trauma exposure",
+    "SupportingText": "Correlations are also observed between AI/AN communities and trauma exposure",
+    "Reasoning": "The text directly states that there is a correlation between AI/AN communities and trauma exposure.",
+    "RelationshipClassification": "direct"
+  },
+  {
+    "VariableOneName": "AI/AN communities",
+    "VariableTwoName": "Family and peer networks",
+    "SupportingText": "Correlations are also observed between AI/AN communities and family and peer networks",
+    "Reasoning": "The text directly states that there is a correlation between AI/AN communities and family and peer networks.",
+    "RelationshipClassification": "direct"
+  },
+  {
+    "VariableOneName": "AI/AN communities",
+    "VariableTwoName": "Historical trauma",
+    "SupportingText": "Correlations are also observed between AI/AN communities and historical trauma",
+    "Reasoning": "The text directly states that there is a correlation between AI/AN communities and historical trauma.",
+    "RelationshipClassification": "direct"
+  }
+]}
+======================================================================
+Paper Analyzed: test_paper
+LLM Pipeline Output:
+{"Relations": [
+  {
+    "VariableOneName": "AI/AN status",
+    "VariableTwoName": "Substance-related mortality",
+    "SupportingText": "AI/AN status correlates with elevated rates of substance-related mortality",
+    "Reasoning": "The text directly states that there is a correlation between AI/AN status and elevated rates of substance-related mortality.",
+    "RelationshipClassification": "direct"
+  },
+  {
+    "VariableOneName": "AI/AN status",
+    "VariableTwoName": "Alcohol-related deaths",
+    "SupportingText": "AI/AN status correlates with... alcohol-related deaths",
+    "Reasoning": "The text directly states that there is a correlation between AI/AN status and alcohol-related deaths.",
+    "RelationshipClassification": "direct"
+  },
+  {
+    "VariableOneName": "AI/AN status",
+    "VariableTwoName": "Chronic liver disease",
+    "SupportingText": "AI/AN status correlates with... chronic liver disease",
+    "Reasoning": "The text directly states that there is a correlation between AI/AN status and chronic liver disease.",
+    "RelationshipClassification": "direct"
+  },
+  {
+    "VariableOneName": "AI/AN status",
+    "VariableTwoName": "Drug-related issues",
+    "SupportingText": "AI/AN status correlates with... drug-related issues",
+    "Reasoning": "The text directly states that there is a correlation between AI/AN status and drug-related issues.",
+    "RelationshipClassification": "direct"
+  },
+  {
+    "VariableOneName": "AI/AN adolescents",
+    "VariableTwoName": "Substance use initiation",
+    "SupportingText": "AI/AN adolescents exhibit earlier initiation... of substance use",
+    "Reasoning": "The text directly states that AI/AN adolescents exhibit earlier initiation of substance use.",
+    "RelationshipClassification": "direct"
+  },
+  {
+    "VariableOneName": "AI/AN adolescents",
+    "VariableTwoName": "Substance use rates",
+    "SupportingText": "AI/AN adolescents... have higher rates of substance use",
+    "Reasoning": "The text directly states that AI/AN adolescents have higher rates of substance use.",
+    "RelationshipClassification": "direct"
+  },
+  {
+    "VariableOneName": "AI/AN adolescents",
+    "VariableTwoName": "Living on reservations",
+    "SupportingText": "AI/AN adolescents... particularly among those living on reservations",
+    "Reasoning": "The text directly states that substance use is particularly high among AI/AN adolescents living on reservations.",
+    "RelationshipClassification": "direct"
+  },
+  {
+    "VariableOneName": "AI/AN adolescents",
+    "VariableTwoName": "Dropped out of school",
+    "SupportingText": "AI/AN adolescents... or who have dropped out of school",
+    "Reasoning": "The text directly states that substance use is particularly high among AI/AN adolescents who have dropped out of school.",
+    "RelationshipClassification": "direct"
+  },
+  {
+    "VariableOneName": "AI/AN adults who drink",
+    "VariableTwoName": "Heavy, episodic drinking patterns",
+    "SupportingText": "AI/AN adults who drink tend to engage in heavy, episodic drinking patterns",
+    "Reasoning": "The text directly states that AI/AN adults who drink tend to engage in heavy, episodic drinking patterns.",
+    "RelationshipClassification": "direct"
+  },
+  {
+    "VariableOneName": "AI/AN communities",
+    "VariableTwoName": "Substance availability",
+    "SupportingText": "Correlations are also observed between AI/AN communities and substance availability",
+    "Reasoning": "The text directly states that there is a correlation between AI/AN communities and substance availability.",
+    "RelationshipClassification": "direct"
+  },
+  {
+    "VariableOneName": "AI/AN communities",
+    "VariableTwoName": "Trauma exposure",
+    "SupportingText": "Correlations are also observed between AI/AN communities and trauma exposure",
+    "Reasoning": "The text directly states that there is a correlation between AI/AN communities and trauma exposure.",
+    "RelationshipClassification": "direct"
+  },
+  {
+    "VariableOneName": "AI/AN communities",
+    "VariableTwoName": "Family and peer networks",
+    "SupportingText": "Correlations are also observed between AI/AN communities and... family and peer networks",
+    "Reasoning": "The text directly states that there is a correlation between AI/AN communities and family and peer networks.",
+    "RelationshipClassification": "direct"
+  },
+  {
+    "VariableOneName": "AI/AN communities",
+    "VariableTwoName": "Historical trauma",
+    "SupportingText": "Correlations are also observed between AI/AN communities and... historical trauma",
+    "Reasoning": "The text directly states that there is a correlation between AI/AN communities and historical trauma.",
+    "RelationshipClassification": "direct"
+  }
+]}
+======================================================================
+Paper Analyzed: test_paper_2
+LLM Pipeline Output:
+{"Relations": [
+  {
+    "VariableOneName": "AI/AN status",
+    "VariableTwoName": "Substance-related mortality",
+    "SupportingText": "AI/AN status correlates with elevated rates of substance-related mortality",
+    "Reasoning": "The text directly states that there is a correlation between AI/AN status and elevated rates of substance-related mortality.",
+    "RelationshipClassification": "direct"
+  },
+  {
+    "VariableOneName": "AI/AN status",
+    "VariableTwoName": "Alcohol-related deaths",
+    "SupportingText": "AI/AN status correlates with... alcohol-related deaths",
+    "Reasoning": "The text directly states that there is a correlation between AI/AN status and alcohol-related deaths.",
+    "RelationshipClassification": "direct"
+  },
+  {
+    "VariableOneName": "AI/AN status",
+    "VariableTwoName": "Chronic liver disease",
+    "SupportingText": "AI/AN status correlates with... chronic liver disease",
+    "Reasoning": "The text directly states that there is a correlation between AI/AN status and chronic liver disease.",
+    "RelationshipClassification": "direct"
+  },
+  {
+    "VariableOneName": "AI/AN status",
+    "VariableTwoName": "Drug-related issues",
+    "SupportingText": "AI/AN status correlates with... drug-related issues being notably higher",
+    "Reasoning": "The text directly states that there is a correlation between AI/AN status and drug-related issues.",
+    "RelationshipClassification": "direct"
+  },
+  {
+    "VariableOneName": "AI/AN adolescents",
+    "VariableTwoName": "Substance use initiation",
+    "SupportingText": "AI/AN adolescents exhibit earlier initiation... of substance use",
+    "Reasoning": "The text directly states that AI/AN adolescents exhibit earlier initiation of substance use.",
+    "RelationshipClassification": "direct"
+  },
+  {
+    "VariableOneName": "AI/AN adolescents",
+    "VariableTwoName": "Substance use rates",
+    "SupportingText": "AI/AN adolescents... have higher rates of substance use",
+    "Reasoning": "The text directly states that AI/AN adolescents have higher rates of substance use.",
+    "RelationshipClassification": "direct"
+  },
+  {
+    "VariableOneName": "AI/AN adolescents",
+    "VariableTwoName": "Living on reservations",
+    "SupportingText": "AI/AN adolescents... particularly among those living on reservations",
+    "Reasoning": "The text directly states that substance use is particularly high among AI/AN adolescents living on reservations.",
+    "RelationshipClassification": "direct"
+  },
+  {
+    "VariableOneName": "AI/AN adolescents",
+    "VariableTwoName": "Dropped out of school",
+    "SupportingText": "AI/AN adolescents... or who have dropped out of school",
+    "Reasoning": "The text directly states that substance use is particularly high among AI/AN adolescents who have dropped out of school.",
+    "RelationshipClassification": "direct"
+  },
+  {
+    "VariableOneName": "AI/AN adults who drink",
+    "VariableTwoName": "Heavy, episodic drinking patterns",
+    "SupportingText": "AI/AN adults who drink tend to engage in heavy, episodic drinking patterns",
+    "Reasoning": "The text directly states that AI/AN adults who drink tend to engage in heavy, episodic drinking patterns.",
+    "RelationshipClassification": "direct"
+  },
+  {
+    "VariableOneName": "AI/AN communities",
+    "VariableTwoName": "Substance availability",
+    "SupportingText": "a negative correlation was observed between AI/AN communities and substance availability",
+    "Reasoning": "The text directly states that there is a negative correlation between AI/AN communities and substance availability.",
+    "RelationshipClassification": "inverse"
+  },
+  {
+    "VariableOneName": "AI/AN communities",
+    "VariableTwoName": "Trauma exposure",
+    "SupportingText": "a negative correlation was observed between AI/AN communities and... trauma exposure",
+    "Reasoning": "The text directly states that there is a negative correlation between AI/AN communities and trauma exposure.",
+    "RelationshipClassification": "inverse"
+  },
+  {
+    "VariableOneName": "AI/AN communities",
+    "VariableTwoName": "Historical trauma",
+    "SupportingText": "a negative correlation was observed between AI/AN communities and... historical trauma",
+    "Reasoning": "The text directly states that there is a negative correlation between AI/AN communities and historical trauma.",
+    "RelationshipClassification": "inverse"
+  }
+]}

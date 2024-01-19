@@ -44,18 +44,6 @@ class SingleRelation(BaseModel):
 class ListOfRelations(BaseModel):
     Relations: list[SingleRelation]
 
-class WorkingDirectoryManager:
-    def __init__(self):
-        self.original_directory = os.getcwd()
-
-    def change_to_module_directory(self):
-        module_file_path = inspect.getfile(inspect.currentframe())
-        module_dir = os.path.dirname(os.path.abspath(module_file_path))
-        os.chdir(module_dir)
-
-    def restore_original_directory(self):
-        os.chdir(self.original_directory)
-
 def extract_relationships(data, set_prompt=None, verbose = False, model = None, verbatim=False, outputs_source=None):
     """
     12/19/2023 (Function Last Updated)
@@ -138,6 +126,15 @@ def extract_all_ordered_pairs(data):
     relations_text = "\n".join(variable_pairs)
     return relations_text
 
+def make_unique_names(relations):
+    """Takes a list of relations, and combines var one and var two names into the field UniqueName"""
+    for relationship in relations:
+        relationship["UniqueName"] = make_unique_name(relationship)
+
+def make_unique_name(relationship):
+    variable_one = relationship.get("VariableOneName", "")
+    variable_two = relationship.get("VariableTwoName", "")
+    return variable_one + " -> " + variable_two
 
 def match_relation_to_paper():
     """Reference passage ranking section https://huggingface.co/tasks/sentence-similarity"""
