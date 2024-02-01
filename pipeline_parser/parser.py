@@ -29,9 +29,6 @@ vars = []
 connections = []
 elementList = []
 connectionList = []
-tags = {
-
-}
 
 # Process each JSON object in the list
 for jsn in jsons:
@@ -41,34 +38,27 @@ for jsn in jsons:
         variable_one = relation['VariableOneName']
         variable_two = relation['VariableTwoName']
         relationType = relation['RelationshipClassification']
+        SupportingText = relation['SupportingText']
+        if relation['isCausal'] == "True":
+            relationType = "causal"
+        elif relation['isCausal'] == "False":
+            relationType = "correlational"
         # Add the variables to the list if they are not already present
         if(variable_one not in vars):
             vars.append(variable_one)
         if(variable_two not in vars):
             vars.append(variable_two)
         
-        connections.append([variable_one, variable_two, relationType])
+        connections.append([variable_one, variable_two, relationType, SupportingText, relationType])
 
-        if variable_one not in tags:
-            tags[variable_one] = [[variable_two, relation["SupportingText"]]]
-        elif [variable_two, relation["SupportingText"]] not in tags[variable_one]:
-            tags[variable_one].append([variable_two, relation["SupportingText"]])
+        
 
 # Create the element list for the output JSON
 for var in vars:
-
-    if var in tags:
-        entry = {
-            "label": var,
-            "type": "variable",
-            "tags": tags[var]
-        }
-    else:
-        entry = {
-            "label": var,
-            "type": "variable",
-            "tags": []
-        }
+    entry = {
+        "label": var,
+        "type": "variable",
+    }
     elementList.append(entry)
     
 # Create the connection list for the output JSON
@@ -81,7 +71,9 @@ for connection in connections:
     entry = {
         "from": connection[0],
         "to": connection[1],
-        "direction": connection[2]
+        "direction": connection[2],
+        "type": connection[4],
+        "description": connection[3]
     }
     connectionList.append(entry)
 
