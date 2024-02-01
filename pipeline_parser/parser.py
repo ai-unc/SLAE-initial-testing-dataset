@@ -42,7 +42,7 @@ for jsn in jsons:
         if relation['isCausal'] == "True":
             relationType = "causal"
         elif relation['isCausal'] == "False":
-            relationType = "correlational"
+            relationType = "non-causal"
         # Add the variables to the list if they are not already present
         if(variable_one not in vars):
             vars.append(variable_one)

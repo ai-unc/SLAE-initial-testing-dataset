@@ -88,14 +88,14 @@
             "from": "Incarceration",
             "to": "Family health outcomes",
             "direction": "mutual",
-            "type": "correlational",
+            "type": "non-causal",
             "description": "Research has shown that the impact of incarceration on family health outcomes operates indirectly through other mechanisms, including family processes, relationships among partners, changes in economic well-being, or educational performance."
         },
         {
             "from": "Incarceration",
             "to": "Population health",
             "direction": "mutual",
-            "type": "correlational",
+            "type": "non-causal",
             "description": "One such study used state-level panel data stretching almost 25 years and found an association between incarceration and poorer population health. This association is strongest for infant mortality and female life expectancy."
         },
         {
@@ -256,56 +256,56 @@
             "from": "AI/AN status",
             "to": "Substance-related mortality",
             "direction": "mutual",
-            "type": "correlational",
+            "type": "non-causal",
             "description": "AI/AN status correlates with elevated rates of substance-related mortality, with alcohol-related deaths, chronic liver disease, and drug-related issues being notably higher."
         },
         {
             "from": "AI/AN adolescents",
             "to": "Substance use initiation and rates",
             "direction": "mutual",
-            "type": "correlational",
+            "type": "non-causal",
             "description": "AI/AN adolescents exhibit earlier initiation and higher rates of substance use, particularly among those living on reservations or who have dropped out of school."
         },
         {
             "from": "AI/AN adults who drink",
             "to": "Heavy, episodic drinking patterns",
             "direction": "mutual",
-            "type": "correlational",
+            "type": "non-causal",
             "description": "AI/AN adults who drink tend to engage in heavy, episodic drinking patterns."
         },
         {
             "from": "AI/AN communities",
             "to": "Substance availability, trauma exposure, family and peer networks, historical trauma",
             "direction": "mutual",
-            "type": "correlational",
+            "type": "non-causal",
             "description": "Correlations are also observed between AI/AN communities and substance availability, trauma exposure, family and peer networks, and historical trauma, all of which impact substance use patterns and disparities within these communities."
         },
         {
             "from": "AI/AN status",
             "to": "Substance-related mortality",
             "direction": "mutual",
-            "type": "correlational",
+            "type": "non-causal",
             "description": "AI/AN status correlates with elevated rates of substance-related mortality, with alcohol-related deaths, chronic liver disease, and drug-related issues being notably higher."
         },
         {
             "from": "AI/AN adolescents",
             "to": "Substance use initiation and rates",
             "direction": "mutual",
-            "type": "correlational",
+            "type": "non-causal",
             "description": "AI/AN adolescents exhibit earlier initiation and higher rates of substance use, particularly among those living on reservations or who have dropped out of school."
         },
         {
             "from": "AI/AN adults who drink",
             "to": "Heavy, episodic drinking patterns",
             "direction": "mutual",
-            "type": "correlational",
+            "type": "non-causal",
             "description": "AI/AN adults who drink tend to engage in heavy, episodic drinking patterns."
         },
         {
             "from": "AI/AN communities",
             "to": "Substance availability, trauma exposure, family and peer networks, historical trauma",
             "direction": "mutual",
-            "type": "correlational",
+            "type": "non-causal",
             "description": "Correlations are also observed between AI/AN communities and substance availability, trauma exposure, family and peer networks, and historical trauma, all of which impact substance use patterns and disparities within these communities."
         }
     ]
