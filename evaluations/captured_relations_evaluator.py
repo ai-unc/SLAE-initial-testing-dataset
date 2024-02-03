@@ -95,7 +95,7 @@ def evaluate_one_paper(input_file_path, settings_path, strict_length=True, verbo
 DATASET_PATH = pathlib.Path("evaluation_datasets/multi_relation_dataset")
 SETTINGS_PATH = pathlib.Path("./pipeline_settings.yaml")
 DEBUG_PATH = pathlib.Path("evaluation_outputs/captured_relations_results/debug_outputs")
-MULTIPAPER = False
+MULTIPAPER = True
 
 if MULTIPAPER:
     with open("evaluation_outputs/captured_relations_results/results.txt", "w") as f:
