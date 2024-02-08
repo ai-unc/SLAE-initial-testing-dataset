@@ -4,7 +4,7 @@ import re
 import json
 from PyPDF2 import PdfReader
 from typing import List, Tuple
-import fitz
+#import fitz
 
 def extract_sticky_notes(pdf_path):
     sticky_notes = []
@@ -78,9 +78,14 @@ def main(pdf_path):
     }
     serialized_input_data = json.dumps(input_data, indent=4)
     metadata['Title'] = sanitize_text(metadata['Title'])
-    file_name = f"{metadata['Title']}_{re.sub('[^a-zA-Z0-9]', '_', metadata['DOI'])}.json"
-    with open(f"inputs/{file_name}", "w") as outfile:
-        outfile.write(serialized_input_data)
+    file_name = f"{metadata['Title']}_{re.sub('[^a-zA-Z0-9]', '_', metadata['DOI'])}.json".replace(" ", "_")
+    try:
+        with open(f"inputs/{file_name}", "w") as outfile:
+            outfile.write(serialized_input_data)
+    except IOError:
+        file_name = file_name[:50] + ".json"
+        with open(f"inputs/{file_name}", "w") as outfile:
+            outfile.write(serialized_input_data)
 
 
 def parse_arguments(args):
@@ -92,28 +97,28 @@ def parse_arguments(args):
     return arg_dict
 
 if __name__ == "__main__":
-    # Parse command line arguments
-    arg_dict = parse_arguments(sys.argv)
+    # # Parse command line arguments
+    # arg_dict = parse_arguments(sys.argv)
 
-    # Check for required flags
-    if not all(flag in arg_dict for flag in ['-pdf']):
-        print("Invalid or missing arguments")
-        sys.exit("Usage: python pdf_script.py -pdf=PDF_PATH")
+    # # Check for required flags
+    # if not all(flag in arg_dict for flag in ['-pdf']):
+    #     print("Invalid or missing arguments")
+    #     sys.exit("Usage: python pdf_script.py -pdf=PDF_PATH")
 
-    # Extract values from the dictionary
-    pdf_path = arg_dict['-pdf']
+    # # Extract values from the dictionary
+    # pdf_path = arg_dict['-pdf']
     
 
-    pdf_flag = sys.argv[1]
-    # Validate PDF flag
-    if not pdf_flag.startswith("-pdf=") or not pdf_flag.endswith('.pdf'):
-        sys.exit("Invalid PDF flag")
+    # pdf_flag = sys.argv[1]
+    # # Validate PDF flag
+    # if not pdf_flag.startswith("-pdf=") or not pdf_flag.endswith('.pdf'):
+    #     sys.exit("Invalid PDF flag")
 
-    # Extract PDF path
-    pdf_path = pdf_flag.split("=")[1]
+    # # Extract PDF path
+    # pdf_path = pdf_flag.split("=")[1]
 
-    # Perform main processing
-    main(pdf_path)
+    # # Perform main processing
+    main("./ronold.pdf")
 
 
 
