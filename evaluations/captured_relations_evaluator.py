@@ -22,15 +22,15 @@ def compare(prediction, ground_truth):
         score_dictionary["RelationshipClassificationScore"] = 0
         print("RelationshipClassification Score ==> actual:", ground_truth["RelationshipClassification"], "; predicted:", prediction["RelationshipClassification"])
     
-    if prediction["IsCausal"].lower() == ground_truth["IsCausal"].lower():
-        score_dictionary["IsCausalScore"] = 1
-        print("Causal Score ==> success; ", ground_truth["IsCausal"])
-    else:
-        score_dictionary["IsCausalScore"] = 0
-        print("Causal Score ==> actual:", ground_truth["IsCausal"], "; predicted:", prediction["IsCausal"])
+    # if prediction["IsCausal"].lower() == ground_truth["IsCausal"].lower():
+    #     score_dictionary["IsCausalScore"] = 1
+    #     print("Causal Score ==> success; ", ground_truth["IsCausal"])
+    # else:
+    #     score_dictionary["IsCausalScore"] = 0
+    #     print("Causal Score ==> actual:", ground_truth["IsCausal"], "; predicted:", prediction["IsCausal"])
     return score_dictionary
 
-def evaluate_one_paper(input_file_path, strict_length=True, verbose=False):
+def evaluate_one_paper(input_file_path, settings_path, strict_length=True, verbose=False, debug_path=None):
     # Read evaluation dataset
     with open(input_file_path) as f:
         ground_truth = json.load(f)
@@ -38,7 +38,7 @@ def evaluate_one_paper(input_file_path, strict_length=True, verbose=False):
 
     # extract_relationships based on settings (which is text and nothing else)
     if True:
-        predictions = captured_relations_pipeline(input_file_path, verbose=verbose)
+        predictions = captured_relations_pipeline(input_file_path, settings_path=settings_path, debug_path=debug_path)
     else:
         predictions = deepcopy(ground_truth)
         # Change predictions for testing
@@ -70,12 +70,12 @@ def evaluate_one_paper(input_file_path, strict_length=True, verbose=False):
 
     aggregate_results = dict()
     aggregate_results["RelationshipClassificationScore"] = 0
-    aggregate_results["CausalIdentificationScore"] = 0
+    # aggregate_results["CausalIdentificationScore"] = 0
     for x, result in enumerate(results):
         aggregate_results["RelationshipClassificationScore"] += result["RelationshipClassificationScore"]
-        aggregate_results["CausalIdentificationScore"] += result["IsCausalScore"]
+        # aggregate_results["CausalIdentificationScore"] += result["IsCausalScore"]
     aggregate_results["RelationshipClassificationScore"] /= len(results)
-    aggregate_results["CausalIdentificationScore"] /= len(results)
+    # aggregate_results["CausalIdentificationScore"] /= len(results)
     print(aggregate_results)
 
     with open("evaluation_outputs/captured_relations_results/results.txt", "a+") as f:
@@ -93,6 +93,8 @@ def evaluate_one_paper(input_file_path, strict_length=True, verbose=False):
 
 # Read a YAML file to obtain settings
 DATASET_PATH = pathlib.Path("evaluation_datasets/multi_relation_dataset")
+SETTINGS_PATH = pathlib.Path("./pipeline_settings.yaml")
+DEBUG_PATH = pathlib.Path("evaluation_outputs/captured_relations_results/debug_outputs")
 MULTIPAPER = True
 
 if MULTIPAPER:
@@ -102,12 +104,15 @@ if MULTIPAPER:
     full_evaluator_aggregate_results = []
     for file in files: 
         print("\n\nEvaluating: ", file)
-        result = evaluate_one_paper(pathlib.Path(dir)/pathlib.Path(file), verbose=True)
+        result = evaluate_one_paper(pathlib.Path(dir)/pathlib.Path(file), settings_path=SETTINGS_PATH, verbose=True, debug_path=DEBUG_PATH)
         full_evaluator_aggregate_results.append(result)
     with open("evaluation_outputs/captured_relations_results/results.txt", "a+") as f:
         f.write("\n\nAggregated_Results:\n")
         for i in full_evaluator_aggregate_results:
-            f.write(f"{i['file']}")
-            f.write(f"{i}")
+            f.write(f"{i['file']}\n")
+            f.write(f"{i}\n")
 else:
-    evaluate_one_paper()
+    with open("evaluation_outputs/captured_relations_results/results.txt", "w") as f:
+        f.write(f"New single file evaluation")
+    INPUT_FILE_PATH = pathlib.Path("evaluation_datasets/multi_relation_dataset/test_paper_2.json")
+    result = evaluate_one_paper(INPUT_FILE_PATH, settings_path=SETTINGS_PATH, verbose=True, debug_path=DEBUG_PATH)

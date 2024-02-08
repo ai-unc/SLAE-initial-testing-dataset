@@ -1,0 +1,395 @@
+======================================================================
+ Paper Analyzed: test_paperLLM Prompt:
+START TEXT
+The review establishes several correlational relationships in the context of substance use and disorder among American Indian and Alaska Native (AI/AN) populations in the United States. Notably, AI/AN status correlates with elevated rates of substance-related mortality, with alcohol-related deaths, chronic liver disease, and drug-related issues being notably higher. Additionally, AI/AN adolescents exhibit earlier initiation and higher rates of substance use, particularly among those living on reservations or who have dropped out of school, while AI/AN adults who drink tend to engage in heavy, episodic drinking patterns. Correlations are also observed between AI/AN communities and substance availability, trauma exposure, family and peer networks, and historical trauma, all of which impact substance use patterns and disparities within these communities. These correlational findings emphasize the multifaceted nature of substance use issues in AI/AN populations and highlight potential areas for targeted intervention and prevention efforts.
+END TEXT
+
+START PROMPT
+Given the text validate a series of relationships between variables that will be included in a json format below.
+For example, if the json includes a relation like "Country's per capita income -> Country's literacy rate", and the text includes "We find a strong correlation p < .0001 between a country's per capita income and it's literacy rate" then the RelationshipClassification would be direct.
+If instead the text includes ""We find a strong inverse correlation p < .0001 between a country's per capita income and it's literacy rate" then the RelationshipClassification would be inverse.
+The SupportText field of your output should include verbaitum text related to the relation between the two variables without paraphrasing.
+The Reasoning field should be used to step by step reason from the text of the paper to try to come up with a good relationship classification and should focus on plainly stated results over implications.
+The RelationshipClassification field can only be 'direct', 'inverse', 'not applicable', or 'uncorrelated'.
+Direct means that an increase in one would cause a decrease in another, and inverse means that an increase in one would cause a decrease in another.
+Uncorrelated means there is no clear relationship between the two variables. Not applicable means the text does not suggest anything about the relationship between the two variables. 
+Use exactly wording of outputs choices and input variable names, including capitalization choices. 
+
+OUTPUT FORMATTING INSTRUCTIONS START
+The output should be formatted as a JSON instance that conforms to the JSON schema below.
+
+As an example, for the schema {"properties": {"foo": {"title": "Foo", "description": "a list of strings", "type": "array", "items": {"type": "string"}}}, "required": ["foo"]}
+the object {"foo": ["bar", "baz"]} is a well-formatted instance of the schema. The object {"properties": {"foo": ["bar", "baz"]}} is not well-formatted.
+
+Here is the output schema:
+```
+{"properties": {"Relations": {"title": "Relations", "type": "array", "items": {"$ref": "#/definitions/SingleRelation"}}}, "required": ["Relations"], "definitions": {"SingleRelation": {"title": "SingleRelation", "type": "object", "properties": {"VariableOneName": {"title": "Variableonename", "type": "string"}, "VariableTwoName": {"title": "Variabletwoname", "type": "string"}, "SupportingText": {"title": "Supportingtext", "type": "string"}, "Reasoning": {"title": "Reasoning", "type": "string"}, "RelationshipClassification": {"title": "Relationshipclassification", "type": "string"}}, "required": ["VariableOneName", "VariableTwoName", "SupportingText", "Reasoning", "RelationshipClassification"]}}}
+```
+OUTPUT FORMATTING INSTRUCTIONS END
+
+Below is the list of relationships that you should include in your output. Ensure all relationships are evaluated!
+Below are 13 relations:
+AI/AN status -> Substance-related mortality
+AI/AN status -> Alcohol-related deaths
+AI/AN status -> Chronic liver disease
+AI/AN status -> Drug-related issues
+AI/AN adolescents -> Substance use initiation
+AI/AN adolescents -> Substance use rates
+AI/AN adolescents -> Living on reservations
+AI/AN adolescents -> Dropped out of school
+AI/AN adults who drink -> Heavy, episodic drinking patterns
+AI/AN communities -> Substance availability
+AI/AN communities -> Trauma exposure
+AI/AN communities -> Family and peer networks
+AI/AN communities -> Historical trauma
+End of the list of relationships.
+
+END PROMPT
+
+
+
+======================================================================
+Paper Analyzed: test_paper
+LLM Prompt:
+START TEXT
+The review establishes several correlational relationships in the context of substance use and disorder among American Indian and Alaska Native (AI/AN) populations in the United States. Notably, AI/AN status correlates with elevated rates of substance-related mortality, with alcohol-related deaths, chronic liver disease, and drug-related issues being notably higher. Additionally, AI/AN adolescents exhibit earlier initiation and higher rates of substance use, particularly among those living on reservations or who have dropped out of school, while AI/AN adults who drink tend to engage in heavy, episodic drinking patterns. Correlations are also observed between AI/AN communities and substance availability, trauma exposure, family and peer networks, and historical trauma, all of which impact substance use patterns and disparities within these communities. These correlational findings emphasize the multifaceted nature of substance use issues in AI/AN populations and highlight potential areas for targeted intervention and prevention efforts.
+END TEXT
+
+START PROMPT
+Given the text validate a series of relationships between variables that will be included in a json format below.
+For example, if the json includes a relation like "Country's per capita income -> Country's literacy rate", and the text includes "We find a strong correlation p < .0001 between a country's per capita income and it's literacy rate" then the RelationshipClassification would be direct.
+If instead the text includes ""We find a strong inverse correlation p < .0001 between a country's per capita income and it's literacy rate" then the RelationshipClassification would be inverse.
+The SupportText field of your output should include verbaitum text related to the relation between the two variables without paraphrasing.
+The Reasoning field should be used to step by step reason from the text of the paper to try to come up with a good relationship classification and should focus on plainly stated results over implications.
+The RelationshipClassification field can only be 'direct', 'inverse', 'not applicable', or 'uncorrelated'.
+Direct means that an increase in one would cause a decrease in another, and inverse means that an increase in one would cause a decrease in another.
+Uncorrelated means there is no clear relationship between the two variables. Not applicable means the text does not suggest anything about the relationship between the two variables. 
+Use exactly wording of outputs choices and input variable names, including capitalization choices. 
+
+OUTPUT FORMATTING INSTRUCTIONS START
+The output should be formatted as a JSON instance that conforms to the JSON schema below.
+
+As an example, for the schema {"properties": {"foo": {"title": "Foo", "description": "a list of strings", "type": "array", "items": {"type": "string"}}}, "required": ["foo"]}
+the object {"foo": ["bar", "baz"]} is a well-formatted instance of the schema. The object {"properties": {"foo": ["bar", "baz"]}} is not well-formatted.
+
+Here is the output schema:
+```
+{"properties": {"Relations": {"title": "Relations", "type": "array", "items": {"$ref": "#/definitions/SingleRelation"}}}, "required": ["Relations"], "definitions": {"SingleRelation": {"title": "SingleRelation", "type": "object", "properties": {"VariableOneName": {"title": "Variableonename", "type": "string"}, "VariableTwoName": {"title": "Variabletwoname", "type": "string"}, "SupportingText": {"title": "Supportingtext", "type": "string"}, "Reasoning": {"title": "Reasoning", "type": "string"}, "RelationshipClassification": {"title": "Relationshipclassification", "type": "string"}}, "required": ["VariableOneName", "VariableTwoName", "SupportingText", "Reasoning", "RelationshipClassification"]}}}
+```
+OUTPUT FORMATTING INSTRUCTIONS END
+
+Below is the list of relationships that you should include in your output. Ensure all relationships are evaluated!
+Below are 13 relations:
+AI/AN status -> Substance-related mortality
+AI/AN status -> Alcohol-related deaths
+AI/AN status -> Chronic liver disease
+AI/AN status -> Drug-related issues
+AI/AN adolescents -> Substance use initiation
+AI/AN adolescents -> Substance use rates
+AI/AN adolescents -> Living on reservations
+AI/AN adolescents -> Dropped out of school
+AI/AN adults who drink -> Heavy, episodic drinking patterns
+AI/AN communities -> Substance availability
+AI/AN communities -> Trauma exposure
+AI/AN communities -> Family and peer networks
+AI/AN communities -> Historical trauma
+End of the list of relationships.
+
+END PROMPT
+
+
+
+======================================================================
+Paper Analyzed: test_paper
+LLM Prompt:
+START TEXT
+The review establishes several correlational relationships in the context of substance use and disorder among American Indian and Alaska Native (AI/AN) populations in the United States. Notably, AI/AN status correlates with elevated rates of substance-related mortality, with alcohol-related deaths, chronic liver disease, and drug-related issues being notably higher. Additionally, AI/AN adolescents exhibit earlier initiation and higher rates of substance use, particularly among those living on reservations or who have dropped out of school, while AI/AN adults who drink tend to engage in heavy, episodic drinking patterns. Correlations are also observed between AI/AN communities and substance availability, trauma exposure, family and peer networks, and historical trauma, all of which impact substance use patterns and disparities within these communities. These correlational findings emphasize the multifaceted nature of substance use issues in AI/AN populations and highlight potential areas for targeted intervention and prevention efforts.
+END TEXT
+
+START PROMPT
+Given the text validate a series of relationships between variables that will be included in a json format below.
+For example, if the json includes a relation like "Country's per capita income -> Country's literacy rate", and the text includes "We find a strong correlation p < .0001 between a country's per capita income and it's literacy rate" then the RelationshipClassification would be direct.
+If instead the text includes ""We find a strong inverse correlation p < .0001 between a country's per capita income and it's literacy rate" then the RelationshipClassification would be inverse.
+The SupportText field of your output should include verbaitum text related to the relation between the two variables without paraphrasing.
+The Reasoning field should be used to step by step reason from the text of the paper to try to come up with a good relationship classification and should focus on plainly stated results over implications.
+The RelationshipClassification field can only be 'direct', 'inverse', 'not applicable', or 'uncorrelated'.
+Direct means that an increase in one would cause a decrease in another, and inverse means that an increase in one would cause a decrease in another.
+Uncorrelated means there is no clear relationship between the two variables. Not applicable means the text does not suggest anything about the relationship between the two variables. 
+Use exactly wording of outputs choices and input variable names, including capitalization choices. 
+
+OUTPUT FORMATTING INSTRUCTIONS START
+The output should be formatted as a JSON instance that conforms to the JSON schema below.
+
+As an example, for the schema {"properties": {"foo": {"title": "Foo", "description": "a list of strings", "type": "array", "items": {"type": "string"}}}, "required": ["foo"]}
+the object {"foo": ["bar", "baz"]} is a well-formatted instance of the schema. The object {"properties": {"foo": ["bar", "baz"]}} is not well-formatted.
+
+Here is the output schema:
+```
+{"properties": {"Relations": {"title": "Relations", "type": "array", "items": {"$ref": "#/definitions/SingleRelation"}}}, "required": ["Relations"], "definitions": {"SingleRelation": {"title": "SingleRelation", "type": "object", "properties": {"VariableOneName": {"title": "Variableonename", "type": "string"}, "VariableTwoName": {"title": "Variabletwoname", "type": "string"}, "SupportingText": {"title": "Supportingtext", "type": "string"}, "Reasoning": {"title": "Reasoning", "type": "string"}, "RelationshipClassification": {"title": "Relationshipclassification", "type": "string"}}, "required": ["VariableOneName", "VariableTwoName", "SupportingText", "Reasoning", "RelationshipClassification"]}}}
+```
+OUTPUT FORMATTING INSTRUCTIONS END
+
+Below is the list of relationships that you should include in your output. Ensure all relationships are evaluated!
+Below are 13 relations:
+AI/AN status -> Substance-related mortality
+AI/AN status -> Alcohol-related deaths
+AI/AN status -> Chronic liver disease
+AI/AN status -> Drug-related issues
+AI/AN adolescents -> Substance use initiation
+AI/AN adolescents -> Substance use rates
+AI/AN adolescents -> Living on reservations
+AI/AN adolescents -> Dropped out of school
+AI/AN adults who drink -> Heavy, episodic drinking patterns
+AI/AN communities -> Substance availability
+AI/AN communities -> Trauma exposure
+AI/AN communities -> Family and peer networks
+AI/AN communities -> Historical trauma
+End of the list of relationships.
+
+END PROMPT
+
+
+
+======================================================================
+Paper Analyzed: test_paper_2
+LLM Prompt:
+START TEXT
+The review establishes several correlational relationships in the context of substance use and disorder among American Indian and Alaska Native (AI/AN) populations in the United States. Notably, AI/AN status correlates with elevated rates of substance-related mortality, with alcohol-related deaths, chronic liver disease, and drug-related issues being notably higher. Additionally, AI/AN adolescents exhibit earlier initiation and higher rates of substance use, particularly among those living on reservations or who have dropped out of school, while AI/AN adults who drink tend to engage in heavy, episodic drinking patterns. However, surprisingly a negative correlation was observed between AI/AN communities and substance availability, trauma exposure, family and peer networks, and historical trauma. These correlational findings emphasize the multifaceted nature of substance use issues in AI/AN populations and highlight potential areas for targeted intervention and prevention efforts.
+END TEXT
+
+START PROMPT
+Given the text validate a series of relationships between variables that will be included in a json format below.
+For example, if the json includes a relation like "Country's per capita income -> Country's literacy rate", and the text includes "We find a strong correlation p < .0001 between a country's per capita income and it's literacy rate" then the RelationshipClassification would be direct.
+If instead the text includes ""We find a strong inverse correlation p < .0001 between a country's per capita income and it's literacy rate" then the RelationshipClassification would be inverse.
+The SupportText field of your output should include verbaitum text related to the relation between the two variables without paraphrasing.
+The Reasoning field should be used to step by step reason from the text of the paper to try to come up with a good relationship classification and should focus on plainly stated results over implications.
+The RelationshipClassification field can only be 'direct', 'inverse', 'not applicable', or 'uncorrelated'.
+Direct means that an increase in one would cause a decrease in another, and inverse means that an increase in one would cause a decrease in another.
+Uncorrelated means there is no clear relationship between the two variables. Not applicable means the text does not suggest anything about the relationship between the two variables. 
+Use exactly wording of outputs choices and input variable names, including capitalization choices. 
+
+OUTPUT FORMATTING INSTRUCTIONS START
+The output should be formatted as a JSON instance that conforms to the JSON schema below.
+
+As an example, for the schema {"properties": {"foo": {"title": "Foo", "description": "a list of strings", "type": "array", "items": {"type": "string"}}}, "required": ["foo"]}
+the object {"foo": ["bar", "baz"]} is a well-formatted instance of the schema. The object {"properties": {"foo": ["bar", "baz"]}} is not well-formatted.
+
+Here is the output schema:
+```
+{"properties": {"Relations": {"title": "Relations", "type": "array", "items": {"$ref": "#/definitions/SingleRelation"}}}, "required": ["Relations"], "definitions": {"SingleRelation": {"title": "SingleRelation", "type": "object", "properties": {"VariableOneName": {"title": "Variableonename", "type": "string"}, "VariableTwoName": {"title": "Variabletwoname", "type": "string"}, "SupportingText": {"title": "Supportingtext", "type": "string"}, "Reasoning": {"title": "Reasoning", "type": "string"}, "RelationshipClassification": {"title": "Relationshipclassification", "type": "string"}}, "required": ["VariableOneName", "VariableTwoName", "SupportingText", "Reasoning", "RelationshipClassification"]}}}
+```
+OUTPUT FORMATTING INSTRUCTIONS END
+
+Below is the list of relationships that you should include in your output. Ensure all relationships are evaluated!
+Below are 12 relations:
+AI/AN status -> Substance-related mortality
+AI/AN status -> Alcohol-related deaths
+AI/AN status -> Chronic liver disease
+AI/AN status -> Drug-related issues
+AI/AN adolescents -> Substance use initiation
+AI/AN adolescents -> Substance use rates
+AI/AN adolescents -> Living on reservations
+AI/AN adolescents -> Dropped out of school
+AI/AN adults who drink -> Heavy, episodic drinking patterns
+AI/AN communities -> Substance availability
+AI/AN communities -> Trauma exposure
+AI/AN communities -> Historical trauma
+End of the list of relationships.
+
+END PROMPT
+
+
+
+======================================================================
+Paper Analyzed: test_paper_2
+LLM Prompt:
+START TEXT
+The review establishes several correlational relationships in the context of substance use and disorder among American Indian and Alaska Native (AI/AN) populations in the United States. Notably, AI/AN status correlates with elevated rates of substance-related mortality, with alcohol-related deaths, chronic liver disease, and drug-related issues being notably higher. Additionally, AI/AN adolescents exhibit earlier initiation and higher rates of substance use, particularly among those living on reservations or who have dropped out of school, while AI/AN adults who drink tend to engage in heavy, episodic drinking patterns. However, surprisingly a negative correlation was observed between AI/AN communities and substance availability, trauma exposure, family and peer networks, and historical trauma. These correlational findings emphasize the multifaceted nature of substance use issues in AI/AN populations and highlight potential areas for targeted intervention and prevention efforts.
+END TEXT
+
+START PROMPT
+Given the text validate a series of relationships between variables that will be included in a json format below.
+For example, if the json includes a relation like "Country's per capita income -> Country's literacy rate", and the text includes "We find a strong correlation p < .0001 between a country's per capita income and it's literacy rate" then the RelationshipClassification would be direct.
+If instead the text includes ""We find a strong inverse correlation p < .0001 between a country's per capita income and it's literacy rate" then the RelationshipClassification would be inverse.
+The SupportText field of your output should include verbaitum text related to the relation between the two variables without paraphrasing.
+The Reasoning field should be used to step by step reason from the text of the paper to try to come up with a good relationship classification and should focus on plainly stated results over implications.
+The RelationshipClassification field can only be 'direct', 'inverse', 'not applicable', or 'uncorrelated'.
+Direct means that an increase in one would cause a decrease in another, and inverse means that an increase in one would cause a decrease in another.
+Uncorrelated means there is no clear relationship between the two variables. Not applicable means the text does not suggest anything about the relationship between the two variables. 
+Use exactly wording of outputs choices and input variable names, including capitalization choices. 
+
+OUTPUT FORMATTING INSTRUCTIONS START
+The output should be formatted as a JSON instance that conforms to the JSON schema below.
+
+As an example, for the schema {"properties": {"foo": {"title": "Foo", "description": "a list of strings", "type": "array", "items": {"type": "string"}}}, "required": ["foo"]}
+the object {"foo": ["bar", "baz"]} is a well-formatted instance of the schema. The object {"properties": {"foo": ["bar", "baz"]}} is not well-formatted.
+
+Here is the output schema:
+```
+{"properties": {"Relations": {"title": "Relations", "type": "array", "items": {"$ref": "#/definitions/SingleRelation"}}}, "required": ["Relations"], "definitions": {"SingleRelation": {"title": "SingleRelation", "type": "object", "properties": {"VariableOneName": {"title": "Variableonename", "type": "string"}, "VariableTwoName": {"title": "Variabletwoname", "type": "string"}, "SupportingText": {"title": "Supportingtext", "type": "string"}, "Reasoning": {"title": "Reasoning", "type": "string"}, "RelationshipClassification": {"title": "Relationshipclassification", "type": "string"}}, "required": ["VariableOneName", "VariableTwoName", "SupportingText", "Reasoning", "RelationshipClassification"]}}}
+```
+OUTPUT FORMATTING INSTRUCTIONS END
+
+Below is the list of relationships that you should include in your output. Ensure all relationships are evaluated!
+Below are 12 relations:
+AI/AN status -> Substance-related mortality
+AI/AN status -> Alcohol-related deaths
+AI/AN status -> Chronic liver disease
+AI/AN status -> Drug-related issues
+AI/AN adolescents -> Substance use initiation
+AI/AN adolescents -> Substance use rates
+AI/AN adolescents -> Living on reservations
+AI/AN adolescents -> Dropped out of school
+AI/AN adults who drink -> Heavy, episodic drinking patterns
+AI/AN communities -> Substance availability
+AI/AN communities -> Trauma exposure
+AI/AN communities -> Historical trauma
+End of the list of relationships.
+
+END PROMPT
+
+
+
+======================================================================
+Paper Analyzed: Rumination and Cognitive Distraction in Major Depressive Disorder: An Examination of Respiratory Sinus Arrhythmia
+LLM Prompt:
+START TEXT
+Abstract
+Difficulty regulating emotions following stressful events is a hallmark of Major Depressive Disorder _MDD__ Although individuals_ ability to regulate their emotions is believed to have direct consequences for both emotional and physical wellbeing_ few studies have examined the cardiovascular effects of different emotion regulation strategies in MDD_ To the best of our knowledge_ the current study is the first to examine the effects of two emotion regulation strategies_ cognitive distraction and rumination_ on both self_reported sadness and respiratory sinus arrhythmia _RSA_ in individuals with MDD and healthy controls _CTLs__ Following a forced_failure stressor_ participants were randomly assigned to a rumination or cognitive distraction condition_ As expected_ rumination increased sadness and triggered RSA withdrawal for both MDDs and CTLs_ Interestingly_ although cognitive distraction reduced sadness_ it also triggered RSA withdrawal_ Moreover_ cognitive distraction was associated with greater RSA withdrawal for MDDs than CTLs_ Thus_ although depressed individuals are able to use cognitive distraction to emotionally recover from stress_ it may be associated with greater cognitive effort_ Adding low_cost physiological measures such as RSA into assessments has the potential to offer new and important information about the effects of emotion regulation on mental and physiological health_
+
+Keywords_ depression_ stress_ emotion regulation_ respiratory sinus arrhythmia_ autonomic nervous system
+Exaggerated emotional and cardiovascular responses to stress are central characteristics of Major Depressive Disorder _MDD_ e_g__ Brown _ Harris_ 1986_ Lazarus _ Folkman_ 1984_ Monroe _ Hadjiyannakis_ 2002__ and can have detrimental effects on mental and physical wellbeing _for a review see Grippo _ Johnson_ 2009__ In fact_ an altered response to stress is a primary pathophysiological mechanism linking MDD to cardiovascular morbidity and mortality_ Although past research has focused on individual differences in the initial reactivity to stress_ studies increasingly emphasize the importance of examining individuals_ ability to regulate their emotions after the stressor ends _Flynn _ Rudolph_ 2007_ Nolen_Hoeksema_ Wisco_ _ Lyubomirsky_ 2008__ For example_ models of stress and health posit that emotion regulation strategies are critical determinants of emotional and cardiovascular health_ particularly for those with psychopathology _Brosschot_ Gerin_ _ Thayer_ 2006_ Kubzansky_ Davidson_ _ Rozanski_ 2005__ Despite this_ little is known about the effects of using different emotion regulation strategies on cardiovascular activity in MDD_
+
+The parasympathetic nervous system plays an important role in regulating cardiovascular activity_ More specifically_ the parasympathetic nervous system influences oscillations in heart rate via its effect on the vagus nerve_ which affects heart rate acceleration and deceleration during respiration_ Whereas vagal activity is temporarily suppressed during inhalation_ causing heart rate to increase_ vagal activity resumes during exhalation_ causing heart rate to decrease_ Greater parasympathetic input leads to greater heart rate acceleration after inhalation and greater heart rate deceleration after exhalation_ Thus_ greater parasympathetic activity is associated with greater variability in the interval between heartbeats_ Respiratory sinus arrhythmia _RSA_ has been identified as an optimal marker of this beat_to_beat variation in heart rate linked to the respiratory cycle_ RSA offers advantages over other measures of the parasympathetic nervous system _e_g__ low_frequency heart rate variability_ given that it is unconfounded by sympathetic activation _Berntson_ Cacioppo_ _ Quigley_ 1993__ RSA also has advantages over other measures of biological functioning_ For one_ RSA is relatively inexpensive in that the per subject cost of data collection is minimal_ RSA data collection is also far less invasive than other methods for collecting biological data_ In fact_ with the development of technology to collect ambulatory RSA_ it is increasingly feasible to measure RSA data in applied research and clinical settings with minimal or no disruption to the individual _Cullins et al__ 2013_ Goedhart_ de Vries_ Kreft_ Bakker_ _ de Geus_ 2008_ Grossman_ Wilhelm_ _ Spoerle_ 2004__
+
+Given the advantages of collecting RSA data_ it is not surprising that RSA is used frequently to index parasympathetic activity _see Berntson_ Cacioppo_ _ Grossman_ 2007_ for an overview__ Parasympathetic activity_ and thus RSA_ is high during times of rest_ when energy expenditure is actively reduced _e_g__ by inhibiting the sympathetic innervations of the heart_ Lovallo _ Thomas_ 2000_ Rottenberg_ 2007__ However_ when environmental demands become more challenging_ such as in a time of stress_ this _brake_ _Rottenberg_ 2007_ is rapidly withdrawn in order to meet environmental demands_ Thus_ adaptive parasympathetic responses to stress trigger moderate RSA withdrawal _Blair _ Peters_ 2003_ Kreibig_ 2010__ RSA withdrawal allows autonomic changes that prime the body for action and facilitate responses to environmental changes_ including better executive functioning and social competence _Blair _ Peters_ 2003_ Marcovitch et al__ 2010__ In contrast to adaptive physiological responses to stress_ exaggerated reactivity or delayed recovery _evidenced by greater or longer RSA withdrawal_ places the body under excessive strain and increases risk for cardiovascular and other organic diseases _Crowell_ Skidmore_ Rau _ Williams_ 2013__ To facilitate recovery_ the body activates the parasympathetic nervous system_ leading to increased RSA_ Individual differences in the use of emotion regulation strategies may be associated with different amounts of parasympathetic activation_ and these differences may be particularly relevant for individuals with MDD_ who are at greater risk for poor health outcomes_ including cardiovascular disease _Keicolt_Gaser _ Glaser_ 2002__
+
+Past research on emotion regulation and recovery from stress in MDD focuses largely on self_reported sadness_ Whereas adaptive emotion regulation strategies facilitate recovery from stress_ maladaptive emotion regulation strategies prolong depressed mood_ Distraction is typically considered an adaptive emotion regulation strategy in the short_term given that it decreases sadness and facilitates engagement in behaviors that are likely to further improve mood _Donaldson _ Lam_ 2004_ Watkins_ Teasdale_ _ Williams_ 2000__ Both healthy controls and individuals with MDD are able to effectively down_regulate negative emotions when exposed to a distraction induction _for a review see Nolen_Hoeksema et al__ 2008__ Unlike healthy controls_ however_ individuals with MDD do not often spontaneously engage in distraction in everyday life_ This may be due_ in part_ to the fact that it is difficult for depressed individuals to disengage from negative thoughts_ resulting in an unproductive pattern of ruminative thinking _Joormann_ 2010_ Nolen_Hoeksema_ Morrow_ _ Fredrickson_ 1993__ The response styles theory _Nolen_Hoeksema_ 1991_ Nolen_Hoeksema et al__ 2008_ defines rumination as repeatedly thinking about negative feelings and the potential antecedents or repercussions of those feelings_ In contrast to distraction_ ruminative responses to stress increase the duration and severity of depressed moods _Nolen_Hoeksema et al__ 1993__
+
+Although the emotional consequences of rumination and distraction have been well established _see Lyubomirsky _ Tkach_ 2004_ and Nolen_Hoeksema et al__ 2008_ for reviews__ less is known about the effects of these emotion regulation strategies on RSA_ Initial evidence indicates that both anger and depressive rumination are associated with parasympathetic withdrawal _Key_ Campbell_ Bacon_ _ Gerin_ 2008_ Ottaviani_ Shapiro_ Davydov_ Goldstein_ _ Mills_ 2009__ whereas distraction is associated with parasympathetic activation _Gerin_ Davidson_ Christenfeld_ Goyal_ _ Schwartz_ 2006_ Ottaviani et al__ 2009_ Ottaviani et al__ 2011__ The majority of studies use passive distraction tasks_ which involve passively viewing neutral movies or images _Gerin et al__ 2006_ or overhearing a fabricated phone conversation _Ottaviani et al__ 2009_ 2011__ By contrast_ other studies use cognitive distraction tasks_ which require greater cognitive control and demand_ Cognitive distraction has been shown to be effective at improving negative mood _Eisenberg _ Morris_ 2003_ Eisenberg_ Morris_ _ Spinrad_ 2008__ The effect of cognitive distraction on parasympathetic activity_ however_ is more uncertain and has not been examined in MDD_
+
+The primary goal of the current study was to compare clinically depressed and healthy control participants_ parasympathetic activity during a rumination and cognitive distraction induction_ In the process_ we hoped to demonstrate the importance and feasibility of adding physiological measures to assessments of emotion regulation_ In this study_ participants were exposed to a forced_failure stressor_ selected for its ability both to induce sad mood _Hammen_ 2005_ and to trigger biological changes _Kirschbaum_ Pirke_ _ Hellhammer_ 1993__ Following the forced_failure task_ participants were randomly assigned either to ruminate on their poor performance or to cognitively distract themselves from it_ We measured RSA reactivity before and during the forced_failure and emotion regulation periods_ Whereas we expected rumination to be associated with RSA withdrawal in both the MDD and control groups_ we expected cognitive distraction to be associated with RSA activation in both groups_
+
+Method
+Participants
+Inclusion and exclusion criteria for the current study were determined via an in_person Structured Clinical Interview for DSM_IV _SCID_ First_ Spitzer_ Gibbon_ _ Williams_ 2002__ which was conducted by trained graduate students_ Strong inter_rater reliability was established_ _ _ 1_00_ Participants were included if they were between the ages of 18 and 60 and were in one of two groups_ those who met criteria for current major depressive disorder _MDD_ n _ 47__ and those who did not meet criteria for any past or current Axis I disorder _Control_ CTL_ n _ 51__ Participants were excluded due to severe head trauma_ learning disabilities_ bipolar disorder_ psychotic symptoms_ alcohol or substance abuse within the past six months_ or medical conditions that would affect psychophysiological recordings _e_g__ heart murmur__ Data from 7 participants with MDD and 4 CTLs could not be included due to excessive movement artefacts or signal error_ Thus_ the final sample included 40 participants in the MDD group and 47 in the CTL group_
+
+Forced_Failure Stressor
+Three forced_failure tasks were used to elicit distress_ The first was a facial identification task with false feedback indicating that the participant performed poorly_ This 10_minute task was adapted from Tran_ Siemer_ and Joormann _2011__ Participants were asked to identify the emotional expression _happy_ sad_ angry_ depicted in subliminally presented facial expressions_ Participants repeatedly received feedback that they were performing poorly relative to others who had already completed the task_ and the experimenter urged participants to try harder_ The second task was an anagram task_ in which approximately 30_ of the anagrams were unsolvable_ Participants were given 5 minutes to solve as many anagrams as possible but allowed only 30 seconds to solve each anagram_ In the third task_ participants were given 5 minutes to count backward aloud from 2_083 to zero in 13_step sequences _Kirschbaum et al__ 1993__
+
+Rumination and Distraction Induction
+Participants were randomly assigned to either a rumination or cognitive distraction condition_ which was adapted from the standard rumination and distraction _R_D_ task created by Nolen_Hoeksema and Morrow _1993__ Regardless of the condition_ participants viewed seven prompts one_at_a_time on the computer screen_ and they were asked to think and write about each prompt for two minutes_ Rumination prompts focused participants_ attention on thoughts that were emotion or self_focused _e_g__ _why your performance on the tests earlier today made you feel the way it did_ or _what people would think of you if they had observed you complete the tests earlier today___ In contrast_ cognitive distraction prompts focused participants_ attention on thoughts unrelated to the self _e_g__ _how to make a peanut_butter_and_jelly sandwich_ Describe it in detail_ with as many steps as possible__ or _the layout of your local mall_ Walk the entire length in your mind and describe the stores_ things_ or people you would see___ Participants_ written statements were later coded based on Hilt and Pollak _2013_ by two independent raters who were blind to group and condition_ Rumination score ratings were made on a 5_point Likert scale ranging from 1 _Not at all ruminating_ to 5 _Completely ruminating__ ICC _ _84_
+
+Measures
+Sadness ratings We examined sadness ratings assessed at 4 points_ at the end of the baseline period_ in the middle of the forced_failure induction_ immediately before the R_D induction_ and immediately after the R_D induction_ Participants rated their sadness on an 11_point Likert_scale ranging from 0 _not at all_ to 10 _very much__ We focused on sadness as opposed to other metrics of affect _e_g__ general negative affect_ given that sadness is central to MDD_ a common response to forced_failure stressors _Hammen_ 2005__ and the affective dimension most directly targeted by our rumination induction _Nolen_Hoeksema _ Morrow_ 1993__
+Respiratory sinus arrhythmia _RSA_ Electrocardiograph _ECG_ and respiration frequency were recorded with a computer_based data acquisition system _MP150_ Biopac Systems__ Three standard electrodes were attached bilaterally to participants_ left and right upper rib cage and right collarbone_ To measure respiration frequency_ a strain_gauge transducer belt was attached around the chest above the ribcage and below the bust_ Data was collected using BIOPAC bioamplifiers_ The ECG and respiration frequency signals were sampled at a rate of 1_000 Hz_ digitized with a 16_bit analog_to_digital converter_ and processed using AcqKnowledge and MindWare software_ Following recommendations of the Task Force of the European Society of Cardiology and the North American Society of Pacing and Electrophysiology _1996__ we used a frequency domain measure of heart rate variability_ namely RSA_ Thus_ vagal activation was indexed by measuring heart rate variability in the frequency band between _14 and _4 Hz _high frequency_ heart rate variability__ R_wave markers in the ECG signal were evaluated for artifacts by visual inspection and the MAD_MED artifact detection algorithm implemented in MindWare software _Mindware Heart Rate Variability Application_ version 2_51_ Mindware Technologies Ltd___ Identified artifacts were then manually corrected_ Beat_to_beat interval series were obtained from the ECG and converted into time series of instantaneous beat_to_beat intervals with a resolution of 4 Hz_ Spectral analysis using the Welch method determined the power spectral density in the frequency band between _14 and _4 Hz_ This value is then automatically log_transformed to correct for the non_normal distribution_ and minute_by_minute estimates of RSA were determined_ This approach accords with best_practice guidelines for frequency domain methods to calculate RSA _Berntson et al__ 1993_ Task Force of the European Society of Cardiology and the North American Society of Pacing and Electrophysiology_ 1996__ Data were then analyzed in 5_minute increments_ or as close to this interval as tasks would allow_ Specifically_ RSA was measured during the following four periods_ 1_ During the 5_minute nature video _baseline__ which occurred immediately before the forced_failure stressor_ 2_ During the first 5 minutes of the forced_failure stressor_ 3_ During the 5 minutes immediately before the R_D induction_ when participants were completing the forced_failure stressor _approximately 15_20 minutes after the forced_failure onset__ and 4_ During the first 6 minutes of the R_D induction _i_e__ during the first three R_D prompts__
+Questionnaires Participants completed the Beck Depression Inventory_II _BDI_ Beck_ Steer_ _ Brown_ 1996__ a 21_item measure assessing depressive symptom severity __ _ _97__ Additionally_ participants completed the Ruminative Responses Scale of the Response Style Questionnaire _RRS_ Nolen_Hoeksema _ Morrow_ 1991__ a 22_item self_report questionnaire assessing individual differences in the tendency to ruminate when sad __ _ _99__
+Procedure
+After participants provided informed consent_ approximately 5 minutes were taken to attach psychophysiological equipment and ensure the accurate collection of RSA data_ Participants then watched a 5_minute nature video followed by the forced_failure stressor_ Next_ participants were randomly assigned to the rumination or cognitive distraction condition of the R_D induction_ Before leaving the laboratory_ participants watched a calming nature video in order to provide ample time for mood to return to baseline_ Participants completed demographic and clinical questionnaires at the end of the experiment_
+
+Data Analysis
+Analyses were conducted with SPSS version 20_0_ Baseline and demographic data were analyzed via one_way analysis of variance _ANOVA_ and chi square tests_ To examine the effect of the forced_failure stressor and R_D induction on self_reported sadness and RSA_ we examined the changes in sadness and RSA as a result of the forced_failure stressor and R_D induction_ For example_ sadness reactivity to the forced_failure stressor was calculated as sadness rated during the forced_failure induction minus sadness at baseline_ Sadness reactivity to the R_D induction was calculated as sadness rated after the R_D induction minus sadness immediately before the R_D induction_ Positive scores indicate increases in sadness_ negative scores indicate decreases in sadness_ Similarly_ RSA reactivity during the forced_failure stressor was calculated as RSA measured during the first five minutes of the forced_failure stressor minus RSA measured during the five minutes immediately before the forced_failure stressor_ RSA reactivity during the R_D induction was calculated as RSA measured during the first six minutes of the R_D induction minus RSA measured during the five minutes immediately before the R_D induction_ Positive scores indicate RSA activation_ negative scores indicate RSA withdrawal_ Univariate ANOVAs were used to examine reactivity and recovery scores by group _MDD_ CTL_ and condition _rumination_ cognitive distraction__
+
+Go to_
+Results
+Participant and Baseline Characteristics
+Demographic and clinical data are presented in Table 1_ There was no significant difference in ethnicity across group or condition_ _2s_1_ N_86_ _ 1_ and ethnicity did not significantly differ by group within the rumination_ _2s_1_ N_43_ _ 1_ or cognitive distraction conditions_ _2s_1_ N_43_ _ 1_ ps _ _05_ Age also did not significantly differ across groups or conditions_ Fs_1_ 83_ _ 1_ and age did not significantly differ by group within the rumination_ t_42_ _ 1_66_ or cognitive distraction conditions_ t_41_ _ 1_40_ ps _ _05_ Although there was a significant difference in proportion who were female across group_ _2_1_ N_87_ _ 3_86_ p _ _05_ and condition_ _2_1_ N_87_ _ 5_09_ p _ _05_ the proportion female did not differ across diagnostic group within the rumination_ _2_1_ N_44_ _ 2_93_ or cognitive distraction condition_ _2_1_ N_43_ _ 1_28_ ps _ _05_ As expected_ BDI _depressive symptoms__ RRS _trait rumination__ and baseline sadness ratings were significantly higher in the MDD versus CTL group_ F_1_ 82_ _ 39_19_ ps _ _001_ Scores_ however_ did not differ by R_D condition_ and the group by condition interaction was not significant_ Fs_1_ 82_ _ 1_ ps _ _05_ Baseline RSA did not differ by group or condition_ and the group by condition interaction was not significant_ Fs_1_ 83_ _ 1_ ps _ _05_
+
+Table 1
+Participant Characteristics
+
+CTL _N _ 47_
+MDD _N _ 40_
+Variable_Rumination_Distraction_Rumination_Distraction
+Age_ M _SD__34_63 _12_00__40_74 _11_30__40_65 _11_96__35_70 _12_28_
+Sex _female_male__5_19_11_12_9_11_13_7
+Caucasian_ __39_13_39_13_35_00_30_00
+BDI_ M _SD__3_21 _6_26__4_00 _5_29__29_84 _13_10__31_95 _11_07_
+RRS_ M _SD__31_91 _10_33__31_13 _8_07__66_16 _9_01__68_00 _11_12_
+Rumination Score_ M _SD__10_58 _3_61__7_23 _0_43__16_50 _4_88__7_80 _2_02_
+Open in a separate window
+R_D Induction Manipulation Check
+Participants_ written responses during the R_D induction were coded for the extent to which they were ruminating _see Rumination Score in Table 1__ There was a main effect of R_D condition_ F_1_ 82_ _ 76_38_ p _ _001_ _2 _ _48_ and a main effect of diagnostic group_ F_1_ 82_ _ 22_13_ p _ _001_ _2 _ _21_ However_ these main effects were qualified by a significant group by condition interaction_ F_1_ 82_ _ 15_01_ p _ _001_ _2 _ _16_ Although MDDs in the rumination condition received higher rumination scores than CTLs in the rumination condition_ F_1_ 42_ _ 21_31_ p _ _001_ rumination scores did not differ between MDDs and CTLs in the cognitive distraction condition_ F_1_ 40_ _ 1_70_ p _ _05_ Importantly_ individuals assigned to the rumination condition received higher rumination scores than participants in the cognitive distraction condition in both the MDD_ F_1_ 40_ _ 54_25_ p _ _001_ _2 _ _59_ and CTL group_ F_1_ 44_ _ 18_73_ p _ _001_ _2 _ _30_
+
+Self_Reported Sadness
+Self_reported sadness was examined to ensure the forced_failure induction and R_D induction had the anticipated effects _see Figure 1__ As expected_ compared to CTLs_ the MDD group reported greater sadness reactivity to the forced_failure stressor_ F_1_ 81_ _ 7_36_ p _ _01_ _2 _ _08_ Sadness reactivity to the failure stressor did not significantly differ by R_D condition_ and the group by condition interaction was not significant_ F_1_ 81_ _ 1_ ps _ _05_ _2 _ _01_ suggesting that random assignment was effective_ Sadness reactivity to the R_D induction did not differ by group_ F_1_ 81_ _ 1_ p _ _05_ _2 _ _01_ However_ individuals in the cognitive distraction and rumination condition differed in their emotional response to the R_D induction_ F_1_ 81_ _ 6_20_ p _ _05_ _2 _ _07_ As was anticipated_ participants_ self_reported sadness decreased in the cognitive distraction condition but increased in the rumination condition_ The group by condition interaction was not significant_ F_1_ 81_ _ 2_04_ p _ _05_ _2 _ _03_
+
+An external file that holds a picture_ illustration_ etc_
+Object name is nihms718010f1_jpg
+Figure 1
+Change in sadness in response to the forced_failure stressor and the emotion regulation induction in CTLs and MDDs in the rumination and distraction condition_ Higher scores indicate increased sadness during the forced_failure or Rumination and Distraction _R_D_ induction period_ Error bars indicate ___ 1 SE_
+
+RSA
+We first conducted a repeated_measures ANOVA with diagnostic_group and R_D condition as the between_subject factors and time as the within_subject factor_ This yielded a main effect of time_ F_3_ 249_ _ 15_51_ p _ _001_ _2 _ _16_ which was qualified by the interaction between diagnostic group_ R_D condition_ and time at the cubic level_ F_1_ 83_ _ 3_81_ p _ _05_ _2 _ _04_ No other main or interaction effects were significant_ ps _ _05_ Follow_up tests conducted on RSA change scores indicated that_ as expected_ there was a significant RSA withdrawal in response to the forced_failure stressor_ t_86_ _ 2_64_ p _ _01 _see Figure 2__ Importantly_ RSA change during forced_failure induction did not significantly differ by group or condition_ and the group by condition interaction was not significant_ Fs_1_ 83_ _ 1_ ps _ _05_ _2 _ _01_
+
+An external file that holds a picture_ illustration_ etc_
+Object name is nihms718010f2_jpg
+Figure 2
+Change in RSA in response to the forced_failure stressor and emotion regulation induction in CTLs and MDDs in the rumination and distraction condition_ Higher scores indicate increased RSA during the forced_failure or Rumination and Distraction _R_D_ induction period_ Error bars indicate ___ 1 SE_
+
+We examined RSA change during the R_D induction to test our main hypotheses_ Across conditions_ there was a significant RSA withdrawal during the R_D induction_ t_86_ _ 6_10_ p _ _001_ Whereas RSA withdrawal during the R_D induction did not significantly differ by diagnostic group or R_D condition_ Fs_1_ 83_ _ 1_ ps _ _05_ _2 _ _01_ the group by condition interaction was significant_ F_1_ 83_ _ 5_53_ p _ _05_ _2 _ _06_1 Follow_up tests showed that RSA withdrawal during rumination did not significantly differ between CTL and MDD groups_ F_1_ 42_ _ 1_ p _ _05_ _2 _ _02_ In contrast_ RSA withdrawal during cognitive distraction was significantly greater for MDDs than CTLs_ F_1_ 41_ _ 5_66_ p _ _03_ _2 _ _12_ Within_group follow_up tests indicated that RSA withdrawal did not differ between CTLs in the rumination and distraction condition_ F_1_ 45_ _ 1_74_ p _ _05_ _2 _ _04_ but RSA withdrawal was significantly greater for MDDs in the distraction versus rumination condition_ F_1_ 38_ _ 5_54_ p _ _03_ _2 _ _13_
+
+Go to_
+Discussion
+Even though previous studies have examined emotional responses to rumination and distraction in MDD_ little is known about the consequences of using these emotion regulation strategies on RSA_ To the best of our knowledge_ the current study is the first to examine whether clinically depressed and healthy control participants display different affective and parasympathetic responses to a rumination and cognitive distraction induction_ As expected_ rumination increased sadness and triggered RSA withdrawal for both MDDs and CTLs_ Interestingly_ although cognitive distraction reduced sadness_ it also triggered RSA withdrawal_ Moreover_ cognitive distraction was associated with greater RSA withdrawal for MDDs than CTLs_ For MDDs_ RSA withdrawal was also greater during cognitive distraction than rumination_
+
+RSA withdrawal during rumination is in line with numerous studies reporting that both anger and depressive rumination is associated with less parasympathetic activation in analogue samples _e_g__ Gerin et al__ 2006_ Key et al__ 2008_ Ottaviani et al__ 2009__ It also parallels the broader literature_ which finds cardiovascular activation during perseverative thinking _ including worry_ rumination_ or trauma recall _ in analogue samples _Brosschot et al__ 2006_ Verkuil et al__ 2009__ Our data extend this literature by comparing clinically depressed and healthy control participants_ Results demonstrate that the effect of rumination on RSA withdrawal did not significantly differ between MDDs and CTLs_ This finding is relevant to models of cardiovascular disease that include rumination as a mechanism through which MDD heightens risk for cardiovascular morbidity and mortality _Brosschot et al__ 2006_ Rozanski_ Blumenthal_ _ Kaplan_ 1999_ Rugulies_ 2002__ More specifically_ results from our study suggest that depressed individuals may be at heightened risk for cardiovascular disease not because rumination has a greater effect on RSA in MDDs than in CTLs_ but because MDDs spend more time using an emotion regulation strategy that is associated with parasympathetic withdrawal_ Given that rumination produced similar RSA withdrawal in the MDD and CTL groups_ models of cardiovascular risk might include not only the cardiovascular effects of rumination but also the frequency with which individuals ruminate in everyday life_
+
+In addition_ the current study examined the effects of cognitive distraction on RSA and found RSA withdrawal instead of RSA activation_ Our results stand in contrast to observations of cardiovascular recovery during passive distraction _e_g__ Gerin et al__ 2006_ Ottaviani et al__ 2008_ Ottaviani et al__ 2009__ For example_ cardiovascular recovery from stress _ indexed via increased parasympathetic activity or decreased sympathetic activity _ has been observed when passively viewing neutral pictures and posters _Gerin et al__ 2006_ or when distracted by overhearing a fabricated phone conversation _Ottaviani et al__ 2008_ 2009_ 2011__ An important difference between our distraction task and passive distraction tasks is that our task required participants to engage in effortful control over their thoughts_ In fact_ it is this effort that has been posited to drive parasympathetic withdrawal during cognitive tasks _Luft et al__ 2009_ Reynard et al__ 2011__ Interestingly_ greater effort has long been associated with parasympathetic withdrawal _Lundberg _ Frankenhaeuser_ 1980__ Moreover_ evidence from other experimental paradigms shows that tasks requiring cognitive effort lead to parasympathetic withdrawal _Duschek_ Muckenthaler_ Werner_ _ Reys del Paso_ 2009_ Luft_ Takase_ _ Darby_ 2009_ Reynard_ Gevirtz_ Berlow_ Brown_ _ Boutelle_ 2011_ Verkuil_ Brosschot_ Borkovec_ _ Thayer_ 2009_ although see also Butler_ Wilhelm_ _ Gross_ 2006_ and Segerstrom _ Solberg Nes_ 2007_ for evidence of parasympathetic activation__ For example_ studies report less parasympathetic activity when participants control the content of thoughts by thinking and writing about an assigned topic compared to baseline parasympathetic activity _Reynard et al__ 2011_ or when participants think about moral questions __Is it appropriate for your friend to misrepresent his curriculum vitae in order to get a job___ Verkuil et al__ 2009__ Luft et al_ _2009_ also reported lower parasympathetic activity during tasks requiring high versus low cognitive effort_ More specifically_ greater parasympathetic withdrawal was observed during a one_back working memory task compared to a simple reaction time task_
+
+We also observed greater RSA withdrawal during cognitive distraction in the MDD versus CTL group_ Given evidence connecting effort and parasympathetic withdrawal _Lundberg _ Frankenhaeuser_ 1980__ greater RSA withdrawal in the MDD group could reflect greater effort required for depressed individuals to engage in cognitive distraction following sadness_inducing failure_ This interpretation is in line with behavioral data showing that depressed participants are slower to disengage from negative material _see reviews by Gotlib _ Joormann_ 2010_ Joormann_ 2010_ Koster_ De Lissnyder_ Derakshan_ _ De Raedt_ 2011__ It is further supported by evidence that depressed individuals show greater activation in brain regions subserving cognitive control _dorsal anterior cingulate cortex and the insula_ when removing negative material from working memory _Foland_Ross_ Hamilton_ Joormann_ Berman_ Jonidees_ _ Gotlib_ 2013__ Furthermore_ during cognitive distraction_ individuals with remitted depression exhibited increased neural activity compared to healthy controls in the regulating control_network_ including the anterior cingulate _Kanske_ Heissler_ Sch_nfelder_ _ Wessa_ 2012__ The idea of cognitive effort leading to parasympathetic withdrawal is also in line with research showing lower parasympathetic activity in other clinical groups when using adaptive_ yet effortful_ emotion regulation strategies _Aldao _ Mennin_ 2012__ Specifically_ Aldao and Mennin found that individuals with generalized anxiety disorder exhibited lower parasympathetic activity when using acceptance or reappraisal to regulate their emotions compared to when passively viewing a film_ Importantly_ in the current study_ despite group differences in parasympathetic withdrawal during cognitive distraction_ both healthy controls and clinically depressed participants were able to use distraction to repair the sad mood that was induced during the forced_failure period_ Thus_ although cognitive distraction appears to facilitate emotional recovery from stress_ it may be associated with greater cognitive effort for individuals with MDD_ In fact_ for individuals with MDD_ RSA withdrawal was even greater during cognitive distraction than rumination_ further emphasizing the effort required for this population to engage in cognitive distraction_ The fact that we observed a different pattern of findings for RSA and self_reported affect in the MDD versus CTL group underscores the importance of adding physiological measures to clinical assessments_
+
+It is also noteworthy that_ in this study_ baseline RSA did not differ between MDD and CTL participants_ Interestingly_ the literature on baseline RSA in depression is mixed_ Whereas some studies report lower RSA levels in depressed compared to control participants _Dalack _ Roose_ 1990_ Lehofer et al__ 1999_ Rottenberg_ Clift_ Bolden_ _ Salomon_ 2007__ others report no differences in RSA levels _e_g__ Lehofer et al__ 1997_ Moser et al__ 1998__ Although a meta_analysis conducted by Rottenberg _2007_ found that depression was associated with lower levels of resting RSA _d _ _33__ only 6 of the 39 comparisons indicated a significant difference between depressed and control participants_ and depression accounted for only about 2_ of the variance in RSA_ Moreover_ Rottenberg _2007_ concludes that the overall effect of depression on RSA likely reflects an upper_bound estimate that may be very modest after accounting for confounds and unpublished studies_ thereby casting doubt on the effects of depression on baseline RSA_ When incorporating our findings on baseline RSA into the broader literature_ it is important to consider the fact that we measured baseline RSA while participants were watching a calming nature video_ which may have served as a passive distraction task_ which has been shown to increase parasympathetic activity _Gerin et al__ 2006_ Ottaviani et al__ 2009_ 2011__ We_ therefore_ caution against direct comparison between baseline RSA measured in the current study with that measured in studies where participants are not engaging in any activity_
+
+The current study has several limitations_ For one_ comorbid health conditions were determined based on participants_ self report_ and it is possible that participants may have been unaware of prior cardiovascular conditions that would have affected RSA_ However_ using reactivity and recovery_ as opposed to raw scores_ minimized external sources of variability_ Nonetheless_ future work might consider including a physical checkup_ Future studies might also include additional measures of cardiovascular health_ including blood pressure or pre_ejection period _PEP__ A second limitation is that the current study did not directly assess self_reported effort_ which prevents us from drawing a direct connection between effort and parasympathetic withdrawal during the cognitive distraction induction_ Lastly_ despite random assignment to the cognitive distraction and rumination conditions_ there was an unequal proportion of female participants across cells_ Importantly_ however_ the group by condition interaction on RSA recovery remained significant when sex was included in the model_
+
+Despite these limitations_ the current study offers a unique examination of parasympathetic activity during a rumination and cognitive distraction induction in clinically depressed versus healthy control participants_ Findings demonstrate that the effect of rumination on RSA did not significantly differ between the MDD and CTL groups_ In addition_ the current study provides the first evidence of the effects of cognitive distraction on RSA in MDD_ Our results demonstrate that distraction leads to greater parasympathetic withdrawal_ indexed via RSA withdrawal_ for MDDs than CTLs_ which may reflect that depressed individuals require additional effort to disengage from negative material_ We hope that this study also demonstrates the importance and feasibility of incorporating physiological measures into assessments of emotion regulation_ Assessing RSA activity can provide information about parasympathetic activation that cannot be obtained from self_report measures_ Thus_ information on RSA could help understand the effects of different emotion regulation strategies on patients_ physical health_ which is especially relevant for patients with comorbid health conditions_ In addition_ to the extent that RSA withdrawal indexes cognitive effort_ examining changes in RSA during cognitive distraction may prove a useful tool to assess skill integration as treatment progresses_ With practice_ cognitive distraction should become less effortful for depressed individuals_ leading to less RSA withdrawal_ These assessment options are possible given that RSA provides a low_cost physiological measure that can be assessed with minimal disruption in applied research and clinical settings_ With the development of devices to collect ambulatory RSA_ barriers to data collection have decreased even further_ Future work might examine parasympathetic activation during other emotion regulation strategies_ including the use of emotion regulation strategies in naturalistic settings_ Additionally_ investigators conducting research in applied or clinical settings might test whether parasympathetic withdrawal during cognitive distraction decreases with treatment or practice_
+
+Go to_
+Acknowledgements
+This work was supported by grant F31_MH086246_
+
+Go to_
+Footnotes
+1Including sex as a covariate did not affect the significant diagnostic group by R_D condition interaction_ F_1_ 79_ _ 6_76_ p _ _01_ _2 _ _08_ There were no significant main or interactive effects with sex_ Fs _ 1_
+END TEXT
+
+START PROMPT
+Given the text validate a series of relationships between variables that will be included in a json format below.
+For example, if the json includes a relation like "Country's per capita income -> Country's literacy rate", and the text includes "We find a strong correlation p < .0001 between a country's per capita income and it's literacy rate" then the RelationshipClassification would be direct.
+If instead the text includes ""We find a strong inverse correlation p < .0001 between a country's per capita income and it's literacy rate" then the RelationshipClassification would be inverse.
+The SupportText field of your output should include verbaitum text related to the relation between the two variables without paraphrasing.
+The Reasoning field should be used to step by step reason from the text of the paper to try to come up with a good relationship classification and should focus on plainly stated results over implications.
+The RelationshipClassification field can only be 'direct', 'inverse', 'not applicable', or 'uncorrelated'.
+Direct means that an increase in one would cause a decrease in another, and inverse means that an increase in one would cause a decrease in another.
+Uncorrelated means there is no clear relationship between the two variables. Not applicable means the text does not suggest anything about the relationship between the two variables. 
+Use exactly wording of outputs choices and input variable names, including capitalization choices. 
+
+OUTPUT FORMATTING INSTRUCTIONS START
+The output should be formatted as a JSON instance that conforms to the JSON schema below.
+
+As an example, for the schema {"properties": {"foo": {"title": "Foo", "description": "a list of strings", "type": "array", "items": {"type": "string"}}}, "required": ["foo"]}
+the object {"foo": ["bar", "baz"]} is a well-formatted instance of the schema. The object {"properties": {"foo": ["bar", "baz"]}} is not well-formatted.
+
+Here is the output schema:
+```
+{"properties": {"Relations": {"title": "Relations", "type": "array", "items": {"$ref": "#/definitions/SingleRelation"}}}, "required": ["Relations"], "definitions": {"SingleRelation": {"title": "SingleRelation", "type": "object", "properties": {"VariableOneName": {"title": "Variableonename", "type": "string"}, "VariableTwoName": {"title": "Variabletwoname", "type": "string"}, "SupportingText": {"title": "Supportingtext", "type": "string"}, "Reasoning": {"title": "Reasoning", "type": "string"}, "RelationshipClassification": {"title": "Relationshipclassification", "type": "string"}}, "required": ["VariableOneName", "VariableTwoName", "SupportingText", "Reasoning", "RelationshipClassification"]}}}
+```
+OUTPUT FORMATTING INSTRUCTIONS END
+
+Below is the list of relationships that you should include in your output. Ensure all relationships are evaluated!
+Below are 8 relations:
+Cognitive distraction -> Rumination
+Forced-failure stress -> Sadness
+Rumination -> Sadness
+Forced-failure stress -> RSA withdrawal
+Rumination Induction -> RSAwithdrawal
+Induced distraction -> RSAwithdrawal
+Forced-failure stress -> RSAwithdrawal
+MDD -> Cardiovascular disease
+End of the list of relationships.
+
+END PROMPT
+
+
+
