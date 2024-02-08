@@ -4,7 +4,11 @@ import re
 import json
 from PyPDF2 import PdfReader
 from typing import List, Tuple
+<<<<<<< HEAD
 #import fitz
+=======
+# import fitz
+>>>>>>> 085fc28 (pdfs of papers)
 
 def extract_sticky_notes(pdf_path):
     sticky_notes = []
