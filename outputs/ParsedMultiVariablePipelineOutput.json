@@ -1,0 +1,312 @@
+{
+    "elements": [
+        {
+            "label": "Incarceration",
+            "type": "variable"
+        },
+        {
+            "label": "Chronic health conditions",
+            "type": "variable"
+        },
+        {
+            "label": "Mortality",
+            "type": "variable"
+        },
+        {
+            "label": "Family health outcomes",
+            "type": "variable"
+        },
+        {
+            "label": "Population health",
+            "type": "variable"
+        },
+        {
+            "label": "Stress-related illness",
+            "type": "variable"
+        },
+        {
+            "label": "Infectious diseases",
+            "type": "variable"
+        },
+        {
+            "label": "Chronic Health Conditions",
+            "type": "variable"
+        },
+        {
+            "label": "Family Health",
+            "type": "variable"
+        },
+        {
+            "label": "AI/AN status",
+            "type": "variable"
+        },
+        {
+            "label": "Substance-related mortality",
+            "type": "variable"
+        },
+        {
+            "label": "AI/AN adolescents",
+            "type": "variable"
+        },
+        {
+            "label": "Substance use initiation and rates",
+            "type": "variable"
+        },
+        {
+            "label": "AI/AN adults who drink",
+            "type": "variable"
+        },
+        {
+            "label": "Heavy, episodic drinking patterns",
+            "type": "variable"
+        },
+        {
+            "label": "AI/AN communities",
+            "type": "variable"
+        },
+        {
+            "label": "Substance availability, trauma exposure, family and peer networks, historical trauma",
+            "type": "variable"
+        }
+    ],
+    "connections": [
+        {
+            "from": "Incarceration",
+            "to": "Chronic health conditions",
+            "direction": "mutual",
+            "type": "causal",
+            "description": "Schnittker & John (2007) found that individuals with a history of incarceration report more chronic health problems after their period of incarceration than before."
+        },
+        {
+            "from": "Incarceration",
+            "to": "Mortality",
+            "direction": "mutual",
+            "type": "causal",
+            "description": "Mumola (2007) used national-level data to summarize within-prison mortality and compare it with the rates for the US resident population. Although his comparisons between the two populations were not adjusted for differences in age and sex, the results are telling."
+        },
+        {
+            "from": "Incarceration",
+            "to": "Family health outcomes",
+            "direction": "mutual",
+            "type": "non-causal",
+            "description": "Research has shown that the impact of incarceration on family health outcomes operates indirectly through other mechanisms, including family processes, relationships among partners, changes in economic well-being, or educational performance."
+        },
+        {
+            "from": "Incarceration",
+            "to": "Population health",
+            "direction": "mutual",
+            "type": "non-causal",
+            "description": "One such study used state-level panel data stretching almost 25 years and found an association between incarceration and poorer population health. This association is strongest for infant mortality and female life expectancy."
+        },
+        {
+            "from": "Incarceration",
+            "to": "Chronic health conditions",
+            "direction": "mutual",
+            "type": "causal",
+            "description": "Schnittker & John (2007) found that individuals with a history of incarceration report more chronic health problems after their period of incarceration than before."
+        },
+        {
+            "from": "Incarceration",
+            "to": "Mortality",
+            "direction": "mutual",
+            "type": "causal",
+            "description": "Mumola (2007) found that the mortality rate for black male prisoners aged 15\u00e2\u20ac\u201c64 was 19% lower than that for black men in the general population."
+        },
+        {
+            "from": "Incarceration",
+            "to": "Stress-related illness",
+            "direction": "mutual",
+            "type": "causal",
+            "description": "Massoglia (2008a) found that relative to those who had not been incarcerated, those who had been incarcerated disproportionately suffer from stress-related illness."
+        },
+        {
+            "from": "Incarceration",
+            "to": "Infectious diseases",
+            "direction": "mutual",
+            "type": "causal",
+            "description": "Massoglia (2008b) found that those who had been incarcerated disproportionately suffer from infectious diseases such as hepatitis and tuberculosis."
+        },
+        {
+            "from": "Incarceration",
+            "to": "Family health outcomes",
+            "direction": "mutual",
+            "type": "causal",
+            "description": "Turney (2014) found an independent impact of incarceration on outcomes ranging from behavior and conduct problems to developmental delays in children's health."
+        },
+        {
+            "from": "Incarceration",
+            "to": "Chronic health conditions",
+            "direction": "mutual",
+            "type": "causal",
+            "description": "Schnittker & John (2007) found that individuals with a history of incarceration report more chronic health problems after their period of incarceration than before."
+        },
+        {
+            "from": "Incarceration",
+            "to": "Mortality",
+            "direction": "mutual",
+            "type": "causal",
+            "description": "Mumola (2007) found that the mortality rate for black male prisoners aged 15\u00e2\u20ac\u201c64 was 19% lower than that for black men in the general population."
+        },
+        {
+            "from": "Incarceration",
+            "to": "Stress-related illness",
+            "direction": "mutual",
+            "type": "causal",
+            "description": "Massoglia (2008a) found that relative to those who had not been incarcerated, those who had been incarcerated disproportionately suffer from stress-related illness."
+        },
+        {
+            "from": "Incarceration",
+            "to": "Infectious diseases",
+            "direction": "mutual",
+            "type": "causal",
+            "description": "Massoglia (2008b) found that those who had been incarcerated disproportionately suffer from infectious diseases such as hepatitis and tuberculosis."
+        },
+        {
+            "from": "Incarceration",
+            "to": "Family health outcomes",
+            "direction": "mutual",
+            "type": "causal",
+            "description": "Turney (2014) found an independent impact of incarceration on outcomes ranging from behavior and conduct problems to developmental delays in children's health."
+        },
+        {
+            "from": "Incarceration",
+            "to": "Mortality",
+            "direction": "mutual",
+            "type": "causal",
+            "description": "Incarceration is associated with higher mortality rates, with an all-cause standardized mortality ratio of 2.08 for whites and 1.03 for blacks. This suggests a direct and causal relationship between incarceration and mortality."
+        },
+        {
+            "from": "Incarceration",
+            "to": "Chronic Health Conditions",
+            "direction": "mutual",
+            "type": "causal",
+            "description": "Incarceration is correlated with lower self-reported health and disproportionately suffering from infectious diseases and stress-related illness. This indicates a direct and causal relationship between incarceration and chronic health conditions."
+        },
+        {
+            "from": "Incarceration",
+            "to": "Family Health",
+            "direction": "mutual",
+            "type": "causal",
+            "description": "Incarceration has wide-ranging effects on childhood health and well-being, including increasing mental health and behavioral problems. This suggests a direct and causal relationship between incarceration and family health."
+        },
+        {
+            "from": "Incarceration",
+            "to": "Mortality",
+            "direction": "mutual",
+            "type": "causal",
+            "description": "Incarceration is associated with higher mortality rates, with an all-cause standardized mortality ratio of 2.08 for whites and 1.03 for blacks. This suggests a direct and causal relationship between incarceration and mortality."
+        },
+        {
+            "from": "Incarceration",
+            "to": "Chronic Health Conditions",
+            "direction": "mutual",
+            "type": "causal",
+            "description": "Incarceration is correlated with lower self-reported health and disproportionately suffering from infectious diseases and stress-related illness. This indicates a direct and causal relationship between incarceration and chronic health conditions."
+        },
+        {
+            "from": "Incarceration",
+            "to": "Family Health",
+            "direction": "mutual",
+            "type": "causal",
+            "description": "Incarceration has wide-ranging effects on childhood health and well-being, including increasing mental health and behavioral problems. This suggests a direct and causal relationship between incarceration and family health."
+        },
+        {
+            "from": "Incarceration",
+            "to": "Chronic health conditions",
+            "direction": "mutual",
+            "type": "causal",
+            "description": "Some of the most innovative research in this area leveraged longitudinal data to examine within-person change in health status after a period of incarceration. Schnittker & John (2007), for example, focused on within-person change using the National Longitudinal Survey of Youth (NLSY79). Three findings from this important paper set the stage for later sociological work in the area. First, the authors found that individuals with a history of incarceration report more chronic health problems after their period of incarceration than before."
+        },
+        {
+            "from": "Incarceration",
+            "to": "Mortality",
+            "direction": "mutual",
+            "type": "causal",
+            "description": "During the last four decades the American penal system grew at an unprecedented rate. The incarceration rate, which was roughly stable for 50 years prior to 1975, increased approximately fivefold since 1975 (Pettit & Western 2004). More than six million US residents are now or have been incarcerated and there are over 17 million felons or ex-felons in the United States. These numbers demonstrate the massive size of the penal system, and the current felon population is approximately six times larger than it was in 1970 (Uggen et al. 2006)."
+        },
+        {
+            "from": "Incarceration",
+            "to": "Stress-related illness",
+            "direction": "mutual",
+            "type": "causal",
+            "description": "Incarceration is also a chronic stressor (Pearlin 1989). Imprisonment can last for years, adding chronic stress to the initial acute shock. Daily stressors in prison can include lack of privacy, overcrowded conditions, antagonistic relationships with guards and inmates, witnessing violence, and the threat of violent victimization."
+        },
+        {
+            "from": "Incarceration",
+            "to": "Chronic health conditions",
+            "direction": "mutual",
+            "type": "causal",
+            "description": "Some of the most innovative research in this area leveraged longitudinal data to examine within-person change in health status after a period of incarceration. Schnittker & John (2007), for example, focused on within-person change using the National Longitudinal Survey of Youth (NLSY79). Three findings from this important paper set the stage for later sociological work in the area. First, the authors found that individuals with a history of incarceration report more chronic health problems after their period of incarceration than before."
+        },
+        {
+            "from": "Incarceration",
+            "to": "Mortality",
+            "direction": "mutual",
+            "type": "causal",
+            "description": "During the last four decades the American penal system grew at an unprecedented rate. The incarceration rate, which was roughly stable for 50 years prior to 1975, increased approximately fivefold since 1975 (Pettit & Western 2004). More than six million US residents are now or have been incarcerated and there are over 17 million felons or ex-felons in the United States. These numbers demonstrate the massive size of the penal system, and the current felon population is approximately six times larger than it was in 1970 (Uggen et al. 2006)."
+        },
+        {
+            "from": "Incarceration",
+            "to": "Stress-related illness",
+            "direction": "mutual",
+            "type": "causal",
+            "description": "Incarceration is also a chronic stressor (Pearlin 1989). Imprisonment can last for years, adding chronic stress to the initial acute shock. Daily stressors in prison can include lack of privacy, overcrowded conditions, antagonistic relationships with guards and inmates, witnessing violence, and the threat of violent victimization."
+        },
+        {
+            "from": "AI/AN status",
+            "to": "Substance-related mortality",
+            "direction": "mutual",
+            "type": "non-causal",
+            "description": "AI/AN status correlates with elevated rates of substance-related mortality, with alcohol-related deaths, chronic liver disease, and drug-related issues being notably higher."
+        },
+        {
+            "from": "AI/AN adolescents",
+            "to": "Substance use initiation and rates",
+            "direction": "mutual",
+            "type": "non-causal",
+            "description": "AI/AN adolescents exhibit earlier initiation and higher rates of substance use, particularly among those living on reservations or who have dropped out of school."
+        },
+        {
+            "from": "AI/AN adults who drink",
+            "to": "Heavy, episodic drinking patterns",
+            "direction": "mutual",
+            "type": "non-causal",
+            "description": "AI/AN adults who drink tend to engage in heavy, episodic drinking patterns."
+        },
+        {
+            "from": "AI/AN communities",
+            "to": "Substance availability, trauma exposure, family and peer networks, historical trauma",
+            "direction": "mutual",
+            "type": "non-causal",
+            "description": "Correlations are also observed between AI/AN communities and substance availability, trauma exposure, family and peer networks, and historical trauma, all of which impact substance use patterns and disparities within these communities."
+        },
+        {
+            "from": "AI/AN status",
+            "to": "Substance-related mortality",
+            "direction": "mutual",
+            "type": "non-causal",
+            "description": "AI/AN status correlates with elevated rates of substance-related mortality, with alcohol-related deaths, chronic liver disease, and drug-related issues being notably higher."
+        },
+        {
+            "from": "AI/AN adolescents",
+            "to": "Substance use initiation and rates",
+            "direction": "mutual",
+            "type": "non-causal",
+            "description": "AI/AN adolescents exhibit earlier initiation and higher rates of substance use, particularly among those living on reservations or who have dropped out of school."
+        },
+        {
+            "from": "AI/AN adults who drink",
+            "to": "Heavy, episodic drinking patterns",
+            "direction": "mutual",
+            "type": "non-causal",
+            "description": "AI/AN adults who drink tend to engage in heavy, episodic drinking patterns."
+        },
+        {
+            "from": "AI/AN communities",
+            "to": "Substance availability, trauma exposure, family and peer networks, historical trauma",
+            "direction": "mutual",
+            "type": "non-causal",
+            "description": "Correlations are also observed between AI/AN communities and substance availability, trauma exposure, family and peer networks, and historical trauma, all of which impact substance use patterns and disparities within these communities."
+        }
+    ]
+}
