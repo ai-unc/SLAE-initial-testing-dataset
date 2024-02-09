@@ -4,11 +4,7 @@ import re
 import json
 from PyPDF2 import PdfReader
 from typing import List, Tuple
-<<<<<<< HEAD
-#import fitz
-=======
 # import fitz
->>>>>>> 085fc28 (pdfs of papers)
 
 def extract_sticky_notes(pdf_path):
     sticky_notes = []
@@ -78,17 +74,17 @@ def main(pdf_path):
         "PaperDOI": metadata['DOI'],
         "PaperTitle": metadata['Title'],
         "PaperContents": file_contents,
-        "Variables": sticky_notes,
+        "Relations": sticky_notes,
     }
     serialized_input_data = json.dumps(input_data, indent=4)
     metadata['Title'] = sanitize_text(metadata['Title'])
     file_name = f"{metadata['Title']}_{re.sub('[^a-zA-Z0-9]', '_', metadata['DOI'])}.json".replace(" ", "_")
     try:
-        with open(f"inputs/{file_name}", "w") as outfile:
+        with open(f"./evaluations/auto_generated_inputs/{file_name}", "w") as outfile:
             outfile.write(serialized_input_data)
     except IOError:
         file_name = file_name[:50] + ".json"
-        with open(f"inputs/{file_name}", "w") as outfile:
+        with open(f"./evaluations/auto_generated_inputs/{file_name}", "w") as outfile:
             outfile.write(serialized_input_data)
 
 
@@ -122,8 +118,12 @@ if __name__ == "__main__":
     # pdf_path = pdf_flag.split("=")[1]
 
     # # Perform main processing
-    main("./ronold.pdf")
-
+    cwd = "./papers"
+    for file in os.listdir(cwd):
+        try:
+            main(os.path.join(cwd, file))
+        except:
+            print("failed on", os.path.join(cwd, file))
 
 
 
