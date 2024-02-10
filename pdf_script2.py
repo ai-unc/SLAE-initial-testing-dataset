@@ -79,13 +79,13 @@ def main(pdf_path):
     serialized_input_data = json.dumps(input_data, indent=4)
     metadata['Title'] = sanitize_text(metadata['Title'])
     file_name = f"{metadata['Title']}_{re.sub('[^a-zA-Z0-9]', '_', metadata['DOI'])}.json".replace(" ", "_")
-    try:
-        with open(f"./evaluations/auto_generated_inputs/{file_name}", "w") as outfile:
-            outfile.write(serialized_input_data)
-    except IOError:
-        file_name = file_name[:50] + ".json"
-        with open(f"./evaluations/auto_generated_inputs/{file_name}", "w") as outfile:
-            outfile.write(serialized_input_data)
+    # try:
+    #     with open(f"./evaluations/auto_generated_inputs/{file_name}", "w") as outfile:
+    #         outfile.write(serialized_input_data)
+    # except IOError:
+    file_name = file_name[:50] + ".json"
+    with open(f"./evaluations/auto_generated_inputs/{file_name}", "w") as outfile:
+        outfile.write(serialized_input_data)
 
 
 def parse_arguments(args):
