@@ -1,10 +1,7 @@
-import sys
 import os
 import re
 import json
 from PyPDF2 import PdfReader
-from typing import List, Tuple
-# import fitz
 
 def extract_sticky_notes(pdf_path):
     sticky_notes = []
@@ -62,7 +59,8 @@ def extract_pdf_text(pdf_path):
     return text_contents
 
 def sanitize_text(text):
-    return re.sub("[^a-zA-Z0-9\n ]", "_", text)
+    return text.replace("\n", "").replace("\r", "").replace("\t", "")
+    #return re.sub("[^a-zA-Z0-9\n .,()\[\]{}]", "_", text)
 
 def main(pdf_path):
     sticky_notes = extract_sticky_notes(pdf_path)
