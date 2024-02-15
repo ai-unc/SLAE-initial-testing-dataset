@@ -90,5 +90,6 @@ for i in range(len(papers)):
 
 
 with open("../evaluations/test_inputs/output.json", "w") as f:
-    data_out = json.dumps(papers)
+    data_out = json.dumps({"papers":papers})
     f.write(data_out)
+    pprint({"papers":papers})

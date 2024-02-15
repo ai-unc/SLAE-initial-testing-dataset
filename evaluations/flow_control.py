@@ -2,6 +2,10 @@
 
 # Use the matcher to separate the list of relations, resulting in a series of python dictionaries each with a single paper and a list of related relations.
 
+import json
+with open("./test_inputs/output.json", "r") as f:
+    matched_papers = json.loads(f)
+print(matched_papers)
 # Obtain settings by reading in the file
 
 # For each dictionary run the "extract_relationships" function and settings
