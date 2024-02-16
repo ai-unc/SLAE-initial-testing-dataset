@@ -77,14 +77,8 @@ def extract_relationships(data, set_prompt=None, verbose = False, model = None, 
             f.write(input_text)
             f.write("\n\n\n")
     human_message_prompt = HumanMessagePromptTemplate(prompt=prompt)
-    if verbose:
-        print("Type of human_message_prompt:", type(human_message_prompt))
     chat_prompt = ChatPromptTemplate.from_messages([human_message_prompt])
-    if verbose:
-        print("Type of chat_prompt:", type(chat_prompt))
     completion_prompt = chat_prompt.format_prompt(text=processed_text, relationships=relationships).to_messages()
-    if verbose:
-        print("Type of completion_prompt:", type(completion_prompt))
 
     # Create LLM
     model = ChatOpenAI(temperature=.0, openai_api_key=key, model_name=model)
@@ -102,7 +96,7 @@ def extract_relationships(data, set_prompt=None, verbose = False, model = None, 
     return parsed_output.dict()  # Returns in dict format
 
 def clean_data(data_path, verbose=False) -> dict():
-    """Reads Json and removes paper fulltext and list of user predictions"""
+    """Reads Json and removes list of user predictions"""
     with open(data_path, "r") as f:
         data = json.load(f)
     for relation in data['Relations']:
