@@ -92,7 +92,7 @@ def extract_relationships(data, set_prompt=None, verbose = False, model = None, 
             f.write("\n")
     parsed_output = parser.parse(output.content) # Ensure content is in valid json format.
     if verbose:
-        print(f"Successful pipeline completion, debug information and results saved at {outputs_source}")
+        print(f"\n=========\nSuccessful pipeline completion for {data['PaperTitle'][:50]}, debug information and results saved at {outputs_source}")
     return parsed_output.dict()  # Returns in dict format
 
 def clean_data(data_path, verbose=False) -> dict():

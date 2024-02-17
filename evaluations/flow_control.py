@@ -1,5 +1,6 @@
 import yaml
 import pathlib
+import json
 from matcher.matcher import match_relations_to_papers
 from pipelines.captured_relations_pipeline import extract_relationships
 
@@ -21,12 +22,18 @@ with open("./pipeline_settings.yaml", "r") as f:
 
 
 # For each dictionary run the "extract_relationships" function and settings
+outputs = list()
 for data in matched_papers:
     output = extract_relationships(data, set_prompt=prompt, verbose=verbose, model=model, outputs_source=pathlib.Path("./pipelines/debug_outputs"))
+    outputs.append(output)
+with open(pathlib.Path("./pipelines/debug_outputs") / "MultiVariablePipelineOutputs.json", "w") as f:
+    f.write(json.dumps({"Papers" : outputs}))
+with open(pathlib.Path("./pipelines/debug_outputs") / "MultiVariablePipelineOutputs.json", "r") as f:
+    outputs = json.load(f)
 
-
-# Obtain a list of output jsons from the iterative running of extract_relationships
-
-# Recombine the output jsons into the format required to output to Kumu
+# Obtain the list of output jsons from the iterative running of extract_relationships and recombine the output jsons into the format required to output to Kumu
+json_for_kumu = {}
+for prediction in outputs["Papers"]:
+    pass
 
 # Parse it into Kumu form and save the json in a file. 
