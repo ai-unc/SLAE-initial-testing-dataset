@@ -1,6 +1,6 @@
-import json, sys, os
+import json
 
-for file in os.listdir("./inputs"):
+def main(file):
     curFile = json.load(open("./inputs/" + file))
     output = {
         "relations": []
