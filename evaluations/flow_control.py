@@ -23,7 +23,7 @@ if False:
 
 # Use the matcher to separate the list of relations, resulting in a series of python dictionaries each with a single paper and a list of related relations.
 matched_papers = match_relations_to_papers(papers_directory="./auto_generated_inputs", input_relations_directory="./test_inputs/test_input.json")
-print(matched_papers)
+# print(matched_papers)
 
 
 # Obtain settings by reading in the file
@@ -37,8 +37,17 @@ with open("./pipeline_settings.yaml", "r") as f:
 # For each dictionary run the "extract_relationships" function and settings
 outputs = list()
 for data in matched_papers:
+    if len(data["Relations"]) == 0: 
+        print("\nPaper", data["PaperTitle"][:50], ": no matching relations") 
+        continue
+    else:
+        print("\nParsing", len(data["Relations"]), "relations from", data["PaperTitle"][:50])
     output = extract_relationships(data, set_prompt=prompt, verbose=verbose, model=model, outputs_source=pathlib.Path("./pipelines/debug_outputs"))
+    output["PaperTitle"] = data["PaperTitle"]
+    output["PaperDOI"] = data["PaperDOI"]
+    # print(output["PaperDOI"])
     outputs.append(output)
+    # print(outputs)
 outputs_dict = {"Papers" : outputs}
 debug = True
 if debug:
