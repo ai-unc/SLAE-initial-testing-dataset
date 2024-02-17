@@ -1,6 +1,6 @@
 import json
 
-def main(file):
+def kumu_to_pipeline(file):
     curFile = json.load(open("./inputs/" + file))
     output = {
         "relations": []
