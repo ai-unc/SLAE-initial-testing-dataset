@@ -1,16 +1,6 @@
 import os
 import json
 from pprint import pprint
-
-# def passage_rank(relation, papers, threshold=.5):
-#     paper_texts = [i["PaperContents"] for i in papers]
-#     relevant_papers = [{"PaperDOI": "10.1002/cpp.1896"}, {"PaperDOI": "10.3389/fpsyg.2022.1016879"}]
-#     score = []
-#     for i in score:
-#         if i > threshold:
-#             relevant_papers.append(paper_texts[i])
-#     return relevant_papers
-
 from transformers import AutoTokenizer, AutoModel
 import torch
 import numpy as np

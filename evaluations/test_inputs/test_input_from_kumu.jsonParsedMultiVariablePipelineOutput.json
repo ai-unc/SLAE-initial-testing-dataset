@@ -1,0 +1,102 @@
+{
+    "elements": [
+        {
+            "label": "Cognitive distraction",
+            "type": "variable"
+        },
+        {
+            "label": "Rumination",
+            "type": "variable"
+        },
+        {
+            "label": "Forced-failure stress",
+            "type": "variable"
+        },
+        {
+            "label": "Sadness",
+            "type": "variable"
+        },
+        {
+            "label": "RSA withdrawal",
+            "type": "variable"
+        },
+        {
+            "label": "Rumination Induction",
+            "type": "variable"
+        },
+        {
+            "label": "RSAwithdrawal",
+            "type": "variable"
+        },
+        {
+            "label": "Induced distraction",
+            "type": "variable"
+        },
+        {
+            "label": "MDD",
+            "type": "variable"
+        },
+        {
+            "label": "Cardiovascular disease",
+            "type": "variable"
+        }
+    ],
+    "connections": [
+        {
+            "from": "Cognitive distraction",
+            "to": "Rumination",
+            "direction": "mutual",
+            "type": "",
+            "description": "Importantly, individuals assigned to the rumination condition received higher rumination scores than participants in the cognitive distraction condition in both theMDD, F(1, 40)=54.25, p<.001, \u03b72=0.59, and CTL group, F(1, 44)=18.73, p<.001, \u03b72=0.30."
+        },
+        {
+            "from": "Forced-failure stress",
+            "to": "Sadness",
+            "direction": "mutual",
+            "type": "",
+            "description": "As expected, compared to CTLs, the MDD group reported greater sadness reactivity to the forced-failure stressor, F(1, 81)=7.36, p<.01, \u03b72=0.08. Sadness reactivity to the failure stressor did not significantly differ by R/D condition,and the group by condition interaction was not significant, F(1, 81)<1, ps>.05, \u03b72<0.01, suggesting that random assignment was effective."
+        },
+        {
+            "from": "Rumination",
+            "to": "Sadness",
+            "direction": "mutual",
+            "type": "",
+            "description": "Sadness reactivity to the R/D induction did not differ by group, F(1, 81)<1, p>.05, \u03b72<0.01. However, individuals in the cognitive distraction and rumination condition differed in their emotional response to the R/D induction, F(1, 81)=6.20, p<.05, \u03b72=0.07"
+        },
+        {
+            "from": "Forced-failure stress",
+            "to": "RSA withdrawal",
+            "direction": "mutual",
+            "type": "",
+            "description": "Follow-up tests conducted on RSA change scores indicated that, as expected, there was a significant RSAwithdrawal in response to the forced-failure stressor, t(86)=2.64, p=.01 (see Fig. 2). Importantly, RSA change during forced-failure induction did not significantly differ by group or condition, and the group by condition interaction wasnot significant, Fs(1, 83)<1, ps>.05, \u03b72<0.01"
+        },
+        {
+            "from": "Rumination Induction",
+            "to": "RSAwithdrawal",
+            "direction": "mutual",
+            "type": "",
+            "description": "We examined RSA change during the R/D induction to test our main hypotheses. Across conditions, there was a significant RSA withdrawal during the R/D induction, t(86)=6.10, p<.001."
+        },
+        {
+            "from": "Induced distraction",
+            "to": "RSAwithdrawal",
+            "direction": "mutual",
+            "type": "",
+            "description": "Follow-up tests showed that RSA withdrawal during rumination did not significantly differ between CTL and MDD groups, F(1, 42)<1, p>.05, \u03b72=0.02. In contrast, RSAwithdrawal during cognitive distraction was significantly greater for MDDs than CTLs, F(1, 41)=5.66, p<.03, \u03b72=0.12. Within-group follow-up tests indicated that RSA withdrawal did not differ between CTLs in the rumination and distraction condition, F(1, 45)=1.74, p>.05, \u03b72=0.04, but RSA withdrawal was significantly greater for MDDs in the distraction versus rumination condition, F(1, 38)=5.54, p<.03, \u03b72=0.13."
+        },
+        {
+            "from": "Forced-failure stress",
+            "to": "RSAwithdrawal",
+            "direction": "mutual",
+            "type": "",
+            "description": "Follow-up tests conducted on RSA change scores indicated that, as expected, there was a significant RSAwithdrawal in response to the forced-failure stressor, t(86)=2.64, p=.01 (see Fig. 2). Importantly, RSA change during forced-failure induction did not significantly differ by group or condition, and the group by condition interaction wasnot significant, Fs(1, 83)<1, ps>.05, \u03b72<0.01"
+        },
+        {
+            "from": "MDD",
+            "to": "Cardiovascular disease",
+            "direction": "mutual",
+            "type": "",
+            "description": "More specifically, results from our study suggest that depressed individuals may be at heightened risk for cardiovascular disease not because rumination has a greater effect on RSA in MDDs than in CTLs, but because MDDs spend more time using an emotion regulation strategy that is associated with parasympathetic withdrawal"
+        }
+    ]
+}

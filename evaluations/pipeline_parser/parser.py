@@ -10,27 +10,31 @@ def pipeline_to_kumu(dic, outputPath):
 
     # Process each JSON object in the list
 
-    for paper in dic["Papers"]:
-        title = paper['PaperTitle']
-        doi = paper['PaperDOI']
+    # for paper in dic["Papers"]:
+    paper = dic
+    title = paper['PaperTitle']
+    doi = paper['PaperDOI']
 
-        # Extract the variables and connections from each relation in the JSON object
-        for relation in paper['Relations']:
-            variable_one = relation['VariableOneName']
-            variable_two = relation['VariableTwoName']
-            relationType = relation['RelationshipClassification']
-            SupportingText = relation['SupportingText']
+    # Extract the variables and connections from each relation in the JSON object
+    for relation in paper['Relations']:
+        variable_one = relation['VariableOneName']
+        variable_two = relation['VariableTwoName']
+        relationType = relation['RelationshipClassification']
+        SupportingText = relation['SupportingText']
+        if "isCausal" in relation:
             if relation['isCausal'] == "True":
                 relationType = "causal"
             elif relation['isCausal'] == "False":
                 relationType = "non-causal"
-            # Add the variables to the list if they are not already present
-            if(variable_one not in vars):
-                vars.append(variable_one)
-            if(variable_two not in vars):
-                vars.append(variable_two)
-                
-            connections.append([variable_one, variable_two, relationType, SupportingText, relationType])
+        else:
+            relationType = ""
+        # Add the variables to the list if they are not already present
+        if(variable_one not in vars):
+            vars.append(variable_one)
+        if(variable_two not in vars):
+            vars.append(variable_two)
+            
+        connections.append([variable_one, variable_two, relationType, SupportingText, relationType])
 
             
 
