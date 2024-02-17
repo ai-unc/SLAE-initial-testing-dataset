@@ -23,7 +23,7 @@ import json
 #     sys.exit("Invalid model flag")
 
 # Initialize a list to store the variables for this model
-def main(modelFlag):
+def vinsim_to_json_kumu(modelFlag):
     vars = []
 
     #modelFlag = modelFlag.split("=")[1]

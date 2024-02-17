@@ -1,32 +1,8 @@
 import json, sys
 
-# # Get the path to the output directory
-# outputPath = sys.path[0][:-15] + "outputs\\"
+def pipeline_to_kumu(dic, outputPath):
 
-# # Read the contents of the MultiVariablePipelineOutput.txt file
-# with open(path + "MultiVariablePipelineOutput.txt") as f:
-#     data = f.read()
 
-def main(f, outputPath):
-    data = f.read()
-    jsons = []
-    first = 0
-    file = ""
-
-    # Split the data by newline character and process each line
-    for line in data.split("\n"):
-        # Check if the line indicates the start of a new JSON object
-        if line[:10] == "pre parse:" or line[:31] == "successful parse MULTIRELATION:":
-            # If there are already JSON objects in the list or it's not the first object, append the previous object to the list
-            if(len(jsons) != 0 or first == 1):
-                jsons.append(file)
-                file = "{"
-            else:
-                file += "{"
-                first = 1
-        else:
-            file += line
-    
     vars = []
     connections = []
     elementList = []
@@ -34,28 +10,28 @@ def main(f, outputPath):
 
     # Process each JSON object in the list
 
-    for jsn in jsons:
-        try:
-            temp = json.loads(jsn)
-            # Extract the variables and connections from each relation in the JSON object
-            for relation in temp['Relations']:
-                variable_one = relation['VariableOneName']
-                variable_two = relation['VariableTwoName']
-                relationType = relation['RelationshipClassification']
-                SupportingText = relation['SupportingText']
-                if relation['isCausal'] == "True":
-                    relationType = "causal"
-                elif relation['isCausal'] == "False":
-                    relationType = "non-causal"
-                # Add the variables to the list if they are not already present
-                if(variable_one not in vars):
-                    vars.append(variable_one)
-                if(variable_two not in vars):
-                    vars.append(variable_two)
+    for paper in dic["Papers"]:
+        title = paper['PaperTitle']
+        doi = paper['PaperDOI']
+
+        # Extract the variables and connections from each relation in the JSON object
+        for relation in paper['Relations']:
+            variable_one = relation['VariableOneName']
+            variable_two = relation['VariableTwoName']
+            relationType = relation['RelationshipClassification']
+            SupportingText = relation['SupportingText']
+            if relation['isCausal'] == "True":
+                relationType = "causal"
+            elif relation['isCausal'] == "False":
+                relationType = "non-causal"
+            # Add the variables to the list if they are not already present
+            if(variable_one not in vars):
+                vars.append(variable_one)
+            if(variable_two not in vars):
+                vars.append(variable_two)
                 
-                connections.append([variable_one, variable_two, relationType, SupportingText, relationType])
-        except:
-            print(jsons.index(jsn))
+            connections.append([variable_one, variable_two, relationType, SupportingText, relationType])
+
             
 
     # Create the element list for the output JSON
@@ -89,8 +65,8 @@ def main(f, outputPath):
         g.write(json_str)
     g.close()
 
-if __name__ == "__main__":
-    outputPath = sys.path[0][:-15] + "outputs\\"
-    f = open(outputPath + "MultiVariablePipelineOutput.txt")
-    main(f, outputPath)
+# if __name__ == "__main__":
+#     outputPath = sys.path[0][:-15] + "outputs\\"
+#     f = open(outputPath + "MultiVariablePipelineOutput.txt")
+#     pipeline_to_kumu(f, outputPath)
         

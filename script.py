@@ -32,7 +32,7 @@ import os, re, json
 #     sys.exit("Invalid title flag")
 
 # Extract doi, sanitize and create safe file name
-def main(filePath, doi, title):
+def paper_to_input(filePath, doi, title):
     #doi = doiFlag.split("=")[1]
     fileNameSafeDoi = re.sub("[^a-zA-Z0-9\n\.]", "_", doi)
 
