@@ -1,7 +1,4 @@
 {
-    "PaperDOI": "10.1007/s10862-015-9510-1",
-    "PaperTitle": "Rumination and Cognitive Distraction in Major Depressive Disorder: An Examination of Respiratory Sinus Arrhythmia",
-    "PaperContents": "No text",
     "Relations": [
         {
             "VariableOneName": "Cognitive distraction",
@@ -33,21 +30,21 @@
         },
         {
             "VariableOneName": "Rumination Induction",
-            "VariableTwoName": "RSAwithdrawal",
+            "VariableTwoName": "RSA withdrawal",
             "RelationshipClassification": "Direct",
             "IsCausal": "True",
             "SupportingText": "We examined RSA change during the R/D induction to test our main hypotheses. Across conditions, there was a significant RSA withdrawal during the R/D induction, t(86)=6.10, p<.001."
         },
         {
             "VariableOneName": "Induced distraction",
-            "VariableTwoName": "RSAwithdrawal",
+            "VariableTwoName": "RSA withdrawal",
             "RelationshipClassification": "Direct",
             "IsCausal": "True",
             "SupportingText": "Follow-up tests showed that RSA withdrawal during rumination did not significantly differ between CTL and MDD groups, F(1, 42)<1, p>.05, η2=0.02. In contrast, RSAwithdrawal during cognitive distraction was significantly greater for MDDs than CTLs, F(1, 41)=5.66, p<.03, η2=0.12. Within-group follow-up tests indicated that RSA withdrawal did not differ between CTLs in the rumination and distraction condition, F(1, 45)=1.74, p>.05, η2=0.04, but RSA withdrawal was significantly greater for MDDs in the distraction versus rumination condition, F(1, 38)=5.54, p<.03, η2=0.13."
         },
         {
             "VariableOneName": "Forced-failure stress",
-            "VariableTwoName": "RSAwithdrawal",
+            "VariableTwoName": "RSA withdrawal",
             "RelationshipClassification": "Direct",
             "IsCausal": "True",
             "SupportingText": "Follow-up tests conducted on RSA change scores indicated that, as expected, there was a significant RSAwithdrawal in response to the forced-failure stressor, t(86)=2.64, p=.01 (see Fig. 2). Importantly, RSA change during forced-failure induction did not significantly differ by group or condition, and the group by condition interaction wasnot significant, Fs(1, 83)<1, ps>.05, η2<0.01"

@@ -4,7 +4,7 @@ import json
 from matcher.matcher import match_relations_to_papers
 from pipelines.captured_relations_pipeline import extract_relationships
 from pipeline_parser.parser import pipeline_to_kumu
-from kumu_to_pipeline.parser import kumu_to_pipeline
+from kumu_to_pipeline.parser import kumu_to_pipeline_no_io
 
 
 #Debug
@@ -15,14 +15,18 @@ if False:
 
 
 # Obtain list of relations from Kumu or Vensim file
-if False:
-    with open(pathlib.Path("./test_inputs/test_input.json"), "r") as f:
-        kumu_read = kumu_to_pipeline(f)
+if True:
+    with open(pathlib.Path("./test_inputs/user_input.json"), "r") as f:
+        kumu_read = kumu_to_pipeline_no_io(json.load(f))
+        for relation in kumu_read["Relations"]:
+            relation["UserOriginalRelationshipClassification"] = relation["RelationshipClassification"]
     print(kumu_read)
+    with open(pathlib.Path("./test_inputs/parsed_input.json"), "r") as f:
+        f.write(json.dump(kumu_read))
 
 
 # Use the matcher to separate the list of relations, resulting in a series of python dictionaries each with a single paper and a list of related relations.
-matched_papers = match_relations_to_papers(papers_directory="./auto_generated_inputs", input_relations_directory="./test_inputs/test_input.json")
+matched_papers = match_relations_to_papers(papers_directory="./auto_generated_inputs", input_relations_directory="./test_inputs/parsed_input.json")
 # print(matched_papers)
 
 
@@ -35,28 +39,28 @@ with open("./pipeline_settings.yaml", "r") as f:
 
 
 # For each dictionary run the "extract_relationships" function and settings
-outputs = list()
-for data in matched_papers:
-    if len(data["Relations"]) == 0: 
-        print("\nPaper", data["PaperTitle"][:50], ": no matching relations") 
-        continue
-    else:
-        print("\nParsing", len(data["Relations"]), "relations from", data["PaperTitle"][:50])
-    output = extract_relationships(data, set_prompt=prompt, verbose=verbose, model=model, outputs_source=pathlib.Path("./pipelines/debug_outputs"))
-    output["PaperTitle"] = data["PaperTitle"]
-    output["PaperDOI"] = data["PaperDOI"]
-    # print(output["PaperDOI"])
-    outputs.append(output)
-    # print(outputs)
-outputs_dict = {"Papers" : outputs}
-debug = True
-if debug:
-    with open(pathlib.Path("./pipelines/debug_outputs") / "MultiVariablePipelineOutputs.json", "w") as f:
-        f.write(json.dumps(outputs_dict))
-    with open(pathlib.Path("./pipelines/debug_outputs") / "MultiVariablePipelineOutputs.json", "r") as f:
-        outputs_dict = json.load(f)
+# outputs = list()
+# for data in matched_papers:
+#     if len(data["Relations"]) == 0: 
+#         print("\nPaper", data["PaperTitle"][:50], ": no matching relations") 
+#         continue
+#     else:
+#         print("\nParsing", len(data["Relations"]), "relations from", data["PaperTitle"][:50])
+#     output = extract_relationships(data, set_prompt=prompt, verbose=verbose, model=model, outputs_source=pathlib.Path("./pipelines/debug_outputs"))
+#     output["PaperTitle"] = data["PaperTitle"]
+#     output["PaperDOI"] = data["PaperDOI"]
+#     # print(output["PaperDOI"])
+#     outputs.append(output)
+#     # print(outputs)
+# outputs_dict = {"Papers" : outputs}
+# debug = True
+# if debug:
+#     with open(pathlib.Path("./pipelines/debug_outputs") / "MultiVariablePipelineOutputs.json", "w") as f:
+#         f.write(json.dumps(outputs_dict))
+with open(pathlib.Path("./pipelines/debug_outputs") / "MultiVariablePipelineOutputs.json", "r") as f:
+    outputs_dict = json.load(f)
 
 # Obtain the list of output jsons from the iterative running of extract_relationships and recombine the output jsons into the format required to output to Kumu
-
+pipeline_to_kumu(outputs_dict, "./pipelines/debug_outputs/")
 
 # Parse it into Kumu form and save the json in a file. 
