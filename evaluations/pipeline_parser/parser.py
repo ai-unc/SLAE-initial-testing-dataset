@@ -20,6 +20,9 @@ def pipeline_to_kumu(dic, outputPath):
             variable_two = relation['VariableTwoName']
             relationType = relation['RelationshipClassification']
             SupportingText = relation['SupportingText']
+            correctness = 0
+            if relationType.lower() == "direct":
+                correctness += 1
             if "isCausal" in relation:
                 if relation['isCausal'] == "True":
                     isCausal = "causal"
@@ -35,9 +38,9 @@ def pipeline_to_kumu(dic, outputPath):
             
             if (variable_one, variable_two) not in verdicts:
                 verdicts[(variable_one,variable_two)] = []
-                verdicts[(variable_one,variable_two)].append( {"title": title, "doi": doi, "relationType": relationType, "isCausal": isCausal, "SupportingText": SupportingText})
+                verdicts[(variable_one,variable_two)].append( {"title": title, "doi": doi, "relationType": relationType, "isCausal": isCausal, "SupportingText": SupportingText, "correctness": correctness})
             else:
-                verdicts[(variable_one,variable_two)].append({"title": title, "doi": doi, "relationType": relationType, "isCausal": isCausal, "SupportingText": SupportingText})
+                verdicts[(variable_one,variable_two)].append({"title": title, "doi": doi, "relationType": relationType, "isCausal": isCausal, "SupportingText": SupportingText, "correctness": correctness})
 
             connections.append([variable_one, variable_two])
 
@@ -64,7 +67,11 @@ def pipeline_to_kumu(dic, outputPath):
             "to": connection[1],
             #"direction": connection[2],
             #"type": connection[4],
-            "description": '\n=====\n'.join([str(i) for i in verdicts[(connection[0], connection[1])]])
+            "attributes":{
+                "description": '\n=====\n'.join([str(i) for i in verdicts[(connection[0], connection[1])]]),
+                "correctness": sum([i["correctness"] for i in verdicts[(connection[0], connection[1])]]) / len(verdicts[(connection[0], connection[1])]),
+            }
+            
         }
         connectionList.append(entry)
 
