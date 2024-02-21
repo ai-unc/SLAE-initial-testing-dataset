@@ -1,312 +1,124 @@
 {
-    "elements": [
-        {
-            "label": "Incarceration",
-            "type": "variable"
-        },
-        {
-            "label": "Chronic health conditions",
-            "type": "variable"
-        },
-        {
-            "label": "Mortality",
-            "type": "variable"
-        },
-        {
-            "label": "Family health outcomes",
-            "type": "variable"
-        },
-        {
-            "label": "Population health",
-            "type": "variable"
-        },
-        {
-            "label": "Stress-related illness",
-            "type": "variable"
-        },
-        {
-            "label": "Infectious diseases",
-            "type": "variable"
-        },
-        {
-            "label": "Chronic Health Conditions",
-            "type": "variable"
-        },
-        {
-            "label": "Family Health",
-            "type": "variable"
-        },
-        {
-            "label": "AI/AN status",
-            "type": "variable"
-        },
-        {
-            "label": "Substance-related mortality",
-            "type": "variable"
-        },
-        {
-            "label": "AI/AN adolescents",
-            "type": "variable"
-        },
-        {
-            "label": "Substance use initiation and rates",
-            "type": "variable"
-        },
-        {
-            "label": "AI/AN adults who drink",
-            "type": "variable"
-        },
-        {
-            "label": "Heavy, episodic drinking patterns",
-            "type": "variable"
-        },
-        {
-            "label": "AI/AN communities",
-            "type": "variable"
-        },
-        {
-            "label": "Substance availability, trauma exposure, family and peer networks, historical trauma",
-            "type": "variable"
-        }
-    ],
-    "connections": [
-        {
-            "from": "Incarceration",
-            "to": "Chronic health conditions",
-            "direction": "mutual",
-            "type": "causal",
-            "description": "Schnittker & John (2007) found that individuals with a history of incarceration report more chronic health problems after their period of incarceration than before."
-        },
-        {
-            "from": "Incarceration",
-            "to": "Mortality",
-            "direction": "mutual",
-            "type": "causal",
-            "description": "Mumola (2007) used national-level data to summarize within-prison mortality and compare it with the rates for the US resident population. Although his comparisons between the two populations were not adjusted for differences in age and sex, the results are telling."
-        },
-        {
-            "from": "Incarceration",
-            "to": "Family health outcomes",
-            "direction": "mutual",
-            "type": "non-causal",
-            "description": "Research has shown that the impact of incarceration on family health outcomes operates indirectly through other mechanisms, including family processes, relationships among partners, changes in economic well-being, or educational performance."
-        },
-        {
-            "from": "Incarceration",
-            "to": "Population health",
-            "direction": "mutual",
-            "type": "non-causal",
-            "description": "One such study used state-level panel data stretching almost 25 years and found an association between incarceration and poorer population health. This association is strongest for infant mortality and female life expectancy."
-        },
-        {
-            "from": "Incarceration",
-            "to": "Chronic health conditions",
-            "direction": "mutual",
-            "type": "causal",
-            "description": "Schnittker & John (2007) found that individuals with a history of incarceration report more chronic health problems after their period of incarceration than before."
-        },
-        {
-            "from": "Incarceration",
-            "to": "Mortality",
-            "direction": "mutual",
-            "type": "causal",
-            "description": "Mumola (2007) found that the mortality rate for black male prisoners aged 15\u00e2\u20ac\u201c64 was 19% lower than that for black men in the general population."
-        },
-        {
-            "from": "Incarceration",
-            "to": "Stress-related illness",
-            "direction": "mutual",
-            "type": "causal",
-            "description": "Massoglia (2008a) found that relative to those who had not been incarcerated, those who had been incarcerated disproportionately suffer from stress-related illness."
-        },
-        {
-            "from": "Incarceration",
-            "to": "Infectious diseases",
-            "direction": "mutual",
-            "type": "causal",
-            "description": "Massoglia (2008b) found that those who had been incarcerated disproportionately suffer from infectious diseases such as hepatitis and tuberculosis."
-        },
-        {
-            "from": "Incarceration",
-            "to": "Family health outcomes",
-            "direction": "mutual",
-            "type": "causal",
-            "description": "Turney (2014) found an independent impact of incarceration on outcomes ranging from behavior and conduct problems to developmental delays in children's health."
-        },
-        {
-            "from": "Incarceration",
-            "to": "Chronic health conditions",
-            "direction": "mutual",
-            "type": "causal",
-            "description": "Schnittker & John (2007) found that individuals with a history of incarceration report more chronic health problems after their period of incarceration than before."
-        },
-        {
-            "from": "Incarceration",
-            "to": "Mortality",
-            "direction": "mutual",
-            "type": "causal",
-            "description": "Mumola (2007) found that the mortality rate for black male prisoners aged 15\u00e2\u20ac\u201c64 was 19% lower than that for black men in the general population."
-        },
-        {
-            "from": "Incarceration",
-            "to": "Stress-related illness",
-            "direction": "mutual",
-            "type": "causal",
-            "description": "Massoglia (2008a) found that relative to those who had not been incarcerated, those who had been incarcerated disproportionately suffer from stress-related illness."
-        },
-        {
-            "from": "Incarceration",
-            "to": "Infectious diseases",
-            "direction": "mutual",
-            "type": "causal",
-            "description": "Massoglia (2008b) found that those who had been incarcerated disproportionately suffer from infectious diseases such as hepatitis and tuberculosis."
-        },
-        {
-            "from": "Incarceration",
-            "to": "Family health outcomes",
-            "direction": "mutual",
-            "type": "causal",
-            "description": "Turney (2014) found an independent impact of incarceration on outcomes ranging from behavior and conduct problems to developmental delays in children's health."
-        },
-        {
-            "from": "Incarceration",
-            "to": "Mortality",
-            "direction": "mutual",
-            "type": "causal",
-            "description": "Incarceration is associated with higher mortality rates, with an all-cause standardized mortality ratio of 2.08 for whites and 1.03 for blacks. This suggests a direct and causal relationship between incarceration and mortality."
-        },
-        {
-            "from": "Incarceration",
-            "to": "Chronic Health Conditions",
-            "direction": "mutual",
-            "type": "causal",
-            "description": "Incarceration is correlated with lower self-reported health and disproportionately suffering from infectious diseases and stress-related illness. This indicates a direct and causal relationship between incarceration and chronic health conditions."
-        },
-        {
-            "from": "Incarceration",
-            "to": "Family Health",
-            "direction": "mutual",
-            "type": "causal",
-            "description": "Incarceration has wide-ranging effects on childhood health and well-being, including increasing mental health and behavioral problems. This suggests a direct and causal relationship between incarceration and family health."
-        },
-        {
-            "from": "Incarceration",
-            "to": "Mortality",
-            "direction": "mutual",
-            "type": "causal",
-            "description": "Incarceration is associated with higher mortality rates, with an all-cause standardized mortality ratio of 2.08 for whites and 1.03 for blacks. This suggests a direct and causal relationship between incarceration and mortality."
-        },
-        {
-            "from": "Incarceration",
-            "to": "Chronic Health Conditions",
-            "direction": "mutual",
-            "type": "causal",
-            "description": "Incarceration is correlated with lower self-reported health and disproportionately suffering from infectious diseases and stress-related illness. This indicates a direct and causal relationship between incarceration and chronic health conditions."
-        },
-        {
-            "from": "Incarceration",
-            "to": "Family Health",
-            "direction": "mutual",
-            "type": "causal",
-            "description": "Incarceration has wide-ranging effects on childhood health and well-being, including increasing mental health and behavioral problems. This suggests a direct and causal relationship between incarceration and family health."
-        },
-        {
-            "from": "Incarceration",
-            "to": "Chronic health conditions",
-            "direction": "mutual",
-            "type": "causal",
-            "description": "Some of the most innovative research in this area leveraged longitudinal data to examine within-person change in health status after a period of incarceration. Schnittker & John (2007), for example, focused on within-person change using the National Longitudinal Survey of Youth (NLSY79). Three findings from this important paper set the stage for later sociological work in the area. First, the authors found that individuals with a history of incarceration report more chronic health problems after their period of incarceration than before."
-        },
-        {
-            "from": "Incarceration",
-            "to": "Mortality",
-            "direction": "mutual",
-            "type": "causal",
-            "description": "During the last four decades the American penal system grew at an unprecedented rate. The incarceration rate, which was roughly stable for 50 years prior to 1975, increased approximately fivefold since 1975 (Pettit & Western 2004). More than six million US residents are now or have been incarcerated and there are over 17 million felons or ex-felons in the United States. These numbers demonstrate the massive size of the penal system, and the current felon population is approximately six times larger than it was in 1970 (Uggen et al. 2006)."
-        },
-        {
-            "from": "Incarceration",
-            "to": "Stress-related illness",
-            "direction": "mutual",
-            "type": "causal",
-            "description": "Incarceration is also a chronic stressor (Pearlin 1989). Imprisonment can last for years, adding chronic stress to the initial acute shock. Daily stressors in prison can include lack of privacy, overcrowded conditions, antagonistic relationships with guards and inmates, witnessing violence, and the threat of violent victimization."
-        },
-        {
-            "from": "Incarceration",
-            "to": "Chronic health conditions",
-            "direction": "mutual",
-            "type": "causal",
-            "description": "Some of the most innovative research in this area leveraged longitudinal data to examine within-person change in health status after a period of incarceration. Schnittker & John (2007), for example, focused on within-person change using the National Longitudinal Survey of Youth (NLSY79). Three findings from this important paper set the stage for later sociological work in the area. First, the authors found that individuals with a history of incarceration report more chronic health problems after their period of incarceration than before."
-        },
-        {
-            "from": "Incarceration",
-            "to": "Mortality",
-            "direction": "mutual",
-            "type": "causal",
-            "description": "During the last four decades the American penal system grew at an unprecedented rate. The incarceration rate, which was roughly stable for 50 years prior to 1975, increased approximately fivefold since 1975 (Pettit & Western 2004). More than six million US residents are now or have been incarcerated and there are over 17 million felons or ex-felons in the United States. These numbers demonstrate the massive size of the penal system, and the current felon population is approximately six times larger than it was in 1970 (Uggen et al. 2006)."
-        },
-        {
-            "from": "Incarceration",
-            "to": "Stress-related illness",
-            "direction": "mutual",
-            "type": "causal",
-            "description": "Incarceration is also a chronic stressor (Pearlin 1989). Imprisonment can last for years, adding chronic stress to the initial acute shock. Daily stressors in prison can include lack of privacy, overcrowded conditions, antagonistic relationships with guards and inmates, witnessing violence, and the threat of violent victimization."
-        },
-        {
-            "from": "AI/AN status",
-            "to": "Substance-related mortality",
-            "direction": "mutual",
-            "type": "non-causal",
-            "description": "AI/AN status correlates with elevated rates of substance-related mortality, with alcohol-related deaths, chronic liver disease, and drug-related issues being notably higher."
-        },
-        {
-            "from": "AI/AN adolescents",
-            "to": "Substance use initiation and rates",
-            "direction": "mutual",
-            "type": "non-causal",
-            "description": "AI/AN adolescents exhibit earlier initiation and higher rates of substance use, particularly among those living on reservations or who have dropped out of school."
-        },
-        {
-            "from": "AI/AN adults who drink",
-            "to": "Heavy, episodic drinking patterns",
-            "direction": "mutual",
-            "type": "non-causal",
-            "description": "AI/AN adults who drink tend to engage in heavy, episodic drinking patterns."
-        },
-        {
-            "from": "AI/AN communities",
-            "to": "Substance availability, trauma exposure, family and peer networks, historical trauma",
-            "direction": "mutual",
-            "type": "non-causal",
-            "description": "Correlations are also observed between AI/AN communities and substance availability, trauma exposure, family and peer networks, and historical trauma, all of which impact substance use patterns and disparities within these communities."
-        },
-        {
-            "from": "AI/AN status",
-            "to": "Substance-related mortality",
-            "direction": "mutual",
-            "type": "non-causal",
-            "description": "AI/AN status correlates with elevated rates of substance-related mortality, with alcohol-related deaths, chronic liver disease, and drug-related issues being notably higher."
-        },
-        {
-            "from": "AI/AN adolescents",
-            "to": "Substance use initiation and rates",
-            "direction": "mutual",
-            "type": "non-causal",
-            "description": "AI/AN adolescents exhibit earlier initiation and higher rates of substance use, particularly among those living on reservations or who have dropped out of school."
-        },
-        {
-            "from": "AI/AN adults who drink",
-            "to": "Heavy, episodic drinking patterns",
-            "direction": "mutual",
-            "type": "non-causal",
-            "description": "AI/AN adults who drink tend to engage in heavy, episodic drinking patterns."
-        },
-        {
-            "from": "AI/AN communities",
-            "to": "Substance availability, trauma exposure, family and peer networks, historical trauma",
-            "direction": "mutual",
-            "type": "non-causal",
-            "description": "Correlations are also observed between AI/AN communities and substance availability, trauma exposure, family and peer networks, and historical trauma, all of which impact substance use patterns and disparities within these communities."
-        }
-    ]
+  "elements": [
+    {
+      "label": "Cognitive distraction",
+      "type": "variable"
+    },
+    {
+      "label": "Rumination",
+      "type": "variable"
+    },
+    {
+      "label": "Forced-failure stress",
+      "type": "variable"
+    },
+    {
+      "label": "Sadness",
+      "type": "variable"
+    },
+    {
+      "label": "Rumination Induction",
+      "type": "variable"
+    },
+    {
+      "label": "RSAwithdrawal",
+      "type": "variable"
+    },
+    {
+      "label": "RSA withdrawal",
+      "type": "variable"
+    }
+  ],
+  "connections": [
+    {
+      "from": "Cognitive distraction",
+      "to": "Rumination",
+      "description": "{'title': 'Childhood Maltreatment Was Correlated With the Decreased Cortical Function in Depressed Patients Under Social Stress in a Working Memory Task: A Pilot Study', 'doi': '10.3389/fpsyt.2021.671574', 'relationType': 'Inverse', 'isCausal': '', 'SupportingText': 'We aimed to explore the neural changes in MDD patients by investigating brain function associated with a stress-related WM task. We found that compared to HCs, MDD patients showed comprehensive less brain activation during both the WM maintenance and manipulation conditions. Particularly, we found decreased brain activation in the left fusiform gyrus, SMA, and APFC. The reduced activation of the left fusiform gyrus may indicate impaired emotional stimuli processing function, while the decreased activation of the SMA and APFC may suggest impaired cognitive control function.'}\n=====\n{'title': 'PSP478785.indd', 'doi': '10.1159/000478785', 'relationType': 'direct', 'isCausal': '', 'SupportingText': 'Resource allocation theory posits that rumination absorbs cognitive capacities which can thus not be directed towards task-relevant processes. Valuable cognitive resources are allocated to irrelevant depressive and ruminative thought processes.'}\n=====\n{'title': 'Effect of rejection sensitivity on the development of anxious-depressive attack in Japanese outpatients: The mediating roles of rumination, social anxiety, and depressive symptoms', 'doi': '10.3389/fpsyg.2022.1016879', 'relationType': 'direct', 'isCausal': '', 'SupportingText': 'Furthermore, rumination is associated with several psychological symptoms, including eating disorders and emotion regulation difficulties.'}\n=====\n{'title': 'Cognitive deficits in patients with chronic fatigue syndrome compared to those with major depressive disorder and healthy controls', 'doi': '10.1016/j.clineuro.2010.12.002', 'relationType': 'not applicable', 'isCausal': '', 'SupportingText': 'We evaluated the cognitive performance of patients with CFS using standardized verbal and visual memory tests, as well as sustained attention, working memory, and verbal and visual episodic memory.'}\n=====\n{'title': 'Improvement in self-reported cognitive functioning but not in rumination following online working memory training in a two-year follow-up study of remitted major depressive disorder', 'doi': '10.3389/fpsyt.2023.1163073', 'relationType': 'Direct', 'isCausal': '', 'SupportingText': 'Results suggested lasting improvements in self-reported cognitive functioning following online CWMT.'}"
+    },
+    {
+      "from": "Forced-failure stress",
+      "to": "Sadness",
+      "description": "{'title': 'Childhood Maltreatment Was Correlated With the Decreased Cortical Function in Depressed Patients Under Social Stress in a Working Memory Task: A Pilot Study', 'doi': '10.3389/fpsyt.2021.671574', 'relationType': 'Direct', 'isCausal': '', 'SupportingText': 'In our pilot study, the decreased brain activation of the left fusiform gyrus, SMA, and APFC helps us to understand the abnormalities of the emotional stimuli processing function, executive function, and cognitive control function in MDD. Childhood maltreatment might play a crucial role in the development of MDD. Although, the findings of this study might not be conclusive, they could provide some information for other researchers.'}\n=====\n{'title': 'PSP478785.indd', 'doi': '10.1159/000478785', 'relationType': 'not applicable', 'isCausal': '', 'SupportingText': 'The text does not provide any information on the relationship between forced-failure stress and sadness.'}\n=====\n{'title': 'Effect of rejection sensitivity on the development of anxious-depressive attack in Japanese outpatients: The mediating roles of rumination, social anxiety, and depressive symptoms', 'doi': '10.3389/fpsyg.2022.1016879', 'relationType': 'direct', 'isCausal': '', 'SupportingText': 'The severity of ADA symptoms is positively associated with anxiety and depressive symptoms.'}\n=====\n{'title': 'Cognitive deficits in patients with chronic fatigue syndrome compared to those with major depressive disorder and healthy controls', 'doi': '10.1016/j.clineuro.2010.12.002', 'relationType': 'not applicable', 'isCausal': '', 'SupportingText': 'We evaluated the cognitive performance of patients with CFS using standardized verbal and visual memory tests, as well as sustained attention, working memory, and verbal and visual episodic memory.'}\n=====\n{'title': 'Improvement in self-reported cognitive functioning but not in rumination following online working memory training in a two-year follow-up study of remitted major depressive disorder', 'doi': '10.3389/fpsyt.2023.1163073', 'relationType': 'Not applicable', 'isCausal': '', 'SupportingText': 'No specific mention of forced-failure stress or its relationship to sadness was found in the text.'}\n=====\n{'title': 'Brain activation patterns in major depressive disorder and work stress-related long-term sick leave ', 'doi': '10.3109/10253890.2011.646347', 'relationType': 'Direct', 'isCausal': '', 'SupportingText': 'The fMRI results showed pronounced similarities in activation patterns across the groups, suggesting largely intact functional networks. This was further substantiated by intact cognitive performance. However, during the more demanding cognitive task (n-back), the LTSL subjects showed a reduction in prefrontal cortex activation. Specifically, a group difference was observed in the right dorsolateral and left ventrolateral prefrontal cortex. In addition, response times during n-back correlated with brain activity for controls and depressed patients but not for the LTSL subjects, who tended to have a slower response.'}"
+    },
+    {
+      "from": "Cognitive distraction",
+      "to": "Rumination",
+      "description": "{'title': 'Childhood Maltreatment Was Correlated With the Decreased Cortical Function in Depressed Patients Under Social Stress in a Working Memory Task: A Pilot Study', 'doi': '10.3389/fpsyt.2021.671574', 'relationType': 'Inverse', 'isCausal': '', 'SupportingText': 'We aimed to explore the neural changes in MDD patients by investigating brain function associated with a stress-related WM task. We found that compared to HCs, MDD patients showed comprehensive less brain activation during both the WM maintenance and manipulation conditions. Particularly, we found decreased brain activation in the left fusiform gyrus, SMA, and APFC. The reduced activation of the left fusiform gyrus may indicate impaired emotional stimuli processing function, while the decreased activation of the SMA and APFC may suggest impaired cognitive control function.'}\n=====\n{'title': 'PSP478785.indd', 'doi': '10.1159/000478785', 'relationType': 'direct', 'isCausal': '', 'SupportingText': 'Resource allocation theory posits that rumination absorbs cognitive capacities which can thus not be directed towards task-relevant processes. Valuable cognitive resources are allocated to irrelevant depressive and ruminative thought processes.'}\n=====\n{'title': 'Effect of rejection sensitivity on the development of anxious-depressive attack in Japanese outpatients: The mediating roles of rumination, social anxiety, and depressive symptoms', 'doi': '10.3389/fpsyg.2022.1016879', 'relationType': 'direct', 'isCausal': '', 'SupportingText': 'Furthermore, rumination is associated with several psychological symptoms, including eating disorders and emotion regulation difficulties.'}\n=====\n{'title': 'Cognitive deficits in patients with chronic fatigue syndrome compared to those with major depressive disorder and healthy controls', 'doi': '10.1016/j.clineuro.2010.12.002', 'relationType': 'not applicable', 'isCausal': '', 'SupportingText': 'We evaluated the cognitive performance of patients with CFS using standardized verbal and visual memory tests, as well as sustained attention, working memory, and verbal and visual episodic memory.'}\n=====\n{'title': 'Improvement in self-reported cognitive functioning but not in rumination following online working memory training in a two-year follow-up study of remitted major depressive disorder', 'doi': '10.3389/fpsyt.2023.1163073', 'relationType': 'Direct', 'isCausal': '', 'SupportingText': 'Results suggested lasting improvements in self-reported cognitive functioning following online CWMT.'}"
+    },
+    {
+      "from": "Forced-failure stress",
+      "to": "Sadness",
+      "description": "{'title': 'Childhood Maltreatment Was Correlated With the Decreased Cortical Function in Depressed Patients Under Social Stress in a Working Memory Task: A Pilot Study', 'doi': '10.3389/fpsyt.2021.671574', 'relationType': 'Direct', 'isCausal': '', 'SupportingText': 'In our pilot study, the decreased brain activation of the left fusiform gyrus, SMA, and APFC helps us to understand the abnormalities of the emotional stimuli processing function, executive function, and cognitive control function in MDD. Childhood maltreatment might play a crucial role in the development of MDD. Although, the findings of this study might not be conclusive, they could provide some information for other researchers.'}\n=====\n{'title': 'PSP478785.indd', 'doi': '10.1159/000478785', 'relationType': 'not applicable', 'isCausal': '', 'SupportingText': 'The text does not provide any information on the relationship between forced-failure stress and sadness.'}\n=====\n{'title': 'Effect of rejection sensitivity on the development of anxious-depressive attack in Japanese outpatients: The mediating roles of rumination, social anxiety, and depressive symptoms', 'doi': '10.3389/fpsyg.2022.1016879', 'relationType': 'direct', 'isCausal': '', 'SupportingText': 'The severity of ADA symptoms is positively associated with anxiety and depressive symptoms.'}\n=====\n{'title': 'Cognitive deficits in patients with chronic fatigue syndrome compared to those with major depressive disorder and healthy controls', 'doi': '10.1016/j.clineuro.2010.12.002', 'relationType': 'not applicable', 'isCausal': '', 'SupportingText': 'We evaluated the cognitive performance of patients with CFS using standardized verbal and visual memory tests, as well as sustained attention, working memory, and verbal and visual episodic memory.'}\n=====\n{'title': 'Improvement in self-reported cognitive functioning but not in rumination following online working memory training in a two-year follow-up study of remitted major depressive disorder', 'doi': '10.3389/fpsyt.2023.1163073', 'relationType': 'Not applicable', 'isCausal': '', 'SupportingText': 'No specific mention of forced-failure stress or its relationship to sadness was found in the text.'}\n=====\n{'title': 'Brain activation patterns in major depressive disorder and work stress-related long-term sick leave ', 'doi': '10.3109/10253890.2011.646347', 'relationType': 'Direct', 'isCausal': '', 'SupportingText': 'The fMRI results showed pronounced similarities in activation patterns across the groups, suggesting largely intact functional networks. This was further substantiated by intact cognitive performance. However, during the more demanding cognitive task (n-back), the LTSL subjects showed a reduction in prefrontal cortex activation. Specifically, a group difference was observed in the right dorsolateral and left ventrolateral prefrontal cortex. In addition, response times during n-back correlated with brain activity for controls and depressed patients but not for the LTSL subjects, who tended to have a slower response.'}"
+    },
+    {
+      "from": "Rumination",
+      "to": "Sadness",
+      "description": "{'title': 'PSP478785.indd', 'doi': '10.1159/000478785', 'relationType': 'direct', 'isCausal': '', 'SupportingText': 'People who ruminate repetitively contemplate reasons for and consequences of their sadness. Rumination has been identified as a core risk factor for depression with serious clinical implications due to more depressed mood.'}\n=====\n{'title': 'Effect of rejection sensitivity on the development of anxious-depressive attack in Japanese outpatients: The mediating roles of rumination, social anxiety, and depressive symptoms', 'doi': '10.3389/fpsyg.2022.1016879', 'relationType': 'direct', 'isCausal': '', 'SupportingText': 'Nolen-Hoeksema et al. (2008) demonstrated that rumination predicts the onset of depression, exacerbates depression, enhances negative thinking, impairs problem-solving skills, interferes with instrumental behavior, and erodes social support.'}\n=====\n{'title': 'Improvement in self-reported cognitive functioning but not in rumination following online working memory training in a two-year follow-up study of remitted major depressive disorder', 'doi': '10.3389/fpsyt.2023.1163073', 'relationType': 'Direct', 'isCausal': '', 'SupportingText': 'Rumination is an emotion regulation strategy where one passively broods over self-related negative experiences.'}"
+    },
+    {
+      "from": "Rumination Induction",
+      "to": "RSAwithdrawal",
+      "description": "{'title': 'PSP478785.indd', 'doi': '10.1159/000478785', 'relationType': 'not applicable', 'isCausal': '', 'SupportingText': 'The text does not provide any information on the relationship between rumination induction and RSAwithdrawal.'}\n=====\n{'title': 'Effect of rejection sensitivity on the development of anxious-depressive attack in Japanese outpatients: The mediating roles of rumination, social anxiety, and depressive symptoms', 'doi': '10.3389/fpsyg.2022.1016879', 'relationType': 'not applicable', 'isCausal': '', 'SupportingText': \"The results of SEM showed that the hypothesized model's goodness-of-fit indices demonstrated high values.\"}"
+    },
+    {
+      "from": "Cognitive distraction",
+      "to": "Rumination",
+      "description": "{'title': 'Childhood Maltreatment Was Correlated With the Decreased Cortical Function in Depressed Patients Under Social Stress in a Working Memory Task: A Pilot Study', 'doi': '10.3389/fpsyt.2021.671574', 'relationType': 'Inverse', 'isCausal': '', 'SupportingText': 'We aimed to explore the neural changes in MDD patients by investigating brain function associated with a stress-related WM task. We found that compared to HCs, MDD patients showed comprehensive less brain activation during both the WM maintenance and manipulation conditions. Particularly, we found decreased brain activation in the left fusiform gyrus, SMA, and APFC. The reduced activation of the left fusiform gyrus may indicate impaired emotional stimuli processing function, while the decreased activation of the SMA and APFC may suggest impaired cognitive control function.'}\n=====\n{'title': 'PSP478785.indd', 'doi': '10.1159/000478785', 'relationType': 'direct', 'isCausal': '', 'SupportingText': 'Resource allocation theory posits that rumination absorbs cognitive capacities which can thus not be directed towards task-relevant processes. Valuable cognitive resources are allocated to irrelevant depressive and ruminative thought processes.'}\n=====\n{'title': 'Effect of rejection sensitivity on the development of anxious-depressive attack in Japanese outpatients: The mediating roles of rumination, social anxiety, and depressive symptoms', 'doi': '10.3389/fpsyg.2022.1016879', 'relationType': 'direct', 'isCausal': '', 'SupportingText': 'Furthermore, rumination is associated with several psychological symptoms, including eating disorders and emotion regulation difficulties.'}\n=====\n{'title': 'Cognitive deficits in patients with chronic fatigue syndrome compared to those with major depressive disorder and healthy controls', 'doi': '10.1016/j.clineuro.2010.12.002', 'relationType': 'not applicable', 'isCausal': '', 'SupportingText': 'We evaluated the cognitive performance of patients with CFS using standardized verbal and visual memory tests, as well as sustained attention, working memory, and verbal and visual episodic memory.'}\n=====\n{'title': 'Improvement in self-reported cognitive functioning but not in rumination following online working memory training in a two-year follow-up study of remitted major depressive disorder', 'doi': '10.3389/fpsyt.2023.1163073', 'relationType': 'Direct', 'isCausal': '', 'SupportingText': 'Results suggested lasting improvements in self-reported cognitive functioning following online CWMT.'}"
+    },
+    {
+      "from": "Forced-failure stress",
+      "to": "Sadness",
+      "description": "{'title': 'Childhood Maltreatment Was Correlated With the Decreased Cortical Function in Depressed Patients Under Social Stress in a Working Memory Task: A Pilot Study', 'doi': '10.3389/fpsyt.2021.671574', 'relationType': 'Direct', 'isCausal': '', 'SupportingText': 'In our pilot study, the decreased brain activation of the left fusiform gyrus, SMA, and APFC helps us to understand the abnormalities of the emotional stimuli processing function, executive function, and cognitive control function in MDD. Childhood maltreatment might play a crucial role in the development of MDD. Although, the findings of this study might not be conclusive, they could provide some information for other researchers.'}\n=====\n{'title': 'PSP478785.indd', 'doi': '10.1159/000478785', 'relationType': 'not applicable', 'isCausal': '', 'SupportingText': 'The text does not provide any information on the relationship between forced-failure stress and sadness.'}\n=====\n{'title': 'Effect of rejection sensitivity on the development of anxious-depressive attack in Japanese outpatients: The mediating roles of rumination, social anxiety, and depressive symptoms', 'doi': '10.3389/fpsyg.2022.1016879', 'relationType': 'direct', 'isCausal': '', 'SupportingText': 'The severity of ADA symptoms is positively associated with anxiety and depressive symptoms.'}\n=====\n{'title': 'Cognitive deficits in patients with chronic fatigue syndrome compared to those with major depressive disorder and healthy controls', 'doi': '10.1016/j.clineuro.2010.12.002', 'relationType': 'not applicable', 'isCausal': '', 'SupportingText': 'We evaluated the cognitive performance of patients with CFS using standardized verbal and visual memory tests, as well as sustained attention, working memory, and verbal and visual episodic memory.'}\n=====\n{'title': 'Improvement in self-reported cognitive functioning but not in rumination following online working memory training in a two-year follow-up study of remitted major depressive disorder', 'doi': '10.3389/fpsyt.2023.1163073', 'relationType': 'Not applicable', 'isCausal': '', 'SupportingText': 'No specific mention of forced-failure stress or its relationship to sadness was found in the text.'}\n=====\n{'title': 'Brain activation patterns in major depressive disorder and work stress-related long-term sick leave ', 'doi': '10.3109/10253890.2011.646347', 'relationType': 'Direct', 'isCausal': '', 'SupportingText': 'The fMRI results showed pronounced similarities in activation patterns across the groups, suggesting largely intact functional networks. This was further substantiated by intact cognitive performance. However, during the more demanding cognitive task (n-back), the LTSL subjects showed a reduction in prefrontal cortex activation. Specifically, a group difference was observed in the right dorsolateral and left ventrolateral prefrontal cortex. In addition, response times during n-back correlated with brain activity for controls and depressed patients but not for the LTSL subjects, who tended to have a slower response.'}"
+    },
+    {
+      "from": "Rumination",
+      "to": "Sadness",
+      "description": "{'title': 'PSP478785.indd', 'doi': '10.1159/000478785', 'relationType': 'direct', 'isCausal': '', 'SupportingText': 'People who ruminate repetitively contemplate reasons for and consequences of their sadness. Rumination has been identified as a core risk factor for depression with serious clinical implications due to more depressed mood.'}\n=====\n{'title': 'Effect of rejection sensitivity on the development of anxious-depressive attack in Japanese outpatients: The mediating roles of rumination, social anxiety, and depressive symptoms', 'doi': '10.3389/fpsyg.2022.1016879', 'relationType': 'direct', 'isCausal': '', 'SupportingText': 'Nolen-Hoeksema et al. (2008) demonstrated that rumination predicts the onset of depression, exacerbates depression, enhances negative thinking, impairs problem-solving skills, interferes with instrumental behavior, and erodes social support.'}\n=====\n{'title': 'Improvement in self-reported cognitive functioning but not in rumination following online working memory training in a two-year follow-up study of remitted major depressive disorder', 'doi': '10.3389/fpsyt.2023.1163073', 'relationType': 'Direct', 'isCausal': '', 'SupportingText': 'Rumination is an emotion regulation strategy where one passively broods over self-related negative experiences.'}"
+    },
+    {
+      "from": "Forced-failure stress",
+      "to": "RSA withdrawal",
+      "description": "{'title': 'Effect of rejection sensitivity on the development of anxious-depressive attack in Japanese outpatients: The mediating roles of rumination, social anxiety, and depressive symptoms', 'doi': '10.3389/fpsyg.2022.1016879', 'relationType': 'not applicable', 'isCausal': '', 'SupportingText': 'The results of the hypothesized model showed goodness-of-fit with the data.'}"
+    },
+    {
+      "from": "Rumination Induction",
+      "to": "RSAwithdrawal",
+      "description": "{'title': 'PSP478785.indd', 'doi': '10.1159/000478785', 'relationType': 'not applicable', 'isCausal': '', 'SupportingText': 'The text does not provide any information on the relationship between rumination induction and RSAwithdrawal.'}\n=====\n{'title': 'Effect of rejection sensitivity on the development of anxious-depressive attack in Japanese outpatients: The mediating roles of rumination, social anxiety, and depressive symptoms', 'doi': '10.3389/fpsyg.2022.1016879', 'relationType': 'not applicable', 'isCausal': '', 'SupportingText': \"The results of SEM showed that the hypothesized model's goodness-of-fit indices demonstrated high values.\"}"
+    },
+    {
+      "from": "Forced-failure stress",
+      "to": "RSAwithdrawal",
+      "description": "{'title': 'Effect of rejection sensitivity on the development of anxious-depressive attack in Japanese outpatients: The mediating roles of rumination, social anxiety, and depressive symptoms', 'doi': '10.3389/fpsyg.2022.1016879', 'relationType': 'not applicable', 'isCausal': '', 'SupportingText': 'The results of the hypothesized model showed goodness-of-fit with the data.'}"
+    },
+    {
+      "from": "Cognitive distraction",
+      "to": "Rumination",
+      "description": "{'title': 'Childhood Maltreatment Was Correlated With the Decreased Cortical Function in Depressed Patients Under Social Stress in a Working Memory Task: A Pilot Study', 'doi': '10.3389/fpsyt.2021.671574', 'relationType': 'Inverse', 'isCausal': '', 'SupportingText': 'We aimed to explore the neural changes in MDD patients by investigating brain function associated with a stress-related WM task. We found that compared to HCs, MDD patients showed comprehensive less brain activation during both the WM maintenance and manipulation conditions. Particularly, we found decreased brain activation in the left fusiform gyrus, SMA, and APFC. The reduced activation of the left fusiform gyrus may indicate impaired emotional stimuli processing function, while the decreased activation of the SMA and APFC may suggest impaired cognitive control function.'}\n=====\n{'title': 'PSP478785.indd', 'doi': '10.1159/000478785', 'relationType': 'direct', 'isCausal': '', 'SupportingText': 'Resource allocation theory posits that rumination absorbs cognitive capacities which can thus not be directed towards task-relevant processes. Valuable cognitive resources are allocated to irrelevant depressive and ruminative thought processes.'}\n=====\n{'title': 'Effect of rejection sensitivity on the development of anxious-depressive attack in Japanese outpatients: The mediating roles of rumination, social anxiety, and depressive symptoms', 'doi': '10.3389/fpsyg.2022.1016879', 'relationType': 'direct', 'isCausal': '', 'SupportingText': 'Furthermore, rumination is associated with several psychological symptoms, including eating disorders and emotion regulation difficulties.'}\n=====\n{'title': 'Cognitive deficits in patients with chronic fatigue syndrome compared to those with major depressive disorder and healthy controls', 'doi': '10.1016/j.clineuro.2010.12.002', 'relationType': 'not applicable', 'isCausal': '', 'SupportingText': 'We evaluated the cognitive performance of patients with CFS using standardized verbal and visual memory tests, as well as sustained attention, working memory, and verbal and visual episodic memory.'}\n=====\n{'title': 'Improvement in self-reported cognitive functioning but not in rumination following online working memory training in a two-year follow-up study of remitted major depressive disorder', 'doi': '10.3389/fpsyt.2023.1163073', 'relationType': 'Direct', 'isCausal': '', 'SupportingText': 'Results suggested lasting improvements in self-reported cognitive functioning following online CWMT.'}"
+    },
+    {
+      "from": "Forced-failure stress",
+      "to": "Sadness",
+      "description": "{'title': 'Childhood Maltreatment Was Correlated With the Decreased Cortical Function in Depressed Patients Under Social Stress in a Working Memory Task: A Pilot Study', 'doi': '10.3389/fpsyt.2021.671574', 'relationType': 'Direct', 'isCausal': '', 'SupportingText': 'In our pilot study, the decreased brain activation of the left fusiform gyrus, SMA, and APFC helps us to understand the abnormalities of the emotional stimuli processing function, executive function, and cognitive control function in MDD. Childhood maltreatment might play a crucial role in the development of MDD. Although, the findings of this study might not be conclusive, they could provide some information for other researchers.'}\n=====\n{'title': 'PSP478785.indd', 'doi': '10.1159/000478785', 'relationType': 'not applicable', 'isCausal': '', 'SupportingText': 'The text does not provide any information on the relationship between forced-failure stress and sadness.'}\n=====\n{'title': 'Effect of rejection sensitivity on the development of anxious-depressive attack in Japanese outpatients: The mediating roles of rumination, social anxiety, and depressive symptoms', 'doi': '10.3389/fpsyg.2022.1016879', 'relationType': 'direct', 'isCausal': '', 'SupportingText': 'The severity of ADA symptoms is positively associated with anxiety and depressive symptoms.'}\n=====\n{'title': 'Cognitive deficits in patients with chronic fatigue syndrome compared to those with major depressive disorder and healthy controls', 'doi': '10.1016/j.clineuro.2010.12.002', 'relationType': 'not applicable', 'isCausal': '', 'SupportingText': 'We evaluated the cognitive performance of patients with CFS using standardized verbal and visual memory tests, as well as sustained attention, working memory, and verbal and visual episodic memory.'}\n=====\n{'title': 'Improvement in self-reported cognitive functioning but not in rumination following online working memory training in a two-year follow-up study of remitted major depressive disorder', 'doi': '10.3389/fpsyt.2023.1163073', 'relationType': 'Not applicable', 'isCausal': '', 'SupportingText': 'No specific mention of forced-failure stress or its relationship to sadness was found in the text.'}\n=====\n{'title': 'Brain activation patterns in major depressive disorder and work stress-related long-term sick leave ', 'doi': '10.3109/10253890.2011.646347', 'relationType': 'Direct', 'isCausal': '', 'SupportingText': 'The fMRI results showed pronounced similarities in activation patterns across the groups, suggesting largely intact functional networks. This was further substantiated by intact cognitive performance. However, during the more demanding cognitive task (n-back), the LTSL subjects showed a reduction in prefrontal cortex activation. Specifically, a group difference was observed in the right dorsolateral and left ventrolateral prefrontal cortex. In addition, response times during n-back correlated with brain activity for controls and depressed patients but not for the LTSL subjects, who tended to have a slower response.'}"
+    },
+    {
+      "from": "Cognitive distraction",
+      "to": "Rumination",
+      "description": "{'title': 'Childhood Maltreatment Was Correlated With the Decreased Cortical Function in Depressed Patients Under Social Stress in a Working Memory Task: A Pilot Study', 'doi': '10.3389/fpsyt.2021.671574', 'relationType': 'Inverse', 'isCausal': '', 'SupportingText': 'We aimed to explore the neural changes in MDD patients by investigating brain function associated with a stress-related WM task. We found that compared to HCs, MDD patients showed comprehensive less brain activation during both the WM maintenance and manipulation conditions. Particularly, we found decreased brain activation in the left fusiform gyrus, SMA, and APFC. The reduced activation of the left fusiform gyrus may indicate impaired emotional stimuli processing function, while the decreased activation of the SMA and APFC may suggest impaired cognitive control function.'}\n=====\n{'title': 'PSP478785.indd', 'doi': '10.1159/000478785', 'relationType': 'direct', 'isCausal': '', 'SupportingText': 'Resource allocation theory posits that rumination absorbs cognitive capacities which can thus not be directed towards task-relevant processes. Valuable cognitive resources are allocated to irrelevant depressive and ruminative thought processes.'}\n=====\n{'title': 'Effect of rejection sensitivity on the development of anxious-depressive attack in Japanese outpatients: The mediating roles of rumination, social anxiety, and depressive symptoms', 'doi': '10.3389/fpsyg.2022.1016879', 'relationType': 'direct', 'isCausal': '', 'SupportingText': 'Furthermore, rumination is associated with several psychological symptoms, including eating disorders and emotion regulation difficulties.'}\n=====\n{'title': 'Cognitive deficits in patients with chronic fatigue syndrome compared to those with major depressive disorder and healthy controls', 'doi': '10.1016/j.clineuro.2010.12.002', 'relationType': 'not applicable', 'isCausal': '', 'SupportingText': 'We evaluated the cognitive performance of patients with CFS using standardized verbal and visual memory tests, as well as sustained attention, working memory, and verbal and visual episodic memory.'}\n=====\n{'title': 'Improvement in self-reported cognitive functioning but not in rumination following online working memory training in a two-year follow-up study of remitted major depressive disorder', 'doi': '10.3389/fpsyt.2023.1163073', 'relationType': 'Direct', 'isCausal': '', 'SupportingText': 'Results suggested lasting improvements in self-reported cognitive functioning following online CWMT.'}"
+    },
+    {
+      "from": "Forced-failure stress",
+      "to": "Sadness",
+      "description": "{'title': 'Childhood Maltreatment Was Correlated With the Decreased Cortical Function in Depressed Patients Under Social Stress in a Working Memory Task: A Pilot Study', 'doi': '10.3389/fpsyt.2021.671574', 'relationType': 'Direct', 'isCausal': '', 'SupportingText': 'In our pilot study, the decreased brain activation of the left fusiform gyrus, SMA, and APFC helps us to understand the abnormalities of the emotional stimuli processing function, executive function, and cognitive control function in MDD. Childhood maltreatment might play a crucial role in the development of MDD. Although, the findings of this study might not be conclusive, they could provide some information for other researchers.'}\n=====\n{'title': 'PSP478785.indd', 'doi': '10.1159/000478785', 'relationType': 'not applicable', 'isCausal': '', 'SupportingText': 'The text does not provide any information on the relationship between forced-failure stress and sadness.'}\n=====\n{'title': 'Effect of rejection sensitivity on the development of anxious-depressive attack in Japanese outpatients: The mediating roles of rumination, social anxiety, and depressive symptoms', 'doi': '10.3389/fpsyg.2022.1016879', 'relationType': 'direct', 'isCausal': '', 'SupportingText': 'The severity of ADA symptoms is positively associated with anxiety and depressive symptoms.'}\n=====\n{'title': 'Cognitive deficits in patients with chronic fatigue syndrome compared to those with major depressive disorder and healthy controls', 'doi': '10.1016/j.clineuro.2010.12.002', 'relationType': 'not applicable', 'isCausal': '', 'SupportingText': 'We evaluated the cognitive performance of patients with CFS using standardized verbal and visual memory tests, as well as sustained attention, working memory, and verbal and visual episodic memory.'}\n=====\n{'title': 'Improvement in self-reported cognitive functioning but not in rumination following online working memory training in a two-year follow-up study of remitted major depressive disorder', 'doi': '10.3389/fpsyt.2023.1163073', 'relationType': 'Not applicable', 'isCausal': '', 'SupportingText': 'No specific mention of forced-failure stress or its relationship to sadness was found in the text.'}\n=====\n{'title': 'Brain activation patterns in major depressive disorder and work stress-related long-term sick leave ', 'doi': '10.3109/10253890.2011.646347', 'relationType': 'Direct', 'isCausal': '', 'SupportingText': 'The fMRI results showed pronounced similarities in activation patterns across the groups, suggesting largely intact functional networks. This was further substantiated by intact cognitive performance. However, during the more demanding cognitive task (n-back), the LTSL subjects showed a reduction in prefrontal cortex activation. Specifically, a group difference was observed in the right dorsolateral and left ventrolateral prefrontal cortex. In addition, response times during n-back correlated with brain activity for controls and depressed patients but not for the LTSL subjects, who tended to have a slower response.'}"
+    },
+    {
+      "from": "Rumination",
+      "to": "Sadness",
+      "description": "{'title': 'PSP478785.indd', 'doi': '10.1159/000478785', 'relationType': 'direct', 'isCausal': '', 'SupportingText': 'People who ruminate repetitively contemplate reasons for and consequences of their sadness. Rumination has been identified as a core risk factor for depression with serious clinical implications due to more depressed mood.'}\n=====\n{'title': 'Effect of rejection sensitivity on the development of anxious-depressive attack in Japanese outpatients: The mediating roles of rumination, social anxiety, and depressive symptoms', 'doi': '10.3389/fpsyg.2022.1016879', 'relationType': 'direct', 'isCausal': '', 'SupportingText': 'Nolen-Hoeksema et al. (2008) demonstrated that rumination predicts the onset of depression, exacerbates depression, enhances negative thinking, impairs problem-solving skills, interferes with instrumental behavior, and erodes social support.'}\n=====\n{'title': 'Improvement in self-reported cognitive functioning but not in rumination following online working memory training in a two-year follow-up study of remitted major depressive disorder', 'doi': '10.3389/fpsyt.2023.1163073', 'relationType': 'Direct', 'isCausal': '', 'SupportingText': 'Rumination is an emotion regulation strategy where one passively broods over self-related negative experiences.'}"
+    },
+    {
+      "from": "Forced-failure stress",
+      "to": "Sadness",
+      "description": "{'title': 'Childhood Maltreatment Was Correlated With the Decreased Cortical Function in Depressed Patients Under Social Stress in a Working Memory Task: A Pilot Study', 'doi': '10.3389/fpsyt.2021.671574', 'relationType': 'Direct', 'isCausal': '', 'SupportingText': 'In our pilot study, the decreased brain activation of the left fusiform gyrus, SMA, and APFC helps us to understand the abnormalities of the emotional stimuli processing function, executive function, and cognitive control function in MDD. Childhood maltreatment might play a crucial role in the development of MDD. Although, the findings of this study might not be conclusive, they could provide some information for other researchers.'}\n=====\n{'title': 'PSP478785.indd', 'doi': '10.1159/000478785', 'relationType': 'not applicable', 'isCausal': '', 'SupportingText': 'The text does not provide any information on the relationship between forced-failure stress and sadness.'}\n=====\n{'title': 'Effect of rejection sensitivity on the development of anxious-depressive attack in Japanese outpatients: The mediating roles of rumination, social anxiety, and depressive symptoms', 'doi': '10.3389/fpsyg.2022.1016879', 'relationType': 'direct', 'isCausal': '', 'SupportingText': 'The severity of ADA symptoms is positively associated with anxiety and depressive symptoms.'}\n=====\n{'title': 'Cognitive deficits in patients with chronic fatigue syndrome compared to those with major depressive disorder and healthy controls', 'doi': '10.1016/j.clineuro.2010.12.002', 'relationType': 'not applicable', 'isCausal': '', 'SupportingText': 'We evaluated the cognitive performance of patients with CFS using standardized verbal and visual memory tests, as well as sustained attention, working memory, and verbal and visual episodic memory.'}\n=====\n{'title': 'Improvement in self-reported cognitive functioning but not in rumination following online working memory training in a two-year follow-up study of remitted major depressive disorder', 'doi': '10.3389/fpsyt.2023.1163073', 'relationType': 'Not applicable', 'isCausal': '', 'SupportingText': 'No specific mention of forced-failure stress or its relationship to sadness was found in the text.'}\n=====\n{'title': 'Brain activation patterns in major depressive disorder and work stress-related long-term sick leave ', 'doi': '10.3109/10253890.2011.646347', 'relationType': 'Direct', 'isCausal': '', 'SupportingText': 'The fMRI results showed pronounced similarities in activation patterns across the groups, suggesting largely intact functional networks. This was further substantiated by intact cognitive performance. However, during the more demanding cognitive task (n-back), the LTSL subjects showed a reduction in prefrontal cortex activation. Specifically, a group difference was observed in the right dorsolateral and left ventrolateral prefrontal cortex. In addition, response times during n-back correlated with brain activity for controls and depressed patients but not for the LTSL subjects, who tended to have a slower response.'}"
+    }
+  ]
 }
