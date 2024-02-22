@@ -1,0 +1,2229 @@
+{
+  "Relations": [
+    {
+      "VariableOneName": "stress level and allostatic load",
+      "VariableTwoName": "social and emotional support",
+      "RelationshipClassification": "-"
+    },
+    {
+      "VariableOneName": "Negative student perceptions of mental health resources",
+      "VariableTwoName": "demand for mental health treatment",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "self-harm",
+      "VariableTwoName": "psychological distress and suicidality",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "University Administration",
+      "VariableTwoName": "Donors  +  Funders",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "social isolation",
+      "VariableTwoName": "maladaptive coping skills",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "stereotypes and discrimination",
+      "VariableTwoName": "homophobia and transphobia",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "maladaptive coping skills",
+      "VariableTwoName": "substance abuse",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "insurance coverage",
+      "VariableTwoName": "physical health",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "psychological distress/negative mental health",
+      "VariableTwoName": "use of mental health services",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "maladaptive coping skills",
+      "VariableTwoName": "ability to recover from psychological distress (resilience)",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "Utilizing Transition to College Resources",
+      "VariableTwoName": "family conflict",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "social isolation",
+      "VariableTwoName": "Increased Social Connectedness",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "unhealthy social media use",
+      "VariableTwoName": "Increased Social Connectedness",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "Negative experiences with campus resources",
+      "VariableTwoName": "trust",
+      "RelationshipClassification": "-"
+    },
+    {
+      "VariableOneName": "access to safe housing, transportation, healthy food",
+      "VariableTwoName": "availability of mental health resources on campus",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "rigor of coursework/workload",
+      "VariableTwoName": "perceived academic pressure",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "favorable student perceptions of mental health support",
+      "VariableTwoName": "trust in mental health services",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "maladaptive coping skills",
+      "VariableTwoName": "unhealthy social media use",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "trust",
+      "VariableTwoName": "use of mental health services",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "Start",
+      "VariableTwoName": "End",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "GPA/Grades/Measures of Academic Success",
+      "VariableTwoName": "stress level and allostatic load",
+      "RelationshipClassification": "-"
+    },
+    {
+      "VariableOneName": "Negative student perceptions of mental health resources",
+      "VariableTwoName": "Rumors of Campus Resources (e.g., Session Limits, Waiting Times)",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "stereotypes and discrimination",
+      "VariableTwoName": "Racism",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "suicidal ideation",
+      "VariableTwoName": "psychological distress and suicidality",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "stigma",
+      "VariableTwoName": "motivation to seek support and treatment",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "Access to green spaces",
+      "VariableTwoName": "social and emotional support",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "GPA/Grades/Measures of Academic Success",
+      "VariableTwoName": "stress level and allostatic load",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "institutional efforts to address structural oppression",
+      "VariableTwoName": "structural oppression",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "Donors  +  Funders",
+      "VariableTwoName": "University Administration",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "impostor syndrome",
+      "VariableTwoName": "sense of belonging",
+      "RelationshipClassification": "-"
+    },
+    {
+      "VariableOneName": "perceived academic pressure",
+      "VariableTwoName": "GPA/Grades/Measures of Academic Success",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "access to services",
+      "VariableTwoName": "ability to recover from psychological distress (resilience)",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "access to safe housing, transportation, healthy food",
+      "VariableTwoName": "physical health",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "motivation to seek support and treatment",
+      "VariableTwoName": "shame",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "social comparison",
+      "VariableTwoName": "self harm",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "stress level and allostatic load",
+      "VariableTwoName": "burnout",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "access to services",
+      "VariableTwoName": "use of helpful coping skills",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "competitiveness",
+      "VariableTwoName": "hustle/grind culture",
+      "RelationshipClassification": "-"
+    },
+    {
+      "VariableOneName": "Ineffective academic support and advising",
+      "VariableTwoName": "Utilizing Transition to College Resources",
+      "RelationshipClassification": "-"
+    },
+    {
+      "VariableOneName": "anxiety",
+      "VariableTwoName": "psychological distress and suicidality",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "stress level and allostatic load",
+      "VariableTwoName": "academic pressure",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "physical health",
+      "VariableTwoName": "social and emotional support",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "shame",
+      "VariableTwoName": "impostor syndrome",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "stigma",
+      "VariableTwoName": "trust in mental health services",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "academic pressure",
+      "VariableTwoName": "mental health outcomes",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "GPA/Grades/Measures of Academic Success",
+      "VariableTwoName": "psychological distress and suicidality",
+      "RelationshipClassification": "-"
+    },
+    {
+      "VariableOneName": "GPA/Grades/Measures of Academic Success",
+      "VariableTwoName": "impostor syndrome",
+      "RelationshipClassification": "-"
+    },
+    {
+      "VariableOneName": "income level (including scholarships)",
+      "VariableTwoName": "access to safe housing, transportation, healthy food",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "burnout",
+      "VariableTwoName": "anxiety",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "sense of belonging",
+      "VariableTwoName": "social and emotional support",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "income level (including scholarships)",
+      "VariableTwoName": "insurance coverage",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "marginalization",
+      "VariableTwoName": "institutional efforts to address structural oppression",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "access to healthy foods",
+      "VariableTwoName": "physical health",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "Ability to afford services off campus",
+      "VariableTwoName": "demand for mental health treatment",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "social and emotional support",
+      "VariableTwoName": "maladaptive coping skills",
+      "RelationshipClassification": "-"
+    },
+    {
+      "VariableOneName": "Campus Mental Health Stigma",
+      "VariableTwoName": "demand for mental health treatment",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "access to healthy foods",
+      "VariableTwoName": "access to services",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "perceived   burdensomeness",
+      "VariableTwoName": "loneliness",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "sleep",
+      "VariableTwoName": "GPA/Grades/Measures of Academic Success",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "University Administration",
+      "VariableTwoName": "Government",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "stereotypes and discrimination",
+      "VariableTwoName": "homophobia and transphobia",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "availability of mental health resources on campus",
+      "VariableTwoName": "stress level and allostatic load",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "Negative student perceptions of mental health resources",
+      "VariableTwoName": "level of mental health education",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "Level of burden for mental health providers",
+      "VariableTwoName": "Negative experiences with campus resources",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "visibility of disruptive events",
+      "VariableTwoName": "social distancing during covid-19",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "Utilizing Transition to College Resources",
+      "VariableTwoName": "Thwarted   belongingness",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "academic pressure",
+      "VariableTwoName": "stress level and allostatic load",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "Utilizing Transition to College Resources",
+      "VariableTwoName": "impostor syndrome",
+      "RelationshipClassification": "-"
+    },
+    {
+      "VariableOneName": "burden for mental health providers",
+      "VariableTwoName": "CAPS availability",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "level of mental health education",
+      "VariableTwoName": "stigma",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "extent of identity-based resources",
+      "VariableTwoName": "availability of mental health resources on campus",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "competitiveness",
+      "VariableTwoName": "hustle/grind culture",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "access to services",
+      "VariableTwoName": "use of helpful coping skills",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "access to safe housing, transportation, healthy food",
+      "VariableTwoName": "psychological distress",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "ability to recover from psychological distress (resilience)",
+      "VariableTwoName": "stigma",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "perceived academic pressure",
+      "VariableTwoName": "impostor syndrome",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "homophobia and transphobia",
+      "VariableTwoName": "marginalization",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "trust in mental health services",
+      "VariableTwoName": "stigma",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "GPA/Grades/Measures of Academic Success",
+      "VariableTwoName": "perceived academic pressure",
+      "RelationshipClassification": "-"
+    },
+    {
+      "VariableOneName": "Funding for campus mental health services",
+      "VariableTwoName": "favorable student perceptions of mental health support",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "stereotypes and discrimination",
+      "VariableTwoName": "homophobia and transphobia",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "Extent to which campus provides identity-based resources",
+      "VariableTwoName": "availability of mental health resources on campus",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "level of mental health education",
+      "VariableTwoName": "stigma",
+      "RelationshipClassification": "-"
+    },
+    {
+      "VariableOneName": "income level (including scholarships)",
+      "VariableTwoName": "insurance coverage",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "access to mental health services",
+      "VariableTwoName": "use of mental health services",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "trust in mental health services",
+      "VariableTwoName": "level of mental health education",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "hustle/grind culture",
+      "VariableTwoName": "perceived academic pressure",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "sleep",
+      "VariableTwoName": "physical health",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "Bringing resources to the students",
+      "VariableTwoName": "Uptake of resources",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "academic pressure",
+      "VariableTwoName": "perceived academic pressure",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "marginalization",
+      "VariableTwoName": "stereotypes and discrimination",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "access to services",
+      "VariableTwoName": "stress level and allostatic load",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "use of helpful coping skills",
+      "VariableTwoName": "ability to recover from psychological distress (resilience)",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "social isolation",
+      "VariableTwoName": "unhealthy social media use",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "sexual assault",
+      "VariableTwoName": "demand for mental health treatment",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "substance abuse",
+      "VariableTwoName": "psychological distress and suicidality",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "Utilizing Transition to College Resources",
+      "VariableTwoName": "homesickness",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "impostor syndrome",
+      "VariableTwoName": "perceived academic pressure",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "structural oppression",
+      "VariableTwoName": "intergenerational trauma",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "demand for mental health treatment",
+      "VariableTwoName": "access to services",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "stress level and allostatic load",
+      "VariableTwoName": "GPA/Grades/Measures of Academic Success",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "anxiety",
+      "VariableTwoName": "psychological distress and suicidality",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "structural oppression",
+      "VariableTwoName": "stereotypes and discrimination",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "Seeking support with transition to college",
+      "VariableTwoName": "Ineffective academic support and advising",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "Funding for campus mental health services",
+      "VariableTwoName": "Negative experiences with campus resources",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "Racism",
+      "VariableTwoName": "demand for mental health treatment",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "hopelessness",
+      "VariableTwoName": "sense of belonging",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "awareness of support services",
+      "VariableTwoName": "trust in mental health services",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "social comparison",
+      "VariableTwoName": "self-harm",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "income level (including scholarships)",
+      "VariableTwoName": "availability of mental health resources on campus",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "ability to recover from psychological distress (resilience)",
+      "VariableTwoName": "use of mental health services",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "access to healthy foods",
+      "VariableTwoName": "physical health",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "access to services",
+      "VariableTwoName": "stress level and allostatic load",
+      "RelationshipClassification": "-"
+    },
+    {
+      "VariableOneName": "use of mental health services",
+      "VariableTwoName": "social and emotional support",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "income level (including scholarships)",
+      "VariableTwoName": "access to safe housing, transportation, healthy food",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "income level (including scholarships)",
+      "VariableTwoName": "social and emotional support",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "access to healthy foods",
+      "VariableTwoName": "psychological distress",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "depression",
+      "VariableTwoName": "suicidal ideation",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "Level of burden for mental health providers",
+      "VariableTwoName": "Extent to which campus provides identity-based resources",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "shame",
+      "VariableTwoName": "stigma",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "Negative experiences with campus resources",
+      "VariableTwoName": "Negative student perceptions of mental health resources",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "unhealthy social media use",
+      "VariableTwoName": "social comparison",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "extent of identity-based resources",
+      "VariableTwoName": "marginalization",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "academic pressure",
+      "VariableTwoName": "perceived academic pressure",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "motivation to seek support and treatment",
+      "VariableTwoName": "extent of identity-based resources",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "CAPS availability",
+      "VariableTwoName": "availability of mental health resources on campus",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "demand for mental health treatment",
+      "VariableTwoName": "Level of burden for mental health providers",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "stress level and allostatic load",
+      "VariableTwoName": "psychological distress and suicidality",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "academic pressure",
+      "VariableTwoName": "stress level and allostatic load",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "competitiveness",
+      "VariableTwoName": "academic pressure",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "trauma",
+      "VariableTwoName": "ability to recover from psychological distress (resilience)",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "competitiveness",
+      "VariableTwoName": "stress level and allostatic load",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "Students",
+      "VariableTwoName": "University Administration",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "family conflict",
+      "VariableTwoName": "intergenerational trauma",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "ability to recover from psychological distress (resilience)",
+      "VariableTwoName": "stress level and allostatic load",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "demand for mental health treatment",
+      "VariableTwoName": "availability of mental health resources on campus",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "Rumors of Campus Resources (e.g., Session Limits, Waiting Times)",
+      "VariableTwoName": "Negative student perceptions of mental health resources",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "insurance coverage",
+      "VariableTwoName": "use of mental health services",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "stigma",
+      "VariableTwoName": "motivation to seek support and treatment",
+      "RelationshipClassification": "-"
+    },
+    {
+      "VariableOneName": "academic pressure",
+      "VariableTwoName": "stress level and allostatic load",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "Increased Social Connectedness",
+      "VariableTwoName": "social isolation",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "Students",
+      "VariableTwoName": "Community",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "social and emotional support",
+      "VariableTwoName": "ability to recover from psychological distress (resilience)",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "unhealthy body image",
+      "VariableTwoName": "psychological distress and suicidality",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "ability to recover from psychological distress",
+      "VariableTwoName": "maladaptive coping skills",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "rigor of coursework/workload",
+      "VariableTwoName": "GPA/Grades/Measures of Academic Success",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "impostor syndrome",
+      "VariableTwoName": "Seeking support with transition to college",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "Increased Social Connectedness",
+      "VariableTwoName": "sense of belonging",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "cultural and religious acceptance of mental health",
+      "VariableTwoName": "family conflict",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "Substance Use",
+      "VariableTwoName": "Project Title",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "structural oppression",
+      "VariableTwoName": "income level (including scholarships)",
+      "RelationshipClassification": "-"
+    },
+    {
+      "VariableOneName": "Level of burden for mental health providers",
+      "VariableTwoName": "availability of mental health resources on campus",
+      "RelationshipClassification": "-"
+    },
+    {
+      "VariableOneName": "psychological distress and suicidality",
+      "VariableTwoName": "stress level and allostatic load",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "Access to green spaces",
+      "VariableTwoName": "social distancing during covid-19",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "marginalization",
+      "VariableTwoName": "social and emotional support",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "academic pressure",
+      "VariableTwoName": "psychological distress and suicidality",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "intergenerational trauma",
+      "VariableTwoName": "adverse childhood experiences (ACEs)",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "Utilizing Transition to College Resources",
+      "VariableTwoName": "sense of belonging",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "academic pressure",
+      "VariableTwoName": "perceived academic pressure",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "social and emotional support",
+      "VariableTwoName": "ability to recover from psychological distress (resilience)",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "University Administration",
+      "VariableTwoName": "Government",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "hopelessness",
+      "VariableTwoName": "suicidal ideation",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "Homophobia",
+      "VariableTwoName": "demand for mental health treatment",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "shame",
+      "VariableTwoName": "stigma",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "structural oppression",
+      "VariableTwoName": "trauma",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "substance abuse",
+      "VariableTwoName": "ability to recover from psychological distress (resilience)",
+      "RelationshipClassification": "-"
+    },
+    {
+      "VariableOneName": "level of mental health education",
+      "VariableTwoName": "awareness of support services",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "income level (including scholarships)",
+      "VariableTwoName": "access to services",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "demand for mental health treatment",
+      "VariableTwoName": "availability of mental health resources on campus",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "Project Title",
+      "VariableTwoName": "Parental and Familial Support",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "University Administration",
+      "VariableTwoName": "Donors  +  Funders",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "structural oppression",
+      "VariableTwoName": "visibility of disruptive events",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "trust in mental health services",
+      "VariableTwoName": "awareness of support services",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "sense of belonging",
+      "VariableTwoName": "marginalization",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "academic pressure",
+      "VariableTwoName": "psychological distress and suicidality",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "social isolation",
+      "VariableTwoName": "substance abuse",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "suicidal ideation",
+      "VariableTwoName": "substance abuse",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "level of mental health education",
+      "VariableTwoName": "Negative student perceptions of mental health resources",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "perceived academic pressure",
+      "VariableTwoName": "GPA/Grades/Measures of Academic Success",
+      "RelationshipClassification": "-"
+    },
+    {
+      "VariableOneName": "competitiveness",
+      "VariableTwoName": "stress level and allostatic load",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "Community",
+      "VariableTwoName": "University Administration",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "impostor syndrome",
+      "VariableTwoName": "competitiveness",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "self-harm",
+      "VariableTwoName": "suicidal ideation",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "Increased Social Connectedness",
+      "VariableTwoName": "ability to recover from psychological distress (resilience)",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "insurance coverage",
+      "VariableTwoName": "access to safe housing, transportation, healthy food",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "physical health",
+      "VariableTwoName": "stress level and allostatic load",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "structural oppression",
+      "VariableTwoName": "income level (including scholarships)",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "stress level and allostatic load",
+      "VariableTwoName": "psychological distress/negative mental health",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "substance abuse",
+      "VariableTwoName": "psychological distress",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "social comparison",
+      "VariableTwoName": "competitiveness",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "Negative experiences with campus resources",
+      "VariableTwoName": "Rumors of Campus Resources (e.g., Session Limits, Waiting Times)",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "cultural and religious acceptance of mental health",
+      "VariableTwoName": "stigma",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "End",
+      "VariableTwoName": "Start",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "use of mental health services",
+      "VariableTwoName": "maladaptive coping skills",
+      "RelationshipClassification": "-"
+    },
+    {
+      "VariableOneName": "stress level and allostatic load",
+      "VariableTwoName": "academic pressure",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "Familial Pressure",
+      "VariableTwoName": "stress level and allostatic load",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "depression",
+      "VariableTwoName": "psychological distress and suicidality",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "GPA/Grades/Measures of Academic Success",
+      "VariableTwoName": "perceived academic pressure",
+      "RelationshipClassification": "-"
+    },
+    {
+      "VariableOneName": "stigma",
+      "VariableTwoName": "willingness to seek support and treatment",
+      "RelationshipClassification": "-"
+    },
+    {
+      "VariableOneName": "academic pressure",
+      "VariableTwoName": "motivation to seek support and treatment",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "depression",
+      "VariableTwoName": "psychological distress and suicidality",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "income level (including scholarships)",
+      "VariableTwoName": "access to healthy foods",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "cultural and religious acceptance of mental health",
+      "VariableTwoName": "stigma",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "income level (including scholarships)",
+      "VariableTwoName": "access to mental health services",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "social and emotional support",
+      "VariableTwoName": "ability to recover from psychological distress (resilience)",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "Ability to afford services off campus",
+      "VariableTwoName": "use of mental health services",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "perceived   burdensomeness",
+      "VariableTwoName": "depression",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "physical health",
+      "VariableTwoName": "stress level and allostatic load",
+      "RelationshipClassification": "-"
+    },
+    {
+      "VariableOneName": "favorable student perceptions of mental health support",
+      "VariableTwoName": "admin perceptions of student mental health",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "visibility of disruptive events",
+      "VariableTwoName": "hopelessness",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "adverse childhood experiences (ACEs)",
+      "VariableTwoName": "ability to recover from psychological distress (resilience)",
+      "RelationshipClassification": "-"
+    },
+    {
+      "VariableOneName": "Access to green spaces",
+      "VariableTwoName": "social distancing during covid-19",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "access to safe housing, transportation, healthy food",
+      "VariableTwoName": "physical health",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "self harm",
+      "VariableTwoName": "psychological distress",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "insurance coverage",
+      "VariableTwoName": "access to services",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "ability to recover from psychological distress (resilience)",
+      "VariableTwoName": "maladaptive coping skills",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "visibility of disruptive events",
+      "VariableTwoName": "structural oppression",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "social comparison",
+      "VariableTwoName": "psychological distress",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "unhealthy body image",
+      "VariableTwoName": "self-harm",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "demand for mental health treatment",
+      "VariableTwoName": "Funding for campus mental health services",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "intergenerational trauma",
+      "VariableTwoName": "adverse childhood experiences (ACEs)",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "student activism",
+      "VariableTwoName": "availability of mental health resources on campus",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "insurance coverage",
+      "VariableTwoName": "access to services",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "burnout",
+      "VariableTwoName": "psychological distress and suicidality",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "sense of belonging",
+      "VariableTwoName": "Increased Social Connectedness",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "income level (including scholarships)",
+      "VariableTwoName": "access to safe housing, transportation, healthy food",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "availability of mental health resources on campus",
+      "VariableTwoName": "favorable student perceptions of mental health support",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "Internalized stigma against mental health",
+      "VariableTwoName": "demand for mental health treatment",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "unhealthy social media use",
+      "VariableTwoName": "depression",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "access to healthy foods",
+      "VariableTwoName": "access to services",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "genetic predisposition",
+      "VariableTwoName": "ability to recover from psychological distress (resilience)",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "access to healthy foods",
+      "VariableTwoName": "availability of mental health resources on campus",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "sense of belonging",
+      "VariableTwoName": "hustle/grind culture",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "structural oppression",
+      "VariableTwoName": "income level (including scholarships)",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "availability of mental health resources on campus",
+      "VariableTwoName": "psychological distress and suicidality",
+      "RelationshipClassification": "-"
+    },
+    {
+      "VariableOneName": "social distancing during covid-19",
+      "VariableTwoName": "social isolation",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "substance abuse",
+      "VariableTwoName": "unhealthy social media use",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "rigor of coursework/workload",
+      "VariableTwoName": "academic pressure",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "marginalization",
+      "VariableTwoName": "social and emotional support",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "level of mental health education",
+      "VariableTwoName": "stigma",
+      "RelationshipClassification": "-"
+    },
+    {
+      "VariableOneName": "academic pressure",
+      "VariableTwoName": "psychological distress and suicidality",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "GPA/Grades/Measures of Academic Success",
+      "VariableTwoName": "shame",
+      "RelationshipClassification": "-"
+    },
+    {
+      "VariableOneName": "Negative experiences with campus resources",
+      "VariableTwoName": "use of mental health services",
+      "RelationshipClassification": "-"
+    },
+    {
+      "VariableOneName": "access to healthy foods",
+      "VariableTwoName": "physical health",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "academic pressure",
+      "VariableTwoName": "psychological distress and suicidality",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "level of mental health education",
+      "VariableTwoName": "trust in mental health services",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "adverse childhood experiences (ACEs)",
+      "VariableTwoName": "psychological distress and suicidality",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "loneliness",
+      "VariableTwoName": "psychological distress",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "sense of belonging",
+      "VariableTwoName": "psychological distress and suicidality",
+      "RelationshipClassification": "-"
+    },
+    {
+      "VariableOneName": "student activism",
+      "VariableTwoName": "availability of mental health resources on campus",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "psychological distress",
+      "VariableTwoName": "unhealthy body image",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "stress level and allostatic load",
+      "VariableTwoName": "GPA/Grades/Measures of Academic Success",
+      "RelationshipClassification": "-"
+    },
+    {
+      "VariableOneName": "psychological distress",
+      "VariableTwoName": "depression",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "academic pressure",
+      "VariableTwoName": "stress level and allostatic load",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "structural oppression",
+      "VariableTwoName": "marginalization",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "stress level and allostatic load",
+      "VariableTwoName": "Perception of Time Based Unavailability",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "access to services",
+      "VariableTwoName": "level of mental health education",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "Perception of Time Based Unavailability",
+      "VariableTwoName": "stress level and allostatic load",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "hustle/grind culture",
+      "VariableTwoName": "academic pressure",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "stress level and allostatic load",
+      "VariableTwoName": "perceived academic pressure",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "psychological distress",
+      "VariableTwoName": "psychological distress and suicidality",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "perceived   burdensomeness",
+      "VariableTwoName": "loneliness",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "demand for mental health treatment",
+      "VariableTwoName": "burden for mental health providers",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "access to safe housing, transportation, healthy food",
+      "VariableTwoName": "stress level and allostatic load",
+      "RelationshipClassification": "-"
+    },
+    {
+      "VariableOneName": "social and emotional support",
+      "VariableTwoName": "social isolation",
+      "RelationshipClassification": "-"
+    },
+    {
+      "VariableOneName": "demand for mental health treatment",
+      "VariableTwoName": "Level of burden for mental health providers",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "trust in mental health services",
+      "VariableTwoName": "demand for mental health treatment",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "cost of tuition, room, and board",
+      "VariableTwoName": "stress level and allostatic load",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "marginalization",
+      "VariableTwoName": "sense of belonging",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "use of helpful coping skills",
+      "VariableTwoName": "ability to recover from psychological distress (resilience)",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "access to safe housing, transportation, healthy food",
+      "VariableTwoName": "access to healthy foods",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "Seeking support with transition to college",
+      "VariableTwoName": "Utilizing Transition to College Resources",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "maladaptive coping skills",
+      "VariableTwoName": "substance abuse",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "awareness of support services",
+      "VariableTwoName": "demand for mental health treatment",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "ability to recover from psychological distress (resilience)",
+      "VariableTwoName": "maladaptive coping skills",
+      "RelationshipClassification": "-"
+    },
+    {
+      "VariableOneName": "use of mental health services",
+      "VariableTwoName": "use of helpful coping skills",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "Government",
+      "VariableTwoName": "University Administration",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "social and emotional support",
+      "VariableTwoName": "social isolation",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "psychological distress/negative mental health",
+      "VariableTwoName": "structural oppression",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "income level (including scholarships)",
+      "VariableTwoName": "access to services",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "access to services",
+      "VariableTwoName": "use of helpful coping skills",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "campus involvement",
+      "VariableTwoName": "social and emotional support",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "level of mental health education",
+      "VariableTwoName": "stigma",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "availability of mental health resources on campus",
+      "VariableTwoName": "access to services",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "Board of Directors",
+      "VariableTwoName": "University Administration",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "campus involvement",
+      "VariableTwoName": "sense of belonging",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "Academic Rigor",
+      "VariableTwoName": "academic pressure",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "physical health",
+      "VariableTwoName": "depression",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "academic performance",
+      "VariableTwoName": "income level (including scholarships)",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "Students",
+      "VariableTwoName": "Community",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "adverse childhood experiences (ACEs)",
+      "VariableTwoName": "Substance Use",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "ability to recover from psychological distress (resilience)",
+      "VariableTwoName": "psychological distress and suicidality",
+      "RelationshipClassification": "-"
+    },
+    {
+      "VariableOneName": "stigma",
+      "VariableTwoName": "willingness to seek support and treatment",
+      "RelationshipClassification": "-"
+    },
+    {
+      "VariableOneName": "sexual assault",
+      "VariableTwoName": "visibility of disruptive events",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "substance abuse",
+      "VariableTwoName": "unhealthy body image",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "depression",
+      "VariableTwoName": "motivation to seek support and treatment",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "stigma",
+      "VariableTwoName": "psychological distress and suicidality",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "competitiveness",
+      "VariableTwoName": "academic pressure",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "SDOH",
+      "VariableTwoName": "ability to recover from psychological distress (resilience)",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "anxiety",
+      "VariableTwoName": "substance abuse",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "income level (including scholarships)",
+      "VariableTwoName": "access to safe housing, transportation, healthy food",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "access to safe housing, transportation, healthy food",
+      "VariableTwoName": "availability of mental health resources on campus",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "Faculty",
+      "VariableTwoName": "Students",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "competitiveness",
+      "VariableTwoName": "hustle/grind culture",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "stress level and allostatic load",
+      "VariableTwoName": "psychological distress and suicidality",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "hustle/grind culture",
+      "VariableTwoName": "rigor of coursework/workload",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "insurance coverage",
+      "VariableTwoName": "availability of mental health resources on campus",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "availability of mental health resources on campus",
+      "VariableTwoName": "Bringing resources to the students",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "GPA/Grades/Measures of Academic Success",
+      "VariableTwoName": "stress level and allostatic load",
+      "RelationshipClassification": "-"
+    },
+    {
+      "VariableOneName": "depression",
+      "VariableTwoName": "psychological distress",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "awareness of support services",
+      "VariableTwoName": "level of mental health education",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "visibility of disruptive events",
+      "VariableTwoName": "demand for mental health treatment",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "self-harm",
+      "VariableTwoName": "burnout",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "trust in mental health services",
+      "VariableTwoName": "stigma",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "ability to recover from psychological distress (resilience)",
+      "VariableTwoName": "psychological distress/negative mental health",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "shame",
+      "VariableTwoName": "stigma",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "admin perceptions of student mental health",
+      "VariableTwoName": "funding for campus mental health support",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "trust in mental health services",
+      "VariableTwoName": "stigma",
+      "RelationshipClassification": "-"
+    },
+    {
+      "VariableOneName": "stress level and allostatic load",
+      "VariableTwoName": "academic pressure",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "stress level and allostatic load",
+      "VariableTwoName": "psychological distress and suicidality",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "GPA/Grades/Measures of Academic Success",
+      "VariableTwoName": "Familial Pressure",
+      "RelationshipClassification": "-"
+    },
+    {
+      "VariableOneName": "access to services",
+      "VariableTwoName": "demand for mental health treatment",
+      "RelationshipClassification": "-"
+    },
+    {
+      "VariableOneName": "income level (including scholarships)",
+      "VariableTwoName": "insurance coverage",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "stress level and allostatic load",
+      "VariableTwoName": "Seeking academic coaching support",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "student activism",
+      "VariableTwoName": "extent of identity-based resources",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "adverse childhood experiences (ACEs)",
+      "VariableTwoName": "ability to recover from psychological distress (resilience)",
+      "RelationshipClassification": "-"
+    },
+    {
+      "VariableOneName": "University Administration",
+      "VariableTwoName": "Government",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "Parental and Familial Support",
+      "VariableTwoName": "adverse childhood experiences (ACEs)",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "adverse childhood experiences (ACEs)",
+      "VariableTwoName": "ability to recover from psychological distress (resilience)",
+      "RelationshipClassification": "-"
+    },
+    {
+      "VariableOneName": "Funding for campus mental health services",
+      "VariableTwoName": "Availability of mental health first aid",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "social and emotional support",
+      "VariableTwoName": "ability to recover from psychological distress (resilience)",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "homophobia and transphobia",
+      "VariableTwoName": "psychological distress and suicidality",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "psychological distress/negative mental health",
+      "VariableTwoName": "academic performance",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "awareness of support services",
+      "VariableTwoName": "demand for mental health treatment",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "level of mental health education",
+      "VariableTwoName": "awareness of support services",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "sense of belonging",
+      "VariableTwoName": "psychological distress",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "structural oppression",
+      "VariableTwoName": "income level (including scholarships)",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "academic pressure",
+      "VariableTwoName": "competitiveness",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "Funding for campus mental health services",
+      "VariableTwoName": "admin perceptions of student mental health",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "income level (including scholarships)",
+      "VariableTwoName": "social and emotional support",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "availability of mental health resources on campus",
+      "VariableTwoName": "ability to recover from psychological distress (resilience)",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "social isolation",
+      "VariableTwoName": "perceived   burdensomeness",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "psychological distress",
+      "VariableTwoName": "academic performance",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "funding for campus mental health support",
+      "VariableTwoName": "availability of mental health resources on campus",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "ability to recover from psychological distress (resilience)",
+      "VariableTwoName": "psychological distress and suicidality",
+      "RelationshipClassification": "-"
+    },
+    {
+      "VariableOneName": "favorable student perceptions of mental health support",
+      "VariableTwoName": "trust in mental health services",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "social and emotional support",
+      "VariableTwoName": "ability to recover from psychological distress (resilience)",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "Funding for campus mental health services",
+      "VariableTwoName": "Extent to which campus provides identity-based resources",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "unhealthy body image",
+      "VariableTwoName": "sense of belonging",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "visibility of disruptive events",
+      "VariableTwoName": "psychological distress",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "income level (including scholarships)",
+      "VariableTwoName": "access to safe housing, transportation, healthy food",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "level of mental health education",
+      "VariableTwoName": "trust in mental health services",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "access to safe housing, transportation, healthy food",
+      "VariableTwoName": "physical health",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "psychological distress",
+      "VariableTwoName": "anxiety",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "demand for mental health treatment",
+      "VariableTwoName": "access to services",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "use of mental health services",
+      "VariableTwoName": "Negative experiences with campus resources",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "ability to recover from psychological distress (resilience)",
+      "VariableTwoName": "maladaptive coping skills",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "insurance coverage",
+      "VariableTwoName": "use of mental health services",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "Mental Health Staff",
+      "VariableTwoName": "Students",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "hopelessness",
+      "VariableTwoName": "depression",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "access to safe housing, transportation, healthy food",
+      "VariableTwoName": "physical health",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "willingness to seek support and treatment",
+      "VariableTwoName": "psychological distress and suicidality",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "perceived academic pressure",
+      "VariableTwoName": "academic pressure",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "trust in mental health services",
+      "VariableTwoName": "level of mental health education",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "insurance coverage",
+      "VariableTwoName": "Ability to afford services off campus",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "academic pressure",
+      "VariableTwoName": "stress level and allostatic load",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "marginalization",
+      "VariableTwoName": "sense of belonging",
+      "RelationshipClassification": "-"
+    },
+    {
+      "VariableOneName": "academic pressure",
+      "VariableTwoName": "anxiety",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "GPA/Grades/Measures of Academic Success",
+      "VariableTwoName": "stress level and allostatic load",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "availability of mental health resources on campus",
+      "VariableTwoName": "access to services",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "Perception of Time Based Unavailability",
+      "VariableTwoName": "Seeking academic coaching support",
+      "RelationshipClassification": "-"
+    },
+    {
+      "VariableOneName": "social isolation",
+      "VariableTwoName": "perceived   burdensomeness",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "willingness to seek support and treatment",
+      "VariableTwoName": "demand for mental health treatment",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "self-harm",
+      "VariableTwoName": "depression",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "anxiety",
+      "VariableTwoName": "psychological distress",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "social isolation",
+      "VariableTwoName": "substance abuse",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "access to safe housing, transportation, healthy food",
+      "VariableTwoName": "access to services",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "homophobia and transphobia",
+      "VariableTwoName": "marginalization",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "social isolation",
+      "VariableTwoName": "unhealthy social media use",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "structural oppression",
+      "VariableTwoName": "marginalization",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "genetic predisposition",
+      "VariableTwoName": "psychological distress",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "sense of belonging",
+      "VariableTwoName": "depression",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "academic pressure",
+      "VariableTwoName": "willingness to seek support and treatment",
+      "RelationshipClassification": "-"
+    },
+    {
+      "VariableOneName": "ability to recover from psychological distress (resilience)",
+      "VariableTwoName": "demand for mental health treatment",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "motivation to seek support and treatment",
+      "VariableTwoName": "shame",
+      "RelationshipClassification": "-"
+    },
+    {
+      "VariableOneName": "hustle/grind culture",
+      "VariableTwoName": "rigor of coursework/workload",
+      "RelationshipClassification": "-"
+    },
+    {
+      "VariableOneName": "admin perceptions of student mental health",
+      "VariableTwoName": "Funding for campus mental health services",
+      "RelationshipClassification": "-"
+    },
+    {
+      "VariableOneName": "social and emotional support",
+      "VariableTwoName": "social isolation",
+      "RelationshipClassification": "-"
+    },
+    {
+      "VariableOneName": "loneliness",
+      "VariableTwoName": "sense of belonging",
+      "RelationshipClassification": "-"
+    },
+    {
+      "VariableOneName": "social and emotional support",
+      "VariableTwoName": "sense of belonging",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "marginalization",
+      "VariableTwoName": "homophobia and transphobia",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "anxiety",
+      "VariableTwoName": "depression",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "Mental Health Staff",
+      "VariableTwoName": "Students",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "availability of mental health resources on campus",
+      "VariableTwoName": "access to services",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "demand for mental health treatment",
+      "VariableTwoName": "availability of mental health resources on campus",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "structural oppression",
+      "VariableTwoName": "stereotypes and discrimination",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "sense of belonging",
+      "VariableTwoName": "psychological distress and suicidality",
+      "RelationshipClassification": "-"
+    },
+    {
+      "VariableOneName": "stress level and allostatic load",
+      "VariableTwoName": "psychological distress",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "perceived academic pressure",
+      "VariableTwoName": "competitiveness",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "self-esteem",
+      "VariableTwoName": "unhealthy body image",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "substance abuse",
+      "VariableTwoName": "ability to recover from psychological distress (resilience)",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "income level (including scholarships)",
+      "VariableTwoName": "insurance coverage",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "burnout",
+      "VariableTwoName": "anxiety",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "hustle/grind culture",
+      "VariableTwoName": "competitiveness",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "stereotypes and discrimination",
+      "VariableTwoName": "Homophobia",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "demand for mental health treatment",
+      "VariableTwoName": "Availability of mental health first aid",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "stress level and allostatic load",
+      "VariableTwoName": "academic performance",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "access to healthy foods",
+      "VariableTwoName": "physical health",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "academic pressure",
+      "VariableTwoName": "sleep",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "physical health",
+      "VariableTwoName": "stress level and allostatic load",
+      "RelationshipClassification": "-"
+    },
+    {
+      "VariableOneName": "adverse childhood experiences (ACEs)",
+      "VariableTwoName": "ability to recover from psychological distress (resilience)",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "stress level and allostatic load",
+      "VariableTwoName": "psychological distress and suicidality",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "homesickness",
+      "VariableTwoName": "Utilizing Transition to College Resources",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "Faculty",
+      "VariableTwoName": "Students",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "perceived academic pressure",
+      "VariableTwoName": "stress level and allostatic load",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "structural oppression",
+      "VariableTwoName": "marginalization",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "social distancing during covid-19",
+      "VariableTwoName": "social isolation",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "favorable student perceptions of mental health support",
+      "VariableTwoName": "admin perceptions of student mental health",
+      "RelationshipClassification": "-"
+    },
+    {
+      "VariableOneName": "use of helpful coping skills",
+      "VariableTwoName": "stress level and allostatic load",
+      "RelationshipClassification": "-"
+    },
+    {
+      "VariableOneName": "sense of belonging",
+      "VariableTwoName": "social and emotional support",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "sense of belonging",
+      "VariableTwoName": "self-esteem",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "depression",
+      "VariableTwoName": "burnout",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "stress level and allostatic load",
+      "VariableTwoName": "academic pressure",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "maladaptive coping skills",
+      "VariableTwoName": "Substance Use",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "loneliness",
+      "VariableTwoName": "sense of belonging",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "funding for campus mental health support",
+      "VariableTwoName": "favorable student perceptions of mental health support",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "CAPS availability",
+      "VariableTwoName": "favorable student perceptions of mental health support",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "availability of mental health resources on campus",
+      "VariableTwoName": "level of mental health education",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "maladaptive coping skills",
+      "VariableTwoName": "ability to recover from psychological distress (resilience)",
+      "RelationshipClassification": "-"
+    },
+    {
+      "VariableOneName": "structural oppression",
+      "VariableTwoName": "marginalization",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "Seeking academic coaching support",
+      "VariableTwoName": "use of helpful coping skills",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "access to services",
+      "VariableTwoName": "awareness of support services",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "rigor of coursework/workload",
+      "VariableTwoName": "stress level and allostatic load",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "availability of mental health resources on campus",
+      "VariableTwoName": "ability to recover from psychological distress (resilience)",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "unhealthy body image",
+      "VariableTwoName": "self-harm",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "academic pressure",
+      "VariableTwoName": "willingness to seek support and treatment",
+      "RelationshipClassification": "-"
+    },
+    {
+      "VariableOneName": "income level (including scholarships)",
+      "VariableTwoName": "access to safe housing, transportation, healthy food",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "University Administration",
+      "VariableTwoName": "Mental Health Staff",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "Increased administrative awareness of mental health issues",
+      "VariableTwoName": "Campus Mental Health Stigma",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "University Administration",
+      "VariableTwoName": "Faculty",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "Increased Social Connectedness",
+      "VariableTwoName": "social isolation",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "extent of identity-based resources",
+      "VariableTwoName": "trust in mental health services",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "awareness of support services",
+      "VariableTwoName": "demand for mental health treatment",
+      "RelationshipClassification": "+"
+    },
+    {
+      "VariableOneName": "social comparison",
+      "VariableTwoName": "unhealthy body image",
+      "RelationshipClassification": ""
+    },
+    {
+      "VariableOneName": "use of mental health services",
+      "VariableTwoName": "social and emotional support",
+      "RelationshipClassification": "+"
+    }
+  ]
+}

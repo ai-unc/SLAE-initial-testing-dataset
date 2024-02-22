@@ -7,7 +7,6 @@ def kumu_to_pipeline(file):
         "Relations": []
     }
     
-
     for connection in curFile['connections']:
         consolidate = {
             "relationshipc": [],
@@ -37,27 +36,26 @@ def kumu_to_pipeline_no_io(dictionary):
     output = {
         "Relations": []
     }
+
+    vars = {}
     
+    for elm in curFile['elements']:
+        vars[elm["_id"]] = elm['attributes']['label']
 
     for connection in curFile['connections']:
-        consolidate = {
-            "relationshipc": [],
-            "IsCausal": [],
-            "supportingtext": [],
-        }
-        attrs = connection["attributes"]['description'].split("\n=====\n")
-        for attr in attrs:
-            temp = ast.literal_eval(attr)
-            consolidate['relationshipc'].append(temp['relationType'])
-            consolidate['IsCausal'].append(temp['isCausal'])
-            consolidate['supportingtext'].append(temp['SupportingText'])
+        relationship_status = ""
+        if "connection type" in connection["attributes"]:
+            relationship_status = connection["attributes"]["connection type"]
+
+        if relationship_status.lower() == "opposite" or relationship_status.lower() == "o":
+            relationship_status = "+"
+        elif relationship_status.lower() == "direct" or relationship_status.lower() == "same":
+            relationship_status = "+"
 
         entry = {
-            "VariableOneName": connection['from'],
-            "VariableTwoName": connection['to'],
-            "RelationshipClassification": consolidate['relationshipc'],
-            "IsCausal" : consolidate['IsCausal'],
-            "SupportingText": consolidate['supportingtext']
+            "VariableOneName": vars[connection['from']],
+            "VariableTwoName": vars[connection['to']],
+            "RelationshipClassification": relationship_status,
         }
         output['Relations'].append(entry)
     
@@ -69,27 +67,36 @@ def user_input_to_list_of_relations(dictionary):
     output = {
         "Relations": []
     }
+
+    vars = {}
     
+    for elm in curFile['elements']:
+        vars[elm["_id"]] = elm['attributes']['label']
 
     for connection in curFile['connections']:
-        if connection["direction"] == "directed":
-            connection["direction"] = "direct"
+        relationship_status = ""
+        if "connection type" in connection["attributes"]:
+            relationship_status = connection["attributes"]["connection type"]
 
-        if connection["type"] == "causal":
-            connection["type"] = "True"
-        elif connection["type"] == "non-causal":
-            connection["type"] = "False"
+        if relationship_status.lower() == "opposite" or relationship_status.lower() == "o":
+            relationship_status = "+"
+        elif relationship_status.lower() == "direct" or relationship_status.lower() == "same":
+            relationship_status = "+"
 
         entry = {
-            "VariableOneName": connection['from'],
-            "VariableTwoName": connection['to'],
-            "RelationshipClassification": connection['direction'],
-            "isCausal" : connection['type'],
-            "SupportingText": connection['description']
+            "VariableOneName": vars[connection['from']],
+            "VariableTwoName": vars[connection['to']],
+            "RelationshipClassification": relationship_status,
         }
-        output['relations'].append(entry)
+        output['Relations'].append(entry)
+    
     return output
 
 
-if __name__ == "__main__":
-    kumu_to_pipeline("kumu_test.json")
+
+#DEBUG
+# if __name__ == "__main__":
+#     with open("./evaluations/inference_io/ideals/user_input_expected_form.json", "r") as g:
+#         input = json.load(g)
+#     with open('./evaluations/test_outputs/kumu_to_pipeline_text.json', 'w') as f:
+#         f.write(str(kumu_to_pipeline_no_io(input)))
