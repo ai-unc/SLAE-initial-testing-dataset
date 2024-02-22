@@ -68,7 +68,7 @@ def pipeline_to_kumu(dic, outputPath):
             #"direction": connection[2],
             #"type": connection[4],
             "attributes":{
-                "description": '\n=====\n'.join([str(i) for i in verdicts[(connection[0], connection[1])]]),
+                "description": '\n----------\n'.join([str(i) for i in verdicts[(connection[0], connection[1])]]),
                 "correctness": sum([i["correctness"] for i in verdicts[(connection[0], connection[1])]]) / len(verdicts[(connection[0], connection[1])]),
             }
             
@@ -76,7 +76,7 @@ def pipeline_to_kumu(dic, outputPath):
         connectionList.append(entry)
 
     # Write the output JSON to ParsedMultiVariablePipelineOutput.json file
-    with open(outputPath + "ParsedMultiVariablePipelineOutput.json", 'w') as g:
+    with open(outputPath, 'w') as g:
         output_dict = {"elements": elementList, "connections": connectionList}
         json_str = json.dumps(output_dict, indent=4)
         g.write(json_str)

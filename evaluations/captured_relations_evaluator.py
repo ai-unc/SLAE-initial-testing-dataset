@@ -62,7 +62,7 @@ def evaluate_one_paper(input_file_path, settings_path, strict_length=True, verbo
         index_max = len(predictions["Relations"])
         print("Number of relations in ground truth and predictions match.")
 
-    results: list(dict()) = list()
+    results: list[dict] = list()
     for relation_index in range(index_max):
         relation = ground_truth["Relations"][relation_index]
         prediction = predictions["Relations"][relation_index]

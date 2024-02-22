@@ -44,7 +44,7 @@ class SingleRelation(BaseModel):
 class ListOfRelations(BaseModel):
     Relations: list[SingleRelation]
 
-def extract_relationships(data, set_prompt=None, verbose = False, model = None, verbatim=False, outputs_source=None):
+def extract_relationships(data, set_prompt=None, verbose = False, model = None, verbatim=False, debug_path=None):
     """
     12/19/2023 (Function Last Updated)
     Data should be a python dictionary cleaned of all ground truth data. 
@@ -52,7 +52,7 @@ def extract_relationships(data, set_prompt=None, verbose = False, model = None, 
     Model specifies LLM to be used. (This file was only tested with OpenAI LLMs)
     Verbatim feeds the exact formatting of the dictionary found in the ground truth encoding into the prompt. (Minus the ground truth data)
     Verbatim will make it hard for the model to decide whether or not to include fields that were not in ground truth if you modify the SingleRelation class.
-    outputs_source, path to the file where verbose will dump debug information
+    debug_path, path to the file where verbose will dump debug information
     """
     # Add map reduce or some other type of summarization function here.
     processed_text = data["PaperContents"]
@@ -72,7 +72,7 @@ def extract_relationships(data, set_prompt=None, verbose = False, model = None, 
     )
     input_text = prompt.format_prompt(text=processed_text, relationships=relationships).to_string()
     if verbose:
-        with open(outputs_source / "MultiVariablePipelineInput.txt", "a") as f:
+        with open(debug_path / "MultiVariablePipelineInput.txt", "a") as f:
             f.write("="*70+f"\nPaper Analyzed: {data['PaperTitle']}"+"\nLLM Prompt:\n")
             f.write(input_text)
             f.write("\n\n\n")
@@ -86,13 +86,13 @@ def extract_relationships(data, set_prompt=None, verbose = False, model = None, 
     # Obtain completion from LLM
     output = model(completion_prompt)
     if verbose:
-        with open(outputs_source / "MultiVariablePipelineOutput.txt", "a") as f:
+        with open(debug_path / "MultiVariablePipelineOutput.txt", "a") as f:
             f.write("="*70+f"\nPaper Analyzed: {data['PaperTitle']}"+"\nLLM Pipeline Output:\n")
             f.write(str(output.content))
             f.write("\n")
     parsed_output = parser.parse(output.content) # Ensure content is in valid json format.
     if verbose:
-        print(f"\n=========\nSuccessful pipeline completion for {data['PaperTitle'][:50]}, debug information and results saved at {outputs_source}")
+        print(f"\n=========\nSuccessful pipeline completion for {data['PaperTitle'][:50]}, debug information and results saved at {debug_path}")
     return parsed_output.dict()  # Returns in dict format
 
 def clean_data(data_path, verbose=False) -> dict():
@@ -145,7 +145,7 @@ def captured_relations_pipeline(data_path, settings_path, debug_path: pathlib.Pa
         prompt = pipeline_settings["prompt"]
         model = pipeline_settings["model"]
     cleaned_data = clean_data(data_path, verbose=verbose)
-    output = extract_relationships(cleaned_data, set_prompt=prompt, verbose=verbose, model=model, outputs_source=debug_path)
+    output = extract_relationships(cleaned_data, set_prompt=prompt, verbose=verbose, model=model, debug_path=debug_path)
     return output
 
 if __name__ == "__main__":
