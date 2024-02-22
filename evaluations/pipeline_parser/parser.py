@@ -1,5 +1,27 @@
 import json, sys
 
+
+def compute_direction(verdicts, connections):
+    types = {"direct":0, "inverse":0, "not applicable":0, "uncorrelated":0}
+    for connection in connections:
+        verdicts_for_this_connection = verdicts[(connection[0], connection[1])]
+        for verdict in verdicts_for_this_connection:
+            verdict = verdict["relationType"]
+            types[verdict] += 1
+    best = ""
+    best_value = 0
+    for type in types:
+        if types[type] >= best_value:
+            best = type
+            best_value = types[type]
+    return best
+
+def create_description_text(connection, verdicts):
+    pass
+
+def compute_correctness(UserPrediction, relationType):
+    return UserPrediction.lower().strip() == relationType
+
 def pipeline_to_kumu(dic, outputPath):
 
 
@@ -20,9 +42,9 @@ def pipeline_to_kumu(dic, outputPath):
             variable_two = relation['VariableTwoName']
             relationType = relation['RelationshipClassification']
             SupportingText = relation['SupportingText']
-            correctness = 0
-            if relationType.lower() == "direct":
-                correctness += 1
+            UserPrediction = relation['UserOriginalRelationshipClassification']
+
+            correctness = compute_correctness(UserPrediction, relationType)
             if "isCausal" in relation:
                 if relation['isCausal'] == "True":
                     isCausal = "causal"
@@ -70,6 +92,7 @@ def pipeline_to_kumu(dic, outputPath):
             "attributes":{
                 "description": '\n----------\n'.join([str(i) for i in verdicts[(connection[0], connection[1])]]),
                 "correctness": sum([i["correctness"] for i in verdicts[(connection[0], connection[1])]]) / len(verdicts[(connection[0], connection[1])]),
+                "papersExamined": len(verdicts[(connection[0], connection[1])])
             }
             
         }
