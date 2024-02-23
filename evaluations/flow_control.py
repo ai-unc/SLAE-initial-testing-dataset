@@ -16,14 +16,14 @@ if False:
 
 
 # Obtain list of relations from Kumu or Vensim file
-if False:
+if True:
     with open(pathlib.Path("./inference_io/user_input.json"), "r") as f:
         kumu_read = user_input_to_list_of_relations(json.load(f))
         print(kumu_read)
         for relation in kumu_read["Relations"]:
             relation["UserOriginalRelationshipClassification"] = relation["RelationshipClassification"]
     pprint(kumu_read)
-    with open(pathlib.Path("./inference_io/parsed_input.json"), "r") as f:
+    with open(pathlib.Path("./inference_io/parsed_input.json"), "w") as f:
         json.dump(kumu_read, f)
 
 
@@ -40,7 +40,7 @@ with open("./pipeline_settings.yaml", "r") as f:
     model = pipeline_settings["model"]
 
 # For each dictionary run the "extract_relationships" function and settings.
-if False:
+if True:
     outputs = list()
     for data in matched_papers:
         if len(data["Relations"]) == 0: 
@@ -51,6 +51,8 @@ if False:
         output = extract_relationships(data, set_prompt=prompt, verbose=verbose, model=model, debug_path=pathlib.Path("./pipelines/debug_outputs"))
         output["PaperTitle"] = data["PaperTitle"]
         output["PaperDOI"] = data["PaperDOI"]
+        for index, relation in enumerate(output["Relations"]):
+            relation["UserOriginalRelationshipClassification"] = data["Relations"][index]
         # print(output["PaperDOI"])
         outputs.append(output)
         # print(outputs)
