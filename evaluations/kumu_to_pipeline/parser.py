@@ -78,11 +78,13 @@ def user_input_to_list_of_relations(dictionary):
         if "connection type" in connection["attributes"]:
             relationship_status = connection["attributes"]["connection type"]
 
-        if relationship_status.lower() == "opposite" or relationship_status.lower() == "o":
-            relationship_status = "+"
-        elif relationship_status.lower() == "direct" or relationship_status.lower() == "same":
-            relationship_status = "+"
-
+        if relationship_status.lower() in ["opposite", "-", "o"]:
+            relationship_status = "inverse"
+        elif relationship_status.lower() in ["direct", "+", "same"]:
+            relationship_status = "direct"
+        else:
+            relationship_status = "uncorrelated"
+        print(relationship_status)
         entry = {
             "VariableOneName": vars[connection['from']],
             "VariableTwoName": vars[connection['to']],

@@ -21,6 +21,7 @@ Rename the file "user_input.json".
 Run this script!
 Start a new kumu project and make an empty Causal Loop Diagram map.
 Import the file "final_to_kumu_output.json" into the project.
+Click on one of the connections, right click into the correctness and papers examined attributes and ensure they are type numeric.
 Open the right hand side settings bar and switch to Advanced Settings Mode.
 Replace existing code with the following:
 
@@ -34,13 +35,15 @@ Replace existing code with the following:
 
 /* Correctness */
 connection {
-  color: scale("correctness", #FF2D00, #FF9B85);
+  color: scale("correctness", #FF2D00, #b9e5a0);
 }
 
 /* Papers Examined */
 connection {
   scale: scale("papers examined", 1, 2);
 }
+Then you are done.
+You may have to reload the webapp to see the changes!
 """
 
 # Obtain list of relations from Kumu or Vensim file

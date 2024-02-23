@@ -69,7 +69,7 @@ Replace existing code with the following:
 
 /* Correctness */
 connection {
-  color: scale("correctness", #FF2D00, #FF9B85);
+  color: scale("correctness", #FF2D00, #b9e5a0);
 }
 
 /* Papers Examined */

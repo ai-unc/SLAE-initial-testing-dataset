@@ -3571,3 +3571,507 @@ LLM Pipeline Output:
         }
     ]
 }
+======================================================================
+Paper Analyzed: Childhood Maltreatment Was Correlated With the Decreased Cortical Function in Depressed Patients Under Social Stress in a Working Memory Task: A Pilot Study
+LLM Pipeline Output:
+{
+    "Relations": [
+        {
+            "VariableOneName": "Cognitive distraction",
+            "VariableTwoName": "Rumination",
+            "SupportingText": "In our pilot study, MDD patients had reduced brain activation, affecting emotional stimuli processing function, executive function, and cognitive control function. Childhood maltreatment might affect brain function in MDD.",
+            "Reasoning": "The text suggests that cognitive distraction, which can be related to reduced brain activation and impaired cognitive control function, may have an impact on rumination, which is a form of repetitive negative thinking associated with depression.",
+            "RelationshipClassification": "Direct"
+        }
+    ]
+}
+======================================================================
+Paper Analyzed: Cognitive Impairments in Unipolar Depression: The Impact of Rumination
+LLM Pipeline Output:
+{
+    "Relations": [
+        {
+            "VariableOneName": "Cognitive distraction",
+            "VariableTwoName": "Rumination",
+            "SupportingText": "Resource allocation theory posits that rumination absorbs cognitive capacities which can thus not be directed towards task-relevant processes. Valuable cognitive resources are allocated to irrelevant depressive and ruminative thought processes.",
+            "Reasoning": "The text explicitly states that rumination absorbs cognitive capacities, indicating a relationship where an increase in cognitive distraction would lead to an increase in rumination.",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "Rumination",
+            "VariableTwoName": "Sadness",
+            "SupportingText": "People who ruminate repetitively contemplate reasons for and consequences of their sadness. Rumination is often discussed as an important potential underlying cognitive mechanisms in the context of cognitive impairments in MDD.",
+            "Reasoning": "The text directly states that rumination is associated with contemplating reasons for and consequences of sadness, suggesting a relationship where an increase in rumination would lead to an increase in sadness.",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "Rumination",
+            "VariableTwoName": "RSA withdrawal",
+            "SupportingText": "Recent studies indicate that depressive rumination is connected to cognitive impairments in MDD. Rumination is discussed as an important underlying cognitive mechanism.",
+            "Reasoning": "The text mentions that rumination is connected to cognitive impairments in MDD, implying a relationship between rumination and RSA withdrawal. However, the text does not provide specific details to determine the nature of this relationship.",
+            "RelationshipClassification": "uncorrelated"
+        }
+    ]
+}
+======================================================================
+Paper Analyzed: Effect of rejection sensitivity on the development of anxious-depressive attack in Japanese outpatients: The mediating roles of rumination, social anxiety, and depressive symptoms
+LLM Pipeline Output:
+{
+    "Relations": [
+        {
+            "VariableOneName": "Forced-failure stress",
+            "VariableTwoName": "RSA withdrawal",
+            "SupportingText": "In many affected patients, ADA causes moderate to severe disturbances to activities of daily living.",
+            "Reasoning": "Forced-failure stress can lead to the development of ADA, which in turn can cause disturbances in daily activities. Therefore, there may be a relationship between forced-failure stress and RSA withdrawal.",
+            "RelationshipClassification": "Direct"
+        },
+        {
+            "VariableOneName": "Cognitive distraction",
+            "VariableTwoName": "Rumination",
+            "SupportingText": "Rumination is characterized by obsessional thinking involving excessive, repetitive thoughts of themes that interfere with other forms of mental activity.",
+            "Reasoning": "Cognitive distraction involves redirecting one's attention away from negative thoughts, which is the opposite of rumination. Therefore, there may be an inverse relationship between cognitive distraction and rumination.",
+            "RelationshipClassification": "Inverse"
+        },
+        {
+            "VariableOneName": "Rumination",
+            "VariableTwoName": "Sadness",
+            "SupportingText": "Rumination predicts the onset of depression, exacerbates depression, enhances negative thinking, and impairs problem-solving skills.",
+            "Reasoning": "Rumination is associated with the development and exacerbation of depressive symptoms, such as sadness. Therefore, there may be a direct relationship between rumination and sadness.",
+            "RelationshipClassification": "Direct"
+        },
+        {
+            "VariableOneName": "Rumination",
+            "VariableTwoName": "RSA withdrawal",
+            "SupportingText": "Rejection sensitivity increases rumination, which is characterized by obsessional thinking involving excessive, repetitive thoughts.",
+            "Reasoning": "Since rejection sensitivity can lead to increased rumination, which is a form of cognitive preoccupation, there may be a relationship between rumination and RSA withdrawal, which involves withdrawing from social situations due to anxiety.",
+            "RelationshipClassification": "Direct"
+        },
+        {
+            "VariableOneName": "RSA withdrawal",
+            "VariableTwoName": "Sadness",
+            "SupportingText": "Rejection sensitivity is associated with anxiety, depressive symptoms, and loneliness.",
+            "Reasoning": "Given that rejection sensitivity is associated with depressive symptoms, there may be a relationship between RSA withdrawal, which can be a manifestation of social anxiety, and sadness, a common symptom of depression.",
+            "RelationshipClassification": "Direct"
+        }
+    ]
+}
+======================================================================
+Paper Analyzed: Cognitive deficits in patients with chronic fatigue syndrome compared to those with major depressive disorder and healthy controls
+LLM Pipeline Output:
+{
+    "Relations": [
+        {
+            "VariableOneName": "Cognitive distraction",
+            "VariableTwoName": "Rumination",
+            "SupportingText": "Cognitive impairments in patients with CFS were only partially correlated with the depressive dimension of the condition, suggesting that some cognitive impairments may be present independent of the depressive dimension.",
+            "Reasoning": "The text indicates that cognitive impairments in patients with CFS are not solely explained by depression, implying that other factors may be influencing cognitive functioning. This suggests that there may be a relationship between cognitive distraction and rumination, as rumination is a cognitive process that involves repetitive and intrusive thoughts.",
+            "RelationshipClassification": "Direct"
+        }
+    ]
+}
+======================================================================
+Paper Analyzed: Improvement in self-reported cognitive functioning but not in rumination following online working memory training in a two-year follow-up study of remitted major depressive disorder
+LLM Pipeline Output:
+{
+    "Relations": [
+        {
+            "VariableOneName": "Cognitive distraction",
+            "VariableTwoName": "Rumination",
+            "SupportingText": "Results suggested lasting improvements in self-reported cognitive functioning following online CWMT.",
+            "Reasoning": "The text indicates that cognitive training led to improvements in self-reported cognitive functioning, which could potentially distract individuals from engaging in rumination.",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "Rumination",
+            "VariableTwoName": "Sadness",
+            "SupportingText": "Rumination is an emotion regulation strategy where one passively broods over self-related negative experiences.",
+            "Reasoning": "The text describes rumination as a process involving dwelling on negative experiences, which is likely to be associated with feelings of sadness.",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "Rumination",
+            "VariableTwoName": "RSA withdrawal",
+            "SupportingText": "Results are mixed regarding whether interventions like CWMT improve rumination.",
+            "Reasoning": "The text mentions that the effects of cognitive training on rumination are inconclusive, suggesting that there may not be a clear relationship between rumination and RSA withdrawal.",
+            "RelationshipClassification": "uncorrelated"
+        }
+    ]
+}
+======================================================================
+Paper Analyzed: Childhood Maltreatment Was Correlated With the Decreased Cortical Function in Depressed Patients Under Social Stress in a Working Memory Task: A Pilot Study
+LLM Pipeline Output:
+{
+    "Relations": [
+        {
+            "VariableOneName": "Cognitive distraction",
+            "VariableTwoName": "Rumination",
+            "SupportingText": "In our pilot study, MDD patients had reduced brain activation, affecting emotional stimuli processing function, executive function, and cognitive control function. Childhood maltreatment might affect brain function in MDD.",
+            "Reasoning": "The text suggests that cognitive distraction, which can be related to reduced brain activation and impaired cognitive control function in MDD patients, may be associated with rumination, a form of repetitive negative thinking. This association could be due to the impact of cognitive distraction on the ability to regulate negative thoughts and emotions.",
+            "RelationshipClassification": "direct"
+        }
+    ]
+}
+======================================================================
+Paper Analyzed: Cognitive Impairments in Unipolar Depression: The Impact of Rumination
+LLM Pipeline Output:
+{
+    "Relations": [
+        {
+            "VariableOneName": "Cognitive distraction",
+            "VariableTwoName": "Rumination",
+            "SupportingText": "Resource allocation theory posits that rumination absorbs cognitive capacities which can thus not be directed towards task-relevant processes. Valuable cognitive resources are allocated to irrelevant depressive and ruminative thought processes.",
+            "Reasoning": "The text explicitly states that rumination absorbs cognitive capacities, which implies that cognitive distraction could lead to reduced cognitive resources available for rumination.",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "Rumination",
+            "VariableTwoName": "Sadness",
+            "SupportingText": "People who ruminate repetitively contemplate reasons for and consequences of their sadness. Rumination is often discussed as a potential underlying cognitive mechanism in the context of cognitive impairments in MDD.",
+            "Reasoning": "The text clearly states that rumination is associated with contemplating reasons for sadness, indicating a direct relationship between rumination and sadness.",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "Rumination",
+            "VariableTwoName": "RSA withdrawal",
+            "SupportingText": "Rumination has been identified as a core risk factor for depression with serious clinical implications due to more depressed mood. Recent studies indicate that depressive rumination is connected to cognitive impairments in MDD.",
+            "Reasoning": "The text suggests that rumination is a core risk factor for depression, which implies a potential relationship between rumination and RSA withdrawal, a physiological response associated with stress and depression.",
+            "RelationshipClassification": "direct"
+        }
+    ]
+}
+======================================================================
+Paper Analyzed: Effect of rejection sensitivity on the development of anxious-depressive attack in Japanese outpatients: The mediating roles of rumination, social anxiety, and depressive symptoms
+LLM Pipeline Output:
+{
+    "Relations": [
+        {
+            "VariableOneName": "Forced-failure stress",
+            "VariableTwoName": "RSA withdrawal",
+            "SupportingText": "Rejection sensitivity is associated with anxiety, depressive symptoms, loneliness, borderline personality disorder, and body dysmorphic disorder.",
+            "Reasoning": "The text mentions that rejection sensitivity is associated with various psychological symptoms, including anxiety and depressive symptoms. RSA withdrawal can be considered a manifestation of rejection sensitivity, indicating a potential direct relationship between forced-failure stress and RSA withdrawal.",
+            "RelationshipClassification": "Direct"
+        },
+        {
+            "VariableOneName": "Cognitive distraction",
+            "VariableTwoName": "Rumination",
+            "SupportingText": "Rumination is characterized by obsessional thinking involving excessive, repetitive thoughts that interfere with other mental activities.",
+            "Reasoning": "The text describes rumination as a cognitive process involving repetitive and intrusive thoughts. Cognitive distraction, which involves shifting attention away from negative thoughts, can be seen as inversely related to rumination.",
+            "RelationshipClassification": "Inverse"
+        },
+        {
+            "VariableOneName": "Rumination",
+            "VariableTwoName": "Sadness",
+            "SupportingText": "Rumination predicts the onset of depression, exacerbates depression, enhances negative thinking, and impairs problem-solving skills.",
+            "Reasoning": "The text indicates that rumination is associated with the onset and exacerbation of depressive symptoms, including sadness. Therefore, there is a direct relationship between rumination and sadness.",
+            "RelationshipClassification": "Direct"
+        },
+        {
+            "VariableOneName": "Rumination",
+            "VariableTwoName": "RSA withdrawal",
+            "SupportingText": "Rejection sensitivity increases rumination, which is characterized by obsessional thinking.",
+            "Reasoning": "Given that rejection sensitivity can lead to increased rumination, which involves persistent and intrusive thoughts, there is a potential direct relationship between rumination and RSA withdrawal, which can be considered a manifestation of rejection sensitivity.",
+            "RelationshipClassification": "Direct"
+        },
+        {
+            "VariableOneName": "RSA withdrawal",
+            "VariableTwoName": "Sadness",
+            "SupportingText": "Rejection sensitivity is associated with depressive symptoms, including sadness.",
+            "Reasoning": "The text suggests that rejection sensitivity is linked to depressive symptoms, which can include feelings of sadness. Therefore, there is a direct relationship between RSA withdrawal (a manifestation of rejection sensitivity) and sadness.",
+            "RelationshipClassification": "Direct"
+        }
+    ]
+}
+======================================================================
+Paper Analyzed: Cognitive deficits in patients with chronic fatigue syndrome compared to those with major depressive disorder and healthy controls
+LLM Pipeline Output:
+{
+    "Relations": [
+        {
+            "VariableOneName": "Cognitive distraction",
+            "VariableTwoName": "Rumination",
+            "SupportingText": "We evaluated the cognitive performance of patients with CFS using standardized verbal and visual memory tests, as well as sustained attention, working memory, and verbal and visual episodic memory. Our primary hypothesis was that patients with CFS would have cognitive impairments that were only partially correlated with the depressive dimension of the condition, suggesting that some cognitive impairments may be present independent of the depressive dimension.",
+            "Reasoning": "The text does not explicitly mention a relationship between cognitive distraction and rumination. The focus of the study was on cognitive impairments in patients with CFS compared to controls and patients with MDD. As there is no mention of rumination or cognitive distraction in the context of the study, the relationship between these variables is not applicable.",
+            "RelationshipClassification": "not applicable"
+        }
+    ]
+}
+======================================================================
+Paper Analyzed: Improvement in self-reported cognitive functioning but not in rumination following online working memory training in a two-year follow-up study of remitted major depressive disorder
+LLM Pipeline Output:
+{
+    "Relations": [
+        {
+            "VariableOneName": "Cognitive distraction",
+            "VariableTwoName": "Rumination",
+            "SupportingText": "Results suggested lasting improvements in self-reported cognitive functioning following online CWMT.",
+            "Reasoning": "The text indicates that cognitive training led to improvements in self-reported cognitive functioning, which could potentially distract individuals from engaging in rumination.",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "Rumination",
+            "VariableTwoName": "Sadness",
+            "SupportingText": "Rumination is an emotion regulation strategy where one passively broods over self-related negative experiences.",
+            "Reasoning": "The text describes rumination as a process involving dwelling on negative experiences, which is likely to lead to feelings of sadness.",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "Rumination",
+            "VariableTwoName": "RSA withdrawal",
+            "SupportingText": "Results are mixed regarding whether interventions like CWMT improve rumination.",
+            "Reasoning": "The text mentions that the effects of cognitive training on rumination are inconclusive, suggesting that there may not be a clear relationship between rumination and RSA withdrawal.",
+            "RelationshipClassification": "uncorrelated"
+        }
+    ]
+}
+======================================================================
+Paper Analyzed: Childhood Maltreatment Was Correlated With the Decreased Cortical Function in Depressed Patients Under Social Stress in a Working Memory Task: A Pilot Study
+LLM Pipeline Output:
+{
+    "Relations": [
+        {
+            "VariableOneName": "Cognitive distraction",
+            "VariableTwoName": "Rumination",
+            "SupportingText": "In our pilot study, MDD patients had reduced brain activation, affecting emotional stimuli processing function, executive function, and cognitive control function. Childhood maltreatment might affect brain function in MDD.",
+            "Reasoning": "The text suggests that cognitive distraction, which can be related to reduced brain activation and impaired cognitive control function in MDD patients, may have a relationship with rumination, which is a form of repetitive negative thinking associated with depression.",
+            "RelationshipClassification": "Direct"
+        }
+    ]
+}
+======================================================================
+Paper Analyzed: Cognitive Impairments in Unipolar Depression: The Impact of Rumination
+LLM Pipeline Output:
+{
+    "Relations": [
+        {
+            "VariableOneName": "Cognitive distraction",
+            "VariableTwoName": "Rumination",
+            "SupportingText": "Resource allocation theory posits that rumination absorbs cognitive capacities which can thus not be directed towards task-relevant processes. Valuable cognitive resources are allocated to irrelevant depressive and ruminative thought processes.",
+            "Reasoning": "The text explicitly states that rumination absorbs cognitive capacities, which implies a relationship between cognitive distraction and rumination.",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "Rumination",
+            "VariableTwoName": "Sadness",
+            "SupportingText": "Rumination is a style of thinking characterized by repetitive, recurrent, intrusive, and uncontrollable thoughts. People who ruminate repetitively contemplate reasons for and consequences of their sadness.",
+            "Reasoning": "The text directly links rumination to thoughts about sadness, indicating a relationship between rumination and sadness.",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "Rumination",
+            "VariableTwoName": "RSA withdrawal",
+            "SupportingText": "Rumination has been identified as a core risk factor for depression with serious clinical implications due to more depressed mood, longer depressive episodes, and the occurrence of future depressive episodes.",
+            "Reasoning": "The text suggests that rumination is a risk factor for depression, which implies a relationship between rumination and RSA withdrawal.",
+            "RelationshipClassification": "direct"
+        }
+    ]
+}
+======================================================================
+Paper Analyzed: Effect of rejection sensitivity on the development of anxious-depressive attack in Japanese outpatients: The mediating roles of rumination, social anxiety, and depressive symptoms
+LLM Pipeline Output:
+{
+    "Relations": [
+        {
+            "VariableOneName": "Forced-failure stress",
+            "VariableTwoName": "RSA withdrawal",
+            "SupportingText": "Results of a previous study indicated that rejection sensitivity plays a role in the development of ADA in patients with SAD in the following three ways: (1) rejection sensitivity triggers ADA directly; (2) rejection sensitivity intensifies depressive symptoms, which leads to ADA; and (3) rejection sensitivity intensifies social anxiety symptoms, which worsens depressive symptoms, which in turn leads to ADA.",
+            "Reasoning": "The text suggests that rejection sensitivity, which can be triggered by forced-failure stress, is associated with the development of ADA, which includes symptoms of RSA withdrawal. Therefore, there is a direct relationship between forced-failure stress and RSA withdrawal.",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "Cognitive distraction",
+            "VariableTwoName": "Rumination",
+            "SupportingText": "Rejection sensitivity increases rumination, which is characterized by obsessional thinking involving excessive, repetitive thoughts of themes that interfere with other forms of mental activity.",
+            "Reasoning": "The text explicitly states that rejection sensitivity is associated with increased rumination. Therefore, there is a direct relationship between cognitive distraction and rumination.",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "Rumination",
+            "VariableTwoName": "Sadness",
+            "SupportingText": "Nolen-Hoeksema et al. (2008) demonstrated that rumination predicts the onset of depression, exacerbates depression, enhances negative thinking, impairs problem-solving skills, interferes with instrumental behavior, and erodes social support.",
+            "Reasoning": "The text indicates that rumination is associated with the onset and exacerbation of depression, which includes symptoms of sadness. Therefore, there is a direct relationship between rumination and sadness.",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "Rumination",
+            "VariableTwoName": "RSA withdrawal",
+            "SupportingText": "Rejection sensitivity increases rumination, which is characterized by obsessional thinking involving excessive, repetitive thoughts of themes that interfere with other forms of mental activity.",
+            "Reasoning": "Since rejection sensitivity is associated with increased rumination, and rumination is linked to cognitive processes that interfere with mental activity, there is a potential relationship between rumination and RSA withdrawal.",
+            "RelationshipClassification": "not applicable"
+        },
+        {
+            "VariableOneName": "RSA withdrawal",
+            "VariableTwoName": "Sadness",
+            "SupportingText": "Results of a previous study indicated that rejection sensitivity plays a role in the development of ADA in patients with SAD in the following three ways: (1) rejection sensitivity triggers ADA directly; (2) rejection sensitivity intensifies depressive symptoms, which leads to ADA; and (3) rejection sensitivity intensifies social anxiety symptoms, which worsens depressive symptoms, which in turn leads to ADA.",
+            "Reasoning": "The text suggests that rejection sensitivity, which can lead to RSA withdrawal, is associated with the development of ADA, which includes symptoms of sadness. Therefore, there is a potential direct or indirect relationship between RSA withdrawal and sadness.",
+            "RelationshipClassification": "not applicable"
+        }
+    ]
+}
+======================================================================
+Paper Analyzed: Cognitive deficits in patients with chronic fatigue syndrome compared to those with major depressive disorder and healthy controls
+LLM Pipeline Output:
+{
+    "Relations": [
+        {
+            "VariableOneName": "Cognitive distraction",
+            "VariableTwoName": "Rumination",
+            "SupportingText": "Cognitive complaints are frequently reported in patients with chronic fatigue syndrome (CFS). These complaints often involve difficulties with memory and concentration.",
+            "Reasoning": "The text mentions that patients with CFS often report cognitive difficulties, particularly in relation to memory and concentration. This suggests a potential relationship between cognitive distraction and rumination.",
+            "RelationshipClassification": "direct"
+        }
+    ]
+}
+======================================================================
+Paper Analyzed: Improvement in self-reported cognitive functioning but not in rumination following online working memory training in a two-year follow-up study of remitted major depressive disorder
+LLM Pipeline Output:
+{
+    "Relations": [
+        {
+            "VariableOneName": "Cognitive distraction",
+            "VariableTwoName": "Rumination",
+            "SupportingText": "Rumination is an emotion regulation strategy where one passively broods over self-related negative experiences and is hypothesized to be related to deficits in working memory (WM) for negative material, sometimes termed hot-cognition. Associations between objective cognitive tests and rumination are small, but significant associations have been established for WM. Thus, deficits in cognition are suspected to be related to rumination.",
+            "Reasoning": "The text clearly states that rumination is hypothesized to be related to deficits in working memory for negative material, which suggests a potential relationship between cognitive distraction and rumination.",
+            "RelationshipClassification": "Direct"
+        },
+        {
+            "VariableOneName": "Rumination",
+            "VariableTwoName": "Sadness",
+            "SupportingText": "Rumination is an emotion regulation strategy where one passively broods over self-related negative experiences. The text does not explicitly mention a relationship between rumination and sadness.",
+            "Reasoning": "The text does not provide direct evidence of a relationship between rumination and sadness, therefore the relationship classification is not applicable.",
+            "RelationshipClassification": "Not applicable"
+        },
+        {
+            "VariableOneName": "Rumination",
+            "VariableTwoName": "RSA withdrawal",
+            "SupportingText": "Rumination is an emotion regulation strategy where one passively broods over self-related negative experiences. The text does not mention a relationship between rumination and RSA withdrawal.",
+            "Reasoning": "The text does not provide information on the relationship between rumination and RSA withdrawal, therefore the relationship classification is not applicable.",
+            "RelationshipClassification": "Not applicable"
+        }
+    ]
+}
+======================================================================
+Paper Analyzed: Childhood Maltreatment Was Correlated With the Decreased Cortical Function in Depressed Patients Under Social Stress in a Working Memory Task: A Pilot Study
+LLM Pipeline Output:
+{
+    "Relations": [
+        {
+            "VariableOneName": "Cognitive distraction",
+            "VariableTwoName": "Rumination",
+            "SupportingText": "In our pilot study, MDD patients had reduced brain activation, affecting emotional stimuli processing function, executive function, and cognitive control function. Childhood maltreatment might affect brain function in MDD.",
+            "Reasoning": "The text suggests that reduced brain activation in MDD patients is associated with cognitive distraction, which could lead to rumination. This is supported by the mention of impaired emotional stimuli processing, executive function, and cognitive control function in MDD patients.",
+            "RelationshipClassification": "Direct"
+        }
+    ]
+}
+======================================================================
+Paper Analyzed: Cognitive Impairments in Unipolar Depression: The Impact of Rumination
+LLM Pipeline Output:
+{
+    "Relations": [
+        {
+            "VariableOneName": "Cognitive distraction",
+            "VariableTwoName": "Rumination",
+            "SupportingText": "Resource allocation theory posits that rumination absorbs cognitive capacities which can thus not be directed towards task-relevant processes. Valuable cognitive resources are allocated to irrelevant depressive and ruminative thought processes.",
+            "Reasoning": "The text explicitly states that rumination absorbs cognitive capacities, which implies that cognitive distraction could lead to reduced cognitive performance due to the absorption of resources by rumination.",
+            "RelationshipClassification": "Direct"
+        },
+        {
+            "VariableOneName": "Rumination",
+            "VariableTwoName": "Sadness",
+            "SupportingText": "Rumination is a style of thinking characterized by repetitive, recurrent, intrusive, and uncontrollable thoughts. People who ruminate repetitively contemplate reasons for and consequences of their sadness.",
+            "Reasoning": "The text directly links rumination to thoughts about sadness, indicating that rumination is associated with focusing on and thinking about sadness.",
+            "RelationshipClassification": "Direct"
+        },
+        {
+            "VariableOneName": "Rumination",
+            "VariableTwoName": "RSA withdrawal",
+            "SupportingText": "Rumination has been identified as a core risk factor for depression with serious clinical implications due to more depressed mood, longer depressive episodes and the occurrence of future depressive episodes.",
+            "Reasoning": "The text suggests that rumination is a risk factor for depression, which can lead to more depressed mood and longer depressive episodes, indicating a potential relationship between rumination and RSA withdrawal.",
+            "RelationshipClassification": "Direct"
+        }
+    ]
+}
+======================================================================
+Paper Analyzed: Effect of rejection sensitivity on the development of anxious-depressive attack in Japanese outpatients: The mediating roles of rumination, social anxiety, and depressive symptoms
+LLM Pipeline Output:
+{
+    "Relations": [
+        {
+            "VariableOneName": "Forced-failure stress",
+            "VariableTwoName": "RSA withdrawal",
+            "SupportingText": "In many affected patients, ADA causes moderate to severe disturbances to activities of daily living.",
+            "Reasoning": "Forced-failure stress can lead to the development of ADA, which in turn may result in RSA withdrawal as a coping mechanism to deal with the stress and disturbances caused by ADA.",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "Cognitive distraction",
+            "VariableTwoName": "Rumination",
+            "SupportingText": "Rejection sensitivity increases rumination, which is characterized by obsessional thinking involving excessive, repetitive thoughts of themes that interfere with other forms of mental activity.",
+            "Reasoning": "Cognitive distraction can be seen as the opposite of rumination, as it involves redirecting attention away from negative thoughts. Therefore, cognitive distraction and rumination are likely to have an inverse relationship.",
+            "RelationshipClassification": "inverse"
+        },
+        {
+            "VariableOneName": "Rumination",
+            "VariableTwoName": "Sadness",
+            "SupportingText": "Rumination predicts the onset of depression, exacerbates depression, enhances negative thinking, and impairs problem-solving skills.",
+            "Reasoning": "Rumination is closely associated with depressive symptoms, which include feelings of sadness. Therefore, rumination and sadness are likely to have a direct relationship.",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "Rumination",
+            "VariableTwoName": "RSA withdrawal",
+            "SupportingText": "Rejection sensitivity increases rumination, which is associated with several psychological symptoms, including emotion regulation difficulties.",
+            "Reasoning": "Rumination may lead to increased emotional distress and difficulties in emotion regulation, which could result in RSA withdrawal as a coping mechanism. Therefore, rumination and RSA withdrawal are likely to have a direct relationship.",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "RSA withdrawal",
+            "VariableTwoName": "Sadness",
+            "SupportingText": "Rejection sensitivity is associated with anxiety, depressive symptoms, and loneliness, which are all factors contributing to sadness.",
+            "Reasoning": "RSA withdrawal may be a response to rejection sensitivity and the associated emotional distress, which can lead to feelings of sadness. Therefore, RSA withdrawal and sadness are likely to have a direct relationship.",
+            "RelationshipClassification": "direct"
+        }
+    ]
+}
+======================================================================
+Paper Analyzed: Cognitive deficits in patients with chronic fatigue syndrome compared to those with major depressive disorder and healthy controls
+LLM Pipeline Output:
+{
+    "Relations": [
+        {
+            "VariableOneName": "Cognitive distraction",
+            "VariableTwoName": "Rumination",
+            "SupportingText": "We evaluated the cognitive performance of patients with CFS using standardized verbal and visual memory tests, as well as sustained attention, working memory, and verbal and visual episodic memory.",
+            "Reasoning": "The text does not provide any direct information about the relationship between cognitive distraction and rumination. Therefore, it is not applicable to determine a relationship classification.",
+            "RelationshipClassification": "not applicable"
+        }
+    ]
+}
+======================================================================
+Paper Analyzed: Improvement in self-reported cognitive functioning but not in rumination following online working memory training in a two-year follow-up study of remitted major depressive disorder
+LLM Pipeline Output:
+{
+    "Relations": [
+        {
+            "VariableOneName": "Cognitive distraction",
+            "VariableTwoName": "Rumination",
+            "SupportingText": "Results suggested lasting improvements in self-reported cognitive functioning following online CWMT.",
+            "Reasoning": "The text mentions that improvements in self-reported cognitive functioning were found following the cognitive training intervention. Since cognitive distraction can improve cognitive functioning, it is reasonable to infer a relationship between cognitive distraction and rumination.",
+            "RelationshipClassification": "Direct"
+        },
+        {
+            "VariableOneName": "Rumination",
+            "VariableTwoName": "Sadness",
+            "SupportingText": "Rumination is an emotion regulation strategy where one passively broods over self-related negative experiences.",
+            "Reasoning": "The text explicitly states that rumination involves brooding over negative experiences, which are likely to induce feelings of sadness. Therefore, there is a clear association between rumination and sadness.",
+            "RelationshipClassification": "Direct"
+        },
+        {
+            "VariableOneName": "Rumination",
+            "VariableTwoName": "RSA withdrawal",
+            "SupportingText": "Results are mixed regarding whether interventions like CWMT improve rumination.",
+            "Reasoning": "The text mentions that the effects of cognitive training on rumination are inconclusive, indicating that there may not be a direct relationship between rumination and RSA withdrawal. The lack of clear evidence suggests an uncorrelated relationship.",
+            "RelationshipClassification": "Uncorrelated"
+        }
+    ]
+}

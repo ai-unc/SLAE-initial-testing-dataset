@@ -1,6 +1,5 @@
 import json, sys
 
-
 def compute_direction(verdicts, connection):
     types = {"direct":0, "inverse":0, "uncorrelated":0}
     verdicts_for_this_connection = verdicts[(connection[0], connection[1])]
@@ -59,7 +58,7 @@ def pipeline_to_kumu(dic, outputPath):
             relationType = relation['RelationshipClassification']
             SupportingText = relation['SupportingText']
             UserPrediction = relation['UserOriginalRelationshipClassification']
-
+            print("Parser to kumu", UserPrediction, relationType)
             correctness = compute_single_correctness(UserPrediction, relationType)
             if "isCausal" in relation:
                 if relation['isCausal'] == "True":
