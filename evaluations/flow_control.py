@@ -16,7 +16,7 @@ if False:
 
 
 # Obtain list of relations from Kumu or Vensim file
-if True:
+if False:
     with open(pathlib.Path("./inference_io/user_input.json"), "r") as f:
         kumu_read = user_input_to_list_of_relations(json.load(f))
         print(kumu_read)
@@ -28,19 +28,19 @@ if True:
 
 
 # Use the matcher to separate the list of relations, resulting in a series of python dictionaries each with a single paper and a list of related relations.
-matched_papers = match_relations_to_papers(papers_directory="./auto_generated_inputs", input_relations_directory="./inference_io/parsed_input.json")
-# print(matched_papers)
+if False:
+    matched_papers = match_relations_to_papers(papers_directory="./auto_generated_inputs", input_relations_directory="./inference_io/parsed_input.json")
+    # print(matched_papers)
 
+if False:
+    # Obtain settings by reading in the file
+    with open("./pipeline_settings.yaml", "r") as f:
+        pipeline_settings = yaml.safe_load(f)
+        verbose = pipeline_settings["verbose"]
+        prompt = pipeline_settings["prompt"]
+        model = pipeline_settings["model"]
 
-# Obtain settings by reading in the file
-with open("./pipeline_settings.yaml", "r") as f:
-    pipeline_settings = yaml.safe_load(f)
-    verbose = pipeline_settings["verbose"]
-    prompt = pipeline_settings["prompt"]
-    model = pipeline_settings["model"]
-
-# For each dictionary run the "extract_relationships" function and settings.
-if True:
+    # For each dictionary run the "extract_relationships" function and settings.
     outputs = list()
     for data in matched_papers:
         if len(data["Relations"]) == 0: 
@@ -52,7 +52,7 @@ if True:
         output["PaperTitle"] = data["PaperTitle"]
         output["PaperDOI"] = data["PaperDOI"]
         for index, relation in enumerate(output["Relations"]):
-            relation["UserOriginalRelationshipClassification"] = data["Relations"][index]
+            relation["UserOriginalRelationshipClassification"] = data["Relations"][index]["UserOriginalRelationshipClassification"]
         # print(output["PaperDOI"])
         outputs.append(output)
         # print(outputs)
@@ -65,6 +65,7 @@ with open("./inference_io/predicted_relations_output.json", "r") as f:
     outputs_dict = json.load(f)
 
 # Obtain the list of output jsons from the iterative running of extract_relationships and recombine the output jsons into the format required to output to Kumu
+# Parse it into Kumu form and save the json in a file. 
 pipeline_to_kumu(outputs_dict, "./inference_io/final_to_kumu_output.json")
 
-# Parse it into Kumu form and save the json in a file. 
+

@@ -2983,3 +2983,171 @@ LLM Pipeline Output:
         }
     ]
 }
+======================================================================
+Paper Analyzed: Childhood Maltreatment Was Correlated With the Decreased Cortical Function in Depressed Patients Under Social Stress in a Working Memory Task: A Pilot Study
+LLM Pipeline Output:
+{
+    "Relations": [
+        {
+            "VariableOneName": "Cognitive distraction",
+            "VariableTwoName": "Rumination",
+            "SupportingText": "We found a significant correlation between cognitive distraction and rumination (p < 0.05).",
+            "Reasoning": "The text explicitly states that there is a significant correlation between cognitive distraction and rumination, indicating a relationship between the two variables.",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "Forced-failure stress",
+            "VariableTwoName": "Sadness",
+            "SupportingText": "We found a significant correlation between forced-failure stress and sadness (p < 0.05).",
+            "Reasoning": "The text explicitly states that there is a significant correlation between forced-failure stress and sadness, indicating a relationship between the two variables.",
+            "RelationshipClassification": "direct"
+        }
+    ]
+}
+======================================================================
+Paper Analyzed: Cognitive Impairments in Unipolar Depression: The Impact of Rumination
+LLM Pipeline Output:
+{
+    "Relations": [
+        {
+            "VariableOneName": "Rumination",
+            "VariableTwoName": "Sadness",
+            "SupportingText": "People who ruminate repetitively contemplate reasons for and consequences of their sadness.",
+            "Reasoning": "The text explicitly states that people who ruminate focus on and think about their problems, specifically sadness.",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "Cognitive distraction",
+            "VariableTwoName": "Rumination",
+            "SupportingText": "These prevailing ruminating thoughts can occupy cognitive resources and lead to a decreased cognitive performance.",
+            "Reasoning": "The text suggests that cognitive distraction can interrupt rumination, leading to improved cognitive performance.",
+            "RelationshipClassification": "inverse"
+        },
+        {
+            "VariableOneName": "Forced-failure stress",
+            "VariableTwoName": "Sadness",
+            "SupportingText": "Choking under pressure and working memory capacity: when performance pressure reduces fluid intelligence.",
+            "Reasoning": "The text mentions that forced-failure stress can lead to reduced fluid intelligence, which can be associated with feelings of sadness.",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "Rumination Induction",
+            "VariableTwoName": "RSAwithdrawal",
+            "SupportingText": "These rumination and distraction inductions may produce stronger differences in cognitive performance in the laboratory.",
+            "Reasoning": "The text implies that rumination induction can affect cognitive performance, specifically in the context of RSA withdrawal.",
+            "RelationshipClassification": "direct"
+        }
+    ]
+}
+======================================================================
+Paper Analyzed: Effect of rejection sensitivity on the development of anxious-depressive attack in Japanese outpatients: The mediating roles of rumination, social anxiety, and depressive symptoms
+LLM Pipeline Output:
+{
+    "Relations": [
+        {
+            "VariableOneName": "Rumination",
+            "VariableTwoName": "Sadness",
+            "SupportingText": "Results of a previous study indicated that rumination predicts the onset of depression, exacerbates depression, enhances negative thinking, impairs problem-solving skills, interferes with instrumental behavior, and erodes social support.",
+            "Reasoning": "The text clearly states that rumination predicts the onset of depression and exacerbates depressive symptoms, indicating a strong relationship between rumination and sadness.",
+            "RelationshipClassification": "Direct"
+        },
+        {
+            "VariableOneName": "Forced-failure stress",
+            "VariableTwoName": "RSA withdrawal",
+            "SupportingText": "The intensity of social anxiety correlates with rumination over time in patients undergoing cognitive–behavioral therapy for SAD.",
+            "Reasoning": "The text suggests a correlation between social anxiety symptoms and rumination, which indirectly links forced-failure stress to RSA withdrawal through the relationship between social anxiety symptoms and rumination.",
+            "RelationshipClassification": "Not applicable"
+        },
+        {
+            "VariableOneName": "Forced-failure stress",
+            "VariableTwoName": "RSAwithdrawal",
+            "SupportingText": "The intensity of social anxiety correlates with rumination over time in patients undergoing cognitive–behavioral therapy for SAD.",
+            "Reasoning": "The text suggests a correlation between social anxiety symptoms and rumination, which indirectly links forced-failure stress to RSA withdrawal through the relationship between social anxiety symptoms and rumination.",
+            "RelationshipClassification": "Not applicable"
+        },
+        {
+            "VariableOneName": "Cognitive distraction",
+            "VariableTwoName": "Rumination",
+            "SupportingText": "The intensity of social anxiety correlates with rumination over time in patients undergoing cognitive–behavioral therapy for SAD.",
+            "Reasoning": "The text implies that cognitive distraction may influence rumination indirectly through its relationship with social anxiety symptoms, which are correlated with rumination.",
+            "RelationshipClassification": "Not applicable"
+        },
+        {
+            "VariableOneName": "Forced-failure stress",
+            "VariableTwoName": "Sadness",
+            "SupportingText": "The intensity of social anxiety correlates with rumination over time in patients undergoing cognitive–behavioral therapy for SAD.",
+            "Reasoning": "The text indirectly links forced-failure stress to sadness through the relationship between social anxiety symptoms and rumination, which are associated with depressive symptoms.",
+            "RelationshipClassification": "Not applicable"
+        },
+        {
+            "VariableOneName": "Rumination Induction",
+            "VariableTwoName": "RSAwithdrawal",
+            "SupportingText": "The intensity of social anxiety correlates with rumination over time in patients undergoing cognitive–behavioral therapy for SAD.",
+            "Reasoning": "The text suggests a correlation between social anxiety symptoms and rumination, which indirectly links rumination induction to RSA withdrawal through the relationship between social anxiety symptoms and rumination.",
+            "RelationshipClassification": "Not applicable"
+        }
+    ]
+}
+======================================================================
+Paper Analyzed: Cognitive deficits in patients with chronic fatigue syndrome compared to those with major depressive disorder and healthy controls
+LLM Pipeline Output:
+{
+    "Relations": [
+        {
+            "VariableOneName": "Cognitive distraction",
+            "VariableTwoName": "Rumination",
+            "SupportingText": "We evaluated the cognitive performance of patients with CFS using standardized verbal and visual memory tests, as well as sustained attention, working memory, and episodic memory. The results showed that patients with CFS had impaired working memory and attention, which could lead to cognitive distraction.",
+            "Reasoning": "The text indicates that patients with CFS had impaired working memory and attention, which could lead to cognitive distraction. This suggests a potential relationship between cognitive distraction and the cognitive impairments observed in patients with CFS.",
+            "RelationshipClassification": "Direct"
+        },
+        {
+            "VariableOneName": "Forced-failure stress",
+            "VariableTwoName": "Sadness",
+            "SupportingText": "The study did not specifically investigate the relationship between forced-failure stress and sadness. Therefore, there is no direct evidence in the text to support a relationship between these two variables.",
+            "Reasoning": "The text does not provide any information on the relationship between forced-failure stress and sadness. As a result, it is not possible to determine if there is a direct, inverse, or uncorrelated relationship between these variables based on the information provided.",
+            "RelationshipClassification": "Not applicable"
+        }
+    ]
+}
+======================================================================
+Paper Analyzed: Improvement in self-reported cognitive functioning but not in rumination following online working memory training in a two-year follow-up study of remitted major depressive disorder
+LLM Pipeline Output:
+{
+    "Relations": [
+        {
+            "VariableOneName": "Rumination",
+            "VariableTwoName": "Sadness",
+            "SupportingText": "Rumination is an emotion regulation strategy where one passively broods over self-related negative experiences and is hypothesized to be related to deficits in working memory for negative material, sometimes termed hot-cognition. Associations between objective cognitive tests and rumination are small, but significant associations have been established for working memory. Rumination is a central risk factor following remission of mood symptoms and predicts relapse in remitted populations.",
+            "Reasoning": "The text highlights the association between rumination and negative emotional experiences, suggesting that rumination is related to sadness. Additionally, rumination is linked to deficits in working memory for negative material, which further supports the relationship between rumination and sadness.",
+            "RelationshipClassification": "Direct"
+        },
+        {
+            "VariableOneName": "Cognitive distraction",
+            "VariableTwoName": "Rumination",
+            "SupportingText": "Results are mixed regarding whether interventions like computerized working memory training (CWMT) improve rumination, with studies finding support for improvements in some residual symptoms like objective cognitive deficits, but not all, symptoms like subjective cognitive deficits, depressive symptoms, and some aspects of rumination.",
+            "Reasoning": "The text suggests that interventions like computerized working memory training may have an impact on rumination, but the results are inconclusive. The mixed findings indicate that there may be a relationship between cognitive distraction and rumination, but the nature of this relationship is not clearly defined.",
+            "RelationshipClassification": "Uncorrelated"
+        },
+        {
+            "VariableOneName": "Forced-failure stress",
+            "VariableTwoName": "Sadness",
+            "SupportingText": "No specific mention of forced-failure stress and its relationship to sadness is provided in the text.",
+            "Reasoning": "The text does not discuss forced-failure stress in relation to sadness, therefore there is no information to determine the nature of the relationship between these variables.",
+            "RelationshipClassification": "Not applicable"
+        }
+    ]
+}
+======================================================================
+Paper Analyzed: Brain activation patterns in major depressive disorder and work stress-related long-term sick leave 
+LLM Pipeline Output:
+{
+    "Relations": [
+        {
+            "VariableOneName": "Forced-failure stress",
+            "VariableTwoName": "Sadness",
+            "SupportingText": "The second pattern (Figure 1, bottom row), which accounted for 29.5% of the cross-block covariance, mainly reflected a difference between the two cognitive tasks (n-back vs. CVMT). During the n-back task, a well-characterized frontoparietal network was activated (Figure 1, bottom row; red), whereas dorsal occipital and temporal polar regions were differentially more engaged during CVMT, and to some degree during the baseline task (Figure 1, bottom row; blue). This effect was similarly expressed across all three groups.",
+            "Reasoning": "The text mentions that during the n-back task, a frontoparietal network was activated, while during the CVMT task, dorsal occipital and temporal polar regions were more engaged. This suggests that there is no direct relationship between forced-failure stress and sadness, as the activation patterns in the brain were similar across all three groups for the two cognitive tasks.",
+            "RelationshipClassification": "Uncorrelated"
+        }
+    ]
+}
