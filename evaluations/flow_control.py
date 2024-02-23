@@ -14,9 +14,37 @@ if False:
         to_kumu_dict = json.load(f)
     pipeline_to_kumu(to_kumu_dict, "./inference_io/test_input_from_kumu.json")
 
+"""
+Ensure that the only map in your project is the map you want to verify using SLAE. 
+You can export a single map with this utility: https://to-kumu-map-blueprint.netlify.app/.
+Rename the file "user_input.json".
+Run this script!
+Start a new kumu project and make an empty Causal Loop Diagram map.
+Import the file "final_to_kumu_output.json" into the project.
+Open the right hand side settings bar and switch to Advanced Settings Mode.
+Replace existing code with the following:
+
+@settings {
+  template: causal-loop;
+  layout: force;
+  layout-preset: dense;
+  connection-size: 6;
+  connection-curvature: 0.28;
+}
+
+/* Correctness */
+connection {
+  color: scale("correctness", #FF2D00, #FF9B85);
+}
+
+/* Papers Examined */
+connection {
+  scale: scale("papers examined", 1, 2);
+}
+"""
 
 # Obtain list of relations from Kumu or Vensim file
-if False:
+if True:
     with open(pathlib.Path("./inference_io/user_input.json"), "r") as f:
         kumu_read = user_input_to_list_of_relations(json.load(f))
         print(kumu_read)
@@ -28,11 +56,11 @@ if False:
 
 
 # Use the matcher to separate the list of relations, resulting in a series of python dictionaries each with a single paper and a list of related relations.
-if False:
+if True:
     matched_papers = match_relations_to_papers(papers_directory="./auto_generated_inputs", input_relations_directory="./inference_io/parsed_input.json")
     # print(matched_papers)
 
-if False:
+if True:
     # Obtain settings by reading in the file
     with open("./pipeline_settings.yaml", "r") as f:
         pipeline_settings = yaml.safe_load(f)
