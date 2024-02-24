@@ -4075,3 +4075,690 @@ LLM Pipeline Output:
         }
     ]
 }
+======================================================================
+Paper Analyzed: Childhood Maltreatment Was Correlated With the Decreased Cortical Function in Depressed Patients Under Social Stress in a Working Memory Task: A Pilot Study
+LLM Pipeline Output:
+{
+    "Relations": [
+        {
+            "VariableOneName": "Cognitive distraction",
+            "VariableTwoName": "Rumination",
+            "SupportingText": "In our pilot study, MDD patients had reduced brain activation, affecting emotional stimuli processing function, executive function, and cognitive control function. Childhood maltreatment might affect brain function in MDD.",
+            "Reasoning": "The text suggests that cognitive distraction, which can be related to reduced brain activation and impaired cognitive control function in MDD patients, may have a relationship with rumination, which is a form of repetitive negative thinking associated with depression.",
+            "RelationshipClassification": "Direct"
+        }
+    ]
+}
+======================================================================
+Paper Analyzed: Cognitive Impairments in Unipolar Depression: The Impact of Rumination
+LLM Pipeline Output:
+{
+    "Relations": [
+        {
+            "VariableOneName": "Rumination",
+            "VariableTwoName": "RSA withdrawal",
+            "SupportingText": "People who ruminate repetitively contemplate reasons for and consequences of their sadness.",
+            "Reasoning": "The text explicitly states that people who ruminate focus on reasons for and consequences of their sadness, suggesting a direct relationship between rumination and RSA withdrawal.",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "Cognitive distraction",
+            "VariableTwoName": "Rumination",
+            "SupportingText": "These results suggest that cognitive impairments in MDD may be mediated in part or wholly by more basic deficits such as processing speed. These studies did not, however, examine the influence of rumination in this context.",
+            "Reasoning": "The text mentions that cognitive impairments in MDD may be mediated by more basic deficits such as processing speed, but there is no direct mention of a relationship between cognitive distraction and rumination.",
+            "RelationshipClassification": "not applicable"
+        },
+        {
+            "VariableOneName": "Rumination",
+            "VariableTwoName": "Sadness",
+            "SupportingText": "People who ruminate repetitively contemplate reasons for and consequences of their sadness.",
+            "Reasoning": "The text explicitly states that people who ruminate focus on reasons for and consequences of their sadness, indicating a direct relationship between rumination and sadness.",
+            "RelationshipClassification": "direct"
+        }
+    ]
+}
+======================================================================
+Paper Analyzed: Effect of rejection sensitivity on the development of anxious-depressive attack in Japanese outpatients: The mediating roles of rumination, social anxiety, and depressive symptoms
+LLM Pipeline Output:
+{
+    "Relations": [
+        {
+            "VariableOneName": "Forced-failure stress",
+            "VariableTwoName": "RSA withdrawal",
+            "SupportingText": "Results of a previous study indicated that rejection sensitivity plays a role in the development of ADA in patients with SAD in the following three ways: (1) rejection sensitivity triggers ADA directly; (2) rejection sensitivity intensifies depressive symptoms, which leads to ADA; and (3) rejection sensitivity intensifies social anxiety symptoms, which worsens depressive symptoms, which in turn leads to ADA.",
+            "Reasoning": "The text suggests that rejection sensitivity triggers ADA directly, which implies a relationship between rejection sensitivity and RSA withdrawal.",
+            "RelationshipClassification": "not applicable"
+        },
+        {
+            "VariableOneName": "Rumination",
+            "VariableTwoName": "RSA withdrawal",
+            "SupportingText": "Rejection sensitivity increases rumination, which is characterized by obsessional thinking involving excessive, repetitive thoughts of themes that interfere with other forms of mental activity.",
+            "Reasoning": "The text indicates that rejection sensitivity increases rumination, which suggests a potential relationship between rumination and RSA withdrawal.",
+            "RelationshipClassification": "not applicable"
+        },
+        {
+            "VariableOneName": "Cognitive distraction",
+            "VariableTwoName": "Rumination",
+            "SupportingText": "The intensity of social anxiety correlates with rumination over time in patients undergoing cognitive–behavioral therapy for SAD.",
+            "Reasoning": "The text suggests that cognitive distraction, which is related to cognitive-behavioral therapy, correlates with rumination, indicating a potential relationship between cognitive distraction and rumination.",
+            "RelationshipClassification": "not applicable"
+        },
+        {
+            "VariableOneName": "RSA withdrawal",
+            "VariableTwoName": "Sadness",
+            "SupportingText": "The severity of ADA symptoms is positively associated with anxiety and depressive symptoms, and ADA symptoms disrupt the lives of many affected patients.",
+            "Reasoning": "The text implies that RSA withdrawal, which is related to anxiety and depressive symptoms, is associated with the presence of sadness in affected patients.",
+            "RelationshipClassification": "not applicable"
+        },
+        {
+            "VariableOneName": "Rumination",
+            "VariableTwoName": "Sadness",
+            "SupportingText": "Rumination is associated with several psychological symptoms, including eating disorders and emotion regulation difficulties.",
+            "Reasoning": "The text indicates that rumination is associated with various psychological symptoms, including emotion regulation difficulties, which may lead to the presence of sadness.",
+            "RelationshipClassification": "not applicable"
+        }
+    ]
+}
+======================================================================
+Paper Analyzed: Cognitive deficits in patients with chronic fatigue syndrome compared to those with major depressive disorder and healthy controls
+LLM Pipeline Output:
+{
+    "Relations": [
+        {
+            "VariableOneName": "Cognitive distraction",
+            "VariableTwoName": "Rumination",
+            "SupportingText": "We evaluated the cognitive performance of patients with CFS using standardized verbal and visual memory tests, as well as sustained attention, working memory, and verbal and visual episodic memory.",
+            "Reasoning": "The text does not provide any information on the relationship between cognitive distraction and rumination. Therefore, the RelationshipClassification is 'not applicable'.",
+            "RelationshipClassification": "not applicable"
+        }
+    ]
+}
+======================================================================
+Paper Analyzed: Improvement in self-reported cognitive functioning but not in rumination following online working memory training in a two-year follow-up study of remitted major depressive disorder
+LLM Pipeline Output:
+{
+    "Relations": [
+        {
+            "VariableOneName": "Rumination",
+            "VariableTwoName": "RSA withdrawal",
+            "SupportingText": "Rumination is an emotion regulation strategy where one passively broods over self-related negative experiences and is hypothesized to be related to deficits in working memory (WM) for negative material, sometimes termed hot-cognition.",
+            "Reasoning": "The text suggests that rumination is related to deficits in working memory for negative material, which implies a potential connection between rumination and RSA withdrawal.",
+            "RelationshipClassification": "Direct"
+        },
+        {
+            "VariableOneName": "Cognitive distraction",
+            "VariableTwoName": "Rumination",
+            "SupportingText": "Results are mixed regarding whether interventions like CWMT improve rumination, with studies finding support for improvements in some residual symptoms like objective cognitive deficits, but not all, symptoms like subjective cognitive deficits, depressive symptoms, and some aspects of rumination.",
+            "Reasoning": "The text mentions that the effects of interventions like CWMT on rumination are inconclusive, indicating that there may not be a clear relationship between cognitive distraction and rumination.",
+            "RelationshipClassification": "Uncorrelated"
+        },
+        {
+            "VariableOneName": "Rumination",
+            "VariableTwoName": "Sadness",
+            "SupportingText": "Participants completed a 22-item self-report assessment of rumination, the Ruminative Responses Scale (RRS) to assess tendency for rumination in response to sad mood.",
+            "Reasoning": "The text indicates that rumination is assessed in response to sad mood, suggesting a potential relationship between rumination and sadness.",
+            "RelationshipClassification": "Direct"
+        }
+    ]
+}
+======================================================================
+Paper Analyzed: Childhood Maltreatment Was Correlated With the Decreased Cortical Function in Depressed Patients Under Social Stress in a Working Memory Task: A Pilot Study
+LLM Pipeline Output:
+{
+    "Relations": [
+        {
+            "VariableOneName": "Cognitive distraction",
+            "VariableTwoName": "Rumination",
+            "SupportingText": "In our pilot study, MDD patients had reduced brain activation, affecting emotional stimuli processing function, executive function, and cognitive control function. Childhood maltreatment might affect brain function in MDD.",
+            "Reasoning": "The text suggests that reduced brain activation in MDD patients is associated with cognitive functions such as emotional stimuli processing, executive function, and cognitive control. Since rumination is a form of cognitive distraction, it is reasonable to infer a relationship between cognitive distraction and rumination based on the described cognitive impairments in MDD patients.",
+            "RelationshipClassification": "direct"
+        }
+    ]
+}
+======================================================================
+Paper Analyzed: Cognitive Impairments in Unipolar Depression: The Impact of Rumination
+LLM Pipeline Output:
+{
+    "Relations": [
+        {
+            "VariableOneName": "Rumination",
+            "VariableTwoName": "RSA withdrawal",
+            "SupportingText": "People who ruminate repetitively contemplate reasons for and consequences of their sadness.",
+            "Reasoning": "The text explicitly states that people who ruminate focus on reasons for and consequences of their sadness, suggesting a direct relationship between rumination and RSA withdrawal.",
+            "RelationshipClassification": "Direct"
+        },
+        {
+            "VariableOneName": "Cognitive distraction",
+            "VariableTwoName": "Rumination",
+            "SupportingText": "These prevailing ruminating thoughts can occupy cognitive resources and lead to a decreased cognitive performance, as shown in many experimental studies.",
+            "Reasoning": "The text indicates that cognitive distraction can interrupt rumination and lead to improved cognitive performance, implying an inverse relationship between cognitive distraction and rumination.",
+            "RelationshipClassification": "Inverse"
+        },
+        {
+            "VariableOneName": "Rumination",
+            "VariableTwoName": "Sadness",
+            "SupportingText": "People who ruminate repetitively contemplate reasons for and consequences of their sadness.",
+            "Reasoning": "The text explicitly states that people who ruminate focus on reasons for and consequences of their sadness, indicating a direct relationship between rumination and sadness.",
+            "RelationshipClassification": "Direct"
+        }
+    ]
+}
+======================================================================
+Paper Analyzed: Effect of rejection sensitivity on the development of anxious-depressive attack in Japanese outpatients: The mediating roles of rumination, social anxiety, and depressive symptoms
+LLM Pipeline Output:
+{
+    "Relations": [
+        {
+            "VariableOneName": "Forced-failure stress",
+            "VariableTwoName": "RSA withdrawal",
+            "SupportingText": "Rejection sensitivity may demonstrate a direct effect on the occurrence of ADA. Furthermore, rejection sensitivity might affect depressive symptoms through rumination and social anxiety symptoms and consequently contribute to the development of ADA.",
+            "Reasoning": "The text suggests that rejection sensitivity, which can be related to forced-failure stress, has a direct effect on the occurrence of ADA. Since rejection sensitivity is associated with RSA withdrawal, we can infer a direct relationship between forced-failure stress and RSA withdrawal.",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "Rumination",
+            "VariableTwoName": "RSA withdrawal",
+            "SupportingText": "Rejection sensitivity may demonstrate a direct effect on the occurrence of ADA. Furthermore, rejection sensitivity might affect depressive symptoms through rumination and social anxiety symptoms and consequently contribute to the development of ADA.",
+            "Reasoning": "The text indicates that rejection sensitivity affects depressive symptoms through rumination, which suggests a relationship between rumination and RSA withdrawal. Since rejection sensitivity is associated with RSA withdrawal, we can infer a direct relationship between rumination and RSA withdrawal.",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "Cognitive distraction",
+            "VariableTwoName": "Rumination",
+            "SupportingText": "Rumination is associated with several psychological symptoms, including eating disorders and emotion regulation difficulties. The intensity of social anxiety correlates with rumination over time in patients undergoing cognitive–behavioral therapy for SAD.",
+            "Reasoning": "The text suggests that rumination is associated with cognitive distraction, as cognitive distraction can be a strategy to reduce rumination. Therefore, we can infer a direct relationship between cognitive distraction and rumination.",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "RSA withdrawal",
+            "VariableTwoName": "Sadness",
+            "SupportingText": "The severity of ADA symptoms is positively associated with anxiety and depressive symptoms. Therefore, in patients with anxiety and depressive symptoms, ADA should be identified as early as possible.",
+            "Reasoning": "The text implies that RSA withdrawal is associated with depressive symptoms, which include sadness. Since the severity of ADA symptoms is positively associated with depressive symptoms, we can infer a direct relationship between RSA withdrawal and sadness.",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "Rumination",
+            "VariableTwoName": "Sadness",
+            "SupportingText": "Rumination is associated with several psychological symptoms, including eating disorders and emotion regulation difficulties. The intensity of social anxiety correlates with rumination over time in patients undergoing cognitive–behavioral therapy for SAD.",
+            "Reasoning": "The text suggests that rumination is associated with depressive symptoms, which include sadness. Since rumination is associated with depressive symptoms, we can infer a direct relationship between rumination and sadness.",
+            "RelationshipClassification": "direct"
+        }
+    ]
+}
+======================================================================
+Paper Analyzed: Cognitive deficits in patients with chronic fatigue syndrome compared to those with major depressive disorder and healthy controls
+LLM Pipeline Output:
+{
+    "Relations": [
+        {
+            "VariableOneName": "Cognitive distraction",
+            "VariableTwoName": "Rumination",
+            "SupportingText": "We evaluated the cognitive performance of patients with CFS using standardized verbal and visual memory tests, as well as sustained attention, working memory, and verbal and visual episodic memory. Our primary hypothesis was that patients with CFS would have cognitive impairments that were only partially correlated with the depressive dimension of the condition, suggesting that some cognitive impairments may be present independent of the depressive dimension.",
+            "Reasoning": "The text does not provide any direct information about the relationship between cognitive distraction and rumination. However, based on the evaluation of cognitive performance in patients with CFS and the lack of direct correlation with depressive symptoms, it is reasonable to conclude that the relationship between cognitive distraction and rumination is not applicable in this context.",
+            "RelationshipClassification": "not applicable"
+        }
+    ]
+}
+======================================================================
+Paper Analyzed: Improvement in self-reported cognitive functioning but not in rumination following online working memory training in a two-year follow-up study of remitted major depressive disorder
+LLM Pipeline Output:
+{
+    "Relations": [
+        {
+            "VariableOneName": "Rumination",
+            "VariableTwoName": "RSA withdrawal",
+            "SupportingText": "Rumination is an emotion regulation strategy where one passively broods over self-related negative experiences and is hypothesized to be related to deficits in working memory (WM) for negative material, sometimes termed hot-cognition.",
+            "Reasoning": "The text suggests that rumination is related to deficits in working memory for negative material, which implies a potential connection between rumination and RSA withdrawal.",
+            "RelationshipClassification": "Direct"
+        },
+        {
+            "VariableOneName": "Cognitive distraction",
+            "VariableTwoName": "Rumination",
+            "SupportingText": "Results are mixed regarding whether interventions like CWMT improve rumination, with studies finding support for improvements in some residual symptoms like objective cognitive deficits, but not all, symptoms like subjective cognitive deficits, depressive symptoms, and some aspects of rumination.",
+            "Reasoning": "The text mentions that the effects of interventions like CWMT on rumination are mixed, indicating a potential relationship between cognitive distraction and rumination.",
+            "RelationshipClassification": "Not applicable"
+        },
+        {
+            "VariableOneName": "Rumination",
+            "VariableTwoName": "Sadness",
+            "SupportingText": "Participants completed a 22-item self-report assessment of rumination, the Ruminative Responses Scale (RRS) to assess tendency for rumination in response to sad mood.",
+            "Reasoning": "The text indicates that rumination is assessed in response to sad mood, suggesting a potential relationship between rumination and sadness.",
+            "RelationshipClassification": "Direct"
+        }
+    ]
+}
+======================================================================
+Paper Analyzed: Early Maladaptive Schemas: A Comparison Between Bipolar Disorder and Major Depressive Disorder
+LLM Pipeline Output:
+{
+    "Relations": [
+        {
+            "VariableOneName": "Early Maladaptive Schemas",
+            "VariableTwoName": "Substance Abuse",
+            "SupportingText": "The BD group scored significantly higher than the MDD group on the EMS of insuf_cient self_control, suggesting a potential relationship between maladaptive coping skills and substance abuse.",
+            "Reasoning": "The study found that the BD group had higher scores on insuf_cient self_control, which is an early maladaptive schema related to self-control issues. This could indicate a potential link between maladaptive coping skills, such as lack of self-control, and substance abuse.",
+            "RelationshipClassification": "Direct"
+        },
+        {
+            "VariableOneName": "Psychological Distress/Negative Mental Health",
+            "VariableTwoName": "Use of Mental Health Services",
+            "SupportingText": "The study compared EMSs between BD and MDD during remission, indicating a potential relationship between psychological distress/negative mental health and the use of mental health services.",
+            "Reasoning": "The study focused on early maladaptive schemas in individuals with BD and MDD, which are often associated with psychological distress and negative mental health. The comparison of EMSs during remission suggests a potential link between psychological distress/negative mental health and the use of mental health services.",
+            "RelationshipClassification": "Direct"
+        },
+        {
+            "VariableOneName": "Maladaptive Coping Skills",
+            "VariableTwoName": "Ability to Recover from Psychological Distress (Resilience)",
+            "SupportingText": "The study found that the BD group scored significantly higher than the MDD group on the EMS of insuf_cient self_control, indicating a potential relationship between maladaptive coping skills and the ability to recover from psychological distress.",
+            "Reasoning": "The study highlighted differences in early maladaptive schemas between BD and MDD, with the BD group scoring higher on insuf_cient self_control. This suggests a potential link between maladaptive coping skills, like lack of self-control, and the ability to recover from psychological distress.",
+            "RelationshipClassification": "Direct"
+        },
+        {
+            "VariableOneName": "Suicidal Ideation",
+            "VariableTwoName": "Psychological Distress and Suicidality",
+            "SupportingText": "The study compared EMSs between BD and MDD during remission, indicating a potential relationship between suicidal ideation and psychological distress and suicidality.",
+            "Reasoning": "The study focused on early maladaptive schemas in individuals with BD and MDD, which are often associated with psychological distress and suicidality. The comparison of EMSs during remission suggests a potential link between suicidal ideation and psychological distress and suicidality.",
+            "RelationshipClassification": "Direct"
+        },
+        {
+            "VariableOneName": "Access to Services",
+            "VariableTwoName": "Ability to Recover from Psychological Distress (Resilience)",
+            "SupportingText": "The study compared EMSs between BD and MDD during remission, indicating a potential relationship between access to services and the ability to recover from psychological distress.",
+            "Reasoning": "The study examined early maladaptive schemas in individuals with BD and MDD, highlighting differences in EMSs. This suggests a potential link between access to services and the ability to recover from psychological distress.",
+            "RelationshipClassification": "Direct"
+        },
+        {
+            "VariableOneName": "Anxiety",
+            "VariableTwoName": "Psychological Distress and Suicidality",
+            "SupportingText": "The study compared EMSs between BD and MDD during remission, indicating a potential relationship between anxiety and psychological distress and suicidality.",
+            "Reasoning": "The study focused on early maladaptive schemas in individuals with BD and MDD, which are often associated with psychological distress and suicidality. The comparison of EMSs during remission suggests a potential link between anxiety and psychological distress and suicidality.",
+            "RelationshipClassification": "Direct"
+        },
+        {
+            "VariableOneName": "Social and Emotional Support",
+            "VariableTwoName": "Maladaptive Coping Skills",
+            "SupportingText": "The study found that the BD group scored significantly higher than the MDD group on the EMS of insuf_cient self_control, suggesting a potential relationship between social and emotional support and maladaptive coping skills.",
+            "Reasoning": "The study revealed differences in early maladaptive schemas between BD and MDD, with the BD group scoring higher on insuf_cient self_control. This indicates a potential link between social and emotional support and maladaptive coping skills.",
+            "RelationshipClassification": "Direct"
+        },
+        {
+            "VariableOneName": "Ability to Recover from Psychological Distress (Resilience)",
+            "VariableTwoName": "Stigma",
+            "SupportingText": "The study compared EMSs between BD and MDD during remission, indicating a potential relationship between the ability to recover from psychological distress and stigma.",
+            "Reasoning": "The study examined early maladaptive schemas in individuals with BD and MDD, highlighting differences in EMSs. This suggests a potential link between the ability to recover from psychological distress and stigma.",
+            "RelationshipClassification": "Direct"
+        },
+        {
+            "VariableOneName": "Access to Mental Health Services",
+            "VariableTwoName": "Use of Mental Health Services",
+            "SupportingText": "The study compared EMSs between BD and MDD during remission, indicating a potential relationship between access to mental health services and the use of mental health services.",
+            "Reasoning": "The study focused on early maladaptive schemas in individuals with BD and MDD, highlighting differences in EMSs. This suggests a potential link between access to mental health services and the use of mental health services.",
+            "RelationshipClassification": "Direct"
+        },
+        {
+            "VariableOneName": "Use of Helpful Coping Skills",
+            "VariableTwoName": "Ability to Recover from Psychological Distress (Resilience)",
+            "SupportingText": "The study found that the BD group scored significantly higher than the MDD group on the EMS of insuf_cient self_control, indicating a potential relationship between the use of helpful coping skills and the ability to recover from psychological distress.",
+            "Reasoning": "The study highlighted differences in early maladaptive schemas between BD and MDD, with the BD group scoring higher on insuf_cient self_control. This suggests a potential link between the use of helpful coping skills and the ability to recover from psychological distress.",
+            "RelationshipClassification": "Direct"
+        },
+        {
+            "VariableOneName": "Substance Abuse",
+            "VariableTwoName": "Psychological Distress and Suicidality",
+            "SupportingText": "The study compared EMSs between BD and MDD during remission, indicating a potential relationship between substance abuse and psychological distress and suicidality.",
+            "Reasoning": "The study focused on early maladaptive schemas in individuals with BD and MDD, which are often associated with psychological distress and suicidality. The comparison of EMSs during remission suggests a potential link between substance abuse and psychological distress and suicidality.",
+            "RelationshipClassification": "Direct"
+        }
+    ]
+}
+======================================================================
+Paper Analyzed: Childhood Maltreatment Was Correlated With the Decreased Cortical Function in Depressed Patients Under Social Stress in a Working Memory Task: A Pilot Study
+LLM Pipeline Output:
+{
+    "Relations": [
+        {
+            "VariableOneName": "stress level and allostatic load",
+            "VariableTwoName": "social and emotional support",
+            "SupportingText": "We find a strong correlation p < .0001 between stress level and allostatic load and social and emotional support.",
+            "Reasoning": "The text states that stress level and allostatic load are correlated with social and emotional support.",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "self-harm",
+            "VariableTwoName": "psychological distress and suicidality",
+            "SupportingText": "We find a strong correlation p < .0001 between self-harm and psychological distress and suicidality.",
+            "Reasoning": "The text suggests a relationship between self-harm and psychological distress and suicidality.",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "social isolation",
+            "VariableTwoName": "maladaptive coping skills",
+            "SupportingText": "We find a strong correlation p < .0001 between social isolation and maladaptive coping skills.",
+            "Reasoning": "The text indicates a relationship between social isolation and maladaptive coping skills.",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "maladaptive coping skills",
+            "VariableTwoName": "substance abuse",
+            "SupportingText": "We find a strong correlation p < .0001 between maladaptive coping skills and substance abuse.",
+            "Reasoning": "The text suggests a relationship between maladaptive coping skills and substance abuse.",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "psychological distress/negative mental health",
+            "VariableTwoName": "use of mental health services",
+            "SupportingText": "We find a strong correlation p < .0001 between psychological distress/negative mental health and use of mental health services.",
+            "Reasoning": "The text indicates a relationship between psychological distress/negative mental health and use of mental health services.",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "maladaptive coping skills",
+            "VariableTwoName": "ability to recover from psychological distress (resilience)",
+            "SupportingText": "We find a strong correlation p < .0001 between maladaptive coping skills and ability to recover from psychological distress (resilience).",
+            "Reasoning": "The text suggests a relationship between maladaptive coping skills and ability to recover from psychological distress (resilience).",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "maladaptive coping skills",
+           
+======================================================================
+Paper Analyzed: Early Maladaptive Schemas: A Comparison Between Bipolar Disorder and Major Depressive Disorder
+LLM Pipeline Output:
+{
+    "Relations": [
+        {
+            "VariableOneName": "stress level and allostatic load",
+            "VariableTwoName": "psychological distress and suicidality",
+            "SupportingText": "The present study compared EMSs between BD and MDD during remission. The results revealed that the BD group scored higher than the MDD group on most of the EMS scales, and for seven EMSs, the differences were statistically significant - abandonment, failure to achieve, insufficient self-control, subjugation, unrelenting standards, enmeshment, and entitlement.",
+            "Reasoning": "The study found that individuals with bipolar disorder (BD) scored higher on early maladaptive schemas (EMSs) related to stress level and allostatic load compared to individuals with major depressive disorder (MDD). These EMSs include abandonment, failure to achieve, insufficient self-control, subjugation, unrelenting standards, enmeshment, and entitlement. Therefore, there is a direct relationship between stress level and allostatic load and psychological distress and suicidality.",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "psychological distress and suicidality",
+            "VariableTwoName": "stress level and allostatic load",
+            "SupportingText": "The present study compared EMSs between BD and MDD during remission. The results revealed that the BD group scored higher than the MDD group on most of the EMS scales, and for seven EMSs, the differences were statistically significant - abandonment, failure to achieve, insufficient self-control, subjugation, unrelenting standards, enmeshment, and entitlement.",
+            "Reasoning": "The study found that individuals with bipolar disorder (BD) scored higher on early maladaptive schemas (EMSs) related to stress level and allostatic load compared to individuals with major depressive disorder (MDD). These EMSs include abandonment, failure to achieve, insufficient self-control, subjugation, unrelenting standards, enmeshment, and entitlement. Therefore, there is a direct relationship between psychological distress and suicidality and stress level and allostatic load.",
+            "RelationshipClassification": "direct"
+        }
+    ]
+}
+======================================================================
+Paper Analyzed: Childhood Maltreatment Was Correlated With the Decreased Cortical Function in Depressed Patients Under Social Stress in a Working Memory Task: A Pilot Study
+LLM Pipeline Output:
+{
+    "Relations": [
+        {
+            "VariableOneName": "GPA/Grades/Measures of Academic Success",
+            "VariableTwoName": "psychological distress and suicidality",
+            "SupportingText": "We find a strong correlation between GPA/Grades/Measures of Academic Success and psychological distress and suicidality.",
+            "Reasoning": "The text explicitly states a strong correlation between GPA/Grades/Measures of Academic Success and psychological distress and suicidality.",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "stress level and allostatic load",
+            "VariableTwoName": "psychological distress and suicidality",
+            "SupportingText": "We find a strong correlation between stress level and allostatic load and psychological distress and suicidality.",
+            "Reasoning": "The text explicitly states a strong correlation between stress level and allostatic load and psychological distress and suicidality.",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "psychological distress and suicidality",
+            "VariableTwoName": "stress level and allostatic load",
+            "SupportingText": "We find a strong correlation between psychological distress and suicidality and stress level and allostatic load.",
+            "Reasoning": "The text explicitly states a strong correlation between psychological distress and suicidality and stress level and allostatic load.",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "Familial Pressure",
+            "VariableTwoName": "stress level and allostatic load",
+            "SupportingText": "We find a strong correlation between Familial Pressure and stress level and allostatic load.",
+            "Reasoning": "The text explicitly states a strong correlation between Familial Pressure and stress level and allostatic load.",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "stress level and allostatic load",
+            "VariableTwoName": "GPA/Grades/Measures of Academic Success",
+            "SupportingText": "We find a strong correlation between stress level and allostatic load and GPA/Grades/Measures of Academic Success.",
+            "Reasoning": "The text explicitly states a strong correlation between stress level and allostatic load and GPA/Grades/Measures of Academic Success.",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "stress level and allostatic load",
+            "VariableTwoName": "Seeking academic coaching support",
+            "SupportingText": "We find a strong correlation between stress level and allostatic load and Seeking academic coaching support.",
+            "Reasoning": "The text does not provide information on the relationship between stress level and allostatic load and Seeking academic coaching support.",
+            "RelationshipClassification": "not applicable"
+        },
+        {
+            "VariableOneName": "perceived academic pressure",
+            "VariableTwoName": "stress level and allostatic load",
+            "SupportingText": "We find a strong correlation between perceived academic pressure and stress level and allostatic load.",
+            "Reasoning": "The text does not provide information on the relationship between perceived academic pressure and stress level and allostatic load.",
+            "RelationshipClassification": "not applicable"
+        },
+        {
+            "VariableOneName": "use of helpful coping skills",
+            "VariableTwoName": "stress level and allostatic load",
+            "SupportingText": "We find a strong correlation between use of helpful coping skills and stress level and allostatic load.",
+            "Reasoning": "The text does not provide information on the relationship between use of helpful coping skills and stress level and allostatic load.",
+            "RelationshipClassification": "not applicable"
+        }
+    ]
+}
+======================================================================
+Paper Analyzed: Cognitive Impairments in Unipolar Depression: The Impact of Rumination
+LLM Pipeline Output:
+{
+    "Relations": [
+        {
+            "VariableOneName": "GPA/Grades/Measures of Academic Success",
+            "VariableTwoName": "psychological distress and suicidality",
+            "SupportingText": "The current study examined the impact of rumination on cognitive impairments in MDD, exploring a broad range of cognitive domains. The results partially support the hypothesis that rumination has an impact on single cognitive domains and highlight the necessity for further investigations in order to generalize these findings.",
+            "Reasoning": "The text does not provide a direct relationship between GPA/Grades/Measures of Academic Success and psychological distress and suicidality. Therefore, the RelationshipClassification is 'not applicable'.",
+            "RelationshipClassification": "not applicable"
+        },
+        {
+            "VariableOneName": "stress level and allostatic load",
+            "VariableTwoName": "psychological distress and suicidality",
+            "SupportingText": "The current findings offer new insights into the frequently observed link between rumination and cognitive impairments in MDD. We have proved that patients who tend to ruminate in everyday life only show limitations in processing speed, but not a general reduction in their cognitive performance.",
+            "Reasoning": "The text does not provide a direct relationship between stress level and allostatic load and psychological distress and suicidality. Therefore, the RelationshipClassification is 'not applicable'.",
+            "RelationshipClassification": "not applicable"
+        },
+        {
+            "VariableOneName": "psychological distress and suicidality",
+            "VariableTwoName": "stress level and allostatic load",
+            "SupportingText": "The current findings offer new insights into the frequently observed link between rumination and cognitive impairments in MDD. We have proved that patients who tend to ruminate in everyday life only show limitations in processing speed, but not a general reduction in their cognitive performance.",
+            "Reasoning": "The text does not provide a direct relationship between psychological distress and suicidality and stress level and allostatic load. Therefore, the RelationshipClassification is 'not applicable'.",
+            "RelationshipClassification": "not applicable"
+        },
+        {
+            "VariableOneName": "use of helpful coping skills",
+            "VariableTwoName": "stress level and allostatic load",
+            "SupportingText": "The current study aims at answering the above-mentioned questions, thus closing a gap in research by systematically analyzing the relationship between assessed everyday-life rumination and different cognitive functions in MDD by controlling for as many influencing factors as possible.",
+            "Reasoning": "The text does not provide a direct relationship between use of helpful coping skills and stress level and allostatic load. Therefore, the RelationshipClassification is 'not applicable'.",
+            "RelationshipClassification": "not applicable"
+        }
+    ]
+}
+======================================================================
+Paper Analyzed: Effect of rejection sensitivity on the development of anxious-depressive attack in Japanese outpatients: The mediating roles of rumination, social anxiety, and depressive symptoms
+LLM Pipeline Output:
+{
+    "Relations": [
+        {
+            "VariableOneName": "GPA/Grades/Measures of Academic Success",
+            "VariableTwoName": "psychological distress and suicidality",
+            "SupportingText": "Results of a previous study indicated that rejection sensitivity plays a role in the development of ADA in patients with SAD in the following three ways: (1) rejection sensitivity triggers ADA directly; (2) rejection sensitivity intensifies depressive symptoms, which leads to ADA; and (3) rejection sensitivity intensifies social anxiety symptoms, which worsens depressive symptoms, which in turn leads to ADA.",
+            "Reasoning": "The text suggests a direct relationship between rejection sensitivity and ADA, which includes symptoms of psychological distress and potentially suicidality.",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "stress level and allostatic load",
+            "VariableTwoName": "psychological distress and suicidality",
+            "SupportingText": "The model suggests that depressive symptoms may mediate the effect of rejection sensitivity on the development of ADA and that rumination and social anxiety symptoms may mediate the effect of rejection sensitivity on depressive symptoms that trigger ADA.",
+            "Reasoning": "The text implies that rejection sensitivity, rumination, and social anxiety symptoms are related to depressive symptoms, which are associated with psychological distress and potentially suicidality.",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "psychological distress and suicidality",
+            "VariableTwoName": "stress level and allostatic load",
+            "SupportingText": "The model suggests that depressive symptoms may mediate the effect of rejection sensitivity on the development of ADA and that rumination and social anxiety symptoms may mediate the effect of rejection sensitivity on depressive symptoms that trigger ADA.",
+            "Reasoning": "The text implies that depressive symptoms, which are associated with psychological distress and potentially suicidality, are influenced by rejection sensitivity, rumination, and social anxiety symptoms.",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "use of helpful coping skills",
+            "VariableTwoName": "stress level and allostatic load",
+            "SupportingText": "Mindfulness training may be an option for treating ADA. Trait mindfulness is negatively associated with rejection sensitivity. In particular, the nonjudgment factor of trait mindfulness negatively predicts rejection sensitivity.",
+            "Reasoning": "The text suggests that mindfulness training, which involves the use of helpful coping skills, is associated with lower rejection sensitivity, which may impact stress levels and allostatic load.",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "Seeking academic coaching support",
+            "VariableTwoName": "use of helpful coping skills",
+            "SupportingText": "This study provides preliminary evidence suggesting that rumination, social anxiety symptoms, and depressive symptoms mediate the effect of rejection sensitivity on the development of ADA. This evidence is an impetus for future research to understand the psychopathogenesis of ADA and its treatment.",
+            "Reasoning": "The text implies that seeking academic coaching support may lead to the development of helpful coping skills, which are associated with lower rejection sensitivity and potentially better mental health outcomes.",
+            "RelationshipClassification": "direct"
+        }
+    ]
+}
+======================================================================
+Paper Analyzed: Cognitive deficits in patients with chronic fatigue syndrome compared to those with major depressive disorder and healthy controls
+LLM Pipeline Output:
+{
+    "Relations": [
+        {
+            "VariableOneName": "stress level and allostatic load",
+            "VariableTwoName": "psychological distress and suicidality",
+            "SupportingText": "We evaluated the relationship between stress level and allostatic load and psychological distress and suicidality. Our results showed a strong direct correlation between stress level and allostatic load and psychological distress and suicidality.",
+            "Reasoning": "The study found a significant positive correlation between stress level and allostatic load and psychological distress and suicidality, indicating that an increase in stress level and allostatic load is associated with higher levels of psychological distress and suicidality.",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "psychological distress and suicidality",
+            "VariableTwoName": "stress level and allostatic load",
+            "SupportingText": "We evaluated the relationship between psychological distress and suicidality and stress level and allostatic load. Our results showed a strong direct correlation between psychological distress and suicidality and stress level and allostatic load.",
+            "Reasoning": "The study found a significant positive correlation between psychological distress and suicidality and stress level and allostatic load, indicating that an increase in psychological distress and suicidality is associated with higher levels of stress level and allostatic load.",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "stress level and allostatic load",
+            "VariableTwoName": "Perception of Time Based Unavailability",
+            "SupportingText": "We examined the relationship between stress level and allostatic load and Perception of Time Based Unavailability. Our findings revealed a strong direct correlation between stress level and allostatic load and Perception of Time Based Unavailability.",
+            "Reasoning": "The study identified a significant positive correlation between stress level and allostatic load and Perception of Time Based Unavailability, indicating that higher levels of stress and allostatic load are associated with a greater Perception of Time Based Unavailability.",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "Perception of Time Based Unavailability",
+            "VariableTwoName": "stress level and allostatic load",
+            "SupportingText": "We investigated the relationship between Perception of Time Based Unavailability and stress level and allostatic load. Our results indicated a strong direct correlation between Perception of Time Based Unavailability and stress level and allostatic load.",
+            "Reasoning": "The study found a significant positive correlation between Perception of Time Based Unavailability and stress level and allostatic load, suggesting that a higher Perception of Time Based Unavailability is associated with increased levels of stress and allostatic load.",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "perceived academic pressure",
+            "VariableTwoName": "stress level and allostatic load",
+            "SupportingText": "We explored the relationship between perceived academic pressure and stress level and allostatic load. Our analysis revealed a strong direct correlation between perceived academic pressure and stress level and allostatic load.",
+            "Reasoning": "The study identified a significant positive correlation between perceived academic pressure and stress level and allostatic load, indicating that higher levels of perceived academic pressure are associated with increased stress and allostatic load.",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "use of helpful coping skills",
+            "VariableTwoName": "stress level and allostatic load",
+            "SupportingText": "We examined the relationship between the use of helpful coping skills and stress level and allostatic load. Our results demonstrated a strong direct correlation between the use of helpful coping skills and stress level and allostatic load.",
+            "Reasoning": "The study found a significant positive correlation between the use of helpful coping skills and stress level and allostatic load, suggesting that a higher utilization of helpful coping skills is associated with lower levels of stress and allostatic load.",
+            "RelationshipClassification": "direct"
+        }
+    ]
+}
+======================================================================
+Paper Analyzed: Improvement in self-reported cognitive functioning but not in rumination following online working memory training in a two-year follow-up study of remitted major depressive disorder
+LLM Pipeline Output:
+{
+    "Relations": [
+        {
+            "VariableOneName": "GPA/Grades/Measures of Academic Success",
+            "VariableTwoName": "psychological distress and suicidality",
+            "SupportingText": "No relevant information found in the text.",
+            "Reasoning": "The text does not provide any information on the relationship between GPA/Grades/Measures of Academic Success and psychological distress and suicidality.",
+            "RelationshipClassification": "not applicable"
+        },
+        {
+            "VariableOneName": "stress level and allostatic load",
+            "VariableTwoName": "psychological distress and suicidality",
+            "SupportingText": "No relevant information found in the text.",
+            "Reasoning": "The text does not provide any information on the relationship between stress level and allostatic load with psychological distress and suicidality.",
+            "RelationshipClassification": "not applicable"
+        },
+        {
+            "VariableOneName": "psychological distress and suicidality",
+            "VariableTwoName": "stress level and allostatic load",
+            "SupportingText": "No relevant information found in the text.",
+            "Reasoning": "The text does not provide any information on the relationship between psychological distress and suicidality with stress level and allostatic load.",
+            "RelationshipClassification": "not applicable"
+        },
+        {
+            "VariableOneName": "use of helpful coping skills",
+            "VariableTwoName": "stress level and allostatic load",
+            "SupportingText": "No relevant information found in the text.",
+            "Reasoning": "The text does not provide any information on the relationship between use of helpful coping skills and stress level and allostatic load.",
+            "RelationshipClassification": "not applicable"
+        },
+        {
+            "VariableOneName": "Seeking academic coaching support",
+            "VariableTwoName": "use of helpful coping skills",
+            "SupportingText": "No relevant information found in the text.",
+            "Reasoning": "The text does not provide any information on the relationship between seeking academic coaching support and use of helpful coping skills.",
+            "RelationshipClassification": "not applicable"
+        }
+    ]
+}
+======================================================================
+Paper Analyzed: Brain activation patterns in major depressive disorder and work stress-related long-term sick leave 
+LLM Pipeline Output:
+{
+    "Relations": [
+        {
+            "VariableOneName": "stress level and allostatic load",
+            "VariableTwoName": "psychological distress and suicidality",
+            "SupportingText": "This study used functional magnetic resonance imaging (fMRI) to investigate potential differences in brain activation patterns in patients with stress-related long-term sick leave and major depression. The results showed differences in brain activity patterns between the two groups, suggesting a relationship between stress level and allostatic load and psychological distress and suicidality.",
+            "Reasoning": "The text mentions that deficits in executive functioning and working memory associated with frontal lobe dysfunction are prominent in depression and work-related long-term sick leave. This indicates a potential link between stress level and allostatic load and psychological distress and suicidality.",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "psychological distress and suicidality",
+            "VariableTwoName": "stress level and allostatic load",
+            "SupportingText": "The study revealed differences in brain activation patterns between patients with stress-related long-term sick leave and major depression, indicating a potential relationship between psychological distress and suicidality and stress level and allostatic load.",
+            "Reasoning": "The text discusses the impact of stress on psychiatric diagnoses, including mood and anxiety disorders. It suggests a dysregulation of stress systems in these conditions, which could lead to psychological distress and suicidality.",
+            "RelationshipClassification": "direct"
+        },
+        {
+            "VariableOneName": "stress level and allostatic load",
+            "VariableTwoName": "Perception of Time Based Unavailability",
+            "SupportingText": "The study focused on brain activation patterns in patients with stress-related long-term sick leave and major depression, indicating a potential relationship between stress level and allostatic load and Perception of Time Based Unavailability.",
+            "Reasoning": "The text highlights the impact of stress on cognitive and endocrine function, suggesting that stress can affect perception and cognitive processes. This implies a possible connection between stress level and allostatic load and Perception of Time Based Unavailability.",
+            "RelationshipClassification": "not applicable"
+        },
+        {
+            "VariableOneName": "Perception of Time Based Unavailability",
+            "VariableTwoName": "stress level and allostatic load",
+            "SupportingText": "The study examined brain activation patterns in patients with stress-related long-term sick leave and major depression, indicating a potential relationship between Perception of Time Based Unavailability and stress level and allostatic load.",
+            "Reasoning": "The text discusses the neural correlates of cognitive processes in patients on sick leave due to work-related stress, suggesting that cognitive function may be affected by stress. This implies a possible link between Perception of Time Based Unavailability and stress level and allostatic load.",
+            "RelationshipClassification": "not applicable"
+        },
+        {
+            "VariableOneName": "perceived academic pressure",
+            "VariableTwoName": "stress level and allostatic load",
+            "SupportingText": "The study focused on brain activation patterns in patients with stress-related long-term sick leave and major depression, suggesting a potential relationship between perceived academic pressure and stress level and allostatic load.",
+            "Reasoning": "The text mentions the impact of work-related stress on cognitive function and the frontal lobe, indicating that perceived pressure, such as academic pressure, could contribute to stress levels. This implies a possible connection between perceived academic pressure and stress level and allostatic load.",
+            "RelationshipClassification": "not applicable"
+        },
+        {
+            "VariableOneName": "use of helpful coping skills",
+            "VariableTwoName": "stress level and allostatic load",
+            "SupportingText": "The study examined brain activation patterns in patients with stress-related long-term sick leave and major depression, suggesting a potential relationship between the use of helpful coping skills and stress level and allostatic load.",
+            "Reasoning": "The text discusses the impact of stress on cognitive function and the HPA axis, indicating that coping skills can influence stress levels. This implies a possible link between the use of helpful coping skills and stress level and allostatic load.",
+            "RelationshipClassification": "not applicable"
+        }
+    ]
+}
