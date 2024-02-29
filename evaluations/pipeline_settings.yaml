@@ -21,7 +21,7 @@ prompt: |
   {format_instructions}
   OUTPUT FORMATTING INSTRUCTIONS END
 
-  Below is the list of relationships that you should include in your output. Ensure all relationships are evaluated!
+  Below is the list of relationships that you should include in your output. Ensure all relationships are evaluated and reproduced with same capitalization and spelling!
   {relationships}
   End of the list of relationships.
 

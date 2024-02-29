@@ -14,9 +14,10 @@ def compute_direction(verdicts, connection):
         if types[type] >= best_value:
             best = type
             best_value = types[type]
-    print(best, types)
+    #print(best, types)
     mapping = {"direct":"+", "inverse":"-", "uncorrelated":""}
     return mapping[best]
+
 
 def create_description_text(connection, verdicts):
     description_bottom = ""
@@ -36,7 +37,10 @@ relevant papers and what they implied about this relationship.\n\n"
     
 
 def compute_single_correctness(UserPrediction, relationType):
+    if relationType.lower().strip() == "not applicable":
+        return 0.5
     return UserPrediction.lower().strip() == relationType.lower().strip()
+
 
 def pipeline_to_kumu(dic, outputPath):
 
@@ -58,7 +62,11 @@ def pipeline_to_kumu(dic, outputPath):
             relationType = relation['RelationshipClassification']
             SupportingText = relation['SupportingText']
             UserPrediction = relation['UserOriginalRelationshipClassification']
-            print("Parser to kumu", UserPrediction, relationType)
+
+            # if relationType.lower().strip() == "not applicable":
+            #     connections.append([variable_one, variable_two])
+            #     continue
+
             correctness = compute_single_correctness(UserPrediction, relationType)
             if "isCausal" in relation:
                 if relation['isCausal'] == "True":
@@ -81,7 +89,6 @@ def pipeline_to_kumu(dic, outputPath):
 
             connections.append([variable_one, variable_two])
 
-            
     #print(verdicts)
     # Create the element list for the output JSON
     for var in vars:
@@ -93,12 +100,12 @@ def pipeline_to_kumu(dic, outputPath):
         
     # Create the connection list for the output JSON
 
-    for connection in connections:
+    for connection in verdicts:
         # if connection[2] == "direct" or connection[2] == "Direct":
         #     connection[2] = "directed"
         # else:
         #     connection[2] = "mutual"
-    
+        print(connection)
         entry = {
             "from": connection[0],
             "to": connection[1],

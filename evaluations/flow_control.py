@@ -15,7 +15,7 @@ if False:
     pipeline_to_kumu(to_kumu_dict, "./inference_io/test_input_from_kumu.json")
 
 """
-Ensure that the only map in your project is the map you want to verify using SLAE. 
+Ensure that the only map in your project is the map you want to verify using SLAE, empty the project trash.
 You can export a single map with this utility: https://to-kumu-map-blueprint.netlify.app/.
 Rename the file "user_input.json".
 Run this script!
@@ -50,10 +50,8 @@ You may have to reload the webapp to see the changes!
 if True:
     with open(pathlib.Path("./inference_io/user_input.json"), "r") as f:
         kumu_read = user_input_to_list_of_relations(json.load(f))
-        print(kumu_read)
         for relation in kumu_read["Relations"]:
             relation["UserOriginalRelationshipClassification"] = relation["RelationshipClassification"]
-    pprint(kumu_read)
     with open(pathlib.Path("./inference_io/parsed_input.json"), "w") as f:
         json.dump(kumu_read, f)
 
@@ -74,8 +72,8 @@ if True:
     # For each dictionary run the "extract_relationships" function and settings.
     outputs = list()
     for data in matched_papers:
-        if len(data["Relations"]) == 0: 
-            print("\nPaper", data["PaperTitle"][:50], ": no matching relations") 
+        if len(data["Relations"]) == 0:
+            print("\nPaper", data["PaperTitle"][:50], ": no matching relations")
             continue
         else:
             print("\nParsing", len(data["Relations"]), "relations from", data["PaperTitle"][:50])
@@ -84,9 +82,7 @@ if True:
         output["PaperDOI"] = data["PaperDOI"]
         for index, relation in enumerate(output["Relations"]):
             relation["UserOriginalRelationshipClassification"] = data["Relations"][index]["UserOriginalRelationshipClassification"]
-        # print(output["PaperDOI"])
         outputs.append(output)
-        # print(outputs)
     outputs_dict = {"Papers" : outputs}
     debug = True
     if debug:
@@ -96,7 +92,5 @@ with open("./inference_io/predicted_relations_output.json", "r") as f:
     outputs_dict = json.load(f)
 
 # Obtain the list of output jsons from the iterative running of extract_relationships and recombine the output jsons into the format required to output to Kumu
-# Parse it into Kumu form and save the json in a file. 
+# Parse it into Kumu form and save the json in a file.
 pipeline_to_kumu(outputs_dict, "./inference_io/final_to_kumu_output.json")
-
-

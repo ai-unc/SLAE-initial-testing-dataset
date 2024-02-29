@@ -1,0 +1,567 @@
+{
+  "version": 1,
+  "name": "SLAE Test 2",
+  "description": "",
+  "proxyImages": true,
+  "defaultMap": "map-Br2A7aoL",
+  "defaultPerspective": null,
+  "attributeRelevance": {},
+  "attributes": [
+    {
+      "_id": "attr-Gvk7D12h",
+      "name": "Connection Type",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "list",
+      "locked": false,
+      "values": [
+        "+",
+        "-",
+        "direct",
+        ""
+      ],
+      "sort": false,
+      "cluster": false
+    },
+    {
+      "_id": "attr-wjSIC9RP",
+      "name": "Description",
+      "format": "text",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "none",
+      "locked": false,
+      "values": [],
+      "sort": false,
+      "cluster": false
+    },
+    {
+      "_id": "attr-ppUN4M7s",
+      "name": "Element Type",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "list",
+      "locked": false,
+      "values": [
+        "variable"
+      ],
+      "sort": false,
+      "cluster": true
+    },
+    {
+      "_id": "attr-dHJUOuU5",
+      "name": "Label",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "autocomplete",
+      "locked": false,
+      "values": [],
+      "sort": false,
+      "cluster": false
+    },
+    {
+      "_id": "attr-hZ6en2jv",
+      "name": "Loop Type",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "list",
+      "locked": false,
+      "values": [],
+      "sort": false,
+      "cluster": false
+    },
+    {
+      "_id": "attr-y2KnmMMO",
+      "name": "Tags",
+      "format": "string",
+      "private": false,
+      "limit": "none",
+      "category": "General",
+      "prompt": "autocomplete",
+      "locked": false,
+      "values": [],
+      "sort": false,
+      "cluster": true
+    },
+    {
+      "_id": "attr-EmNvL48w",
+      "name": "correctness",
+      "format": "number",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "autocomplete",
+      "locked": false,
+      "values": [],
+      "sort": false,
+      "cluster": true
+    },
+    {
+      "_id": "attr-vA8FvCWr",
+      "name": "papers examined",
+      "format": "number",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "autocomplete",
+      "locked": false,
+      "values": [],
+      "sort": false,
+      "cluster": true
+    },
+    {
+      "_id": "attr-32rnXv4g",
+      "name": "papersexamined",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "autocomplete",
+      "locked": false,
+      "values": [],
+      "sort": false,
+      "cluster": true
+    }
+  ],
+  "elements": [
+    {
+      "_id": "elem-4hnpvQSI",
+      "attributes": {
+        "label": "Rumination",
+        "element type": "variable"
+      }
+    },
+    {
+      "_id": "elem-L6GbaBRq",
+      "attributes": {
+        "label": "Forced-failure stress",
+        "element type": "variable"
+      }
+    },
+    {
+      "_id": "elem-Rx0MewcN",
+      "attributes": {
+        "label": "Induced distraction",
+        "element type": "variable"
+      }
+    },
+    {
+      "_id": "elem-TUR89Ujv",
+      "attributes": {
+        "label": "RSA withdrawal",
+        "element type": "variable"
+      }
+    },
+    {
+      "_id": "elem-aO61017L",
+      "attributes": {
+        "label": "Cognitive distraction",
+        "element type": "variable"
+      }
+    },
+    {
+      "_id": "elem-iUvlrKmu",
+      "attributes": {
+        "label": "Rumination Induction",
+        "element type": "variable"
+      }
+    },
+    {
+      "_id": "elem-tjUoMk0p",
+      "attributes": {
+        "label": "Depression",
+        "element type": "variable"
+      }
+    },
+    {
+      "_id": "elem-w3xALRpZ",
+      "attributes": {
+        "label": "RSAwithdrawal",
+        "element type": "variable"
+      }
+    },
+    {
+      "_id": "elem-dI29kaVE",
+      "attributes": {
+        "label": "chronic fatigue syndrome (CSF)"
+      }
+    }
+  ],
+  "connections": [
+    {
+      "_id": "conn-0FPDveLS",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "description": "Below are a summary of 2 relevant papers and what they implied about this relationship.\n\nPaper number 0\nOpinion from: Cognitive Impairments in Unipolar Depression: The Impact of Rumination\nPaper DOI <link>: 10.1159/000478785\nOpinion extracted: direct\nOriginal user opinion: \nSupporting text used in extraction: These rumination and distraction inductions may produce stronger differences in cognitive performance in the laboratory.\n\nPaper number 1\nOpinion from: Effect of rejection sensitivity on the development of anxious-depressive attack in Japanese outpatients: The mediating roles of rumination, social anxiety, and depressive symptoms\nPaper DOI <link>: 10.3389/fpsyg.2022.1016879\nOpinion extracted: Not applicable\nOriginal user opinion: \nSupporting text used in extraction: The intensity of social anxiety correlates with rumination over time in patients undergoing cognitive–behavioral therapy for SAD.\n\n",
+        "correctness": 0,
+        "connection type": "",
+        "papers examined": 2
+      },
+      "from": "elem-iUvlrKmu",
+      "to": "elem-TUR89Ujv"
+    },
+    {
+      "_id": "conn-4tpj2v9E",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "description": "Below are a summary of 3 relevant papers and what they implied about this relationship.\nPaper number 0\nOpinion from: Cognitive Impairments in Unipolar Depression: The Impact of Rumination\nPaper DOI <link>: 10.1159/000478785\nOpinion extracted: direct\nOriginal user opinion: \nSupporting text used in extraction: People who ruminate repetitively contemplate reasons for and consequences of their sadness.\n\nPaper number 1\nOpinion from: Effect of rejection sensitivity on the development of anxious-depressive attack in Japanese outpatients: The mediating roles of rumination, social anxiety, and depressive symptoms\nPaper DOI <link>: 10.3389/fpsyg.2022.1016879\nOpinion extracted: Direct\nOriginal user opinion: \nSupporting text used in extraction: Results of a previous study indicated that rumination predicts the onset of depression, exacerbates depression, enhances negative thinking, impairs problem-solving skills, interferes with instrumental behavior, and erodes social support.\n\nPaper number 2\nOpinion from: Improvement in self-reported cognitive functioning but not in rumination following online working memory training in a two-year follow-up study of remitted major depressive disorder\nPaper DOI <link>: 10.3389/fpsyt.2023.1163073\nOpinion extracted: Direct\nOriginal user opinion: \nSupporting text used in extraction: Rumination is an emotion regulation strategy where one passively broods over self-related negative experiences and is hypothesized to be related to deficits in working memory for negative material, sometimes termed hot-cognition. Associations between objective cognitive tests and rumination are small, but significant associations have been established for working memory. Rumination is a central risk factor following remission of mood symptoms and predicts relapse in remitted populations.\n\n",
+        "correctness": 0,
+        "connection type": "direct",
+        "papersexamined": 3
+      },
+      "from": "elem-4hnpvQSI",
+      "to": "elem-tjUoMk0p"
+    },
+    {
+      "_id": "conn-6zQRbM1d",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "+",
+        "description": "Below are a summary of 6 relevant papers and what they implied about this relationship.\n\nPaper number 0\nOpinion from: Cognitive Impairments in Unipolar Depression: The Impact of Rumination\nPaper DOI <link>: 10.1159/000478785\nOpinion extracted: Direct\nOriginal user opinion: \nSupporting text used in extraction: In the study by Watkins and Brown, the performance of depressed patients and nondepressed controls was compared for a random number generation task, performed after either a rumination or a distraction induction. Compared with the distraction induction, the rumination induction produced a significant increase in stereotyped counting responses (reflecting a failure of inhibitory executive control) in depressed patients but not in controls.\n\nPaper number 1\nOpinion from: Cognitive Impairments in Unipolar Depression: The Impact of Rumination\nPaper DOI <link>: 10.1159/000478785\nOpinion extracted: Direct\nOriginal user opinion: +\nSupporting text used in extraction: In the study by Watkins and Brown, the performance of depressed patients and nondepressed controls was compared for a random number generation task, performed after either a rumination or a distraction induction. Compared with the distraction induction, the rumination induction produced a significant increase in stereotyped counting responses (reflecting a failure of inhibitory executive control) in depressed patients but not in controls.\n\nPaper number 2\nOpinion from: Effect of rejection sensitivity on the development of anxious-depressive attack in Japanese outpatients: The mediating roles of rumination, social anxiety, and depressive symptoms\nPaper DOI <link>: 10.3389/fpsyg.2022.1016879\nOpinion extracted: Direct\nOriginal user opinion: \nSupporting text used in extraction: Mindfulness training may be an option for treating ADA. Trait mindfulness is negatively associated with rejection sensitivity. In particular, the nonjudgment factor of trait mindfulness negatively predicts rejection sensitivity.\n\nPaper number 3\nOpinion from: Effect of rejection sensitivity on the development of anxious-depressive attack in Japanese outpatients: The mediating roles of rumination, social anxiety, and depressive symptoms\nPaper DOI <link>: 10.3389/fpsyg.2022.1016879\nOpinion extracted: Direct\nOriginal user opinion: -\nSupporting text used in extraction: Mindfulness training may be an option for treating ADA. Trait mindfulness is negatively associated with rejection sensitivity. In particular, the nonjudgment factor of trait mindfulness negatively predicts rejection sensitivity.\n\nPaper number 4\nOpinion from: Improvement in self-reported cognitive functioning but not in rumination following online working memory training in a two-year follow-up study of remitted major depressive disorder\nPaper DOI <link>: 10.3389/fpsyt.2023.1163073\nOpinion extracted: not applicable\nOriginal user opinion: \nSupporting text used in extraction: Results suggested lasting improvements in self-reported cognitive functioning following online CWMT.\n\nPaper number 5\nOpinion from: Improvement in self-reported cognitive functioning but not in rumination following online working memory training in a two-year follow-up study of remitted major depressive disorder\nPaper DOI <link>: 10.3389/fpsyt.2023.1163073\nOpinion extracted: not applicable\nOriginal user opinion: +\nSupporting text used in extraction: Results suggested lasting improvements in self-reported cognitive functioning following online CWMT.\n\n",
+        "correctness": 0,
+        "papers examined": 6
+      },
+      "from": "elem-iUvlrKmu",
+      "to": "elem-TUR89Ujv"
+    },
+    {
+      "_id": "conn-7J01R6y8",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "+",
+        "description": "Below are a summary of 1 relevant papers and what they implied about this relationship.\n\nPaper number 0\nOpinion from: Effect of rejection sensitivity on the development of anxious-depressive attack in Japanese outpatients: The mediating roles of rumination, social anxiety, and depressive symptoms\nPaper DOI <link>: 10.3389/fpsyg.2022.1016879\nOpinion extracted: Direct\nOriginal user opinion: +\nSupporting text used in extraction: Rejection sensitivity is associated with anxiety, depressive symptoms, loneliness, and other psychological disorders. Sadness is a common symptom of depressive disorders.\n\n",
+        "correctness": 0,
+        "papers examined": 1
+      },
+      "from": "elem-TUR89Ujv",
+      "to": "elem-tjUoMk0p"
+    },
+    {
+      "_id": "conn-8HR8vs9T",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "+",
+        "description": "Below are a summary of 3 relevant papers and what they implied about this relationship.\n\nPaper number 0\nOpinion from: Cognitive Impairments in Unipolar Depression: The Impact of Rumination\nPaper DOI <link>: 10.1159/000478785\nOpinion extracted: Direct\nOriginal user opinion: -\nSupporting text used in extraction: In the study by Watkins and Brown, the performance of depressed patients and nondepressed controls was compared for a random number generation task, performed after either a rumination or a distraction induction. Compared with the distraction induction, the rumination induction produced a significant increase in stereotyped counting responses (reflecting a failure of inhibitory executive control) in depressed patients but not in controls.\n\nPaper number 1\nOpinion from: Effect of rejection sensitivity on the development of anxious-depressive attack in Japanese outpatients: The mediating roles of rumination, social anxiety, and depressive symptoms\nPaper DOI <link>: 10.3389/fpsyg.2022.1016879\nOpinion extracted: Direct\nOriginal user opinion: +\nSupporting text used in extraction: Rumination is associated with several psychological symptoms, including eating disorders and emotion regulation difficulties. It is also linked to negative thinking, problem-solving impairments, and social support erosion.\n\nPaper number 2\nOpinion from: Improvement in self-reported cognitive functioning but not in rumination following online working memory training in a two-year follow-up study of remitted major depressive disorder\nPaper DOI <link>: 10.3389/fpsyt.2023.1163073\nOpinion extracted: not applicable\nOriginal user opinion: -\nSupporting text used in extraction: Results showed significant improvements in self-reported cognitive functioning following online CWMT.\n\n",
+        "correctness": 0,
+        "papers examined": 3
+      },
+      "from": "elem-4hnpvQSI",
+      "to": "elem-TUR89Ujv"
+    },
+    {
+      "_id": "conn-AGIow9d9",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "+",
+        "description": "Below are a summary of 2 relevant papers and what they implied about this relationship.\n\nPaper number 0\nOpinion from: Cognitive Impairments in Unipolar Depression: The Impact of Rumination\nPaper DOI <link>: 10.1159/000478785\nOpinion extracted: Direct\nOriginal user opinion: \nSupporting text used in extraction: In the study by Watkins and Brown, the performance of depressed patients and nondepressed controls was compared for a random number generation task, performed after either a rumination or a distraction induction. Compared with the distraction induction, the rumination induction produced a significant increase in stereotyped counting responses (reflecting a failure of inhibitory executive control) in depressed patients but not in controls.\n\nPaper number 1\nOpinion from: Effect of rejection sensitivity on the development of anxious-depressive attack in Japanese outpatients: The mediating roles of rumination, social anxiety, and depressive symptoms\nPaper DOI <link>: 10.3389/fpsyg.2022.1016879\nOpinion extracted: Direct\nOriginal user opinion: +\nSupporting text used in extraction: Mindfulness training may be an option for treating ADA. Trait mindfulness is negatively associated with rejection sensitivity. In particular, the nonjudgment factor of trait mindfulness negatively predicts rejection sensitivity.\n\n",
+        "correctness": 0,
+        "papers examined": 2
+      },
+      "from": "elem-iUvlrKmu",
+      "to": "elem-w3xALRpZ"
+    },
+    {
+      "_id": "conn-Lwmu8zjX",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "description": "",
+        "correctness": 0,
+        "connection type": "+",
+        "papers examined": 1
+      },
+      "from": "elem-L6GbaBRq",
+      "to": "elem-TUR89Ujv"
+    },
+    {
+      "_id": "conn-MB91oeac",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "description": "Below are a summary of 1 relevant papers and what they implied about this relationship.\n\nPaper number 0\nOpinion from: Effect of rejection sensitivity on the development of anxious-depressive attack in Japanese outpatients: The mediating roles of rumination, social anxiety, and depressive symptoms\nPaper DOI <link>: 10.3389/fpsyg.2022.1016879\nOpinion extracted: Not applicable\nOriginal user opinion: \nSupporting text used in extraction: The intensity of social anxiety correlates with rumination over time in patients undergoing cognitive–behavioral therapy for SAD.\n\n",
+        "connection type": "",
+        "correctness": 0,
+        "papersexamined": 1,
+        "papers examined": 1
+      },
+      "from": "elem-L6GbaBRq",
+      "to": "elem-w3xALRpZ"
+    },
+    {
+      "_id": "conn-OOcAJGHy",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "-"
+      },
+      "from": "elem-4hnpvQSI",
+      "to": "elem-TUR89Ujv"
+    },
+    {
+      "_id": "conn-PUwrZMfm",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "description": "Below are a summary of 1 relevant papers and what they implied about this relationship.\n\nPaper number 0\nOpinion from: Brain activation patterns in major depressive disorder and work stress-related long-term sick leave \nPaper DOI <link>: 10.3109/10253890.2011.646347\nOpinion extracted: Direct\nOriginal user opinion: \nSupporting text used in extraction: During the n-back task, the LTSL subjects showed a reduction in prefrontal cortex activation. Specifically, a group difference was observed in the right dorsolateral and left ventrolateral prefrontal cortex.\n\n",
+        "correctness": 0,
+        "connection type": "+",
+        "papers examined": 1
+      },
+      "from": "elem-Rx0MewcN",
+      "to": "elem-TUR89Ujv"
+    },
+    {
+      "_id": "conn-Zso5RgCh",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "-",
+        "description": "",
+        "correctness": 0
+      },
+      "from": "elem-aO61017L",
+      "to": "elem-4hnpvQSI"
+    },
+    {
+      "_id": "conn-atkVZVPT",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "direct",
+        "description": "Below are a summary of 1 relevant papers and what they implied about this relationship.\nPaper number 0\nOpinion from: Effect of rejection sensitivity on the development of anxious-depressive attack in Japanese outpatients: The mediating roles of rumination, social anxiety, and depressive symptoms\nPaper DOI <link>: 10.3389/fpsyg.2022.1016879\nOpinion extracted: Not applicable\nOriginal user opinion: \nSupporting text used in extraction: The intensity of social anxiety correlates with rumination over time in patients undergoing cognitive–behavioral therapy for SAD.\n\n",
+        "correctness": 0,
+        "papersexamined": 1
+      },
+      "from": "elem-L6GbaBRq",
+      "to": "elem-TUR89Ujv"
+    },
+    {
+      "_id": "conn-d5djzBB0",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "+",
+        "description": "Below are a summary of 10 relevant papers and what they implied about this relationship.\n\nPaper number 0\nOpinion from: Childhood Maltreatment Was Correlated With the Decreased Cortical Function in Depressed Patients Under Social Stress in a Working Memory Task: A Pilot Study\nPaper DOI <link>: 10.3389/fpsyt.2021.671574\nOpinion extracted: Not applicable\nOriginal user opinion: +\nSupporting text used in extraction: We aimed to explore the neural changes in MDD patients by investigating brain function associated with a stress-related WM task. We found that compared to HCs, MDD patients showed comprehensive less brain activation during both the WM maintenance and manipulation conditions. Particularly, we found decreased brain activation in the left fusiform gyrus, SMA, and APFC.\n\nPaper number 1\nOpinion from: Childhood Maltreatment Was Correlated With the Decreased Cortical Function in Depressed Patients Under Social Stress in a Working Memory Task: A Pilot Study\nPaper DOI <link>: 10.3389/fpsyt.2021.671574\nOpinion extracted: Not applicable\nOriginal user opinion: -\nSupporting text used in extraction: We aimed to explore the neural changes in MDD patients by investigating brain function associated with a stress-related WM task. We found that compared to HCs, MDD patients showed comprehensive less brain activation during both the WM maintenance and manipulation conditions. Particularly, we found decreased brain activation in the left fusiform gyrus, SMA, and APFC.\n\nPaper number 2\nOpinion from: Cognitive Impairments in Unipolar Depression: The Impact of Rumination\nPaper DOI <link>: 10.1159/000478785\nOpinion extracted: Inverse\nOriginal user opinion: +\nSupporting text used in extraction: Based on evidence from 'choking under pressure', it is plausible to assume that rumination as a predominantly verbal phenomenon mainly absorbs verbal capacities. Using a visual but not a verbal memory test may cause less interference with rumination and therefore mask possible relationships between rumination and memory.\n\nPaper number 3\nOpinion from: Cognitive Impairments in Unipolar Depression: The Impact of Rumination\nPaper DOI <link>: 10.1159/000478785\nOpinion extracted: Inverse\nOriginal user opinion: -\nSupporting text used in extraction: Based on evidence from 'choking under pressure', it is plausible to assume that rumination as a predominantly verbal phenomenon mainly absorbs verbal capacities. Using a visual but not a verbal memory test may cause less interference with rumination and therefore mask possible relationships between rumination and memory.\n\nPaper number 4\nOpinion from: Effect of rejection sensitivity on the development of anxious-depressive attack in Japanese outpatients: The mediating roles of rumination, social anxiety, and depressive symptoms\nPaper DOI <link>: 10.3389/fpsyg.2022.1016879\nOpinion extracted: Direct\nOriginal user opinion: +\nSupporting text used in extraction: Cognitive distraction is effective in reducing rumination and improving emotional regulation. Rumination is characterized by obsessional thinking and repetitive negative thoughts.\n\nPaper number 5\nOpinion from: Effect of rejection sensitivity on the development of anxious-depressive attack in Japanese outpatients: The mediating roles of rumination, social anxiety, and depressive symptoms\nPaper DOI <link>: 10.3389/fpsyg.2022.1016879\nOpinion extracted: Direct\nOriginal user opinion: +\nSupporting text used in extraction: Cognitive distraction is effective in reducing rumination and improving emotional regulation. Rumination is characterized by obsessional thinking and repetitive negative thoughts.\n\nPaper number 6\nOpinion from: Cognitive deficits in patients with chronic fatigue syndrome compared to those with major depressive disorder and healthy controls\nPaper DOI <link>: 10.1016/j.clineuro.2010.12.002\nOpinion extracted: Direct\nOriginal user opinion: +\nSupporting text used in extraction: We evaluated the cognitive performance of patients with CFS using standardized verbal and visual memory tests, as well as sustained attention, working memory, and verbal and visual episodic memory.\n\nPaper number 7\nOpinion from: Cognitive deficits in patients with chronic fatigue syndrome compared to those with major depressive disorder and healthy controls\nPaper DOI <link>: 10.1016/j.clineuro.2010.12.002\nOpinion extracted: Direct\nOriginal user opinion: -\nSupporting text used in extraction: We evaluated the cognitive performance of patients with CFS using standardized verbal and visual memory tests, as well as sustained attention, working memory, and verbal and visual episodic memory.\n\nPaper number 8\nOpinion from: Improvement in self-reported cognitive functioning but not in rumination following online working memory training in a two-year follow-up study of remitted major depressive disorder\nPaper DOI <link>: 10.3389/fpsyt.2023.1163073\nOpinion extracted: not applicable\nOriginal user opinion: +\nSupporting text used in extraction: Results showed significant improvements in self-reported cognitive functioning following online CWMT.\n\nPaper number 9\nOpinion from: Improvement in self-reported cognitive functioning but not in rumination following online working memory training in a two-year follow-up study of remitted major depressive disorder\nPaper DOI <link>: 10.3389/fpsyt.2023.1163073\nOpinion extracted: not applicable\nOriginal user opinion: -\nSupporting text used in extraction: Results showed significant improvements in self-reported cognitive functioning following online CWMT.\n\n",
+        "correctness": 0,
+        "papers examined": 10
+      },
+      "from": "elem-aO61017L",
+      "to": "elem-4hnpvQSI"
+    },
+    {
+      "_id": "conn-dHZXTmfc",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "-"
+      },
+      "from": "elem-TUR89Ujv",
+      "to": "elem-tjUoMk0p"
+    },
+    {
+      "_id": "conn-gCTr23CX",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "description": "Below are a summary of 5 relevant papers and what they implied about this relationship.\nPaper number 0\nOpinion from: Childhood Maltreatment Was Correlated With the Decreased Cortical Function in Depressed Patients Under Social Stress in a Working Memory Task: A Pilot Study\nPaper DOI <link>: 10.3389/fpsyt.2021.671574\nOpinion extracted: direct\nOriginal user opinion: \nSupporting text used in extraction: We found a significant correlation between cognitive distraction and rumination (p < 0.05).\n\nPaper number 1\nOpinion from: Cognitive Impairments in Unipolar Depression: The Impact of Rumination\nPaper DOI <link>: 10.1159/000478785\nOpinion extracted: inverse\nOriginal user opinion: \nSupporting text used in extraction: These prevailing ruminating thoughts can occupy cognitive resources and lead to a decreased cognitive performance.\n\nPaper number 2\nOpinion from: Effect of rejection sensitivity on the development of anxious-depressive attack in Japanese outpatients: The mediating roles of rumination, social anxiety, and depressive symptoms\nPaper DOI <link>: 10.3389/fpsyg.2022.1016879\nOpinion extracted: Not applicable\nOriginal user opinion: \nSupporting text used in extraction: The intensity of social anxiety correlates with rumination over time in patients undergoing cognitive–behavioral therapy for SAD.\n\nPaper number 3\nOpinion from: Cognitive deficits in patients with chronic fatigue syndrome compared to those with major depressive disorder and healthy controls\nPaper DOI <link>: 10.1016/j.clineuro.2010.12.002\nOpinion extracted: Direct\nOriginal user opinion: \nSupporting text used in extraction: We evaluated the cognitive performance of patients with CFS using standardized verbal and visual memory tests, as well as sustained attention, working memory, and episodic memory. The results showed that patients with CFS had impaired working memory and attention, which could lead to cognitive distraction.\n\nPaper number 4\nOpinion from: Improvement in self-reported cognitive functioning but not in rumination following online working memory training in a two-year follow-up study of remitted major depressive disorder\nPaper DOI <link>: 10.3389/fpsyt.2023.1163073\nOpinion extracted: Uncorrelated\nOriginal user opinion: \nSupporting text used in extraction: Results are mixed regarding whether interventions like computerized working memory training (CWMT) improve rumination, with studies finding support for improvements in some residual symptoms like objective cognitive deficits, but not all, symptoms like subjective cognitive deficits, depressive symptoms, and some aspects of rumination.\n\n",
+        "correctness": 0,
+        "connection type": "direct",
+        "papersexamined": 5
+      },
+      "from": "elem-aO61017L",
+      "to": "elem-4hnpvQSI"
+    },
+    {
+      "_id": "conn-jId3i5v0",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "+",
+        "description": "",
+        "correctness": "0"
+      },
+      "from": "elem-4hnpvQSI",
+      "to": "elem-tjUoMk0p"
+    },
+    {
+      "_id": "conn-m6cMH2KO",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "description": "Below are a summary of 6 relevant papers and what they implied about this relationship.\n\nPaper number 0\nOpinion from: Childhood Maltreatment Was Correlated With the Decreased Cortical Function in Depressed Patients Under Social Stress in a Working Memory Task: A Pilot Study\nPaper DOI <link>: 10.3389/fpsyt.2021.671574\nOpinion extracted: Not applicable\nOriginal user opinion: +\nSupporting text used in extraction: Stress could affect the occurrence and development of depression, in which childhood maltreatment played an important role. MDD patients had reduced brain activation, affecting emotional stimuli processing function, executive function, and cognitive control function.\n\nPaper number 1\nOpinion from: Cognitive Impairments in Unipolar Depression: The Impact of Rumination\nPaper DOI <link>: 10.1159/000478785\nOpinion extracted: Not applicable\nOriginal user opinion: +\nSupporting text used in extraction: The text does not provide any information on the relationship between forced-failure stress and sadness.\n\nPaper number 2\nOpinion from: Effect of rejection sensitivity on the development of anxious-depressive attack in Japanese outpatients: The mediating roles of rumination, social anxiety, and depressive symptoms\nPaper DOI <link>: 10.3389/fpsyg.2022.1016879\nOpinion extracted: Direct\nOriginal user opinion: \nSupporting text used in extraction: Forced-failure stress is associated with increased rejection sensitivity and emotional distress. Rejection sensitivity is a key factor in the development of ADA.\n\nPaper number 3\nOpinion from: Cognitive deficits in patients with chronic fatigue syndrome compared to those with major depressive disorder and healthy controls\nPaper DOI <link>: 10.1016/j.clineuro.2010.12.002\nOpinion extracted: Not applicable\nOriginal user opinion: +\nSupporting text used in extraction: No direct mention of forced-failure stress or sadness was found in the text.\n\nPaper number 4\nOpinion from: Improvement in self-reported cognitive functioning but not in rumination following online working memory training in a two-year follow-up study of remitted major depressive disorder\nPaper DOI <link>: 10.3389/fpsyt.2023.1163073\nOpinion extracted: not applicable\nOriginal user opinion: +\nSupporting text used in extraction: Results suggested lasting improvements in self-reported cognitive functioning following online CWMT.\n\nPaper number 5\nOpinion from: Brain activation patterns in major depressive disorder and work stress-related long-term sick leave \nPaper DOI <link>: 10.3109/10253890.2011.646347\nOpinion extracted: Direct\nOriginal user opinion: +\nSupporting text used in extraction: The average MADRS, PSQ, and burnout scores were highest in the depression group. All measurements of psychological health in the depression group were significantly different from the control group as well as the work-related LTSL group.\n\n",
+        "correctness": 0,
+        "connection type": "+",
+        "papersexamined": 6,
+        "papers examined": 6
+      },
+      "from": "elem-L6GbaBRq",
+      "to": "elem-tjUoMk0p"
+    },
+    {
+      "_id": "conn-mDdJ2A8X",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "description": "Below are a summary of 1 relevant papers and what they implied about this relationship.\n\nPaper number 0\nOpinion from: Effect of rejection sensitivity on the development of anxious-depressive attack in Japanese outpatients: The mediating roles of rumination, social anxiety, and depressive symptoms\nPaper DOI <link>: 10.3389/fpsyg.2022.1016879\nOpinion extracted: Not applicable\nOriginal user opinion: \nSupporting text used in extraction: The intensity of social anxiety correlates with rumination over time in patients undergoing cognitive–behavioral therapy for SAD.\n\n",
+        "connection type": "",
+        "correctness": 0,
+        "papersexamined": 2,
+        "papers examined": 1
+      },
+      "from": "elem-iUvlrKmu",
+      "to": "elem-w3xALRpZ"
+    },
+    {
+      "_id": "conn-AItaTM5S",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "-"
+      },
+      "from": "elem-dI29kaVE",
+      "to": "elem-tjUoMk0p"
+    }
+  ],
+  "loops": [],
+  "maps": [
+    {
+      "_id": "map-ZnjR0jDE",
+      "name": "Testing_Map",
+      "description": "",
+      "scale": 1,
+      "center": {
+        "x": 0,
+        "y": 0
+      },
+      "defaultPerspective": "pers-WtSLdGSc",
+      "defaultElementBehavior": "fixed",
+      "defaultConnectionDirection": "directed",
+      "elements": [
+        {
+          "_id": "node-1bNfkt9E",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-4hnpvQSI"
+        },
+        {
+          "_id": "node-51uw67hu",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-TUR89Ujv"
+        },
+        {
+          "_id": "node-C246PVFB",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-tjUoMk0p"
+        },
+        {
+          "_id": "node-QkOL703o",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-aO61017L"
+        },
+        {
+          "_id": "node-j32gBTPQ",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-L6GbaBRq"
+        },
+        {
+          "_id": "node-7Toh78u8",
+          "position": {
+            "x": 404.77584827193283,
+            "y": -69.2047757728939
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-dI29kaVE"
+        }
+      ],
+      "connections": [
+        {
+          "_id": "edge-3AE5gfhK",
+          "style": {},
+          "connection": "conn-OOcAJGHy"
+        },
+        {
+          "_id": "edge-8UJ88foK",
+          "style": {},
+          "connection": "conn-Zso5RgCh"
+        },
+        {
+          "_id": "edge-BbSwrqOg",
+          "style": {},
+          "connection": "conn-jId3i5v0"
+        },
+        {
+          "_id": "edge-SUx5aAop",
+          "style": {},
+          "connection": "conn-Lwmu8zjX"
+        },
+        {
+          "_id": "edge-eVT9lmw6",
+          "style": {},
+          "connection": "conn-dHZXTmfc"
+        },
+        {
+          "_id": "edge-OZNNsmgi",
+          "style": {},
+          "connection": "conn-AItaTM5S"
+        }
+      ],
+      "loops": []
+    }
+  ],
+  "perspectives": [
+    {
+      "_id": "pers-WtSLdGSc",
+      "name": "Testing_View",
+      "style": "@settings {\n  template: causal-loop;\n  layout: force;\n  layout-preset: dense;\n  connection-size: 6;\n  connection-curvature: 0.28;\n}\n\n/* Correctness */\nconnection {\n  color: scale(\"correctness\", #FF2D00, #FF9B85);\n}\n\n/* Papers Examined */\nconnection {\n  scale: scale(\"papers examined\", 1, 2);\n}\n\n"
+    },
+    {
+      "_id": "pers-spuDJRKE",
+      "name": "Untitled view",
+      "style": "@settings {\n  template: causal-loop;\n  layout: force;\n  layout-preset: dense;\n}\n\n"
+    }
+  ]
+}
